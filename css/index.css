@@ -282,7 +282,6 @@ body, p {
   
   }
   
-  
   /* Skills */
   .section#skills {
     display: none;
@@ -353,6 +352,7 @@ body, p {
       font-size: .8em;
     }
   }
+
   /* Portfolio */
   .portfolio-container {
     max-width: 1000px;
@@ -382,11 +382,59 @@ body, p {
   .portfolio-item > .item-body {
     margin-right: 10px;
   }
-  
-  #tjef-logo {
-    background-color: white;
-    border-radius: 20px;
+
+  .video-container { 
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
   }
+
+  /*Programming languages */
+  .programming-languages-items {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.programming-language {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+}
+
+.programming-language:hover {
+    background-color: #f9f9f9;
+}
+
+.programming-language:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+.programming-language div:first-child {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.programming-language div:last-child {
+    line-height: 1.6;
+    /* color: #555; */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .programming-languages-items {
+        padding: 10px;
+    }
+    
+    .programming-language {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 15px;
+    }
+}
   
   /* Generic items */
   .item-body {
@@ -448,15 +496,9 @@ body, p {
   }
   
   /* Experience items */
-  
   .experience-item > .item-body {
     margin-left: 5%;
   }
-  
-  .experience-item > .item-img > img {
-    border-radius: 50%;
-  }
-  
   
   /* Footer */
   .footer {
