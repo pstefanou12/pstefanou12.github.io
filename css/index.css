@@ -423,6 +423,52 @@ body, p {
     line-height: 1.6;
 }
 
+/* Racing */
+.racing-items {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.racing-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 3fr; /* Race name | Date | Time | Thoughts */
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.racing-item:last-child {
+    border-bottom: none;
+}
+
+.race {
+    font-weight: bold;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.race-thoughts {
+    line-height: 1.5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .racing-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .racing-item div {
+        padding: 2px 0;
+    }
+}
+
 /* Responsive design */
 @media (max-width: 600px) {
     .interest-items {
@@ -515,7 +561,7 @@ body, p {
   
   /* Footer */
   .footer {
-    width: 100vw;
+    width: 100%;
     height: 100px;
   
     display: flex;
@@ -526,6 +572,7 @@ body, p {
   }
   
   .footer-side {
+    white-space: nowrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
