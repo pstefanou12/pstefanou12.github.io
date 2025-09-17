@@ -390,13 +390,14 @@ body, p {
     padding: 20px;
   }
 
-  /*Programming languages */
-  .programming-languages-items {
+
+/* Generic two-column layout  for programming languages and interests*/
+.two-column-items {
     margin: 0 auto;
     padding: 20px;
 }
 
-.programming-language {
+.two-column-item {
     display: grid;
     grid-template-columns: 200px 1fr;
     gap: 30px;
@@ -405,22 +406,34 @@ body, p {
     transition: background-color 0.3s;
 }
 
-.programming-language:hover {
+.two-column-item:hover {
     background-color: #f9f9f9;
 }
 
-.programming-language:last-child {
-    border-bottom: none; /* Remove border from last item */
+.two-column-item:last-child {
+    border-bottom: none;
 }
 
-.programming-language div:first-child {
+.two-column-item div:first-child {
     font-weight: bold;
     font-size: 1.3em;
 }
 
-.programming-language div:last-child {
+.two-column-item div:last-child {
     line-height: 1.6;
-    /* color: #555; */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .interest-items {
+        padding: 10px;
+    }
+    
+    .interest {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 15px;
+    }
 }
 
 /* Responsive design */
