@@ -15,10 +15,10 @@ body, p {
   
   /* Font */
   body {
-    font-family: monaco, Consolas, 'Lucida Console', monospace;
-    --color: #00F72C;
+    font-family: Roboto,sans-serif;
+    --color: #BD93F9;
     color: var(--color);
-    background-color: rgba(0,0,0,.85);
+    background-color: #282A36;
   }
   
   /* Nav bar */
@@ -226,7 +226,7 @@ body, p {
     margin: auto;
     margin-top: 40px;
     padding-bottom: 40px;
-    border-bottom: 3px solid var(--color);
+    border-bottom: 3px solid #8BE9FD;;
     mask-size: 100px 10px;
     mask-repeat: repeat-x;
     mask-position: bottom;
@@ -243,7 +243,7 @@ body, p {
     text-transform: uppercase;
     font-size: 2.5em;
     text-align: left;
-  
+    color: #69FF94;
     margin-bottom: 20px;
   }
   
@@ -411,6 +411,7 @@ body, p {
 
 .two-column-item:hover {
     background-color: #f9f9f9;
+    /* color: black; */
 }
 
 .two-column-item:last-child {
