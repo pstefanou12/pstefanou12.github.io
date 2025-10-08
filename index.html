@@ -14,17 +14,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pat Stefanou</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/squirtle.png">
   </head>
   <body>
     <div class="nav-bar" style="display:none;">
-      <div class="nav-brand"><a class="brand-logo"><img class="logo-img" src="./img/jh-logo.png" /></a></div>
+      <div class="nav-brand"><a class="brand-logo"><img class="logo-img" src="./img/squirtle.png" /></a></div>
       <div class="menu-button"><img src="./img/menu-button.png" /></div>
       <div class="nav-items">
         <div class="nav-item" id="resume"><a target="_blank" href="./resources/patroklos_cv.pdf">My Resume</a></div>
         <div class="nav-item" data-scroll-to="about-me"><a>About Me</a></div>
         <div class="nav-item" data-scroll-to="portfolio"><a>Portfolio</a></div>
         <div class="nav-item" data-scroll-to="experience"><a>Experience</a></div>
-        <div class="nav-item" data-scroll-to="programming-languages"><a>Programming Languages</a></div>
         <div class="nav-item" data-scroll-to="interests"><a>Interests</a></div>
         <div class="nav-item" data-scroll-to="racing"><a>Racing</a></div>
       </div>
@@ -39,7 +39,6 @@
     <div class="section" id="about-me">
       <div class="section-header">About Me</div>
       <div class="about-me-body">
-        <!-- <img src="./img/about-me-1.png" /> -->
         <div class="about-me-description">
           Hi, my name is Pat Stefanou. I am originally from Greenwich, Connecticut but moved away to Boston to study and play water polo at the Massachusetts
           Institute of Technology. After graduating with both a BS in Computer Science and an MEng in Machine Learning,
@@ -49,79 +48,11 @@
         </div>
       </div>
     </div>
-    <div class="section" id="skills">
-      <div class="section-header">Skills</div>
-      <div class="skills-container">
-        <div class="skills-type">
-          <div class="skill-type-name">Languages</div>
-          <div class="skill">
-            <div class="skill-name">Python</div>
-            <div class="skill-level">
-              <div class="gold-star">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">Scala</div>
-            <div class="skill-level">
-              <div class="gold-star">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">Java</div>
-            <div class="skill-level">
-              <div class="gold-star">&#9732; &#9733; &#9733; &#9733; &#9733;</div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">Go</div>
-            <div class="skill-level">
-              <div class="gold-star">&#9733; &#9733; &#9733; &#9733;&nbsp;&#9733;</div>
-              <div class="gray-star"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">Kafka</div>
-            <div class="skill-level">
-              <div class="gold-star">&#9732; &#9733; &#9733; &#9733;</div>
-              <div class="gray-star">&nbsp;&#9732;</div>
-            </div>
-          </div>
-        </div>
-          <div class="skill">
-            <div class="skill-name">AWS</div>
-            <div class="skill-level">
-              <div class="gold-star">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name">Temporal</div>
-            <div class="skill-level">
-              <div class="gold-star">&#9732; &#9733; &#9733; &#9733;</div>
-              <div class="gray-star">&nbsp;&#9732;</div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">PyTorch</div>
-            <div class="skill-level">
-              <div class="gold-star">&#9732; &#9733; &#9733; &#9733;</div>
-              <div class="gray-star">&nbsp;&#9732;</div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-name">HTML/CSS</div>
-            <div class="skill-level">
-              <div class="gold-star">&#9733; &#9733; &#9733; &#9733;&nbsp;&#9733;</div>
-              <div class="gray-star"></div>
-            </div>
-          </div>
-      </div>
-    </div>
     <div class="section" id="portfolio">
       <div class="section-header">Portfolio</div>
         <div class="portfolio-item">
           <div class="item-body">
-            <div class="item-name">Stripe</div>
+            <div class="item-name">Features</div>
               <ul class="description">
                 <li>Main focus of contributions when at Stripe. Distributed system written using Temporal in Scala. The Kafka Control Plane is the service that we use to automate maintenance operations for our kafka clusters. For example, operations such as cluster rebalancing, broker replacements, and cluster rolling restarts.</li>
                 <li>Contributed topic configuration management workflow to Kafka Control Plane that manages all topic configurations for all users, across all Kafka clusters at Stripe</li>
@@ -150,20 +81,14 @@
         </div>
         <div class="portfolio-item">
           <div class="item-body">
-            <div class="item-name">Confluent Current 2024</div>
-              I gave a talk on the Kafka Control Plane at Confluent Current 2024 in Austin, Texas
-              <div class="video-container"> 
-                <iframe width="800" height="450" src="https://www.youtube.com/embed/q7zA-whlDYk?si=XqFb611ovVVFNtbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>  
+            <div class="item-name">Confluent Current 2024 - <a  target="_blank" href="https://youtu.be/q7zA-whlDYk?si=NpZXzqanE4vTLrGg">watch talk</a></div>
+              I gave a talk on the Kafka Control Plane at Confluent Current 2024 in Austin, Texas 
           </div>
         </div>
         <div class="portfolio-item">
           <div class="item-body">
-            <div class="item-name">Temporal Replay 2023</div>
+            <div class="item-name">Temporal Replay 2023 - <a  target="_blank" href="https://youtu.be/aF4SHzsxgSc?si=R_ReGuBDT5IEm7ls">watch talk</a></div>
               I gave a similar talk on the Kafka Control Plane at Temporal Replay 2023 in Bellevue, Washington. This was my first conference talk. Although it wasn’t the best presentation, I am glad that I stepped out of my comfort zone and gave a presentation in front of an audience of developers. I’d like to continue to give talks and contribute more to the open source community. 
-              <div class="video-container", width="100%">   
-                <iframe width="800" height="450" src="https://www.youtube.com/embed/aF4SHzsxgSc?si=7wajUWXm4eLgZErY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-              </div>
           </div>
         </div>
       </div>
@@ -172,10 +97,9 @@
       <div class="section-header">Work Experience</div>
       <div class="experience-items">
         <div class="experience-item" id="stripe">
-          <!-- <div class="item-img"><img class="landscape" src="./img/stripe_logo.png" /></div> -->
           <div class="item-body">
-            <div class="item-name">Stripe
-              <div class="item-subtitle">Software Engineer - Stream Infrastructure</div>
+            <div class="item-name h1">Stripe
+              <div class="item-subtitle h2">Software Engineer - Stream Infrastructure</div>
             </div>
             <ul class="description">
               <li>Stream Infrastructure has a large surface of infrastructure that it manages. The team manages over 50 Kafka clusters over three different environments. A proxy layer called Kproxy that is used for ensuring high availability publishes to Kafka clusters over a multi cluster setup. A Kafka Control Plane that performs maintenance operations on Kafka clusters. A Kafka Archiver that writes data from Kafka Clusters to S3. 
@@ -188,7 +112,6 @@
           </div>
         </div>
         <div class="experience-item" id="inspirit">
-          <!-- <div class="item-img"><img class="landscape" src="./img/inspirit_logo.png" /></div> -->
           <div class="item-body">
             <div class="item-name">Inspirit.ai 
               <div class="item-subtitle">Instructor</div>
@@ -199,7 +122,6 @@
           </div>
         </div>
         <div class="experience-item" id="csail">
-          <!-- <div class="item-img"><img class="landscape" src="./img/csail_logo.png" /></div> -->
           <div class="item-body">
             <div class="item-name">MIT CSAIL
               <div class="item-subtitle">Theory of Computation Group - Professor Constantinos Daskalakis</div>
@@ -212,59 +134,63 @@
         </div>
       </div>
     </div>
-    <div class="section" id="programming-languages">
-        <div class="section-header">Programming Languages</div>
-        <div class="programming-languages-items two-column-items">
-            <div class="programming-language two-column-item" id="python">
-                <div>Python</div>
-                <div>Great, easy-to-use language that provides functionality for nearly everything. Can be used for backend web development, infrastructure, data science, you name it. I find it very easy to write Python code and get something working with its scripting style.</div>
-            </div>
-            <div class="programming-language two-column-item" id="java">
-                <div>Java</div>
-                <div>Extremely verbose. Almost too verbose. I think that writing Java is a pain, given all of the boiler plate code that goes into writing a Java Application. Typing is a nice feature, and code compilation is nice because it helps with debugging before running either test cases or deploying a service within QA. I think that Java’s verbosity and abstraction is a double edged sword. Abstracting functionality away through helper functions, can provide high-level functions that are easy to follow, but debugging or investigating a Java Application can be difficult when digging through layers of abstraction on abstraction. I personally find it hard to follow Java codebases that abstract complexity away too aggressively.</div>
-            </div>
-            <div class="programming-language two-column-item" id="scala">
-                <div>Scala</div>
-                <div>Scala is a language that provides a lot of flexibility in how you write it. It has OOP and functional programming capabilities. Because of this, coders have a lot of power over how to write their programs which is ultimately a disaster. Using callbacks and chaining multiple operations looks pretty in code, but it typically isn’t taught in schools and has a steep learning curve when starting out. Not many developers are learning about Monads and SemiGroups when studying in college - cats. Given Scala’s flexibility, it is very hard to have multiple developers contribute to a Scala project. I think that the only time to use Scala is for personal projects or if there is a strict style guide and review process required before making contributions. In my opinion, using Scala within a large company is a poor design choice.</div>
-            </div>
-            <div class="programming-language two-column-item" id="go">
-                <div>Go</div>
-                <div>I am not an expert in Go, but I have some experience. Go is a low-level language that allows you to deal with things such as pointers, but does not require you to manage memory by yourself. It is the right mix of low and high level programming. Setting up concurrent operations is very straightforward with go routines and channels. Go also provides great out of the box observability into your program’s concurrency with Go dumps. It also is a very simple language with less flexibility like Scala, that makes it easier to understand when spinning up onto a new project.</div>
-            </div>
-            <div class="programming-language two-column-item" id="ruby">
-                <div>Ruby</div>
-                <div>I worked with Ruby a bit at Stripe. I don’t know why you would use Ruby at this point over other backend languages. Static type checkers like Sorbet make it easier to use and may be a reason to use it over Python, but I personally would not use it when starting a new project.</div>
+    <div class="section" id="interests">
+      <div class="section-header">Interests</div>
+        <div class="item-body">
+          <div class="item-name">Programming Languages</div>
+          <div class="programming-languages-items two-column-items">
+              <div class="programming-language two-column-item" id="python">
+                  <div>Python</div>
+                  <div>Great, easy-to-use language that provides functionality for nearly everything. Can be used for backend web development, infrastructure, data science, you name it. I find it very easy to write Python code and get something working with its scripting style.</div>
+              </div>
+              <div class="programming-language two-column-item" id="java">
+                  <div>Java</div>
+                  <div>Extremely verbose. Almost too verbose. I think that writing Java is a pain, given all of the boiler plate code that goes into writing a Java Application. Typing is a nice feature, and code compilation is nice because it helps with debugging before running either test cases or deploying a service within QA. I think that Java’s verbosity and abstraction is a double edged sword. Abstracting functionality away through helper functions, can provide high-level functions that are easy to follow, but debugging or investigating a Java Application can be difficult when digging through layers of abstraction on abstraction. I personally find it hard to follow Java codebases that abstract complexity away too aggressively.</div>
+              </div>
+              <div class="programming-language two-column-item" id="scala">
+                  <div>Scala</div>
+                  <div>Scala is a language that provides a lot of flexibility in how you write it. It has OOP and functional programming capabilities. Because of this, coders have a lot of power over how to write their programs which is ultimately a disaster. Using callbacks and chaining multiple operations looks pretty in code, but it typically isn’t taught in schools and has a steep learning curve when starting out. Not many developers are learning about Monads and SemiGroups when studying in college - cats. Given Scala’s flexibility, it is very hard to have multiple developers contribute to a Scala project. I think that the only time to use Scala is for personal projects or if there is a strict style guide and review process required before making contributions. In my opinion, using Scala within a large company is a poor design choice.</div>
+              </div>
+              <div class="programming-language two-column-item" id="go">
+                  <div>Go</div>
+                  <div>I am not an expert in Go, but I have some experience. Go is a low-level language that allows you to deal with things such as pointers, but does not require you to manage memory by yourself. It is the right mix of low and high level programming. Setting up concurrent operations is very straightforward with go routines and channels. Go also provides great out of the box observability into your program’s concurrency with Go dumps. It also is a very simple language with less flexibility like Scala, that makes it easier to understand when spinning up onto a new project.</div>
+              </div>
+              <div class="programming-language two-column-item" id="ruby">
+                  <div>Ruby</div>
+                  <div>I worked with Ruby a bit at Stripe. I don’t know why you would use Ruby at this point over other backend languages. Static type checkers like Sorbet make it easier to use and may be a reason to use it over Python, but I personally would not use it when starting a new project.</div>
+              </div>
             </div>
         </div>
-    </div>
-    <div class="section" id="interests">
-        <div class="section-header">Interests</div>
-        <div class="interest-items two-column-items">
-            <div class="interest two-column-item" id="streaming">
-                <div>Streaming</div>
-                <div>I have extensive experience working with streaming services, particularly Kafka.</div>
-            </div>
-            <div class="interest two-column-item" id="databases">
-                <div>Databases</div>
-                <div>I have some experience using query languages such as SQL on top of Presto, but don’t have much experience with OLAP or OLTP databases. I am particularly more interested in making decisions on which database to use for a specific use case and how to manage online databases at scale.</div>
-            </div>
-            <div class="interest two-column-item" id="containerization">
-                <div>Containerization</div>
-                <div>I am interested in learning more about containerization. I’d like to get more experience with technologies such as Docker and Kubernetes, and learn the internals about how applications are scaled.</div>
-            </div>
-            <div class="interest two-column-item" id="durable-execution">
-                <div>Durable Execution</div>
-                <div>I have experience building the Kafka Control Plane at Stripe using Temporal at Stripe. The technology is new and I am interested in seeing the technologies adoptions and use cases that people come up with for fault tolerant execution.</div>
-            </div>
-            <div class="interest two-column-item" id="web-development">
-                <div>Web Development</div>
-                <div>While at Nasdaq, I worked with React/Redux and node.js. It has been a while since then, but I am interested in getting back into building web applications.</div>
-            </div>
-            <div class="interest two-column-item" id="ml-ds">
-                <div>Machine Learning/Data Science</div>
-                <div> I have experience in robust statistics and machine learning. I understand how various models are used, but don’t have serious interest in working on developing regressions, etc at the moment. Going forward, I am more interested in learning about how models are deployed and used in practice.</div>
+      <div class="item-body">
+        <div class="item-name">Misc.</div>
+          <div class="interest-items two-column-items">
+              <div class="interest two-column-item" id="streaming">
+                  <div>Streaming</div>
+                  <div>I have extensive experience working with streaming services, particularly Kafka.</div>
+              </div>
+              <div class="interest two-column-item" id="databases">
+                  <div>Databases</div>
+                  <div>I have some experience using query languages such as SQL on top of Presto, but don’t have much experience with OLAP or OLTP databases. I am particularly more interested in making decisions on which database to use for a specific use case and how to manage online databases at scale.</div>
+              </div>
+              <div class="interest two-column-item" id="containerization">
+                  <div>Containerization</div>
+                  <div>I am interested in learning more about containerization. I’d like to get more experience with technologies such as Docker and Kubernetes, and learn the internals about how applications are scaled.</div>
+              </div>
+              <div class="interest two-column-item" id="durable-execution">
+                  <div>Durable Execution</div>
+                  <div>I have experience building the Kafka Control Plane at Stripe using Temporal at Stripe. The technology is new and I am interested in seeing the technologies adoptions and use cases that people come up with for fault tolerant execution.</div>
+              </div>
+              <div class="interest two-column-item" id="web-development">
+                  <div>Web Development</div>
+                  <div>While at Nasdaq, I worked with React/Redux and node.js. It has been a while since then, but I am interested in getting back into building web applications.</div>
+              </div>
+              <div class="interest two-column-item" id="ml-ds">
+                  <div>Machine Learning/Data Science</div>
+                  <div> I have experience in robust statistics and machine learning. I understand how various models are used, but don’t have serious interest in working on developing regressions, etc at the moment. Going forward, I am more interested in learning about how models are deployed and used in practice.</div>
+              </div>
             </div>
           </div>
+        </div>
     </div>
     <div class="section" id="racing">
         <div class="section-header">Racing</div>
