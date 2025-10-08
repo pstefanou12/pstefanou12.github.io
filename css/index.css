@@ -576,9 +576,9 @@ body {
   align-items: center;
   align-content: center;
   
-  margin: auto 10%;
+  margin: auto auto;
 }
-  
+
 .social-media {
   height: 100%;
   
@@ -590,16 +590,20 @@ body {
 }
   
 .social-media > .platform {
-  height: 65%;
+  height: 60%;
 }
   
 .social-media > .platform + .platform {
-  margin-left: 5%;
+  margin-left: 10%;
 }
   
-.social-media > .platform > img {
-  height: 100%;
-  border-radius: 30%;
+/* SVG inherits the text color */
+.platform svg {
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1;
+    height: 90%;
+    margin: 10%;
 }
   
 @media (max-width : 768px) {
