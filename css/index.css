@@ -20,6 +20,11 @@ body {
   color: var(--color);
   background-color: #282A36;
 }
+
+h1, h2, h3, h4, h5 {
+  color: #FF79C6;
+  margin-bottom: .1rem;
+}
   
 /* Nav bar */
 .nav-bar {
