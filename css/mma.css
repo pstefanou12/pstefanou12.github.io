@@ -1,0 +1,147 @@
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.blog-post {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #1a1a1a;
+  border: 2px solid var(--color);
+}
+
+.blog-post:hover {
+  transform: translateY(-10px);
+}
+
+.blog-post img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-info {
+  padding: 20px;
+}
+
+.blog-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+  color: var(--color);
+}
+
+.blog-info p {
+  margin: 0;
+  color: #888;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--color);
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: transform 0.2s;
+}
+
+.back-button:hover {
+  transform: translateX(-5px);
+}
+
+.event-date {
+  color: #888;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.event-poster {
+  width: 100%;
+  max-width: 250px;
+  margin: 30px auto;
+  display: block;
+  border-radius: 10px;
+  border: 3px solid var(--color);
+}
+
+.recap-content {
+  margin-top: 40px;
+}
+
+.fight {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #1a1a1a;
+  border-left: 4px solid var(--color);
+  border-radius: 5px;
+}
+
+.fight h3 {
+  color: var(--color);
+  margin-top: 0;
+}
+
+.rating-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating-bar {
+  flex: 1;
+  height: 8px;
+  background: #44475a;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.rating-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease, background-color 0.3s ease;
+}
+
+/* Rating: 8.0 - 10.0 (Excellent) - Dracula Green */
+.rating-fill.excellent {
+  background: #50fa7b;
+  box-shadow: 0 0 10px #50fa7b;
+}
+
+/* Rating: 7.0 - 7.9 (Good) - Dracula Cyan */
+.rating-fill.good {
+  background: #8be9fd;
+  box-shadow: 0 0 10px #8be9fd;
+}
+
+/* Rating: 5.0 - 6.9 (Average) - Dracula Yellow */
+.rating-fill.average {
+  background: #f1fa8c;
+  box-shadow: 0 0 10px #f1fa8c;
+}
+
+/* Rating: 3.0 - 4.9 (Below Average) - Dracula Orange */
+.rating-fill.below-average {
+  background: #ffb86c;
+  box-shadow: 0 0 10px #ffb86c;
+}
+
+/* Rating: 0.0 - 2.9 (Poor) - Dracula Red */
+.rating-fill.poor {
+  background: #ff5555;
+  box-shadow: 0 0 10px #ff5555;
+}
+
+.rating-score {
+  font-weight: bold;
+  color: #bd93f9;
+  font-size: 1.1em;
+  min-width: 60px;
+  text-align: right;
+}
