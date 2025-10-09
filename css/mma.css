@@ -1,3 +1,7 @@
+h1, h2 { 
+  color: #69FF94;
+}
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -33,7 +37,7 @@
 .blog-info h3 {
   margin: 0 0 10px 0;
   font-size: 1.5em;
-  color: var(--color);
+  color: #FF79C6;
 }
 
 .blog-info p {
@@ -74,14 +78,17 @@
 }
 
 .fight {
-  margin-bottom: 40px;
   padding: 20px;
   border-radius: 5px;
 }
 
 .fight h3 {
-  color: var(--color);
+  color: #FF79C6;
   margin-top: 0;
+}
+
+.fight-result { 
+    padding-bottom: 10px;
 }
 
 .rating-container {
