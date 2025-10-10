@@ -20,12 +20,7 @@ def scrape_tapology_event(url):
     else:
         event_name = 'UFC Event'
     
-    # Extract event date and location from the details section
-    date_text = ''
-    location_text = ''
-    
-    # Look for date in the page
-
+    # Extract event date and location from the primary details section
     primary_details_container = soup.find_all(id='primaryDetailsContainer')
     
     date = primary_details_container[0].find_all('li')[0].find_all('span', class_='text-neutral-700')[0].get_text().strip()
@@ -62,7 +57,6 @@ def scrape_tapology_event(url):
                     card_placement = 'Main'
                 elif card_placement.lower() == 'prelim': 
                     card_placement = 'Prelim'
-
 
                 bout_dict = {
                     'card_placement': card_placement,
@@ -187,7 +181,7 @@ def main():
     html_content = generate_html_template(event_data, rating, rating_class)
     
     # Save to file
-    filename = f"{event_data['event_name'].replace(' ', '_')}_recap.html"
+    filename = './mma/recaps' f"{event_data['event_name'].replace(' ', '_')}_recap.html"
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(html_content)
     
