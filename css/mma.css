@@ -156,3 +156,31 @@ h1, h2 {
   min-width: 60px;
   text-align: right;
 }
+
+/* Recap table of contents styling */
+.toc {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.toc > li {
+  margin: 15px 0;
+}
+
+.toc a {
+  color: #8be9fd;
+  text-decoration: none;
+  font-size: 1.05em;
+  transition: color 0.2s;
+}
+
+.toc a:hover {
+  color: #FF79C6;
+  text-decoration: underline;
+}
+
+.toc strong {
+  color: #69FF94;
+  font-size: 1.15em;
+}
