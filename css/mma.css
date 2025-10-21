@@ -184,3 +184,12 @@ h1, h2 {
   color: #69FF94;
   font-size: 1.15em;
 }
+
+#coming-soon { 
+  text-align: center;
+  font-size: 50px;
+}
+
+.preview { 
+  height: 425px;
+}
