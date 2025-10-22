@@ -115,7 +115,7 @@ def generate_html_template(event_data, rating='0.0', rating_class='poor'):
 <body>
   
   <div class="section">
-    <a href="../mma.html" class="back-button">← Back to All Recaps</a>
+    <a href="../mma.html" class="back-button">← Back to hardcore.MMA Central</a>
     
     <h1>{event_data['event_name']} Recap</h1>
     <p class="event-date">{event_data['date']} • {event_data['location']}</p>
