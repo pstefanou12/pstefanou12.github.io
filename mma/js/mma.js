@@ -1,11 +1,7 @@
-// import { ufcCards } from '../ufc_cards.js';
-
 // Fetch and load UFC cards data
 async function loadCards() {
     try {
-        // console.log(ufcCards);
         const ufcJSonPath = './js/ufc_cards.json'; 
-        console.log('ufcJsonPath: ' + ufcJSonPath);
         const response = await fetch(ufcJSonPath);
         const data = await response.json();
           
