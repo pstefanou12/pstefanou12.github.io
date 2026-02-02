@@ -7,7 +7,7 @@ async function loadRecapHeader() {
     const filename = pageUrl.split('/').pop();
     
     // Extract card ID from filename (remove _recap.html)
-    const cardId = filename.replace('_recap.html', '').toLowerCase().replace(/_/g, '-');
+    const cardId = filename.replace('.html', '').toLowerCase().replace(/_/g, '-');
     
     // Load the cards JSON
     const ufcJSonPath = '../js/ufc_cards.json'; 
