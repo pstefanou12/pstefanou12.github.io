@@ -57,6 +57,11 @@ h3, h4, h5 {
   margin-bottom: 20px;
 }
 
+#logo { 
+  text-align: left;
+  width: 200px;
+}
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

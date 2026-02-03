@@ -260,14 +260,16 @@ def generate_html_template(event_data, card_id, rating='0.0', rating_class='poor
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{event_data['event_name']} Recap</title>
   <link rel="stylesheet" href="../css/mma.css">
-  <link rel="icon" type="image/png" href="../img/chibili.jpeg">
+  <link rel="icon" type="image/png" href="../img/hardcore_mma.png">
   <script src="../js/recap.js"></script>
 </head>
 <body>
   
   <div class="section">
-    <a href="../mma.html" class="back-button">← Back to hardcore.MMA Central</a>
-    
+    <a href="../mma.html">
+      <img id="logo" src="../img/hardcore_mma.png">
+    </a>    
+
     <h1>Loading...</h1>
     <p class="event-date">Loading...</p>
    
