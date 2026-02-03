@@ -6,7 +6,7 @@ async function loadCards() {
         const data = await response.json();
           
         // // Display top 5 rated cards
-        // displayTopRated(data.cards);
+        displayTopRated(data.cards);
           
         // Display all recap cards (sorted by date, newest first)
         displayRecapCards(data.cards);
@@ -30,7 +30,7 @@ function getRatingClass(rating) {
     return 'average';
 }
 
-function createCardHTML(card, isPreview = false) {
+function createCardHTML(card, isPreview = false, ranking = null) {
     const displayTitle = card.subtitle ? `${card.title}: ${card.subtitle}` : card.title;
         
     if (isPreview) {
@@ -43,9 +43,13 @@ function createCardHTML(card, isPreview = false) {
         </a>
         `;
     }
+    
+    // Add ranking badge if provided
+    const rankingBadge = ranking ? `<div class="ranking-badge">#${ranking}</div>` : '';
         
     return `
         <a href="${card.recapUrl}" class="blog-post">
+        ${rankingBadge}
         <img src="${card.poster}" alt="${card.title} Poster">
         <div class="blog-info">
             <h3>${card.title}</h3>
@@ -67,7 +71,7 @@ function displayTopRated(cards) {
         .slice(0, 5);
         
     const container = document.getElementById('top-rated-cards');
-    container.innerHTML = topRated.map(card => createCardHTML(card)).join('');
+    container.innerHTML = topRated.map((card, index) => createCardHTML(card, false, index + 1)).join('');
 }
 
 function displayRecapCards(cards) {
