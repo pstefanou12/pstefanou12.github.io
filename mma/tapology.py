@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import re
 from datetime import datetime
 import pprint
+import json
+import os
 
 def scrape_tapology_event(url):
     """Scrape fight data from Tapology event page"""
@@ -77,7 +79,153 @@ def scrape_tapology_event(url):
         'fights': fights
     }
 
-def generate_html_template(event_data, rating='0.0', rating_class='poor'):
+def generate_card_id(event_name):
+    """
+    Generate card ID from event name following the naming convention:
+    - UFC 320 -> ufc-320
+    - UFC Fight Night: Royval vs Kape -> ufc-fight-night-royval-kape
+    """
+    event_name_lower = event_name.lower()
+    
+    # Check if it's a numbered UFC event
+    ufc_number_match = re.search(r'ufc (\d+)', event_name_lower)
+    if ufc_number_match:
+        return f"ufc-{ufc_number_match.group(1)}"
+    
+    # Check if it's a Fight Night
+    if 'fight night' in event_name_lower:
+        # Extract fighter names after the colon
+        if ':' in event_name:
+            fighters_part = event_name.split(':')[1].strip()
+            # Split by 'vs' or 'vs.'
+            fighters = re.split(r'\s+vs\.?\s+', fighters_part, flags=re.IGNORECASE)
+            if len(fighters) >= 2:
+                # Get last names (assume last word is last name)
+                fighter1_last = fighters[0].strip().split()[-1].lower()
+                fighter2_last = fighters[1].strip().split()[-1].lower()
+                return f"ufc-fight-night-{fighter1_last}-{fighter2_last}"
+        
+        # Fallback if we can't parse fighters
+        return "ufc-fight-night-" + re.sub(r'[^a-z0-9]+', '-', event_name_lower.replace('ufc fight night', '').strip()).strip('-')
+    
+    # For other UFC events (e.g., "UFC Qatar: Tsarukyan vs Hooker")
+    if ':' in event_name and 'ufc' in event_name_lower:
+        fighters_part = event_name.split(':')[1].strip()
+        fighters = re.split(r'\s+vs\.?\s+', fighters_part, flags=re.IGNORECASE)
+        if len(fighters) >= 2:
+            fighter1_last = fighters[0].strip().split()[-1].lower()
+            fighter2_last = fighters[1].strip().split()[-1].lower()
+            location = event_name.split(':')[0].replace('UFC', '').strip().lower()
+            location_slug = re.sub(r'[^a-z0-9]+', '-', location).strip('-')
+            return f"ufc-{location_slug}-{fighter1_last}-{fighter2_last}"
+    
+    # Default fallback
+    return re.sub(r'[^a-z0-9]+', '-', event_name_lower).strip('-')
+
+def parse_event_date(date_string):
+    """
+    Parse date string from Tapology format to YYYY-MM-DD
+    Example: "Sat. 10.04.2025" -> "2025-10-04"
+    """
+    try:
+        # Remove day of week and parse
+        date_part = date_string.split()[1]  # Get "10.04.2025"
+        date_obj = datetime.strptime(date_part, "%m.%d.%Y")
+        return date_obj.strftime("%Y-%m-%d")
+    except:
+        # Fallback to current date if parsing fails
+        return datetime.now().strftime("%Y-%m-%d")
+
+def extract_subtitle(event_name):
+    """
+    Extract subtitle from event name
+    Example: "UFC 320 Ankalaev vs. Pereira 2" -> "Ankalaev vs. Pereira 2"
+    """
+    # For numbered UFC events, everything after the number is the subtitle
+    ufc_number_match = re.search(r'ufc (\d+)\s+(.*)', event_name, re.IGNORECASE)
+    if ufc_number_match:
+        subtitle = ufc_number_match.group(2).strip()
+        return subtitle if subtitle else None
+    
+    # For Fight Night, extract fighters
+    if ':' in event_name:
+        return event_name.split(':', 1)[1].strip()
+    
+    return None
+
+def update_json_metadata(event_data, card_id, rating, json_path='./mma/js/ufc_cards.json'):
+    """
+    Add or update card metadata in the JSON file
+    """
+    # Parse the date
+    iso_date = parse_event_date(event_data['date'])
+    
+    # Extract title and subtitle
+    event_name = event_data['event_name']
+    
+    # Determine title based on event type
+    if 'fight night' in event_name.lower():
+        title = "UFC Fight Night"
+        if ':' in event_name:
+            subtitle = event_name.split(':', 1)[1].strip()
+        else:
+            subtitle = None
+    else:
+        # For numbered events or other UFC events
+        title_match = re.match(r'(UFC \d+|UFC [^:]+)', event_name, re.IGNORECASE)
+        if title_match:
+            title = title_match.group(1).strip()
+            subtitle = extract_subtitle(event_name)
+        else:
+            title = event_name
+            subtitle = None
+    
+    # Create the new card entry
+    new_card = {
+        "id": card_id,
+        "title": title,
+        "subtitle": subtitle,
+        "date": iso_date,
+        "rating": float(rating),
+        "poster": f"../img/{card_id.replace('-', '_')}_poster.jpg",
+        "recapUrl": f"recaps/{card_id}.html",
+        "previewUrl": None,  # Can be added manually later
+        "location": event_data['location'],
+        "eventTime": event_data['date']
+    }
+    
+    # Load existing JSON or create new structure
+    if os.path.exists(json_path):
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    else:
+        data = {"cards": []}
+    
+    # Check if card already exists and update, otherwise append
+    existing_card = None
+    for i, card in enumerate(data['cards']):
+        if card['id'] == card_id:
+            existing_card = i
+            break
+    
+    if existing_card is not None:
+        print(f"Updating existing card: {card_id}")
+        data['cards'][existing_card] = new_card
+    else:
+        print(f"Adding new card: {card_id}")
+        data['cards'].insert(0, new_card)  # Add to beginning (most recent first)
+    
+    # Sort by date (newest first)
+    data['cards'].sort(key=lambda x: x['date'], reverse=True)
+    
+    # Save updated JSON
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    
+    print(f"Updated JSON metadata at {json_path}")
+    return new_card
+
+def generate_html_template(event_data, card_id, rating='0.0', rating_class='poor'):
     """Generate HTML template from scraped event data"""
     
     # Group fights by section
@@ -91,6 +239,9 @@ def generate_html_template(event_data, rating='0.0', rating_class='poor'):
     # Calculate rating width percentage
     rating_float = float(rating)
     rating_width = int(rating_float * 10)
+    
+    # Generate poster filename from card_id
+    poster_filename = card_id.replace('-', '_') + '_poster.jpg'
     
     # Generate HTML
     html = f'''<!DOCTYPE html>
@@ -108,24 +259,24 @@ def generate_html_template(event_data, rating='0.0', rating_class='poor'):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{event_data['event_name']} Recap</title>
-  <link rel="stylesheet" href="../../css/index.css">
-  <link rel="stylesheet" href="../../css/mma.css">
-  <link rel="icon" type="image/png" href="../../img/chibili.jpeg">
+  <link rel="stylesheet" href="../css/mma.css">
+  <link rel="icon" type="image/png" href="../img/chibili.jpeg">
+  <script src="../js/recap.js"></script>
 </head>
 <body>
   
   <div class="section">
     <a href="../mma.html" class="back-button">← Back to hardcore.MMA Central</a>
     
-    <h1>{event_data['event_name']} Recap</h1>
-    <p class="event-date">{event_data['date']} • {event_data['location']}</p>
+    <h1>Loading...</h1>
+    <p class="event-date">Loading...</p>
    
-    <img src="../../img/{event_data['event_name'].replace(' ', '_')}_poster.jpg" alt="{event_data['event_name']} Poster" class="event-poster">
+    <img src="" alt="Event Poster" class="event-poster">
     <div class="rating-container event-rating">
       <div class="rating-bar">
-        <div class="rating-fill {rating_class}" style="width: {rating_width}%;"></div>
+        <div class="rating-fill" style="width: 0%;"></div>
       </div>
-      <span class="rating-score">{rating}/10</span>
+      <span class="rating-score">-/10</span>
     </div>
     
     <div class="recap-content">
@@ -229,6 +380,10 @@ def main():
     print(f"Location: {event_data['location']}")
     print(f"Fights found: {len(event_data['fights'])}\n")
     
+    # Generate card ID
+    card_id = generate_card_id(event_data['event_name'])
+    print(f"Generated card ID: {card_id}\n")
+    
     # Get rating info
     rating = input("Enter event rating (0.0-10.0): ")
     
@@ -245,15 +400,20 @@ def main():
     else:
         rating_class = 'poor'
     
-    # Generate HTML
-    html_content = generate_html_template(event_data, rating, rating_class)
+    # Update JSON metadata
+    update_json_metadata(event_data, card_id, rating)
     
-    # Save to file
-    filename = f"./mma/recaps/{event_data['event_name'].replace(' ', '_')}_recap.html"
+    # Generate HTML
+    html_content = generate_html_template(event_data, card_id, rating, rating_class)
+    
+    # Save to file using card_id as filename
+    filename = f"./mma/recaps/{card_id}.html"
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(html_content)
     
     print(f"\nHTML template generated: {filename}")
+    print(f"Poster filename expected: {card_id.replace('-', '_')}_poster.jpg")
+    print(f"\nReminder: Add the poster image to ./mma/img/")
 
 if __name__ == "__main__":
     main()
