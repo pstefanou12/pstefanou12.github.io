@@ -75,7 +75,7 @@ function displayTopRated(cards) {
 }
 
 function displayRecapCards(cards) {
-    const sortedCards = [...cards].sort((a, b) => new Date(b.date) - new Date(a.date));
+    const sortedCards = [...cards].filter(card => card.recapUrl !== null).sort((a, b) => new Date(b.date) - new Date(a.date));
         
     const container = document.getElementById('recap-cards');
     container.innerHTML = sortedCards.map(card => createCardHTML(card)).join('');

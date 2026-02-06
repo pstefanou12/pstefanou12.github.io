@@ -1,6 +1,18 @@
 {
   "cards": [
     {
+      "id": "ufc-fight-night-bautista-oliveira",
+      "title": "UFC Fight Night: Bautista vs. Oliveira",
+      "subtitle": null,
+      "date": "2026-02-06",
+      "rating": null,
+      "poster": "/mma/img/UFC_Fight_Night_Bautista_Oliveira_Poster.png",
+      "recapUrl": null,
+      "previewUrl": "previews/ufc-fight-night-bautista-oliveira.html",
+      "location": "Octagon",
+      "eventTime": "Saturday 02.07.2026 at 05:00 PM ET"
+    },
+    {
       "id": "ufc-325",
       "title": "UFC 325",
       "subtitle": "Volkanovski vs. Lopes 2",
