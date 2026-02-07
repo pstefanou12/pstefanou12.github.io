@@ -22,11 +22,10 @@
       <div class="nav-items">
         <div class="nav-item" id="resume"><a target="_blank" href="./resources/patroklos_cv.pdf">My Resume</a></div>
         <div class="nav-item" data-scroll-to="about-me"><a>About Me</a></div>
+        <div class="nav-item" data-scroll-to="links"><a>Links</a></div>
         <div class="nav-item" data-scroll-to="portfolio"><a>Portfolio</a></div>
         <div class="nav-item" data-scroll-to="experience"><a>Experience</a></div>
-        <div class="nav-item" data-scroll-to="interests"><a>Interests</a></div>
         <div class="nav-item" data-scroll-to="racing"><a>Racing</a></div>
-        <div class="nav-item" data-scroll-to="misc"><a>Misc</a></div>
       </div>
     </div>
     <div class="side-nav"></div>
@@ -48,15 +47,31 @@
         </div>
       </div>
     </div>
+    <div class="section" id="links">
+      <div class="section-header">Links</div>
+      <div id="link-items">
+        <ul id="link-list">
+          <li><a href="mma/mma.html">hardcore.MMA</a></li>
+          <li><a target="_blank" href="https://github.com/pstefanou12/delphi.ai">delphi.ai</a></li>
+          <li><a target="_blank" href="https://x.com/formyxscarfalo1/">@formyxscarfalo1</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="section" id="portfolio">
       <div class="section-header">Portfolio</div>
         <div class="portfolio-item">
           <div class="item-body">
             <div class="item-name">Features</div>
               <ul class="description">
-                <li>Main focus of contributions when at Stripe. Distributed system written using Temporal in Scala. The Kafka Control Plane is the service that we use to automate maintenance operations for our kafka clusters. For example, operations such as cluster rebalancing, broker replacements, and cluster rolling restarts.</li>
+                <li>Main focus of contributions while at Stripe was to the Kafka Control Plane; a distributed system written using Temporal in Scala. The Kafka Control Plane is the service that we use to automate maintenance operations for our kafka clusters. For example, operations such as cluster rebalancing, broker replacements, and cluster rolling restarts.</li>
                 <li>Contributed topic configuration management workflow to Kafka Control Plane that manages all topic configurations for all users, across all Kafka clusters at Stripe</li>
-                <li>workflow coordination mechanism that prevents multiple cluster operations from being applied to a Kafka cluster at the same time. I did this by writing a locking mechanism that leverages Temporal’s mutual exclusion Workflow Id principals. Whenever an operation is to be run on a Kafka cluster, a LockWorkflow is spawned that has the name of the kafka cluster it is operating on. So for example, if you have a kafka cluster name kafka-00 and you want to replace a broker on said cluster, a LockWorkflow must be spawned with the cluster name. If there is a lock that is already acquired on the cluster, then the operation trying to acquire the lock will spin until it can acquire the lock, and proceed as normal. Ultimately, this doesn’t help with providing ordering and priority to specific operations, but it prevents multiple operations being applied to a cluster at once that could result in dire states, such as under the minimum number of in-sync replicas.</li>
+                <li>Workflow coordination mechanism that prevents multiple cluster operations from being applied to a Kafka cluster at the same time.
+                  <ul>
+                    <li>Implemented a locking mechanism that leverages Temporal's mutual exclusion Workflow Id principles. Whenever an operation is to be run on a Kafka cluster, a LockWorkflow is spawned with the name of the Kafka cluster it is operating on.</li>
+                    <li>For example, if you have a Kafka cluster named kafka-00 and you want to replace a broker on said cluster, a LockWorkflow must be spawned with the cluster name. If there is a lock that is already acquired on the cluster, then the operation trying to acquire the lock will spin until it can acquire the lock, and proceed as normal.</li>
+                    <li>This doesn't help with providing ordering and priority to specific operations, but it prevents multiple operations being applied to a cluster at once that could result in dire states, such as under the minimum number of in-sync replicas.</li>
+                  </ul>
+                </li>
               </ul>
           </div>
         </div>
@@ -64,9 +79,9 @@
           <div class="item-body">
             <div class="item-name">Efficient Truncated Regression with Unknown Noise Variance - <a target="_blank" href="https://arxiv.org/abs/2208.12042">arxiv</a></div>
               <ul class="description">
-                <li>Selected to NeurIPs 2021</li>
-                <li>we provide the first computationally and statistically efficient estimators for truncated linear regression when the noise variance is unknown, estimating both the linear model and the variance of the noise. Our estimator is based on an efficient implementation of Projected Stochastic Gradient Descent on the negative log-likelihood of the truncated sample. Importantly, we show that the error of our estimates is asymptotically normal, and we use this to provide explicit confidence regions for our estimates</li>
-                <li>Conducted experiments no both synthetic and semi-synthetic data to show the algorithm's performance in practice; <a target="_blank" href="https://github.com/pstefanou12/Truncated-Regression-With-Unknown-Noise-Variance-NeurIPS-2021">see github</a></li>
+                <li>Selected to NeurIPS 2021</li>
+                <li>We provide the first computationally and statistically efficient estimators for truncated linear regression when the noise variance is unknown, estimating both the linear model and the variance of the noise. Our estimator is based on an efficient implementation of Projected Stochastic Gradient Descent on the negative log-likelihood of the truncated sample. Importantly, we show that the error of our estimates is asymptotically normal, and we use this to provide explicit confidence regions for our estimates</li>
+                <li>Conducted experiments on both synthetic and semi-synthetic data to show the algorithm's performance in practice; <a target="_blank" href="https://github.com/pstefanou12/Truncated-Regression-With-Unknown-Noise-Variance-NeurIPS-2021">see github</a></li>
               </ul>
           </div>
         </div>
@@ -102,10 +117,7 @@
               <div class="item-subtitle h2">Software Engineer - Stream Infrastructure</div>
             </div>
             <ul class="description">
-              <li>Stream Infrastructure has a large surface of infrastructure that it manages. The team manages over 50 Kafka clusters over three different environments. A proxy layer called Kproxy that is used for ensuring high availability publishes to Kafka clusters over a multi cluster setup. A Kafka Control Plane that performs maintenance operations on Kafka clusters. A Kafka Archiver that writes data from Kafka Clusters to S3. 
-                Over the course of my time at Stripe, I have had the opportunity to take a handful of responsibilities. I held the pager and responded to incidents during on-call, spun up new team members, designed and implemented components of a distributed system, and learned about Kafka internals. 
-                The majority of the code was done in Java and Scala, but I received exposure to working with other programming languages such as Go, Ruby, and Python. 
-              </li>
+              <li>Stream Infrastructure has a large surface of infrastructure that it manages. The team manages over 50 Kafka clusters over three different environments. A proxy layer called Kproxy that is used for ensuring high availability publishes to Kafka clusters over a multi cluster setup. A Kafka Control Plane that performs maintenance operations on Kafka clusters. A Kafka Archiver that writes data from Kafka Clusters to S3.</li>
               <li>Over the course of my time at Stripe, I have had the opportunity to take a handful of responsibilities. I held the pager and responded to incidents during on-call, spun up new team members, designed and implemented components of a distributed system, and learned about Kafka internals.</li>
               <li>The majority of the code was done in Java and Scala, but I also worked with other programming languages such as Go, Ruby, and Python.</li>
             </ul>
@@ -127,75 +139,17 @@
               <div class="item-subtitle">Theory of Computation Group - Professor Constantinos Daskalakis</div>
             </div>
             <ul class="description">
-              <li>Did research in the implementation of algorithms in trunated statistics</li>
+              <li>Did research in the implementation of algorithms in truncated statistics</li>
               <li>Worked on developing a Python package built with PyTorch for correcting statistical models biased by truncation</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="section" id="interests">
-      <div class="section-header">Interests</div>
-        <div class="item-body">
-          <div class="item-name">Programming Languages</div>
-          <div class="programming-languages-items two-column-items">
-              <div class="programming-language two-column-item" id="python">
-                  <div>Python</div>
-                  <div>Great, easy-to-use language that provides functionality for nearly everything. Can be used for backend web development, infrastructure, data science, you name it. I find it very easy to write Python code and get something working with its scripting style.</div>
-              </div>
-              <div class="programming-language two-column-item" id="java">
-                  <div>Java</div>
-                  <div>Extremely verbose. Almost too verbose. I think that writing Java is a pain, given all of the boiler plate code that goes into writing a Java Application. Typing is a nice feature, and code compilation is nice because it helps with debugging before running either test cases or deploying a service within QA. I think that Java’s verbosity and abstraction is a double edged sword. Abstracting functionality away through helper functions, can provide high-level functions that are easy to follow, but debugging or investigating a Java Application can be difficult when digging through layers of abstraction on abstraction. I personally find it hard to follow Java codebases that abstract complexity away too aggressively.</div>
-              </div>
-              <div class="programming-language two-column-item" id="scala">
-                  <div>Scala</div>
-                  <div>Scala is a language that provides a lot of flexibility in how you write it. It has OOP and functional programming capabilities. Because of this, coders have a lot of power over how to write their programs which is ultimately a disaster. Using callbacks and chaining multiple operations looks pretty in code, but it typically isn’t taught in schools and has a steep learning curve when starting out. Not many developers are learning about Monads and SemiGroups when studying in college - cats. Given Scala’s flexibility, it is very hard to have multiple developers contribute to a Scala project. I think that the only time to use Scala is for personal projects or if there is a strict style guide and review process required before making contributions. In my opinion, using Scala within a large company is a poor design choice.</div>
-              </div>
-              <div class="programming-language two-column-item" id="go">
-                  <div>Go</div>
-                  <div>I am not an expert in Go, but I have some experience. Go is a low-level language that allows you to deal with things such as pointers, but does not require you to manage memory by yourself. It is the right mix of low and high level programming. Setting up concurrent operations is very straightforward with go routines and channels. Go also provides great out of the box observability into your program’s concurrency with Go dumps. It also is a very simple language with less flexibility like Scala, that makes it easier to understand when spinning up onto a new project.</div>
-              </div>
-              <div class="programming-language two-column-item" id="ruby">
-                  <div>Ruby</div>
-                  <div>I worked with Ruby a bit at Stripe. I don’t know why you would use Ruby at this point over other backend languages. Static type checkers like Sorbet make it easier to use and may be a reason to use it over Python, but I personally would not use it when starting a new project.</div>
-              </div>
-            </div>
-        </div>
-      <div class="item-body">
-        <div class="item-name">Tech</div>
-          <div class="interest-items two-column-items">
-              <div class="interest two-column-item" id="streaming">
-                  <div>Streaming</div>
-                  <div>I have extensive experience working with streaming services, particularly Kafka.</div>
-              </div>
-              <div class="interest two-column-item" id="databases">
-                  <div>Databases</div>
-                  <div>I have some experience using query languages such as SQL on top of Presto, but don’t have much experience with OLAP or OLTP databases. I am particularly more interested in making decisions on which database to use for a specific use case and how to manage online databases at scale.</div>
-              </div>
-              <div class="interest two-column-item" id="containerization">
-                  <div>Containerization</div>
-                  <div>I am interested in learning more about containerization. I’d like to get more experience with technologies such as Docker and Kubernetes, and learn the internals about how applications are scaled.</div>
-              </div>
-              <div class="interest two-column-item" id="durable-execution">
-                  <div>Durable Execution</div>
-                  <div>I have experience building the Kafka Control Plane at Stripe using Temporal at Stripe. The technology is new and I am interested in seeing the technologies adoptions and use cases that people come up with for fault tolerant execution.</div>
-              </div>
-              <div class="interest two-column-item" id="web-development">
-                  <div>Web Development</div>
-                  <div>While at Nasdaq, I worked with React/Redux and node.js. It has been a while since then, but I am interested in getting back into building web applications.</div>
-              </div>
-              <div class="interest two-column-item" id="ml-ds">
-                  <div>Machine Learning/Data Science</div>
-                  <div> I have experience in robust statistics and machine learning. I understand how various models are used, but don’t have serious interest in working on developing regressions, etc at the moment. Going forward, I am more interested in learning about how models are deployed and used in practice.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
     <div class="section" id="racing">
         <div class="section-header">Racing</div>
         <div class="racing-blurb">
-            In 2024, I started pursuring amateur athletics again in endurance racing. I am a committed athlete and strive to continue progressing in both triathlons and marathons. Here are some of my results.
+            In 2024, I started pursuing amateur athletics again in endurance racing. I am a committed athlete and strive to continue progressing in both triathlons and marathons. Here are some of my results.
         </div>
         <div class="racing-items">
             <div class="racing-item">
@@ -256,22 +210,15 @@
             </div>
         </div>
     </div>
-    <div class="section" id="misc">
-      <div class="section-header">Misc</div> 
-      <div id="misc-items">
-        <ul id="misc-list"> 
-          <li><a href="mma/mma.html">hardcore.MMA</a></li>
-        </ul>
-      </div>
-    </div>
     <div class="footer">
       <div class="footer-side" id="left">
         <div>Copyright © Patroklos Stefanou</div>
       </div>
       <div class="social-media">
-        <a class="platform" target="_blank" href="https://www.linkedin.com/in/patroklos-stefanou/", rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg", viewBox="0 0 24 24">
-            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+        <a class="platform" target="_blank" href="https://www.linkedin.com/in/patroklos-stefanou/" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+            <circle cx="4" cy="4" r="2"/>
           </svg>
         </a>
         <a class="platform" target="_blank" href="https://github.com/pstefanou12">
@@ -280,10 +227,9 @@
           </svg>
         </a>
         <a class="platform" target="_blank" href="https://x.com/formyxscarfalo1/">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
-              <circle cx="4" cy="4" r="2"/>
-          </svg>        
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+          </svg>
         </a>
         <a class="platform" target="_blank" href="https://www.strava.com/athletes/23695440">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
