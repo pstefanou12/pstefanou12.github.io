@@ -555,7 +555,7 @@ def generate_preview_template(event_data, card_id):
         
         for fight in fights:
             fight_id = f"{fight['fighter1'].lower().replace(' ', '-')}-vs-{fight['fighter2'].lower().replace(' ', '-')}"
-            html += f'''      <div class="fight-preview" id="{fight_id}">
+            html += f'''      <div id="{fight_id}">
         <h3>{fight['fighter1']} vs. {fight['fighter2']}</h3>
         
         <div class="fight-overview">
