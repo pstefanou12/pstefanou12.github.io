@@ -2,15 +2,69 @@
   "cards": [
     {
       "id": "ufc-fight-night-bautista-oliveira",
-      "title": "UFC Fight Night: Bautista vs. Oliveira",
-      "subtitle": null,
-      "date": "2026-02-06",
-      "rating": null,
-      "poster": "/mma/img/UFC_Fight_Night_Bautista_Oliveira_Poster.png",
-      "recapUrl": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Bautista vs. Oliveira",
+      "date": "2026-02-08",
+      "rating": 6.3,
+      "poster": "/mma/img/ufc_fight_night_bautista_oliveira_poster.jpg",
+      "recapUrl": "recaps/ufc-fight-night-bautista-oliveira.html",
       "previewUrl": "previews/ufc-fight-night-bautista-oliveira.html",
       "location": "Octagon",
-      "eventTime": "Saturday 02.07.2026 at 05:00 PM ET"
+      "eventTime": "Saturday 02.07.2026 at 05:00 PM ET",
+      "predictions": {
+        "Mario Bautista vs. Vinicius Oliveira": {
+          "winner": "Mario Bautista",
+          "method": "Decision"
+        },
+        "Amir Albazi vs. Kyoji Horiguchi": {
+          "winner": "Kyoji Horiguchi",
+          "method": "Decision"
+        },
+        "Jailton Almeida vs. Rizvan Kuniev": {
+          "winner": "Rizvan Kuniev",
+          "method": "KO/TKO"
+        },
+        "Michał Oleksiejczuk vs. Marc-André Barriault": {
+          "winner": "Michał Oleksiejczuk",
+          "method": "KO/TKO"
+        },
+        "Jean Matsumoto vs. Farid Basharat": {
+          "winner": "Farid Basharat",
+          "method": "Decision"
+        },
+        "Dustin Jacoby vs. Julius Walker": {
+          "winner": "Dustin Jacoby",
+          "method": "Decision"
+        },
+        "Alex Morono vs. Daniil Donchenko": {
+          "winner": "Daniil Donchenko",
+          "method": "KO/TKO"
+        },
+        "Nikolay Veretennikov vs. Niko Price": {
+          "winner": "Niko Price",
+          "method": "Decision"
+        },
+        "Bruna Brasil vs. Ketlen Souza": {
+          "winner": "Bruna Brasil",
+          "method": "Decision"
+        },
+        "Javid Basharat vs. Gianni Vazquez": {
+          "winner": "Javid Basharat",
+          "method": "Decision"
+        },
+        "Cong Wang vs. Eduarda Moura": {
+          "winner": "Cong Wang",
+          "method": "Decision"
+        },
+        "Muin Gafurov vs. Jakub Wikłacz": {
+          "winner": "Jakub Wikłacz",
+          "method": "Decision"
+        },
+        "Priscila Cachoeira vs. Klaudia Syguła": {
+          "winner": "Priscila Cachoeira",
+          "method": "KO/TKO"
+        }
+      }
     },
     {
       "id": "ufc-325",

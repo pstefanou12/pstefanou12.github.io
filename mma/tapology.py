@@ -45,6 +45,9 @@ def scrape_tapology_event(url, mode='both'):
                 fighter1 = fighter_links[0].get_text().strip()
                 fighter2 = fighter_links[2].get_text().strip()
 
+                # Extract additional bout information
+                bout_info = bout.find_all('span', class_=re.compile('text-xs11'))
+
                 method_of_victory, time_of_victory = None, None
                 if mode != 'preview':
                     # Extract the method of victory from the bout
@@ -52,17 +55,16 @@ def scrape_tapology_event(url, mode='both'):
                     # Extract time of victory from the bout
                     time_of_victory = bout_info[-2].get_text().strip()
 
-                # Extract additional bout information
-                bout_info = bout.find_all('span', class_=re.compile('text-xs11'))
-                
-                card_placement = bout_info[0].find_all('a')[0].get_text().strip()
-
-                if 'main' in card_placement.lower(): 
-                    card_placement = 'Main Card'
-                elif card_placement.lower() == 'prelim': 
-                    card_placement = 'Prelims'
-                elif 'early' in card_placement.lower():
+                # Determine card placement by searching bout text for keywords
+                bout_text = bout.get_text()
+                if re.search(r'early\s*prelim', bout_text, re.IGNORECASE):
                     card_placement = 'Early Prelims'
+                elif re.search(r'main\s*card', bout_text, re.IGNORECASE):
+                    card_placement = 'Main Card'
+                elif re.search(r'prelim', bout_text, re.IGNORECASE):
+                    card_placement = 'Prelims'
+                else:
+                    card_placement = 'Main Card'
 
                 bout_dict = {
                     'card_placement': card_placement,
@@ -155,7 +157,7 @@ def extract_subtitle(event_name):
     
     return None
 
-def update_json_metadata(event_data, card_id, rating, json_path='./mma/ufc-cards.json'):
+def update_json_metadata(event_data, card_id, rating, predictions=None, json_path='./mma/js/ufc_cards.json'):
     """
     Add or update card metadata in the JSON file
     """
@@ -181,7 +183,7 @@ def update_json_metadata(event_data, card_id, rating, json_path='./mma/ufc-cards
         else:
             title = event_name
             subtitle = None
-    
+
     # Create the new card entry
     new_card = {
         "id": card_id,
@@ -189,13 +191,14 @@ def update_json_metadata(event_data, card_id, rating, json_path='./mma/ufc-cards
         "subtitle": subtitle,
         "date": iso_date,
         "rating": float(rating),
-        "poster": f"mma/img/{card_id.replace('-', '_')}_poster.jpg",
+        "poster": f"img/{card_id.replace('-', '_')}_poster.jpg",
         "recapUrl": f"recaps/{card_id}.html",
         "previewUrl": None,  # Can be added manually later
         "location": event_data['location'],
-        "eventTime": event_data['date']
+        "eventTime": event_data['date'],
+        "predictions": predictions or {}
     }
-    
+
     # Load existing JSON or create new structure
     if os.path.exists(json_path):
         with open(json_path, 'r', encoding='utf-8') as f:
@@ -212,6 +215,11 @@ def update_json_metadata(event_data, card_id, rating, json_path='./mma/ufc-cards
     
     if existing_card is not None:
         print(f"Updating existing card: {card_id}")
+        # Preserve predictions from existing card if not provided
+        if not predictions and data['cards'][existing_card].get('predictions'):
+            new_card['predictions'] = data['cards'][existing_card]['predictions']
+        if data['cards'][existing_card]['previewUrl'] is not None: 
+            new_card['previewUrl'] = data['cards'][existing_card]['previewUrl']
         data['cards'][existing_card] = new_card
     else:
         print(f"Adding new card: {card_id}")
@@ -227,9 +235,22 @@ def update_json_metadata(event_data, card_id, rating, json_path='./mma/ufc-cards
     print(f"Updated JSON metadata at {json_path}")
     return new_card
 
+def find_prediction(predictions, fighter1, fighter2):
+    """Find prediction for a fight matchup, handling different fighter orderings"""
+    key1 = f"{fighter1} vs. {fighter2}"
+    key2 = f"{fighter2} vs. {fighter1}"
+    if key1 in predictions:
+        return predictions[key1]
+    if key2 in predictions:
+        return predictions[key2]
+    for matchup, pred in predictions.items():
+        if fighter1.lower() in matchup.lower() and fighter2.lower() in matchup.lower():
+            return pred
+    return None
+
 def generate_html_template(event_data, card_id, rating='0.0', rating_class='poor'):
     """Generate HTML template from scraped event data"""
-    
+
     # Group fights by section
     sections = {}
     for fight in event_data['fights']:
@@ -237,7 +258,7 @@ def generate_html_template(event_data, card_id, rating='0.0', rating_class='poor
         if section not in sections:
             sections[section] = []
         sections[section].append(fight)
-    
+
     # Calculate rating width percentage
     rating_float = float(rating)
     rating_width = int(rating_float * 10)
@@ -262,8 +283,8 @@ def generate_html_template(event_data, card_id, rating='0.0', rating_class='poor
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{event_data['event_name']} Recap</title>
   <link rel="stylesheet" href="../css/mma.css">
-  <link rel="icon" type="image/png" href="../img/chibili.jpeg">
-  <script src="../js/recap.js"></script>
+  <link rel="icon" type="image/png" href="../img/hardcore_mma.png">
+  <script src="../js/ufc_recaps.js"></script>
 </head>
 <body>
   
@@ -282,7 +303,8 @@ def generate_html_template(event_data, card_id, rating='0.0', rating_class='poor
       </div>
       <span class="rating-score">-/10</span>
     </div>
-    
+    <div class="predictions-score"></div>
+
     <div class="recap-content">
 
       <h2 id="table-of-contents">Table of Contents</h2>
@@ -325,11 +347,12 @@ def generate_html_template(event_data, card_id, rating='0.0', rating_class='poor
             html += f'''      <div class="fight" id="{fight_id}">
         <h3>{fight['fighter1']} vs. {fight['fighter2']}</h3>
         <p class="fight-result"><strong>Result: </strong>{fight['method_of_victory']} at {fight['time_of_victory']}</p>
+        <p class="fight-prediction"></p>
         <p>
           [Add your fight recap here]
         </p>
       </div>
-      
+
 '''
     
     html += '''    </div>
@@ -401,6 +424,12 @@ def main():
     
     # Handle preview mode
     if args.mode == 'preview':
+        # Build predictions scaffolding from fight matchups
+        predictions = {}
+        for fight in event_data['fights']:
+            matchup = f"{fight['fighter1']} vs. {fight['fighter2']}"
+            predictions[matchup] = {"winner": "", "method": ""}
+
         # Update JSON with preview URL only (no rating needed for preview)
         preview_card = {
             "id": card_id,
@@ -408,11 +437,12 @@ def main():
             "subtitle": extract_title(event_data['event_name'])[1],
             "date": parse_event_date(event_data['date']),
             "rating": None,  # Will be filled in later
-            "poster": f"mma/img/{card_id.replace('-', '_')}_poster.jpg",
+            "poster": f"/mma/img/{card_id.replace('-', '_')}_poster.jpg",
             "recapUrl": None,
             "previewUrl": f"previews/{card_id}.html",
             "location": event_data['location'],
-            "eventTime": event_data['date']
+            "eventTime": event_data['date'],
+            "predictions": predictions
         }
         
         update_json_with_preview(preview_card)
@@ -435,7 +465,24 @@ def main():
     
     # Handle recap or both modes
     rating = args.rating
-    
+
+    # Load predictions from JSON
+    predictions = {}
+    json_path = './mma/js/ufc_cards.json'
+    if os.path.exists(json_path):
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        for card in data['cards']:
+            if card['id'] == card_id:
+                predictions = card.get('predictions', {})
+                break
+
+    # If no predictions found, create empty scaffolding
+    if not predictions:
+        for fight in event_data['fights']:
+            matchup = f"{fight['fighter1']} vs. {fight['fighter2']}"
+            predictions[matchup] = {"winner": "", "method": ""}
+
     # Determine rating class
     if rating >= 8.0:
         rating_class = 'excellent'
@@ -449,9 +496,9 @@ def main():
         rating_class = 'poor'
     
     # Update JSON metadata
-    update_json_metadata(event_data, card_id, rating)
+    update_json_metadata(event_data, card_id, rating, predictions)
     print(f"✓ JSON metadata updated")
-    
+
     # Generate HTML template
     html_content = generate_html_template(event_data, card_id, rating, rating_class)
     
@@ -565,9 +612,9 @@ def generate_preview_template(event_data, card_id):
         </div>
         
         <div class="pick">
-          <h4>Pick: [Fighter Name]</h4>
+          <h4>Pick: </h4>
           <div class="method">
-            <strong>Method:</strong> [Decision/KO/Submission]
+            <strong>Method:</strong>
           </div>
           <div class="reasoning">
             <p>
@@ -642,6 +689,9 @@ def update_json_with_preview(preview_card, json_path='./mma/js/ufc_cards.json'):
             data['cards'][existing_index]['location'] = preview_card['location']
         if not data['cards'][existing_index].get('eventTime'):
             data['cards'][existing_index]['eventTime'] = preview_card['eventTime']
+        # Add predictions scaffolding if not already present
+        if not data['cards'][existing_index].get('predictions') and preview_card.get('predictions'):
+            data['cards'][existing_index]['predictions'] = preview_card['predictions']
     else:
         # Add new card
         data['cards'].insert(0, preview_card)

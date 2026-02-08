@@ -49,6 +49,56 @@ async function loadRecapHeader() {
         ratingFill.className = `rating-fill ${getRatingClass(card.rating)}`;
         ratingScore.textContent = `${card.rating}/10`;
       }
+
+      // Populate predictions from JSON
+      if (card.predictions) {
+        let correctCount = 0;
+        let totalPredictions = 0;
+
+        const fightDivs = document.querySelectorAll('.fight');
+        for (const fightDiv of fightDivs) {
+          const h3 = fightDiv.querySelector('h3');
+          if (!h3) continue;
+
+          // fighter1 (listed first) is the winner in recap pages
+          const fighters = h3.textContent.split(' vs. ');
+          if (fighters.length < 2) continue;
+          const fighter1 = fighters[0].trim();
+          const fighter2 = fighters[1].trim();
+
+          // Find matching prediction
+          let prediction = null;
+          for (const [matchup, pred] of Object.entries(card.predictions)) {
+            if (matchup.toLowerCase().includes(fighter1.toLowerCase()) &&
+                matchup.toLowerCase().includes(fighter2.toLowerCase())) {
+              prediction = pred;
+              break;
+            }
+          }
+
+          if (!prediction || !prediction.winner) continue;
+
+          totalPredictions++;
+          const isCorrect = prediction.winner.toLowerCase().trim() === fighter1.toLowerCase().trim();
+          if (isCorrect) correctCount++;
+
+          const predEl = fightDiv.querySelector('.fight-prediction');
+          if (predEl) {
+            const symbol = isCorrect ? '\u2713' : '\u2717';
+            const methodStr = prediction.method ? ` via ${prediction.method}` : '';
+            predEl.className = `fight-prediction ${isCorrect ? 'prediction-correct' : 'prediction-incorrect'}`;
+            predEl.innerHTML = `<strong>Prediction: </strong>${prediction.winner}${methodStr} ${symbol}`;
+          }
+        }
+
+        // Update predictions score
+        if (totalPredictions > 0) {
+          const scoreEl = document.querySelector('.predictions-score');
+          if (scoreEl) {
+            scoreEl.innerHTML = `Predictions: <strong>${correctCount}/${totalPredictions}</strong>`;
+          }
+        }
+      }
     } else {
       console.warn('Card not found for ID:', cardId);
     }
