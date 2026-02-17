@@ -1,9 +1,79 @@
 {
   "cards": [
     {
+      "id": "ufc-fight-night-strickland-hernandez",
+      "title": "UFC Fight Night: Strickland vs. Hernandez",
+      "subtitle": null,
+      "date": "2026-02-16",
+      "rating": null,
+      "poster": "/mma/img/ufc_fight_night_strickland_hernandez_poster.jpg",
+      "recapUrl": null,
+      "previewUrl": "previews/ufc-fight-night-strickland-hernandez.html",
+      "location": "Houston, Texas",
+      "eventTime": "Saturday 02.21.2026 at 05:00 PM ET",
+      "predictions": {
+        "Sean Strickland vs. Anthony Hernandez": {
+          "winner": "Sean Strickland",
+          "method": "Decision"
+        },
+        "Geoff Neal vs. Uros Medic": {
+          "winner": "Uros Medic",
+          "method": "KO/TKO"
+        },
+        "Dan Ige vs. Melquizael Costa": {
+          "winner": "Melquizael Costa",
+          "method": "Decision"
+        },
+        "Serghei Spivac vs. Ante Delija": {
+          "winner": "Ante Delija",
+          "method": "KO/TKO"
+        },
+        "Jacobe Smith vs. Josiah Harrell": {
+          "winner": "Jacobe Smith",
+          "method": "KO/TKO"
+        },
+        "Zach Reese vs. Michel Pereira": {
+          "winner": "Zach Reese",
+          "method": "Decision"
+        },
+        "Chidi Njokuani vs. Carlos Leal": {
+          "winner": "Carlos Leal",
+          "method": "Decision"
+        },
+        "Ode Osbourne vs. Alibi Idiris": {
+          "winner": "Alibi Idiris",
+          "method": "Decision"
+        },
+        "Alden Coria vs. Luis Gurule": {
+          "winner": "Alden Coria",
+          "method": "KO/TKO"
+        },
+        "Nora Cornolle vs. Joselyne Edwards": {
+          "winner": "Joselyne Edwards",
+          "method": "Decision"
+        },
+        "Ramiz Brahimaj vs. Punahele Soriano": {
+          "winner": "Punahele Soriano",
+          "method": "Decision"
+        },
+        "Jean-Paul Lebosnoyani vs. Phil Rowe": {
+          "winner": "Jean-Paul Lebosnoyani",
+          "method": "Decision"
+        },
+        "Yadier del Valle vs. Jordan Leavitt": {
+          "winner": "Yadier del Valle",
+          "method": "KO/TKO"
+        },
+        "Carli Judice vs. Juliana Miller": {
+          "winner": "Carli Judice",
+          "method": "Decision"
+        }
+      }
+    },
+    {
       "id": "ufc-fight-night-bautista-oliveira",
-      "title": "UFC Fight Night",
-      "subtitle": "Bautista vs. Oliveira",
+      "title": "UFC Fight Night: Bautista vs Oliveira",
+      "subtitle": null,
       "date": "2026-02-08",
       "rating": 6.3,
       "poster": "/mma/img/ufc_fight_night_bautista_oliveira_poster.jpg",
