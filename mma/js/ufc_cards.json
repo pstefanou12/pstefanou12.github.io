@@ -2,71 +2,169 @@
   "cards": [
     {
       "id": "ufc-fight-night-strickland-hernandez",
-      "title": "UFC Fight Night: Strickland vs. Hernandez",
-      "subtitle": null,
-      "date": "2026-02-16",
-      "rating": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Strickland vs. Hernandez",
+      "date": "2026-02-22",
+      "rating": 6.3,
       "poster": "/mma/img/ufc_fight_night_strickland_hernandez_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "recaps/ufc-fight-night-strickland-hernandez.html",
       "previewUrl": "previews/ufc-fight-night-strickland-hernandez.html",
-      "location": "Houston, Texas",
+      "location": "Octagon",
       "eventTime": "Saturday 02.21.2026 at 05:00 PM ET",
-      "predictions": {
+      "fights": {
         "Sean Strickland vs. Anthony Hernandez": {
-          "winner": "Sean Strickland",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Sean Strickland",
+            "method": "Decision"
+          },
+          "result": {
+            "winner": "Sean Strickland",
+            "method": "KO/TKO, Knee and Punches",
+            "time": "2:33 Round 3 of 5, 12:33 Total"
+          }
         },
-        "Geoff Neal vs. Uros Medic": {
-          "winner": "Uros Medic",
-          "method": "KO/TKO"
+        "Uros Medic vs. Geoff Neal": {
+          "prediction": {
+            "winner": "Uros Medic",
+            "method": "KO/TKO"
+          },
+          "result": {
+            "winner": "Uros Medic",
+            "method": "KO/TKO, Left Hook",
+            "time": "1:19 Round 1 of 3"
+          }
         },
-        "Dan Ige vs. Melquizael Costa": {
-          "winner": "Melquizael Costa",
-          "method": "Decision"
+        "Melquizael Costa vs. Dan Ige": {
+          "prediction": {
+            "winner": "Melquizael Costa",
+            "method": "Decision"
+          },
+          "result": {
+            "winner": "Melquizael Costa",
+            "method": "KO/TKO, Spinning Back Kick to Ground Punches",
+            "time": "4:56 Round 1 of 3"
+          }
         },
         "Serghei Spivac vs. Ante Delija": {
-          "winner": "Ante Delija",
-          "method": "KO/TKO"
+          "prediction": {
+            "winner": "Ante Delija",
+            "method": "KO/TKO"
+          },
+          "result": {
+            "winner": "Serghei Spivac",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          }
         },
         "Jacobe Smith vs. Josiah Harrell": {
-          "winner": "Jacobe Smith",
-          "method": "KO/TKO"
+          "prediction": {
+            "winner": "Jacobe Smith",
+            "method": "KO/TKO"
+          },
+          "result": {
+            "winner": "Jacobe Smith",
+            "method": "KO/TKO, Strikes From Side Control",
+            "time": "3:01 Round 1 of 3"
+          }
         },
-        "Zach Reese vs. Michel Pereira": {
-          "winner": "Zach Reese",
-          "method": "Decision"
+        "Michel Pereira vs. Zach Reese": {
+          "prediction": {
+            "winner": "Zach Reese",
+            "method": "Decision"
+          },
+          "result": {
+            "winner": "Michel Pereira",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          }
         },
-        "Chidi Njokuani vs. Carlos Leal": {
-          "winner": "Carlos Leal",
-          "method": "Decision"
+        "Carlos Leal vs. Chidi Njokuani": {
+          "prediction": {
+            "winner": "Carlos Leal",
+            "method": "Decision"
+          },
+          "result": {
+            "winner": "Carlos Leal",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          }
         },
-        "Ode Osbourne vs. Alibi Idiris": {
-          "winner": "Alibi Idiris",
-          "method": "Decision"
+        "Alibi Idiris vs. Ode Osbourne": {
+          "prediction": {
+            "winner": "Alibi Idiris",
+            "method": "Decision"
+          },
+          "result": {
+            "winner": "Alibi Idiris",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          }
         },
         "Alden Coria vs. Luis Gurule": {
-          "winner": "Alden Coria",
-          "method": "KO/TKO"
+          "prediction": {
+            "winner": "Alden Coria",
+            "method": "KO/TKO"
+          },
+          "result": {
+            "winner": "Alden Coria",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          }
         },
-        "Nora Cornolle vs. Joselyne Edwards": {
-          "winner": "Joselyne Edwards",
-          "method": "Decision"
+        "Joselyne Edwards vs. Nora Cornolle": {
+          "prediction": {
+            "winner": "Joselyne Edwards",
+            "method": "Decision"
+          },
+          "result": {
+            "winner": "Joselyne Edwards",
+            "method": "Submission, Rear Naked Choke",
+            "time": "2:44 Round 2 of 3, 7:44 Total"
+          }
         },
-        "Ramiz Brahimaj vs. Punahele Soriano": {
-          "winner": "Punahele Soriano",
-          "method": "Decision"
+        "Punahele Soriano vs. Ramiz Brahimaj": {
+          "prediction": {
+            "winner": "Punahele Soriano",
+            "method": "Decision"
+          },
+          "result": {
+            "winner": "Punahele Soriano",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          }
         },
         "Jean-Paul Lebosnoyani vs. Phil Rowe": {
-          "winner": "Jean-Paul Lebosnoyani",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Jean-Paul Lebosnoyani",
+            "method": "Decision"
+          },
+          "result": {
+            "winner": "Jean-Paul Lebosnoyani",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          }
         },
-        "Yadier del Valle vs. Jordan Leavitt": {
-          "winner": "Yadier del Valle",
-          "method": "KO/TKO"
+        "Jordan Leavitt vs. Yadier del Valle": {
+          "prediction": {
+            "winner": "Yadier del Valle",
+            "method": "KO/TKO"
+          },
+          "result": {
+            "winner": "Jordan Leavitt",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          }
         },
         "Carli Judice vs. Juliana Miller": {
-          "winner": "Carli Judice",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Carli Judice",
+            "method": "Decision"
+          },
+          "result": {
+            "winner": "Carli Judice",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          }
         }
       }
     },
@@ -81,58 +179,97 @@
       "previewUrl": "previews/ufc-fight-night-bautista-oliveira.html",
       "location": "Octagon",
       "eventTime": "Saturday 02.07.2026 at 05:00 PM ET",
-      "predictions": {
+      "fights": {
         "Mario Bautista vs. Vinicius Oliveira": {
-          "winner": "Mario Bautista",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Mario Bautista",
+            "method": "Decision"
+          },
+          "result": null
         },
         "Amir Albazi vs. Kyoji Horiguchi": {
-          "winner": "Kyoji Horiguchi",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Kyoji Horiguchi",
+            "method": "Decision"
+          },
+          "result": null
         },
         "Jailton Almeida vs. Rizvan Kuniev": {
-          "winner": "Rizvan Kuniev",
-          "method": "KO/TKO"
+          "prediction": {
+            "winner": "Rizvan Kuniev",
+            "method": "KO/TKO"
+          },
+          "result": null
         },
         "Michał Oleksiejczuk vs. Marc-André Barriault": {
-          "winner": "Michał Oleksiejczuk",
-          "method": "KO/TKO"
+          "prediction": {
+            "winner": "Michał Oleksiejczuk",
+            "method": "KO/TKO"
+          },
+          "result": null
         },
         "Jean Matsumoto vs. Farid Basharat": {
-          "winner": "Farid Basharat",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Farid Basharat",
+            "method": "Decision"
+          },
+          "result": null
         },
         "Dustin Jacoby vs. Julius Walker": {
-          "winner": "Dustin Jacoby",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Dustin Jacoby",
+            "method": "Decision"
+          },
+          "result": null
         },
         "Alex Morono vs. Daniil Donchenko": {
-          "winner": "Daniil Donchenko",
-          "method": "KO/TKO"
+          "prediction": {
+            "winner": "Daniil Donchenko",
+            "method": "KO/TKO"
+          },
+          "result": null
         },
         "Nikolay Veretennikov vs. Niko Price": {
-          "winner": "Niko Price",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Niko Price",
+            "method": "Decision"
+          },
+          "result": null
         },
         "Bruna Brasil vs. Ketlen Souza": {
-          "winner": "Bruna Brasil",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Bruna Brasil",
+            "method": "Decision"
+          },
+          "result": null
         },
         "Javid Basharat vs. Gianni Vazquez": {
-          "winner": "Javid Basharat",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Javid Basharat",
+            "method": "Decision"
+          },
+          "result": null
         },
         "Cong Wang vs. Eduarda Moura": {
-          "winner": "Cong Wang",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Cong Wang",
+            "method": "Decision"
+          },
+          "result": null
         },
         "Muin Gafurov vs. Jakub Wikłacz": {
-          "winner": "Jakub Wikłacz",
-          "method": "Decision"
+          "prediction": {
+            "winner": "Jakub Wikłacz",
+            "method": "Decision"
+          },
+          "result": null
         },
         "Priscila Cachoeira vs. Klaudia Syguła": {
-          "winner": "Priscila Cachoeira",
-          "method": "KO/TKO"
+          "prediction": {
+            "winner": "Priscila Cachoeira",
+            "method": "KO/TKO"
+          },
+          "result": null
         }
       }
     },

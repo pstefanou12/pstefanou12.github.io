@@ -54,9 +54,10 @@ async function loadPreviewHeader() {
       }
 
       // Populate predictions from JSON
-      if (card.predictions) {
-        for (const [matchup, prediction] of Object.entries(card.predictions)) {
-          if (!prediction.winner) continue;
+      if (card.fights) {
+        for (const [matchup, fightEntry] of Object.entries(card.fights)) {
+          const prediction = fightEntry.prediction;
+          if (!prediction || !prediction.winner) continue;
 
           // Convert matchup key to fight div ID
           const fightId = matchup.toLowerCase()

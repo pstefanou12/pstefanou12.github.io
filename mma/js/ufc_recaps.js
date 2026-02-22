@@ -51,11 +51,11 @@ async function loadRecapHeader() {
       }
 
       // Populate predictions from JSON
-      if (card.predictions) {
+      if (card.fights) {
+        const fightDivs = document.querySelectorAll('.fight');
         let correctCount = 0;
         let totalPredictions = 0;
 
-        const fightDivs = document.querySelectorAll('.fight');
         for (const fightDiv of fightDivs) {
           const h3 = fightDiv.querySelector('h3');
           if (!h3) continue;
@@ -66,12 +66,12 @@ async function loadRecapHeader() {
           const fighter1 = fighters[0].trim();
           const fighter2 = fighters[1].trim();
 
-          // Find matching prediction
+          // Find matching fight entry
           let prediction = null;
-          for (const [matchup, pred] of Object.entries(card.predictions)) {
+          for (const [matchup, fightEntry] of Object.entries(card.fights)) {
             if (matchup.toLowerCase().includes(fighter1.toLowerCase()) &&
                 matchup.toLowerCase().includes(fighter2.toLowerCase())) {
-              prediction = pred;
+              prediction = fightEntry.prediction;
               break;
             }
           }
