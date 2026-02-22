@@ -2,8 +2,8 @@
   "cards": [
     {
       "id": "ufc-fight-night-strickland-hernandez",
-      "title": "UFC Fight Night",
-      "subtitle": "Strickland vs. Hernandez",
+      "title": "UFC Fight Night: Strickland vs. Hernandez",
+      "subtitle": null,
       "date": "2026-02-22",
       "rating": 6.3,
       "poster": "/mma/img/ufc_fight_night_strickland_hernandez_poster.jpg",

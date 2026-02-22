@@ -25,19 +25,39 @@
       <a href="mma.html">
         <img id="logo" src="img/hardcore_mma.png">
       </a>
+      <nav class="mma-nav">
+        <a href="#recaps">UFC Card Recaps</a>
+        <a href="#previews">UFC Card Previews</a>
+        <div class="search-container" id="search-container">
+          <button class="search-icon-btn" id="search-icon-btn" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </button>
+          <input type="text" id="mma-search" autocomplete="off">
+          <div id="search-dropdown" class="search-dropdown"></div>
+        </div>
+      </nav>
     </div>
 
-      <!-- UFC Top 5 Rated Cards -->
-      <h2 style="color:#FF79C6">Top Rated Cards</h2>
-      <div class="blog-grid" id="top-rated-cards"></div>
+    <div class="main-layout">
 
-      <!-- UFC Card Recaps -->
-      <h2 style="color:#FF79C6">UFC Card Recaps</h2>
-      <div class="blog-grid" id="recap-cards"></div>
+      <!-- Left column: Recaps + Previews -->
+      <div class="main-content">
+        <h2 id="recaps" style="color:#FF79C6">UFC Card Recaps</h2>
+        <div class="blog-grid" id="recap-cards"></div>
 
-      <!-- UFC Event previews -->
-      <h2 style="color:#FF79C6">Event Previews</h2>
-      <div class="blog-grid" id="preview-cards"></div>
+        <h2 id="previews" style="color:#FF79C6">UFC Card Previews</h2>
+        <div class="blog-grid" id="preview-cards"></div>
+      </div>
+
+      <!-- Right column: Top Rated table -->
+      <div class="sidebar">
+        <h2 style="color:#FF79C6">Top Rated Cards</h2>
+        <div id="top-rated-cards"></div>
+      </div>
+
+    </div>
     </div>
 
     <div class="footer">

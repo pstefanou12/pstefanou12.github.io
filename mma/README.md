@@ -1,13 +1,6 @@
-# UFC Event Generator Script
+# UFC Event Scripts
 
-Python script to automatically generate UFC event preview and recap templates from Tapology event pages.
-
-## Features
-
-- Scrapes fight card data from Tapology
-- Generates HTML templates for previews and recaps
-- Automatically updates `ufc_cards.json` with event metadata
-- Creates consistent file naming and structure
+Two Python scripts for generating UFC event templates and LLM-ready recap/preview prompts.
 
 ## Installation
 
@@ -15,97 +8,69 @@ Python script to automatically generate UFC event preview and recap templates fr
 pip install requests beautifulsoup4
 ```
 
-## Usage
+---
 
-### 1. Generate Preview (Before Event)
+## `tapology.py` — Template & Metadata Generator
 
-Creates a preview template with fight picks sections:
+Scrapes Tapology event pages to generate HTML templates and update `ufc_cards.json`.
+
+### Usage
+
+#### Preview mode (before event)
 
 ```bash
-python generate_recap.py "https://www.tapology.com/fightcenter/events/..." --mode preview
+python mma/tapology.py "https://www.tapology.com/fightcenter/events/..." --mode preview
 ```
 
 **Output:**
-- `previews/{card-id}.html` - Preview template with pick sections for each fight
-- Updates `ufc_cards.json` with preview URL
-- Shows expected poster filename
+- `mma/previews/{card-id}.html` — Preview template with per-fight pick sections
+- Updates `ufc_cards.json` with event metadata and a `fights` scaffold:
+  ```json
+  "fights": {
+    "Fighter A vs. Fighter B": {
+      "prediction": {"winner": "", "method": ""},
+      "result": null
+    }
+  }
+  ```
 
-### 2. Generate Recap (After Event)
-
-Creates a recap template and adds rating to JSON:
+#### Recap mode (after event)
 
 ```bash
-python generate_recap.py "https://www.tapology.com/fightcenter/events/..." --mode recap --rating 7.6
+python mma/tapology.py "https://www.tapology.com/fightcenter/events/..." --mode recap --rating 7.6
 ```
 
 **Output:**
-- `recaps/{card-id}.html` - Recap template with fight sections
-- Updates `ufc_cards.json` with rating and full metadata
+- `mma/recaps/{card-id}.html` — Recap template with fight sections pre-filled with result data
+- Updates `ufc_cards.json`: merges scraped results into the existing `fights` entries and sets the rating:
+  ```json
+  "fights": {
+    "Fighter A vs. Fighter B": {
+      "prediction": {"winner": "Fighter A", "method": "Decision"},
+      "result": {"winner": "Fighter A", "method": "Decision, Unanimous", "time": "3 Rounds, 15:00 Total"}
+    }
+  }
+  ```
 
-### 3. Generate Both (Preview + Recap)
-
-If you want to create both at once (rare use case):
+#### Both modes
 
 ```bash
-python generate_recap.py "https://www.tapology.com/fightcenter/events/..." --rating 7.6
+python mma/tapology.py "https://www.tapology.com/fightcenter/events/..." --rating 7.6
 ```
 
-## File Naming Convention
+### File Naming Convention
 
-The script automatically generates card IDs:
+Card IDs are generated automatically:
 
 | Event Name | Card ID |
-|------------|---------|
+|---|---|
 | UFC 326 | `ufc-326` |
 | UFC Fight Night: Royval vs Kape | `ufc-fight-night-royval-kape` |
 | UFC Qatar: Tsarukyan vs Hooker | `ufc-qatar-tsarukyan-hooker` |
 
-## Workflow Example
+### JSON Schema
 
-**Week before UFC 326:**
-```bash
-# 1. Generate preview template
-python generate_recap.py "https://www.tapology.com/..." --mode preview
-
-# 2. Add poster to ./mma/img/ufc_326_poster.jpg
-
-# 3. Fill in preview template with:
-#    - Event overview
-#    - Major storylines
-#    - Fight analysis and picks
-```
-
-**After UFC 326:**
-```bash
-# 1. Generate recap template with rating
-python generate_recap.py "https://www.tapology.com/..." --mode recap --rating 7.6
-
-# 2. Fill in recap template with:
-#    - Event summary
-#    - Fight-by-fight analysis
-```
-
-## Generated Files
-
-### Preview Template
-- Header loads dynamically from JSON (via `preview.js`)
-- Table of contents with fight picks
-- Overview and storyline sections
-- Fight pick sections with:
-  - Fight context
-  - Your prediction
-  - Method (Decision/KO/Submission)
-  - Reasoning
-
-### Recap Template
-- Header loads dynamically from JSON (via `recap.js`)
-- Table of contents with all fights
-- Summary section
-- Fight sections grouped by card placement (Main Card, Prelims, etc.)
-
-## JSON Metadata
-
-The script updates `./mma/js/ufc_cards.json` with:
+`ufc_cards.json` entries follow this structure:
 
 ```json
 {
@@ -114,28 +79,86 @@ The script updates `./mma/js/ufc_cards.json` with:
   "subtitle": "Jones vs. Aspinall",
   "date": "2026-03-15",
   "rating": 7.6,
-  "poster": "../img/ufc_326_poster.jpg",
+  "poster": "/mma/img/ufc_326_poster.jpg",
   "recapUrl": "recaps/ufc-326.html",
   "previewUrl": "previews/ufc-326.html",
   "location": "Las Vegas, Nevada, United States",
-  "eventTime": "Sat. 03.15.2026"
+  "eventTime": "Sat. 03.15.2026",
+  "fights": {
+    "Fighter A vs. Fighter B": {
+      "prediction": {"winner": "Fighter A", "method": "Decision"},
+      "result": {"winner": "Fighter A", "method": "Decision, Unanimous", "time": "3 Rounds, 15:00 Total"}
+    }
+  }
 }
 ```
 
+### Typical Workflow
+
+**Before the event:**
+```bash
+# 1. Generate preview template and fights scaffold
+python mma/tapology.py "https://www.tapology.com/..." --mode preview
+
+# 2. Add poster to mma/img/{card-id}_poster.jpg
+
+# 3. Fill in prediction winner/method in ufc_cards.json for each fight
+
+# 4. Generate the recap prompt and write preview content (see generate_prompt.py below)
+```
+
+**After the event:**
+```bash
+# 1. Generate recap template (populates results from Tapology, preserves predictions)
+python mma/tapology.py "https://www.tapology.com/..." --mode recap --rating 7.6
+
+# 2. Generate the recap prompt and write recap content (see generate_prompt.py below)
+```
+
+---
+
+## `generate_prompt.py` — LLM Prompt Assembler
+
+Combines a prompt template, your event notes, and the HTML template into a single file ready to paste into any model.
+
+### Usage
+
+```bash
+python mma/generate_prompt.py <mode> <card-id> <notes.txt>
+```
+
+- `mode` — `recap` or `preview`
+- `card-id` — must exist in `ufc_cards.json` (validated at runtime)
+- `notes.txt` — path to your handwritten event notes
+
+**Example:**
+```bash
+python mma/generate_prompt.py recap ufc-fight-night-strickland-hernandez ~/Downloads/"UFC Fight Night Strickland vs Hernandez.txt"
+```
+
+**Output:**
+- `mma/prompts/generated_prompts/{card-id}-{mode}.md` — assembled prompt (gitignored)
+
+The generated file contains:
+1. The prompt template (`mma/prompts/RECAP.md` or `mma/prompts/PREVIEW.md`)
+2. Your event notes under `## Event Notes`
+3. The HTML template under `## HTML Template`
+
+Paste the contents into any model to produce a fully written recap or preview.
+
+### Prompt Templates
+
+| File | Purpose |
+|---|---|
+| `mma/prompts/RECAP.md` | Role, task, and formatting rules for recap writing |
+| `mma/prompts/PREVIEW.md` | Role, task, and formatting rules for preview writing |
+
+---
+
 ## Common Issues
 
-### Date Parsing Error
-If the script can't parse the date from Tapology, it falls back to the current date. Check the generated JSON and update manually if needed.
+**Date parsing** — If Tapology's date format can't be parsed, the script falls back to the current date. Check the JSON and correct manually if needed.
 
-### Fighter Name Extraction
-For Fight Night events, the script extracts last names from the event title. If the naming is unusual, the card ID might need manual adjustment.
+**Card ID mismatch** — `generate_prompt.py` will error and list all valid IDs if the provided card ID isn't found in `ufc_cards.json`.
 
-### Poster Files
-Remember to add the poster image to `./mma/img/` with the exact filename shown in the script output (e.g., `ufc_326_poster.jpg`).
-
-## Tips
-
-- Always run preview mode first to set up the event structure
-- Use consistent rating scale (0.0-10.0)
-- The script preserves existing data when updating JSON
-- Files are sorted by date automatically in JSON
+**Poster files** — Add the poster image to `mma/img/` using the exact filename shown in the script output (e.g., `ufc_326_poster.jpg`).
