@@ -73,12 +73,76 @@ async function loadPreviewHeader() {
           const methodDiv = fightDiv.querySelector('.pick .method');
           if (methodDiv) methodDiv.innerHTML = `<strong>Method:</strong> ${prediction.method}`;
         }
+
+        renderOddsTable(card);
       }
     } else {
       console.warn('Card not found for ID:', cardId);
     }
   } catch (error) {
     console.error('Error loading preview header:', error);
+  }
+}
+
+function renderOddsTable(card) {
+  const fights = card.fights;
+  if (!fights) return;
+
+  const rows = [];
+  let totalProfit = 0;
+
+  for (const [matchup, entry] of Object.entries(fights)) {
+    if (!entry.odds) continue;
+    const { winner, platform, american, profit_per_dollar, return_pct } = entry.odds;
+    const sign = american > 0 ? '+' : '';
+    rows.push({ matchup, winner, platform, american: `${sign}${american}`, profit: profit_per_dollar, returnPct: return_pct });
+    totalProfit += profit_per_dollar;
+  }
+
+  if (rows.length === 0) return;
+
+  const wagered = rows.length;
+  const netSign = totalProfit >= 0 ? '+' : '';
+  const avgReturn = ((totalProfit / wagered) * 100).toFixed(1);
+
+  const html = `
+    <div class="odds-section">
+      <h2>Projected Betting Returns ($1/pick)</h2>
+      <table class="odds-table">
+        <thead>
+          <tr>
+            <th>Fight</th>
+            <th>Pick</th>
+            <th>Platform</th>
+            <th>Odds</th>
+            <th>Profit</th>
+            <th>Return</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(r => `
+          <tr>
+            <td class="odds-fight">${r.matchup}</td>
+            <td>${r.winner}</td>
+            <td class="odds-platform">${r.platform}</td>
+            <td class="odds-value">${r.american}</td>
+            <td class="pnl-positive">+$${r.profit.toFixed(2)}</td>
+            <td class="pnl-positive">+${r.returnPct}%</td>
+          </tr>`).join('')}
+        </tbody>
+        <tfoot>
+          <tr class="odds-total">
+            <td colspan="4"><strong>Total (${wagered} pick${wagered !== 1 ? 's' : ''} · $${wagered} wagered)</strong></td>
+            <td class="${totalProfit >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}$${totalProfit.toFixed(2)}</strong></td>
+            <td class="${totalProfit >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}${avgReturn}%</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>`;
+
+  const recapContent = document.querySelector('.recap-content');
+  if (recapContent) {
+    recapContent.insertAdjacentHTML('beforebegin', html);
   }
 }
 

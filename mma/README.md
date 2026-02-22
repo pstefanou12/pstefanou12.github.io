@@ -155,6 +155,74 @@ Paste the contents into any model to produce a fully written recap or preview.
 
 ---
 
+## `fetch_odds.py` — Betting Odds Populator
+
+Populates `ufc_cards.json` with the best available odds for each predicted winner.
+For each fight, it stores the platform with the highest payout for your pick under `fights[matchup].odds`.
+
+These odds are then rendered automatically on preview pages (projected returns) and recap pages (actual P&L).
+
+### Usage
+
+#### Interactive mode
+
+```bash
+python mma/fetch_odds.py ufc-325 --interactive
+```
+
+Walks through each fight and prompts for the platform name and American odds.
+
+#### Odds file mode
+
+```bash
+python mma/fetch_odds.py ufc-325 --odds-file ~/odds.json
+```
+
+**Odds file format:**
+```json
+{
+  "Fighter A vs. Fighter B": {
+    "BetOnline":  {"Fighter A": -175, "Fighter B": 145},
+    "DraftKings": {"Fighter A": -180, "Fighter B": 150}
+  }
+}
+```
+
+The script picks the platform with the best (highest) payout for the predicted winner.
+
+#### URL scraping (best-effort)
+
+```bash
+python mma/fetch_odds.py ufc-325 --url https://fightodds.io/odds/...
+```
+
+Attempts to scrape odds from the given URL with `requests` + `beautifulsoup4`. Many sportsbook sites require JavaScript rendering and will return a 403 or empty page — use `--odds-file` or `--interactive` as a fallback.
+
+### Odds schema (written to `ufc_cards.json`)
+
+```json
+"odds": {
+  "winner": "Fighter A",
+  "platform": "BetOnline",
+  "american": -175,
+  "profit_per_dollar": 0.5714,
+  "return_pct": 57.1
+}
+```
+
+### American odds reference
+
+| Odds | Profit per $1 |
+|------|--------------|
+| -200 | $0.50 |
+| -150 | $0.67 |
+| -110 | $0.91 |
+| +100 | $1.00 |
+| +150 | $1.50 |
+| +200 | $2.00 |
+
+---
+
 ## Common Issues
 
 **Date parsing** — If Tapology's date format can't be parsed, the script falls back to the current date. Check the JSON and correct manually if needed.

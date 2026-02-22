@@ -98,12 +98,97 @@ async function loadRecapHeader() {
             scoreEl.innerHTML = `Predictions: <strong>${correctCount}/${totalPredictions}</strong>`;
           }
         }
+
+        renderBettingResults(card, fightDivs);
       }
     } else {
       console.warn('Card not found for ID:', cardId);
     }
   } catch (error) {
     console.error('Error loading recap header:', error);
+  }
+}
+
+function renderBettingResults(card, fightDivs) {
+  const fights = card.fights;
+  if (!fights) return;
+
+  const rows = [];
+  let totalPnl = 0;
+
+  for (const fightDiv of fightDivs) {
+    const h3 = fightDiv.querySelector('h3');
+    if (!h3) continue;
+
+    const fighters = h3.textContent.split(' vs. ');
+    if (fighters.length < 2) continue;
+    const fighter1 = fighters[0].trim();
+    const fighter2 = fighters[1].trim();
+
+    // Find matching fight entry with odds
+    let matchup = null;
+    let fightEntry = null;
+    for (const [key, entry] of Object.entries(fights)) {
+      if (key.toLowerCase().includes(fighter1.toLowerCase()) &&
+          key.toLowerCase().includes(fighter2.toLowerCase())) {
+        matchup = key;
+        fightEntry = entry;
+        break;
+      }
+    }
+
+    if (!matchup || !fightEntry || !fightEntry.odds || !fightEntry.prediction || !fightEntry.result) continue;
+
+    const { winner: pick, platform, american, profit_per_dollar } = fightEntry.odds;
+    // fighter1 in recap h3 is always the winner
+    const isCorrect = fightEntry.prediction.winner.toLowerCase().trim() === fighter1.toLowerCase().trim();
+    const pnl = isCorrect ? profit_per_dollar : -1;
+    totalPnl += pnl;
+
+    const sign = american > 0 ? '+' : '';
+    rows.push({ matchup, pick, result: `${fighter1} wins`, american: `${sign}${american}`, isCorrect, pnl });
+  }
+
+  if (rows.length === 0) return;
+
+  const wagered = rows.length;
+  const netSign = totalPnl >= 0 ? '+' : '';
+
+  const html = `
+    <div class="odds-section">
+      <h2>Betting Results ($1/pick)</h2>
+      <table class="odds-table">
+        <thead>
+          <tr>
+            <th>Fight</th>
+            <th>Pick</th>
+            <th>Result</th>
+            <th>Odds</th>
+            <th>P&amp;L</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(r => `
+          <tr>
+            <td class="odds-fight">${r.matchup}</td>
+            <td>${r.pick}</td>
+            <td class="${r.isCorrect ? 'prediction-correct' : 'prediction-incorrect'}">${r.result} ${r.isCorrect ? '✓' : '✗'}</td>
+            <td class="odds-value">${r.american}</td>
+            <td class="${r.pnl >= 0 ? 'pnl-positive' : 'pnl-negative'}">${r.pnl >= 0 ? '+' : ''}$${r.pnl.toFixed(2)}</td>
+          </tr>`).join('')}
+        </tbody>
+        <tfoot>
+          <tr class="odds-total">
+            <td colspan="4"><strong>Total (${wagered} bet${wagered !== 1 ? 's' : ''} · $${wagered} wagered)</strong></td>
+            <td class="${totalPnl >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}$${totalPnl.toFixed(2)}</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>`;
+
+  const recapContent = document.querySelector('.recap-content');
+  if (recapContent) {
+    recapContent.insertAdjacentHTML('beforebegin', html);
   }
 }
 
