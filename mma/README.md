@@ -155,56 +155,24 @@ Paste the contents into any model to produce a fully written recap or preview.
 
 ---
 
-### Betting odds (`--odds` flag / `--mode odds`)
+### Betting odds
 
-Odds are entered interactively per fight and stored in `ufc_cards.json` under `fights[matchup].odds`:
+Preview mode automatically generates a null-filled odds scaffold in `ufc_cards.json` for all known platforms:
 
 ```json
 "odds": {
-  "BetOnline":  {"Fighter A": -175, "Fighter B": 145},
-  "DraftKings": {"Fighter A": -165, "Fighter B": 135},
-  "Bovada":     {"Fighter A": -180, "Fighter B": 150}
+  "BetOnline":  {"Fighter A": null, "Fighter B": null},
+  "Bovada":     {"Fighter A": null, "Fighter B": null},
+  "DraftKings": {"Fighter A": null, "Fighter B": null},
+  ...
 }
 ```
 
-The JS automatically finds the best payout for the predicted winner at render time.
-
-#### Enter odds during preview or recap
-
-```bash
-python mma/tapology.py "https://www.tapology.com/..." --mode preview --odds
-python mma/tapology.py "https://www.tapology.com/..." --mode recap --rating 7.6 --odds
-```
-
-#### Update odds only (no template regeneration)
-
-```bash
-python mma/tapology.py "https://www.tapology.com/..." --mode odds
-```
-
-#### Interactive prompt format
-
-```
---- Sean Strickland vs. Anthony Hernandez ---
-  Press Enter with no platform to move to the next fight.
-  Platform: BetOnline
-    Sean Strickland: -175
-    Anthony Hernandez: +145
-    Saved: BetOnline → Sean Strickland: -175, Anthony Hernandez: +145
-  Platform: Bovada
-    Sean Strickland: -180
-    Anthony Hernandez: +150
-    Saved: Bovada → Sean Strickland: -180, Anthony Hernandez: +150
-  Platform:
-```
-
-Enter the platform name, then each fighter's odds on separate lines. Press Enter on an empty platform to advance to the next fight.
+Fill in the values manually before publishing the preview. The JS finds the best non-null payout for the predicted winner at render time.
 
 #### Supported platforms
 
-BetOnline, Bovada, MyBookie, BetUS, Bet105, BookMaker, DraftKings, FanDuel, 4Cx, Circa, BetAnything, BetRivers, HardRocketBet, BetMGM, Caesars, Jazz, Polymakr, Pinnacle, Betway, Stake, Cloudbet, 4casters, SXBet
-
-Any platform name is accepted; the list above is shown as a reference prompt.
+BetOnline, Bovada, MyBookie, BetUS, Bet105, BookMaker, DraftKings, FanDuel, 4Cx, Circa, BetAnything, BetRivers, HardRocketBet, BetMGM, Caesars, Jazz, Polymarket, Pinnacle, Betway, Stake, Cloudbet, 4casters, SXBet
 
 #### American odds reference
 
