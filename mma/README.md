@@ -155,62 +155,54 @@ Paste the contents into any model to produce a fully written recap or preview.
 
 ---
 
-## `fetch_odds.py` — Betting Odds Populator
+### Betting odds (`--odds` flag / `--mode odds`)
 
-Populates `ufc_cards.json` with the best available odds for each predicted winner.
-For each fight, it stores the platform with the highest payout for your pick under `fights[matchup].odds`.
-
-These odds are then rendered automatically on preview pages (projected returns) and recap pages (actual P&L).
-
-### Usage
-
-#### Interactive mode
-
-```bash
-python mma/fetch_odds.py ufc-325 --interactive
-```
-
-Walks through each fight and prompts for the platform name and American odds.
-
-#### Odds file mode
-
-```bash
-python mma/fetch_odds.py ufc-325 --odds-file ~/odds.json
-```
-
-**Odds file format:**
-```json
-{
-  "Fighter A vs. Fighter B": {
-    "BetOnline":  {"Fighter A": -175, "Fighter B": 145},
-    "DraftKings": {"Fighter A": -180, "Fighter B": 150}
-  }
-}
-```
-
-The script picks the platform with the best (highest) payout for the predicted winner.
-
-#### URL scraping (best-effort)
-
-```bash
-python mma/fetch_odds.py ufc-325 --url https://fightodds.io/odds/...
-```
-
-Attempts to scrape odds from the given URL with `requests` + `beautifulsoup4`. Many sportsbook sites require JavaScript rendering and will return a 403 or empty page — use `--odds-file` or `--interactive` as a fallback.
-
-### Odds schema (written to `ufc_cards.json`)
+Odds are entered interactively per fight and stored in `ufc_cards.json` under `fights[matchup].odds`:
 
 ```json
 "odds": {
-  "winner": "Fighter A",
-  "platform": "BetOnline",
-  "american": -175,
-  "profit_per_dollar": 0.5714,
-  "return_pct": 57.1
+  "BetOnline":  {"Fighter A": -175, "Fighter B": 145},
+  "DraftKings": {"Fighter A": -165, "Fighter B": 135},
+  "Bovada":     {"Fighter A": -180, "Fighter B": 150}
 }
 ```
 
-### American odds reference
+The JS automatically finds the best payout for the predicted winner at render time.
+
+#### Enter odds during preview or recap
+
+```bash
+python mma/tapology.py "https://www.tapology.com/..." --mode preview --odds
+python mma/tapology.py "https://www.tapology.com/..." --mode recap --rating 7.6 --odds
+```
+
+#### Update odds only (no template regeneration)
+
+```bash
+python mma/tapology.py "https://www.tapology.com/..." --mode odds
+```
+
+#### Interactive prompt format
+
+```
+--- Sean Strickland vs. Anthony Hernandez ---
+  Format: PLATFORM STRICKLAND HERNANDEZ  (e.g. BetOnline -175 +145)
+  Press Enter with no input to move to the next fight.
+  > BetOnline -175 +145
+  > Bovada -180 +150
+  > DraftKings -165 +135
+  >
+```
+
+One line per platform. Press Enter on an empty line to advance to the next fight.
+
+#### Supported platforms
+
+BetOnline, Bovada, MyBookie, BetUS, Bet105, BookMaker, DraftKings, FanDuel, 4Cx, Circa, BetAnything, BetRivers, HardRocketBet, BetMGM, Caesars, Jazz, Polymakr, Pinnacle, Betway, Stake, Cloudbet, 4casters, SXBet
+
+Any platform name is accepted; the list above is shown as a reference prompt.
+
+#### American odds reference
 
 | Odds | Profit per $1 |
 |------|--------------|

@@ -6,6 +6,13 @@ import pprint
 import json
 import os
 
+PLATFORMS = [
+    'BetOnline', 'Bovada', 'MyBookie', 'BetUS', 'Bet105', 'BookMaker',
+    'DraftKings', 'FanDuel', '4Cx', 'Circa', 'BetAnything', 'BetRivers',
+    'HardRocketBet', 'BetMGM', 'Caesars', 'Jazz', 'Polymakr', 'Pinnacle',
+    'Betway', 'Stake', 'Cloudbet', '4casters', 'SXBet',
+]
+
 def scrape_tapology_event(url, mode='both'):
     """Scrape fight data from Tapology event page"""
     headers = {
@@ -388,33 +395,157 @@ def generate_html_template(event_data):
     
     return html
 
+def collect_odds_interactive(fights_list):
+    """
+    Interactively collect betting odds for each fight.
+
+    fights_list: list of dicts with 'fighter1' and 'fighter2' keys (from scrape_tapology_event)
+    Returns: {matchup: {platform: {fighter1: int, fighter2: int}}}
+    """
+    print('\n' + '=' * 60)
+    print('BETTING ODDS ENTRY')
+    print('=' * 60)
+    print('Known platforms: ' + ', '.join(PLATFORMS))
+    print()
+
+    all_odds = {}
+
+    for fight in fights_list:
+        f1 = fight['fighter1']
+        f2 = fight['fighter2']
+        matchup = f"{f1} vs. {f2}"
+        fight_odds = {}
+
+        last1 = f1.split()[-1].upper()
+        last2 = f2.split()[-1].upper()
+
+        print(f'--- {matchup} ---')
+        print(f'  Format: PLATFORM {last1} {last2}  (e.g. BetOnline -175 +145)')
+        print(f'  Press Enter with no input to move to the next fight.')
+
+        while True:
+            line = input('  > ').strip()
+            if not line:
+                break
+
+            parts = line.split()
+            if len(parts) != 3:
+                print(f'    Expected: PLATFORM ODDS1 ODDS2')
+                continue
+
+            platform = parts[0]
+            try:
+                odds1 = int(parts[1].replace('+', ''))
+                odds2 = int(parts[2].replace('+', ''))
+            except ValueError:
+                print(f'    Invalid odds. Use integers like -175 or +145.')
+                continue
+
+            fight_odds[platform] = {f1: odds1, f2: odds2}
+            print(f'    Saved: {platform} → {f1}: {odds1:+d}, {f2}: {odds2:+d}')
+
+        if fight_odds:
+            all_odds[matchup] = fight_odds
+        print()
+
+    return all_odds
+
+
+def merge_odds_into_fights(fights_dict, new_odds):
+    """
+    Merge new_odds into fights_dict[matchup]['odds'], preserving any
+    existing platform entries not re-entered this session.
+    """
+    def norm(s):
+        return s.lower().replace(' vs. ', ' vs ')
+
+    for matchup, platform_odds in new_odds.items():
+        # Find matching key in fights_dict
+        target_key = None
+        for key in fights_dict:
+            if norm(key) == norm(matchup):
+                target_key = key
+                break
+
+        if target_key is None:
+            continue
+
+        existing = fights_dict[target_key].get('odds') or {}
+        existing.update(platform_odds)
+        fights_dict[target_key]['odds'] = existing
+
+    return fights_dict
+
+
+def update_json_odds(card_id, updated_fights, json_path='./mma/js/ufc_cards.json'):
+    """Write updated fights (odds only) back to JSON without touching other fields."""
+    with open(json_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    for card in data['cards']:
+        if card['id'] == card_id:
+            for matchup, entry in updated_fights.items():
+                if 'odds' not in entry:
+                    continue
+                # Find matching fight in existing card
+                def norm(s):
+                    return s.lower().replace(' vs. ', ' vs ')
+                for key in card.get('fights', {}):
+                    if norm(key) == norm(matchup):
+                        existing = card['fights'][key].get('odds') or {}
+                        existing.update(entry['odds'])
+                        card['fights'][key]['odds'] = existing
+                        break
+            break
+
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"Updated odds in {json_path}")
+
+
 def main():
     import argparse
-    
+
     parser = argparse.ArgumentParser(description='Generate UFC event recap templates and update metadata')
     parser.add_argument('url', help='Tapology event URL')
-    parser.add_argument('--mode', choices=['preview', 'recap', 'both'], default='both',
-                      help='Mode: preview (update JSON only), recap (generate template + update JSON), both (default)')
-    parser.add_argument('--rating', type=float, help='Event rating (0.0-10.0). Required for recap mode.')
-    
+    parser.add_argument('--mode', choices=['preview', 'recap', 'both', 'odds'], default='both',
+                      help='Mode: preview, recap, both (default), or odds (update odds only)')
+    parser.add_argument('--rating', type=float, help='Event rating (0.0-10.0). Required for recap/both mode.')
+    parser.add_argument('--odds', action='store_true',
+                      help='Interactively enter betting odds after the main flow')
+
     args = parser.parse_args()
-    
+
     # Validate rating requirement
     if args.mode in ['recap', 'both'] and args.rating is None:
         parser.error("--rating is required when mode is 'recap' or 'both'")
     
     print("Scraping event data...")
-    event_data = scrape_tapology_event(args.url, mode=args.mode)
-    
+    scrape_mode = 'preview' if args.mode == 'odds' else args.mode
+    event_data = scrape_tapology_event(args.url, mode=scrape_mode)
+
     print(f"\nEvent: {event_data['event_name']}")
     print(f"Date: {event_data['date']}")
     print(f"Location: {event_data['location']}")
     print(f"Fights found: {len(event_data['fights'])}\n")
-    
+
     # Generate card ID
     card_id = generate_card_id(event_data['event_name'])
     print(f"Generated card ID: {card_id}\n")
-    
+
+    # Handle odds-only mode
+    if args.mode == 'odds':
+        new_odds = collect_odds_interactive(event_data['fights'])
+        if new_odds:
+            # Build a temporary fights dict to pass to merge helper
+            temp_fights = {f"{f['fighter1']} vs. {f['fighter2']}": {'odds': new_odds.get(f"{f['fighter1']} vs. {f['fighter2']}", {})}
+                           for f in event_data['fights']}
+            update_json_odds(card_id, temp_fights)
+            print(f"✓ Betting odds updated for {card_id}")
+        else:
+            print("No odds entered.")
+        return
+
     # Handle preview mode
     if args.mode == 'preview':
         # Build fights scaffolding from fight matchups
@@ -422,6 +553,11 @@ def main():
         for fight in event_data['fights']:
             matchup = f"{fight['fighter1']} vs. {fight['fighter2']}"
             fights[matchup] = {"prediction": {"winner": "", "method": ""}, "result": None}
+
+        # Collect odds interactively if requested
+        if args.odds:
+            new_odds = collect_odds_interactive(event_data['fights'])
+            fights = merge_odds_into_fights(fights, new_odds)
 
         # Update JSON with preview URL only (no rating needed for preview)
         preview_card = {
@@ -439,13 +575,13 @@ def main():
         }
 
         update_json_with_preview(preview_card)
-        
+
         # Generate preview HTML template
         preview_html = generate_preview_template(event_data)
         preview_filename = f"./mma/previews/{card_id}.html"
         with open(preview_filename, 'w', encoding='utf-8') as f:
             f.write(preview_html)
-        
+
         print(f"✓ JSON updated with preview URL")
         print(f"✓ Preview template generated: {preview_filename}")
         print(f"✓ Poster filename: {card_id.replace('-', '_')}_poster.jpg")
@@ -455,7 +591,7 @@ def main():
         print(f"  3. Add your major storyline sections")
         print(f"  4. Fill in fight analysis and picks for each matchup")
         return
-    
+
     # Handle recap or both modes
     rating = args.rating
 
@@ -476,12 +612,21 @@ def main():
         matchup = f"{fight['fighter1']} vs. {fight['fighter2']}"
         existing = find_fight(existing_fights, fight['fighter1'], fight['fighter2'])
         prediction = existing['prediction'] if existing else {"winner": "", "method": ""}
+        existing_odds = existing.get('odds') if existing else None
         result = {
             "winner": fight['fighter1'],  # Tapology lists winner first on completed events
             "method": fight['method_of_victory'],
             "time": fight['time_of_victory']
         } if fight.get('method_of_victory') else None
-        fights[matchup] = {"prediction": prediction, "result": result}
+        entry = {"prediction": prediction, "result": result}
+        if existing_odds:
+            entry['odds'] = existing_odds
+        fights[matchup] = entry
+
+    # Collect odds interactively if requested
+    if args.odds:
+        new_odds = collect_odds_interactive(event_data['fights'])
+        fights = merge_odds_into_fights(fights, new_odds)
 
     # Update JSON metadata
     update_json_metadata(event_data, card_id, rating, fights)
@@ -489,12 +634,12 @@ def main():
 
     # Generate HTML template
     html_content = generate_html_template(event_data)
-    
+
     # Save to file using card_id as filename
     filename = f"./mma/recaps/{card_id}.html"
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(html_content)
-    
+
     print(f"✓ HTML template generated: {filename}")
     print(f"✓ Poster filename: {card_id.replace('-', '_')}_poster.jpg")
     print(f"\n📋 Next steps:")

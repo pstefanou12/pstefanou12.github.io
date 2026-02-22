@@ -84,6 +84,28 @@ async function loadPreviewHeader() {
   }
 }
 
+function americanToProfit(american) {
+  return american > 0 ? american / 100 : 100 / Math.abs(american);
+}
+
+function bestOddsForPick(oddsData, pick) {
+  // oddsData: {platform: {fighter: american_int}}
+  const pickLower = pick.toLowerCase();
+  let bestPlatform = null;
+  let bestAmerican = null;
+  for (const [platform, lines] of Object.entries(oddsData)) {
+    for (const [fighter, american] of Object.entries(lines)) {
+      if (fighter.toLowerCase() === pickLower) {
+        if (bestAmerican === null || american > bestAmerican) {
+          bestAmerican = american;
+          bestPlatform = platform;
+        }
+      }
+    }
+  }
+  return bestPlatform ? { platform: bestPlatform, american: bestAmerican } : null;
+}
+
 function renderOddsTable(card) {
   const fights = card.fights;
   if (!fights) return;
@@ -92,11 +114,16 @@ function renderOddsTable(card) {
   let totalProfit = 0;
 
   for (const [matchup, entry] of Object.entries(fights)) {
-    if (!entry.odds) continue;
-    const { winner, platform, american, profit_per_dollar, return_pct } = entry.odds;
-    const sign = american > 0 ? '+' : '';
-    rows.push({ matchup, winner, platform, american: `${sign}${american}`, profit: profit_per_dollar, returnPct: return_pct });
-    totalProfit += profit_per_dollar;
+    if (!entry.odds || Object.keys(entry.odds).length === 0) continue;
+    const pick = (entry.prediction || {}).winner;
+    if (!pick) continue;
+    const best = bestOddsForPick(entry.odds, pick);
+    if (!best) continue;
+    const profit = americanToProfit(best.american);
+    const returnPct = parseFloat((profit * 100).toFixed(1));
+    const sign = best.american > 0 ? '+' : '';
+    rows.push({ matchup, winner: pick, platform: best.platform, american: `${sign}${best.american}`, profit, returnPct });
+    totalProfit += profit;
   }
 
   if (rows.length === 0) return;

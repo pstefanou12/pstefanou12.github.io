@@ -109,6 +109,28 @@ async function loadRecapHeader() {
   }
 }
 
+function americanToProfit(american) {
+  return american > 0 ? american / 100 : 100 / Math.abs(american);
+}
+
+function bestOddsForPick(oddsData, pick) {
+  // oddsData: {platform: {fighter: american_int}}
+  const pickLower = pick.toLowerCase();
+  let bestPlatform = null;
+  let bestAmerican = null;
+  for (const [platform, lines] of Object.entries(oddsData)) {
+    for (const [fighter, american] of Object.entries(lines)) {
+      if (fighter.toLowerCase() === pickLower) {
+        if (bestAmerican === null || american > bestAmerican) {
+          bestAmerican = american;
+          bestPlatform = platform;
+        }
+      }
+    }
+  }
+  return bestPlatform ? { platform: bestPlatform, american: bestAmerican } : null;
+}
+
 function renderBettingResults(card, fightDivs) {
   const fights = card.fights;
   if (!fights) return;
@@ -137,16 +159,21 @@ function renderBettingResults(card, fightDivs) {
       }
     }
 
-    if (!matchup || !fightEntry || !fightEntry.odds || !fightEntry.prediction || !fightEntry.result) continue;
+    if (!matchup || !fightEntry || !fightEntry.odds || Object.keys(fightEntry.odds).length === 0) continue;
+    if (!fightEntry.prediction || !fightEntry.result) continue;
 
-    const { winner: pick, platform, american, profit_per_dollar } = fightEntry.odds;
+    const pick = fightEntry.prediction.winner;
+    const best = bestOddsForPick(fightEntry.odds, pick);
+    if (!best) continue;
+
+    const profit_per_dollar = americanToProfit(best.american);
     // fighter1 in recap h3 is always the winner
-    const isCorrect = fightEntry.prediction.winner.toLowerCase().trim() === fighter1.toLowerCase().trim();
+    const isCorrect = pick.toLowerCase().trim() === fighter1.toLowerCase().trim();
     const pnl = isCorrect ? profit_per_dollar : -1;
     totalPnl += pnl;
 
-    const sign = american > 0 ? '+' : '';
-    rows.push({ matchup, pick, result: `${fighter1} wins`, american: `${sign}${american}`, isCorrect, pnl });
+    const sign = best.american > 0 ? '+' : '';
+    rows.push({ matchup, pick, result: `${fighter1} wins`, american: `${sign}${best.american}`, isCorrect, pnl });
   }
 
   if (rows.length === 0) return;
