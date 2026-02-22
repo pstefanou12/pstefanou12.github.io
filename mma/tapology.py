@@ -416,27 +416,24 @@ def collect_odds_interactive(fights_list):
         matchup = f"{f1} vs. {f2}"
         fight_odds = {}
 
-        last1 = f1.split()[-1].upper()
-        last2 = f2.split()[-1].upper()
-
         print(f'--- {matchup} ---')
-        print(f'  Format: PLATFORM {last1} {last2}  (e.g. BetOnline -175 +145)')
-        print(f'  Press Enter with no input to move to the next fight.')
+        print(f'  Press Enter with no platform to move to the next fight.')
 
         while True:
-            line = input('  > ').strip()
-            if not line:
+            platform = input('  Platform: ').strip()
+            if not platform:
                 break
 
-            parts = line.split()
-            if len(parts) != 3:
-                print(f'    Expected: PLATFORM ODDS1 ODDS2')
+            odds1_str = input(f'    {f1}: ').strip()
+            try:
+                odds1 = int(odds1_str.replace('+', ''))
+            except ValueError:
+                print(f'    Invalid odds. Use integers like -175 or +145.')
                 continue
 
-            platform = parts[0]
+            odds2_str = input(f'    {f2}: ').strip()
             try:
-                odds1 = int(parts[1].replace('+', ''))
-                odds2 = int(parts[2].replace('+', ''))
+                odds2 = int(odds2_str.replace('+', ''))
             except ValueError:
                 print(f'    Invalid odds. Use integers like -175 or +145.')
                 continue

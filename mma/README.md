@@ -186,15 +186,19 @@ python mma/tapology.py "https://www.tapology.com/..." --mode odds
 
 ```
 --- Sean Strickland vs. Anthony Hernandez ---
-  Format: PLATFORM STRICKLAND HERNANDEZ  (e.g. BetOnline -175 +145)
-  Press Enter with no input to move to the next fight.
-  > BetOnline -175 +145
-  > Bovada -180 +150
-  > DraftKings -165 +135
-  >
+  Press Enter with no platform to move to the next fight.
+  Platform: BetOnline
+    Sean Strickland: -175
+    Anthony Hernandez: +145
+    Saved: BetOnline → Sean Strickland: -175, Anthony Hernandez: +145
+  Platform: Bovada
+    Sean Strickland: -180
+    Anthony Hernandez: +150
+    Saved: Bovada → Sean Strickland: -180, Anthony Hernandez: +150
+  Platform:
 ```
 
-One line per platform. Press Enter on an empty line to advance to the next fight.
+Enter the platform name, then each fighter's odds on separate lines. Press Enter on an empty platform to advance to the next fight.
 
 #### Supported platforms
 
