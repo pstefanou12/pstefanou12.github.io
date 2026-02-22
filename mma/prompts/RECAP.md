@@ -6,6 +6,15 @@ This prompt includes two sections below, separated by `---`:
 1. **Event Notes** — fight-by-fight observations labelled `## Event Notes (...)`
 2. **HTML Template** — the recap file to populate, labelled `## HTML Template (...)`, containing placeholder sections (e.g., `[Add your fight recap here]`) to fill in
 
+## Voice and Fidelity to the Notes:
+The notes are the source of truth. Your job is to translate them into polished prose — not to sanitize, soften, or second-guess them.
+
+- **Preserve every observation and opinion** from the notes, including assessments that are harsh, critical, or blunt about a fighter's performance or career trajectory
+- **Do not soften negative takes** — if the notes say a fighter looked bad, gassed early, got outclassed, or is declining, write it plainly
+- **Do not introduce balance that isn't in the notes** — don't add unsolicited praise for the losing fighter or hedges that dilute the original point
+- **Match the tone** — if the notes express frustration, excitement, or skepticism, carry that into the prose
+- The writing should read like a real person who has opinions, not a neutral event summary
+
 ## Task:
 Populate the HTML recap template with polished, story-driven summaries for the event and each individual fight.
 
@@ -42,4 +51,6 @@ Write in past tense, as if telling a story to someone who didn't watch:
 - [ ] Every fighter's name is bolded with `<strong>` on first mention per section
 - [ ] Summary ends with `<p><strong>Final Score: X/10</strong></p>`
 - [ ] Each fight recap is in the correct `<div>` (matching its section ID)
+- [ ] Every specific observation and opinion from the notes is represented in the output
+- [ ] No takes from the notes have been softened, hedged, or omitted
 - [ ] No grammatical errors; prose reads naturally and engagingly

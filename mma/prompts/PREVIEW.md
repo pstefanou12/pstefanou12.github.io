@@ -6,6 +6,15 @@ This prompt includes two sections below, separated by `---`:
 1. **Event Notes** — per-fight analysis labelled `## Event Notes (...)`, containing fighter backgrounds, matchup breakdowns, a winner pick, and reasoning for each fight
 2. **HTML Template** — the preview file to populate, labelled `## HTML Template (...)`, containing placeholder sections for each fight
 
+## Voice and Fidelity to the Notes:
+The notes are the source of truth. Your job is to translate them into polished prose — not to sanitize, soften, or second-guess them.
+
+- **Preserve every point** made in the notes, including takes that are blunt, critical, or unflattering to a fighter
+- **Do not water down controversial opinions** — if the notes call a fighter shot, declining, overhyped, or out of their depth, say it clearly
+- **Do not add diplomatic hedging** that isn't in the notes — phrases like "to be fair" or "both fighters have a chance" that contradict the notes' actual position should not appear
+- **Maintain the original tone** — if the notes are dismissive of a fighter, the prose should reflect that; if they're enthusiastic about an underdog, match that energy
+- The writing should read like a real person's opinion, not a press release
+
 ## Task:
 Using the notes, populate the two placeholder sections for each fight in the HTML template.
 
@@ -63,4 +72,6 @@ Write enough to make a clear analytical case for the pick:
 - [ ] `<br><br>` used between paragraphs within each `<p>` block
 - [ ] Pick name and Method left untouched
 - [ ] Each fight's content placed in the correct `<div id="...">` section
+- [ ] Every specific point and opinion from the notes is represented in the output
+- [ ] No takes from the notes have been softened, hedged, or omitted
 - [ ] No grammatical errors; writing is analytical and reads with authority
