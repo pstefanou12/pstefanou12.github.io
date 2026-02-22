@@ -7,9 +7,10 @@ The output of this prompt becomes the **Event Notes** fed into the preview-writi
 
 ## Verification Protocol (Strict Adherence Required):
 1. **Card Verification**: Access the provided Tapology link to identify every fighter on the full card — main card, prelims, and early prelims.
-2. **Live Record Pull**: For each fighter, find their individual Tapology profile and pull their current record from the live page. You are forbidden from using training data for records or recent results.
-3. **Last 5 Fights**: For every fighter, list their last 5 professional bouts — Opponent, Date, Result, and Method.
-4. **News Search**: Search `"[Fighter Name] UFC 2026"` and `"[Fighter Name] news"` to surface recent narratives, injuries, camp changes, or promotional storylines.
+2. **Tapology Profile Links**: For each fighter, search Tapology by name, navigate to the result, and confirm the page loads and displays the correct fighter before recording the URL. Do not construct, guess, or infer URLs from a fighter's name. If you cannot confirm a URL opens to the correct fighter's page, write `[UNVERIFIED]` instead.
+3. **Live Record Pull**: Pull each fighter's current record from their verified Tapology profile page. You are forbidden from using training data for records or recent results.
+4. **Last 5 Fights**: For every fighter, list their last 5 professional bouts — Opponent, Date, Result, and Method — sourced from their Tapology profile.
+5. **News Search**: Search `"[Fighter Name] UFC 2026"` and `"[Fighter Name] news"` to surface recent narratives, injuries, camp changes, or promotional storylines.
 
 ---
 
@@ -62,6 +63,8 @@ Produce one block per bout, ordered: Main Card → Prelims → Early Prelims.
 
 ## Validation Checklist:
 - [ ] Every fighter on the card is covered — main card, prelims, and early prelims
+- [ ] Each Tapology URL was navigated to and confirmed before being recorded (no guessed or constructed URLs)
+- [ ] Any unconfirmed URL is marked `[UNVERIFIED]`
 - [ ] Records pulled from live Tapology pages, not training data
 - [ ] Last 5 fights listed for every fighter
 - [ ] Each fight has a Matchup Breakdown and a Pick with reasoning
