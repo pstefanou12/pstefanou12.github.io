@@ -95,7 +95,7 @@ function bestOddsForPick(oddsData, pick) {
   let bestAmerican = null;
   for (const [platform, lines] of Object.entries(oddsData)) {
     for (const [fighter, american] of Object.entries(lines)) {
-      if (fighter.toLowerCase() === pickLower) {
+      if (fighter.toLowerCase() === pickLower && american !== null) {
         if (bestAmerican === null || american > bestAmerican) {
           bestAmerican = american;
           bestPlatform = platform;
@@ -133,7 +133,7 @@ function renderOddsTable(card) {
   const avgReturn = ((totalProfit / wagered) * 100).toFixed(1);
 
   const html = `
-    <div class="odds-section">
+    <div class="odds-section" id="projected-betting-returns">
       <h2>Projected Betting Returns ($1/pick)</h2>
       <table class="odds-table">
         <thead>
@@ -169,7 +169,7 @@ function renderOddsTable(card) {
 
   const recapContent = document.querySelector('.recap-content');
   if (recapContent) {
-    recapContent.insertAdjacentHTML('beforebegin', html);
+    recapContent.insertAdjacentHTML('beforeend', html);
   }
 }
 

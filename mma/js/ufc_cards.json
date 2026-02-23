@@ -1,6 +1,1333 @@
 {
   "cards": [
     {
+      "id": "ufc-fight-night-moreno-kavanagh",
+      "title": "UFC Fight Night: Moreno vs. Kavanagh",
+      "subtitle": null,
+      "date": "2026-02-22",
+      "rating": null,
+      "poster": "/mma/img/ufc_fight_night_moreno_kavanagh_poster.jpg",
+      "recapUrl": null,
+      "previewUrl": "previews/ufc-fight-night-moreno-kavanagh.html",
+      "location": "Mexico City, Mexico",
+      "eventTime": "Saturday 02.28.2026 at 05:00 PM ET",
+      "fights": {
+        "Brandon Moreno vs. Lone'er Kavanagh": {
+          "prediction": {
+            "winner": "Brandon Moreno",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Brandon Moreno": -225,
+              "Lone'er Kavanagh": 190 
+            },
+            "Bovada": {
+              "Brandon Moreno": -245,
+              "Lone'er Kavanagh": 205
+            },
+            "MyBookie": {
+              "Brandon Moreno": -248,
+              "Lone'er Kavanagh": 188
+            },
+            "BetUS": {
+              "Brandon Moreno": -235,
+              "Lone'er Kavanagh": 188
+            },
+            "Bet105": {
+              "Brandon Moreno": -235,
+              "Lone'er Kavanagh": 194
+            },
+            "Bookmaker": {
+              "Brandon Moreno": -249,
+              "Lone'er Kavanagh": 208
+            },
+            "DraftKings": {
+              "Brandon Moreno": -250,
+              "Lone'er Kavanagh": 205
+            },
+            "FanDuel": {
+              "Brandon Moreno": -245,
+              "Lone'er Kavanagh": 186
+            },
+            "4Cx": {
+              "Brandon Moreno": -237,
+              "Lone'er Kavanagh": 182
+            },
+            "BetAnything": {
+              "Brandon Moreno": -260,
+              "Lone'er Kavanagh": 200
+            },
+            "Circa": {
+              "Brandon Moreno": -245,
+              "Lone'er Kavanagh": 235
+            },
+            "BetRivers": {
+              "Brandon Moreno": -238,
+              "Lone'er Kavanagh": 188
+            },
+            "HardRocketBet": {
+              "Brandon Moreno": -240,
+              "Lone'er Kavanagh": 190
+            },
+            "BetMGM": {
+              "Brandon Moreno": -250,
+              "Lone'er Kavanagh": 200
+            },
+            "Caesars": {
+              "Brandon Moreno": -265,
+              "Lone'er Kavanagh": 215
+            },
+            "Jazz": {
+              "Brandon Moreno": -277,
+              "Lone'er Kavanagh": 197
+            },
+            "Polymarket": {
+              "Brandon Moreno": -213,
+              "Lone'er Kavanagh": 170
+            },
+            "Pinnacle": {
+              "Brandon Moreno": -249,
+              "Lone'er Kavanagh": 208
+            },
+            "Betway": {
+              "Brandon Moreno": -250,
+              "Lone'er Kavanagh": 175
+            },
+            "Stake": {
+              "Brandon Moreno": -244,
+              "Lone'er Kavanagh": 195
+            },
+            "Cloudbet": {
+              "Brandon Moreno": -249,
+              "Lone'er Kavanagh": 208
+            },
+            "4casters": {
+              "Brandon Moreno": -232,
+              "Lone'er Kavanagh": 186
+            },
+            "SXBet": {
+              "Brandon Moreno": -286,
+              "Lone'er Kavanagh": 181
+            }
+          }
+        },
+        "Marlon Vera vs. David Martinez": {
+          "prediction": {
+            "winner": "David Martinez",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Marlon Vera": 215,
+              "David Martinez": -255
+            },
+            "Bovada": {
+              "Marlon Vera": 215,
+              "David Martinez": -260
+            },
+            "MyBookie": {
+              "Marlon Vera": 204,
+              "David Martinez": -270
+            },
+            "BetUS": {
+              "Marlon Vera": 210,
+              "David Martinez": -255
+            },
+            "Bet105": {
+              "Marlon Vera": 210,
+              "David Martinez": -253
+            },
+            "BookMaker": {
+              "Marlon Vera": 223,
+              "David Martinez": -285
+            },
+            "DraftKings": {
+              "Marlon Vera": 210,
+              "David Martinez": -258
+            },
+            "FanDuel": {
+              "Marlon Vera": 220,
+              "David Martinez": -295
+            },
+            "4Cx": {
+              "Marlon Vera": 212,
+              "David Martinez": -298
+            },
+            "BetAnything": {
+              "Marlon Vera": 200,
+              "David Martinez": -260
+            },
+            "Circa": {
+              "Marlon Vera": 215,
+              "David Martinez": -250
+            },
+            "BetRivers": {
+              "Marlon Vera": 215,
+              "David Martinez": -278
+            },
+            "HardRocketBet": {
+              "Marlon Vera": 220,
+              "David Martinez": -275
+            },
+            "BetMGM": {
+              "Marlon Vera": 220,
+              "David Martinez": -275
+            },
+            "Caesars": {
+              "Marlon Vera": 220,
+              "David Martinez": -270
+            },
+            "Jazz": {
+              "Marlon Vera": null,
+              "David Martinez": null
+            },
+            "Polymarket": {
+              "Marlon Vera": 178,
+              "David Martinez": -212
+            },
+            "Pinnacle": {
+              "Marlon Vera": 212,
+              "David Martinez": -255
+            },
+            "Betway": {
+              "Marlon Vera": 200,
+              "David Martinez": -275
+            },
+            "Stake": {
+              "Marlon Vera": 210,
+              "David Martinez": -263
+            },
+            "Cloudbet": {
+              "Marlon Vera": 212,
+              "David Martinez": -255
+            },
+            "4casters": {
+              "Marlon Vera": 217,
+              "David Martinez": -291
+            },
+            "SXBet": {
+              "Marlon Vera": null,
+              "David Martinez": null
+            }
+          }
+        },
+        "Daniel Zellhuber vs. King Green": {
+          "prediction": {
+            "winner": "Daniel Zellhuber",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Daniel Zellhuber": -500,
+              "King Green": 375
+            },
+            "Bovada": {
+              "Daniel Zellhuber": -500,
+              "King Green": 360
+            },
+            "MyBookie": {
+              "Daniel Zellhuber": -526,
+              "King Green": 360
+            },
+            "BetUS": {
+              "Daniel Zellhuber": -500,
+              "King Green": 369
+            },
+            "Bet105": {
+              "Daniel Zellhuber": -503,
+              "King Green": 390
+            },
+            "BookMaker": {
+              "Daniel Zellhuber": -515,
+              "King Green": 390
+            },
+            "DraftKings": {
+              "Daniel Zellhuber": -515,
+              "King Green": 370
+            },
+            "FanDuel": {
+              "Daniel Zellhuber": -520,
+              "King Green": 350
+            },
+            "4Cx": {
+              "Daniel Zellhuber": -553,
+              "King Green": 343
+            },
+            "BetAnything": {
+              "Daniel Zellhuber": -550,
+              "King Green": 340
+            },
+            "Circa": {
+              "Daniel Zellhuber": -590,
+              "King Green": 450
+            },
+            "BetRivers": {
+              "Daniel Zellhuber": -500,
+              "King Green": 360
+            },
+            "HardRocketBet": {
+              "Daniel Zellhuber": -500,
+              "King Green": 350
+            },
+            "BetMGM": {
+              "Daniel Zellhuber": -500,
+              "King Green": 375
+            },
+            "Caesars": {
+              "Daniel Zellhuber": -500,
+              "King Green": 380
+            },
+            "Jazz": {
+              "Daniel Zellhuber": -612,
+              "King Green": 376
+            },
+            "Polymarket": {
+              "Daniel Zellhuber": -317,
+              "King Green": 245 
+            },
+            "Pinnacle": {
+              "Daniel Zellhuber": -502,
+              "King Green": 389
+            },
+            "Betway": {
+              "Daniel Zellhuber": -450,
+              "King Green": 300
+            },
+            "Stake": {
+              "Daniel Zellhuber": -526,
+              "King Green": 370
+            },
+            "Cloudbet": {
+              "Daniel Zellhuber": null,
+              "King Green": null
+            },
+            "4casters": {
+              "Daniel Zellhuber": -540,
+              "King Green": 352
+            },
+            "SXBet": {
+              "Daniel Zellhuber": null,
+              "King Green": null
+            }
+          }
+        },
+        "Edgar Cháirez vs. Felipe Bunes": {
+          "prediction": {
+            "winner": "Edgar Cháirez",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Edgar Cháirez": -275,
+              "Felipe Bunes": 235
+            },
+            "Bovada": {
+              "Edgar Cháirez": -290,
+              "Felipe Bunes": 240
+            },
+            "MyBookie": {
+              "Edgar Cháirez": -295,
+              "Felipe Bunes": 220
+            },
+            "BetUS": {
+              "Edgar Cháirez": -270,
+              "Felipe Bunes": 226
+            },
+            "Bet105": {
+              "Edgar Cháirez": -303,
+              "Felipe Bunes": 250
+            },
+            "BookMaker": {
+              "Edgar Cháirez": -285,
+              "Felipe Bunes": 223
+            },
+            "DraftKings": {
+              "Edgar Cháirez": -310,
+              "Felipe Bunes": 250
+            },
+            "FanDuel": {
+              "Edgar Cháirez": -295,
+              "Felipe Bunes": 220
+            },
+            "4Cx": {
+              "Edgar Cháirez": -299,
+              "Felipe Bunes": 213
+            },
+            "BetAnything": {
+              "Edgar Cháirez": -290,
+              "Felipe Bunes": 220
+            },
+            "Circa": {
+              "Edgar Cháirez": -300,
+              "Felipe Bunes": 250
+            },
+            "BetRivers": {
+              "Edgar Cháirez": -294,
+              "Felipe Bunes": 225
+            },
+            "HardRocketBet": {
+              "Edgar Cháirez": -300,
+              "Felipe Bunes": 225
+            },
+            "BetMGM": {
+              "Edgar Cháirez": -275,
+              "Felipe Bunes": 220
+            },
+            "Caesars": {
+              "Edgar Cháirez": -270,
+              "Felipe Bunes": 220
+            },
+            "Jazz": {
+              "Edgar Cháirez": -322,
+              "Felipe Bunes": 226
+            },
+            "Polymarket": {
+              "Edgar Cháirez": -245,
+              "Felipe Bunes": 212
+            },
+            "Pinnacle": {
+              "Edgar Cháirez": -312,
+              "Felipe Bunes": 256
+            },
+            "Betway": {
+              "Edgar Cháirez": -275,
+              "Felipe Bunes": 200
+            },
+            "Stake": {
+              "Edgar Cháirez": null,
+              "Felipe Bunes": null
+            },
+            "Cloudbet": {
+              "Edgar Cháirez": -312,
+              "Felipe Bunes": 256
+            },
+            "4casters": {
+              "Edgar Cháirez": -292,
+              "Felipe Bunes": 218
+            },
+            "SXBet": {
+              "Edgar Cháirez": -335,
+              "Felipe Bunes": 223
+            }
+          }
+        },
+        "Imanol Rodriguez vs. Kevin Borjas": {
+          "prediction": {
+            "winner": "Imanol Rodriguez",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Imanol Rodriguez": -400,
+              "Kevin Borjas": 330
+            },
+            "Bovada": {
+              "Imanol Rodriguez": -415,
+              "Kevin Borjas": 310
+            },
+            "MyBookie": {
+              "Imanol Rodriguez": -429,
+              "Kevin Borjas": 300
+            },
+            "BetUS": {
+              "Imanol Rodriguez": -400,
+              "Kevin Borjas": 309
+            },
+            "Bet105": {
+              "Imanol Rodriguez": -421,
+              "Kevin Borjas": 334
+            },
+            "BookMaker": {
+              "Imanol Rodriguez": -400,
+              "Kevin Borjas": 300
+            },
+            "DraftKings": {
+              "Imanol Rodriguez": -425,
+              "Kevin Borjas": 330
+            },
+            "FanDuel": {
+              "Imanol Rodriguez": -430,
+              "Kevin Borjas": 300
+            },
+            "4Cx": {
+              "Imanol Rodriguez": -428,
+              "Kevin Borjas": 279
+            },
+            "BetAnything": {
+              "Imanol Rodriguez": -405,
+              "Kevin Borjas": 265
+            },
+            "Circa": {
+              "Edgar Cháirez": -405,
+              "Felipe Bunes": 330 
+            },
+            "BetRivers": {
+              "Imanol Rodriguez": -417,
+              "Kevin Borjas": 310
+            },
+            "HardRocketBet": {
+              "Imanol Rodriguez": -425,
+              "Kevin Borjas": 300
+            },
+            "BetMGM": {
+              "Imanol Rodriguez": -400,
+              "Kevin Borjas": 310
+            },
+            "Caesars": {
+              "Imanol Rodriguez": -400,
+              "Kevin Borjas": 310
+            },
+            "Jazz": {
+              "Imanol Rodriguez": -462,
+              "Kevin Borjas": 304
+            },
+            "Polymarket": {
+              "Imanol Rodriguez": -300,
+              "Kevin Borjas": 257
+            },
+            "Pinnacle": {
+              "Imanol Rodriguez": -421,
+              "Kevin Borjas": 334
+            },
+            "Betway": {
+              "Imanol Rodriguez": -400,
+              "Kevin Borjas": 275
+            },
+            "Stake": {
+              "Imanol Rodriguez": -417,
+              "Kevin Borjas": 310
+            },
+            "Cloudbet": {
+              "Imanol Rodriguez": -422,
+              "Kevin Borjas": 334
+            },
+            "4casters": {
+              "Imanol Rodriguez": -419,
+              "Kevin Borjas": 286
+            },
+            "SXBet": {
+              "Imanol Rodriguez": null,
+              "Kevin Borjas": null
+            }
+          }
+        },
+        "Santiago Luna vs. Angel Pacheco": {
+          "prediction": {
+            "winner": "Santiago Luna",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Santiago Luna": -450,
+              "Angel Pacheco": 350
+            },
+            "Bovada": {
+              "Santiago Luna": -480,
+              "Angel Pacheco": 350
+            },
+            "MyBookie": {
+              "Santiago Luna": -481,
+              "Angel Pacheco": 330
+            },
+            "BetUS": {
+              "Santiago Luna": -450,
+              "Angel Pacheco": 339
+            },
+            "Bet105": {
+              "Santiago Luna": -496,
+              "Angel Pacheco": 385
+            },
+            "BookMaker": {
+              "Santiago Luna": -465,
+              "Angel Pacheco": 341
+            },
+            "DraftKings": {
+              "Santiago Luna": -485,
+              "Angel Pacheco": 370
+            },
+            "FanDuel": {
+              "Santiago Luna": -480,
+              "Angel Pacheco": 330
+            },
+            "4Cx": {
+              "Santiago Luna": -501,
+              "Angel Pacheco": 317
+            },
+            "BetAnything": {
+              "Santiago Luna": -550,
+              "Angel Pacheco": 340
+            },
+            "Circa": {
+              "Santiago Luna": -550,
+              "Angel Pacheco": 425
+            },
+            "BetRivers": {
+              "Santiago Luna": -476,
+              "Angel Pacheco": 350
+            },
+            "HardRocketBet": {
+              "Santiago Luna": -475,
+              "Angel Pacheco": 350
+            },
+            "BetMGM": {
+              "Santiago Luna": -450,
+              "Angel Pacheco": 350
+            },
+            "Caesars": {
+              "Santiago Luna": -480,
+              "Angel Pacheco": 360
+            },
+            "Jazz": {
+              "Santiago Luna": -546,
+              "Angel Pacheco": 346
+            },
+            "Polymarket": {
+              "Santiago Luna": -400,
+              "Angel Pacheco": 317
+            },
+            "Pinnacle": {
+              "Santiago Luna": -496,
+              "Angel Pacheco": 385
+            },
+            "Betway": {
+              "Santiago Luna": -450,
+              "Angel Pacheco": 300
+            },
+            "Stake": {
+              "Santiago Luna": -476,
+              "Angel Pacheco": 340
+            },
+            "Cloudbet": {
+              "Santiago Luna": -498,
+              "Angel Pacheco": 385
+            },
+            "4casters": {
+              "Santiago Luna": -489,
+              "Angel Pacheco": 324
+            },
+            "SXBet": {
+              "Santiago Luna": null,
+              "Angel Pacheco": null
+            }
+          }
+        },
+        "José Medina vs. Ryan Gandra": {
+          "prediction": {
+            "winner": "Ryan Gandra",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "José Medina": 400,
+              "Ryan Gandra": -550
+            },
+            "Bovada": {
+              "José Medina": 425,
+              "Ryan Gandra": -600
+            },
+            "MyBookie": {
+              "José Medina": 360,
+              "Ryan Gandra": -526
+            },
+            "BetUS": {
+              "José Medina": 399,
+              "Ryan Gandra": -550
+            },
+            "Bet105": {
+              "José Medina": 429,
+              "Ryan Gandra": -564
+            },
+            "BookMaker": {
+              "José Medina": 405,
+              "Ryan Gandra": -575
+            },
+            "DraftKings": {
+              "José Medina": 425,
+              "Ryan Gandra": -575
+            },
+            "FanDuel": {
+              "José Medina": 360,
+              "Ryan Gandra": -530
+            },
+            "4Cx": {
+              "José Medina": 376,
+              "Ryan Gandra": -618
+            },
+            "BetAnything": {
+              "José Medina": 370,
+              "Ryan Gandra": -615
+            },
+            "Circa": {
+              "José Medina": 500,
+              "Ryan Gandra": -670
+            },
+            "BetRivers": {
+              "José Medina": 410,
+              "Ryan Gandra": -556
+            },
+            "HardRocketBet": {
+              "José Medina": 400,
+              "Ryan Gandra": -550
+            },
+            "BetMGM": {
+              "José Medina": 400,
+              "Ryan Gandra": -550
+            },
+            "Caesars": {
+              "José Medina": 400,
+              "Ryan Gandra": -550
+            },
+            "Jazz": {
+              "José Medina": null,
+              "Ryan Gandra": null
+            },
+            "Polymarket": {
+              "José Medina": 335,
+              "Ryan Gandra": -400
+            },
+            "Pinnacle": {
+              "José Medina": 428,
+              "Ryan Gandra": -563
+            },
+            "Betway": {
+              "José Medina": 350,
+              "Ryan Gandra": -549
+            },
+            "Stake": {
+              "José Medina": null,
+              "Ryan Gandra": null
+            },
+            "Cloudbet": {
+              "José Medina": 428,
+              "Ryan Gandra": -565
+            },
+            "4casters": {
+              "José Medina": 385,
+              "Ryan Gandra": -606
+            },
+            "SXBet": {
+              "José Medina": null,
+              "Ryan Gandra": null
+            }
+          }
+        },
+        "Macy Chiasson vs. Ailín Pérez": {
+          "prediction": {
+            "winner": "Macy Chiasson",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Macy Chiasson": 145,
+              "Ailín Pérez": -170
+            },
+            "Bovada": {
+              "Macy Chiasson": 145,
+              "Ailín Pérez": -170
+            },
+            "MyBookie": {
+              "Macy Chiasson": 134,
+              "Ailín Pérez": -172
+            },
+            "BetUS": {
+              "Macy Chiasson": 142,
+              "Ailín Pérez": -170
+            },
+            "Bet105": {
+              "Macy Chiasson": 155,
+              "Ailín Pérez": -182
+            },
+            "BookMaker": {
+              "Macy Chiasson": 143,
+              "Ailín Pérez": -177
+            },
+            "DraftKings": {
+              "Macy Chiasson": 145,
+              "Ailín Pérez": -175
+            },
+            "FanDuel": {
+              "Macy Chiasson": 134,
+              "Ailín Pérez": -172
+            },
+            "4Cx": {
+              "Macy Chiasson": 137,
+              "Ailín Pérez": -185
+            },
+            "BetAnything": {
+              "Macy Chiasson": 140,
+              "Ailín Pérez": -170
+            },
+            "Circa": {
+              "Macy Chiasson": 140,
+              "Ailín Pérez": -160
+            },
+            "BetRivers": {
+              "Macy Chiasson": 132,
+              "Ailín Pérez": -164
+            },
+            "HardRocketBet": {
+              "Macy Chiasson": 130,
+              "Ailín Pérez": -165
+            },
+            "BetMGM": {
+              "Macy Chiasson": 140,
+              "Ailín Pérez": -165
+            },
+            "Caesars": {
+              "Macy Chiasson": 140,
+              "Ailín Pérez": -165
+            },
+            "Jazz": {
+              "Macy Chiasson": 136,
+              "Ailín Pérez": -184
+            },
+            "Polymarket": {
+              "Macy Chiasson": 163,
+              "Ailín Pérez": -170
+            },
+            "Pinnacle": {
+              "Macy Chiasson": 151,
+              "Ailín Pérez": -177
+            },
+            "Betway": {
+              "Macy Chiasson": 120,
+              "Ailín Pérez": -163
+            },
+            "Stake": {
+              "Macy Chiasson": 137,
+              "Ailín Pérez": -169
+            },
+            "Cloudbet": {
+              "Macy Chiasson": 151,
+              "Ailín Pérez": -177
+            },
+            "4casters": {
+              "Macy Chiasson": 140,
+              "Ailín Pérez": -181
+            },
+            "SXBet": {
+              "Macy Chiasson": 148,
+              "Ailín Pérez": -184
+            }
+          }
+        },
+        "Cristian Quiñonez vs. Kris Moutinho": {
+          "prediction": {
+            "winner": "Kris Moutinho",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Cristian Quiñonez": -650,
+              "Kris Moutinho": 475
+            },
+            "Bovada": {
+              "Cristian Quiñonez": -675,
+              "Kris Moutinho": 460
+            },
+            "MyBookie": {
+              "Cristian Quiñonez": -699,
+              "Kris Moutinho": 440
+            },
+            "BetUS": {
+              "Cristian Quiñonez": -650,
+              "Kris Moutinho": 450
+            },
+            "Bet105": {
+              "Cristian Quiñonez": -634,
+              "Kris Moutinho": 472
+            },
+            "BookMaker": {
+              "Cristian Quiñonez": -650,
+              "Kris Moutinho": 445
+            },
+            "DraftKings": {
+              "Cristian Quiñonez": -625,
+              "Kris Moutinho": 455
+            },
+            "FanDuel": {
+              "Cristian Quiñonez": -650,
+              "Kris Moutinho": 420
+            },
+            "4Cx": {
+              "Cristian Quiñonez": -704,
+              "Kris Moutinho": 452
+            },
+            "BetAnything": {
+              "Cristian Quiñonez": -700,
+              "Kris Moutinho": 400
+            },
+            "Circa": {
+              "Cristian Quiñonez": -670,
+              "Kris Moutinho": 500
+            },
+            "BetRivers": {
+              "Cristian Quiñonez": -526,
+              "Kris Moutinho": 390
+            },
+            "HardRocketBet": {
+              "Cristian Quiñonez": -500,
+              "Kris Moutinho": 375
+            },
+            "BetMGM": {
+              "Cristian Quiñonez": -650,
+              "Kris Moutinho": 475
+            },
+            "Caesars": {
+              "Cristian Quiñonez": -700,
+              "Kris Moutinho": 500
+            },
+            "Jazz": {
+              "Cristian Quiñonez": -806,
+              "Kris Moutinho": 456
+            },
+            "Polymarket": {
+              "Cristian Quiñonez": -456,
+              "Kris Moutinho": 257
+            },
+            "Pinnacle": {
+              "Cristian Quiñonez": -626,
+              "Kris Moutinho": 468
+            },
+            "Betway": {
+              "Cristian Quiñonez": -649,
+              "Kris Moutinho": 400
+            },
+            "Stake": {
+              "Cristian Quiñonez": -667,
+              "Kris Moutinho": 460
+            },
+            "Cloudbet": {
+              "Cristian Quiñonez": -629,
+              "Kris Moutinho": 468
+            },
+            "4casters": {
+              "Cristian Quiñonez": -686,
+              "Kris Moutinho": 464
+            },
+            "SXBet": {
+              "Cristian Quiñonez": -716,
+              "Kris Moutinho": 484
+            }
+          }
+        },
+        "D. Silva de Andrade vs. Javier Reyes": {
+          "prediction": {
+            "winner": "Javier Reyes",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "D. Silva de Andrade": 185,
+              "Javier Reyes": -220
+            },
+            "Bovada": {
+              "D. Silva de Andrade": 190,
+              "Javier Reyes": -230
+            },
+            "MyBookie": {
+              "D. Silva de Andrade": 176,
+              "Javier Reyes": -230
+            },
+            "BetUS": {
+              "D. Silva de Andrade": 182,
+              "Javier Reyes": -220
+            },
+            "Bet105": {
+              "D. Silva de Andrade": 191,
+              "Javier Reyes": -227
+            },
+            "BookMaker": {
+              "D. Silva de Andrade": 187,
+              "Javier Reyes": -235
+            },
+            "DraftKings": {
+              "D. Silva de Andrade": 185,
+              "Javier Reyes": -225
+            },
+            "FanDuel": {
+              "D. Silva de Andrade": 190,
+              "Javier Reyes": -250
+            },
+            "4Cx": {
+              "D. Silva de Andrade": 178,
+              "Javier Reyes": -245
+            },
+            "BetAnything": {
+              "D. Silva de Andrade": 185,
+              "Javier Reyes": -235
+            },
+            "Circa": {
+              "D. Silva de Andrade": 200,
+              "Javier Reyes": -235
+            },
+            "BetRivers": {
+              "D. Silva de Andrade": 188,
+              "Javier Reyes": -238
+            },
+            "HardRocketBet": {
+              "D. Silva de Andrade": 190,
+              "Javier Reyes": -240
+            },
+            "BetMGM": {
+              "D. Silva de Andrade": 190,
+              "Javier Reyes": -235
+            },
+            "Caesars": {
+              "D. Silva de Andrade": 190,
+              "Javier Reyes": -230
+            },
+            "Jazz": {
+              "D. Silva de Andrade": 180,
+              "Javier Reyes": -248
+            },
+            "Polymarket": {
+              "D. Silva de Andrade": 138,
+              "Javier Reyes": -203
+            },
+            "Pinnacle": {
+              "D. Silva de Andrade": 190,
+              "Javier Reyes": -226
+            },
+            "Betway": {
+              "D. Silva de Andrade": 175,
+              "Javier Reyes": -250
+            },
+            "Stake": {
+              "D. Silva de Andrade": null,
+              "Javier Reyes": null
+            },
+            "Cloudbet": {
+              "D. Silva de Andrade": 190,
+              "Javier Reyes": -226
+            },
+            "4casters": {
+              "D. Silva de Andrade": 181,
+              "Javier Reyes": -240
+            },
+            "SXBet": {
+              "D. Silva de Andrade": 183,
+              "Javier Reyes": -229
+            }
+          }
+        },
+        "Ernesta Kareckaite vs. Sofia Montenegro": {
+          "prediction": {
+            "winner": "Ernesta Kareckaite",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Ernesta Kareckaite": -284,
+              "Sofia Montenegro": 234
+            },
+            "Bovada": {
+              "Ernesta Kareckaite": -305,
+              "Sofia Montenegro": 237
+            },
+            "MyBookie": {
+              "Ernesta Kareckaite": -300,
+              "Sofia Montenegro": 224
+            },
+            "BetUS": {
+              "Ernesta Kareckaite": -280,
+              "Sofia Montenegro": 230
+            },
+            "Bet105": {
+              "Ernesta Kareckaite": -284,
+              "Sofia Montenegro": 235
+            },
+            "BookMaker": {
+              "Ernesta Kareckaite": -300,
+              "Sofia Montenegro": 230
+            },
+            "DraftKings": {
+              "Ernesta Kareckaite": -340,
+              "Sofia Montenegro": 270
+            },
+            "FanDuel": {
+              "Ernesta Kareckaite": -350,
+              "Sofia Montenegro": 255
+            },
+            "4Cx": {
+              "Ernesta Kareckaite": -324,
+              "Sofia Montenegro": 222
+            },
+            "BetAnything": {
+              "Ernesta Kareckaite": -300,
+              "Sofia Montenegro": 230
+            },
+            "Circa": {
+              "Ernesta Kareckaite": -270,
+              "Sofia Montenegro": 230
+            },
+            "BetRivers": {
+              "Ernesta Kareckaite": -345,
+              "Sofia Montenegro": 265
+            },
+            "HardRocketBet": {
+              "Ernesta Kareckaite": -350,
+              "Sofia Montenegro": 260
+            },
+            "BetMGM": {
+              "Ernesta Kareckaite": -325,
+              "Sofia Montenegro": 260
+            },
+            "Caesars": {
+              "Ernesta Kareckaite": -320,
+              "Sofia Montenegro": 250
+            },
+            "Jazz": {
+              "Ernesta Kareckaite": -327,
+              "Sofia Montenegro": 229
+            },
+            "Polymarket": {
+              "Ernesta Kareckaite": -257,
+              "Sofia Montenegro": 194
+            },
+            "Pinnacle": {
+              "Ernesta Kareckaite": -290,
+              "Sofia Montenegro": 239
+            },
+            "Betway": {
+              "Ernesta Kareckaite": -333,
+              "Sofia Montenegro": 225
+            },
+            "Stake": {
+              "Ernesta Kareckaite": -294,
+              "Sofia Montenegro": 230
+            },
+            "Cloudbet": {
+              "Ernesta Kareckaite": -291,
+              "Sofia Montenegro": 239
+            },
+            "4casters": {
+              "Ernesta Kareckaite": -317,
+              "Sofia Montenegro": 226
+            },
+            "SXBet": {
+              "Ernesta Kareckaite": -304,
+              "Sofia Montenegro": 238
+            }
+          }
+        },
+        "Erik Silva vs. Francis Marshall": {
+          "prediction": {
+            "winner": "Francis Marshall",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Erik Silva": 525,
+              "Francis Marshall": -700
+            },
+            "Bovada": {
+              "Erik Silva": 430,
+              "Francis Marshall": -625
+            },
+            "MyBookie": {
+              "Erik Silva": 460,
+              "Francis Marshall": -752
+            },
+            "BetUS": {
+              "Erik Silva": 475,
+              "Francis Marshall": -700
+            },
+            "Bet105": {
+              "Erik Silva": 476,
+              "Francis Marshall": -640
+            },
+            "BookMaker": {
+              "Erik Silva": 405,
+              "Francis Marshall": -575
+            },
+            "DraftKings": {
+              "Erik Silva": 390,
+              "Francis Marshall": -520
+            },
+            "FanDuel": {
+              "Erik Silva": 360,
+              "Francis Marshall": -530
+            },
+            "4Cx": {
+              "Erik Silva": 446,
+              "Francis Marshall": -618
+            },
+            "BetAnything": {
+              "Erik Silva": 400,
+              "Francis Marshall": -700
+            },
+            "Circa": {
+              "Erik Silva": 500,
+              "Francis Marshall": -670
+            },
+            "BetRivers": {
+              "Erik Silva": 390,
+              "Francis Marshall": -526
+            },
+            "HardRocketBet": {
+              "Erik Silva": 400,
+              "Francis Marshall": -525
+            },
+            "BetMGM": {
+              "Erik Silva": 390,
+              "Francis Marshall": -525
+            },
+            "Caesars": {
+              "Erik Silva": 400,
+              "Francis Marshall": -550
+            },
+            "Jazz": {
+              "Erik Silva": 448,
+              "Francis Marshall": -788
+            },
+            "Polymarket": {
+              "Erik Silva": 376,
+              "Francis Marshall": -456
+            },
+            "Pinnacle": {
+              "Erik Silva": 468,
+              "Francis Marshall": -627
+            },
+            "Betway": {
+              "Erik Silva": 350,
+              "Francis Marshall": -549
+            },
+            "Stake": {
+              "Erik Silva": 480,
+              "Francis Marshall": -714
+            },
+            "Cloudbet": {
+              "Erik Silva": 468,
+              "Francis Marshall": -629
+            },
+            "4casters": {
+              "Erik Silva": 384,
+              "Francis Marshall": -606
+            },
+            "SXBet": {
+              "Erik Silva": null,
+              "Francis Marshall": null
+            }
+          }
+        },
+        "Wes Schultz vs. Damian Pinas": {
+          "prediction": {
+            "winner": "Damian Pinas",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Wes Schultz": 220,
+              "Damian Pinas": -260
+            },
+            "Bovada": {
+              "Wes Schultz": 220,
+              "Damian Pinas": -270
+            },
+            "MyBookie": {
+              "Wes Schultz": 208,
+              "Damian Pinas": -280
+            },
+            "BetUS": {
+              "Wes Schultz": 214,
+              "Damian Pinas": -260
+            },
+            "Bet105": {
+              "Wes Schultz": 222,
+              "Damian Pinas": -267
+            },
+            "BookMaker": {
+              "Wes Schultz": 217,
+              "Damian Pinas": -277
+            },
+            "DraftKings": {
+              "Wes Schultz": 220,
+              "Damian Pinas": -270
+            },
+            "FanDuel": {
+              "Wes Schultz": 200,
+              "Damian Pinas": -265
+            },
+            "4Cx": {
+              "Wes Schultz": 206,
+              "Damian Pinas": -290
+            },
+            "BetAnything": {
+              "Wes Schultz": 210,
+              "Damian Pinas": -270
+            },
+            "Circa": {
+              "Wes Schultz": 230,
+              "Damian Pinas": -270
+            },
+            "BetRivers": {
+              "Wes Schultz": 195,
+              "Damian Pinas": -250
+            },
+            "HardRocketBet": {
+              "Wes Schultz": 195,
+              "Damian Pinas": -250
+            },
+            "BetMGM": {
+              "Wes Schultz": 220,
+              "Damian Pinas": -270
+            },
+            "Caesars": {
+              "Wes Schultz": 220,
+              "Damian Pinas": -275
+            },
+            "Jazz": {
+              "Wes Schultz": 203,
+              "Damian Pinas": -212
+            },
+            "Polymarket": {
+              "Wes Schultz": 222,
+              "Damian Pinas": -267
+            },
+            "Pinnacle": {
+              "Wes Schultz": 200,
+              "Damian Pinas": -275
+            },
+            "Betway": {
+              "Wes Schultz": 215,
+              "Damian Pinas": -270
+            },
+            "Stake": {
+              "Wes Schultz": 222,
+              "Damian Pinas": -267
+            },
+            "Cloudbet": {
+              "Wes Schultz": 211,
+              "Damian Pinas": -284
+            },
+            "4casters": {
+              "Wes Schultz": 220,
+              "Damian Pinas": -290
+            },
+            "SXBet": {
+              "Wes Schultz": 220,
+              "Damian Pinas": -290
+            }
+          }
+        }
+      }
+    },
+    {
       "id": "ufc-fight-night-strickland-hernandez",
       "title": "UFC Fight Night: Strickland vs. Hernandez",
       "subtitle": null,
@@ -9,7 +1336,7 @@
       "poster": "/mma/img/ufc_fight_night_strickland_hernandez_poster.jpg",
       "recapUrl": "recaps/ufc-fight-night-strickland-hernandez.html",
       "previewUrl": "previews/ufc-fight-night-strickland-hernandez.html",
-      "location": "Octagon",
+      "location": "Houston, Texas",
       "eventTime": "Saturday 02.21.2026 at 05:00 PM ET",
       "fights": {
         "Sean Strickland vs. Anthony Hernandez": {

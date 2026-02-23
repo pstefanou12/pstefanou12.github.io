@@ -120,7 +120,7 @@ function bestOddsForPick(oddsData, pick) {
   let bestAmerican = null;
   for (const [platform, lines] of Object.entries(oddsData)) {
     for (const [fighter, american] of Object.entries(lines)) {
-      if (fighter.toLowerCase() === pickLower) {
+      if (fighter.toLowerCase() === pickLower && american !== null) {
         if (bestAmerican === null || american > bestAmerican) {
           bestAmerican = american;
           bestPlatform = platform;
