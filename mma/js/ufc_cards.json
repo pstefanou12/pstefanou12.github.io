@@ -2,26 +2,30 @@
   "cards": [
     {
       "id": "ufc-fight-night-moreno-kavanagh",
-      "title": "UFC Fight Night: Moreno vs. Kavanagh",
-      "subtitle": null,
-      "date": "2026-02-22",
-      "rating": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Moreno vs. Kavanagh",
+      "date": "2026-03-01",
+      "rating": 6.8,
       "poster": "/mma/img/ufc_fight_night_moreno_kavanagh_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "recaps/ufc-fight-night-moreno-kavanagh.html",
       "previewUrl": "previews/ufc-fight-night-moreno-kavanagh.html",
-      "location": "Mexico City, Mexico",
+      "location": "Octagon",
       "eventTime": "Saturday 02.28.2026 at 05:00 PM ET",
       "fights": {
-        "Brandon Moreno vs. Lone'er Kavanagh": {
+        "Lone'er Kavanagh vs. Brandon Moreno": {
           "prediction": {
             "winner": "Brandon Moreno",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Lone'er Kavanagh",
+            "method": "Decision, Unanimous",
+            "time": "5 Rounds, 25:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Brandon Moreno": -225,
-              "Lone'er Kavanagh": 190 
+              "Lone'er Kavanagh": 190
             },
             "Bovada": {
               "Brandon Moreno": -245,
@@ -113,12 +117,16 @@
             }
           }
         },
-        "Marlon Vera vs. David Martinez": {
+        "David Martinez vs. Marlon Vera": {
           "prediction": {
             "winner": "David Martinez",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "David Martinez",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Marlon Vera": 215,
@@ -214,12 +222,16 @@
             }
           }
         },
-        "Daniel Zellhuber vs. King Green": {
+        "King Green vs. Daniel Zellhuber": {
           "prediction": {
             "winner": "Daniel Zellhuber",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "King Green",
+            "method": "KO/TKO, Punches",
+            "time": "4:55 Round 2 of 3, 9:55 Total"
+          },
           "odds": {
             "BetOnline": {
               "Daniel Zellhuber": -500,
@@ -287,7 +299,7 @@
             },
             "Polymarket": {
               "Daniel Zellhuber": -317,
-              "King Green": 245 
+              "King Green": 245
             },
             "Pinnacle": {
               "Daniel Zellhuber": -502,
@@ -320,7 +332,11 @@
             "winner": "Edgar Cháirez",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Edgar Cháirez",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Edgar Cháirez": -275,
@@ -421,7 +437,11 @@
             "winner": "Imanol Rodriguez",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Imanol Rodriguez",
+            "method": "KO/TKO, Overhand Right to Ground Strikes",
+            "time": "4:21 Round 2 of 3, 9:21 Total"
+          },
           "odds": {
             "BetOnline": {
               "Imanol Rodriguez": -400,
@@ -465,7 +485,7 @@
             },
             "Circa": {
               "Edgar Cháirez": -405,
-              "Felipe Bunes": 330 
+              "Felipe Bunes": 330
             },
             "BetRivers": {
               "Imanol Rodriguez": -417,
@@ -522,7 +542,11 @@
             "winner": "Santiago Luna",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Santiago Luna",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Santiago Luna": -450,
@@ -618,12 +642,16 @@
             }
           }
         },
-        "José Medina vs. Ryan Gandra": {
+        "Ryan Gandra vs. José Medina": {
           "prediction": {
             "winner": "Ryan Gandra",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Ryan Gandra",
+            "method": "KO/TKO, Punches",
+            "time": "0:41 Round 1 of 3"
+          },
           "odds": {
             "BetOnline": {
               "José Medina": 400,
@@ -719,12 +747,16 @@
             }
           }
         },
-        "Macy Chiasson vs. Ailín Pérez": {
+        "Ailín Pérez vs. Macy Chiasson": {
           "prediction": {
             "winner": "Macy Chiasson",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Ailín Pérez",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Macy Chiasson": 145,
@@ -825,7 +857,11 @@
             "winner": "Kris Moutinho",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Cristian Quiñonez",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Cristian Quiñonez": -650,
@@ -921,12 +957,16 @@
             }
           }
         },
-        "D. Silva de Andrade vs. Javier Reyes": {
+        "Javier Reyes vs. D. Silva de Andrade": {
           "prediction": {
             "winner": "Javier Reyes",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Javier Reyes",
+            "method": "KO/TKO, Punches From Back Mount",
+            "time": "4:59 Round 1 of 3"
+          },
           "odds": {
             "BetOnline": {
               "D. Silva de Andrade": 185,
@@ -1022,113 +1062,27 @@
             }
           }
         },
-        "Ernesta Kareckaite vs. Sofia Montenegro": {
+        "Regina Tarin vs. Ernesta Kareckaite": {
           "prediction": {
-            "winner": "Ernesta Kareckaite",
-            "method": "Decision"
+            "winner": "",
+            "method": ""
           },
-          "result": null,
-          "odds": {
-            "BetOnline": {
-              "Ernesta Kareckaite": -284,
-              "Sofia Montenegro": 234
-            },
-            "Bovada": {
-              "Ernesta Kareckaite": -305,
-              "Sofia Montenegro": 237
-            },
-            "MyBookie": {
-              "Ernesta Kareckaite": -300,
-              "Sofia Montenegro": 224
-            },
-            "BetUS": {
-              "Ernesta Kareckaite": -280,
-              "Sofia Montenegro": 230
-            },
-            "Bet105": {
-              "Ernesta Kareckaite": -284,
-              "Sofia Montenegro": 235
-            },
-            "BookMaker": {
-              "Ernesta Kareckaite": -300,
-              "Sofia Montenegro": 230
-            },
-            "DraftKings": {
-              "Ernesta Kareckaite": -340,
-              "Sofia Montenegro": 270
-            },
-            "FanDuel": {
-              "Ernesta Kareckaite": -350,
-              "Sofia Montenegro": 255
-            },
-            "4Cx": {
-              "Ernesta Kareckaite": -324,
-              "Sofia Montenegro": 222
-            },
-            "BetAnything": {
-              "Ernesta Kareckaite": -300,
-              "Sofia Montenegro": 230
-            },
-            "Circa": {
-              "Ernesta Kareckaite": -270,
-              "Sofia Montenegro": 230
-            },
-            "BetRivers": {
-              "Ernesta Kareckaite": -345,
-              "Sofia Montenegro": 265
-            },
-            "HardRocketBet": {
-              "Ernesta Kareckaite": -350,
-              "Sofia Montenegro": 260
-            },
-            "BetMGM": {
-              "Ernesta Kareckaite": -325,
-              "Sofia Montenegro": 260
-            },
-            "Caesars": {
-              "Ernesta Kareckaite": -320,
-              "Sofia Montenegro": 250
-            },
-            "Jazz": {
-              "Ernesta Kareckaite": -327,
-              "Sofia Montenegro": 229
-            },
-            "Polymarket": {
-              "Ernesta Kareckaite": -257,
-              "Sofia Montenegro": 194
-            },
-            "Pinnacle": {
-              "Ernesta Kareckaite": -290,
-              "Sofia Montenegro": 239
-            },
-            "Betway": {
-              "Ernesta Kareckaite": -333,
-              "Sofia Montenegro": 225
-            },
-            "Stake": {
-              "Ernesta Kareckaite": -294,
-              "Sofia Montenegro": 230
-            },
-            "Cloudbet": {
-              "Ernesta Kareckaite": -291,
-              "Sofia Montenegro": 239
-            },
-            "4casters": {
-              "Ernesta Kareckaite": -317,
-              "Sofia Montenegro": 226
-            },
-            "SXBet": {
-              "Ernesta Kareckaite": -304,
-              "Sofia Montenegro": 238
-            }
+          "result": {
+            "winner": "Regina Tarin",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
           }
         },
-        "Erik Silva vs. Francis Marshall": {
+        "Francis Marshall vs. Erik Silva": {
           "prediction": {
             "winner": "Francis Marshall",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Francis Marshall",
+            "method": "Submission, Rear Naked Choke",
+            "time": "2:29 Round 1 of 3"
+          },
           "odds": {
             "BetOnline": {
               "Erik Silva": 525,
@@ -1224,12 +1178,16 @@
             }
           }
         },
-        "Wes Schultz vs. Damian Pinas": {
+        "Damian Pinas vs. Wes Schultz": {
           "prediction": {
             "winner": "Damian Pinas",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Damian Pinas",
+            "method": "KO/TKO, Jab-cross",
+            "time": "2:30 Round 1 of 3"
+          },
           "odds": {
             "BetOnline": {
               "Wes Schultz": 220,

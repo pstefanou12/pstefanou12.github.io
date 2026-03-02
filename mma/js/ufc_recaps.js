@@ -173,7 +173,7 @@ function renderBettingResults(card, fightDivs) {
     totalPnl += pnl;
 
     const sign = best.american > 0 ? '+' : '';
-    rows.push({ matchup, pick, result: `${fighter1} wins`, american: `${sign}${best.american}`, isCorrect, pnl });
+    rows.push({ matchup, pick, result: `${fighter1} wins`, american: `${sign}${best.american}`, isCorrect, pnl, returnPct: pnl * 100 });
   }
 
   if (rows.length === 0) return;
@@ -181,41 +181,44 @@ function renderBettingResults(card, fightDivs) {
   const wagered = rows.length;
   const netSign = totalPnl >= 0 ? '+' : '';
 
-  const html = `
-    <div class="odds-section">
-      <h2>Betting Results ($1/pick)</h2>
-      <table class="odds-table">
-        <thead>
-          <tr>
-            <th>Fight</th>
-            <th>Pick</th>
-            <th>Result</th>
-            <th>Odds</th>
-            <th>P&amp;L</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${rows.map(r => `
-          <tr>
-            <td class="odds-fight">${r.matchup}</td>
-            <td>${r.pick}</td>
-            <td class="${r.isCorrect ? 'prediction-correct' : 'prediction-incorrect'}">${r.result} ${r.isCorrect ? '✓' : '✗'}</td>
-            <td class="odds-value">${r.american}</td>
-            <td class="${r.pnl >= 0 ? 'pnl-positive' : 'pnl-negative'}">${r.pnl >= 0 ? '+' : ''}$${r.pnl.toFixed(2)}</td>
-          </tr>`).join('')}
-        </tbody>
-        <tfoot>
-          <tr class="odds-total">
-            <td colspan="4"><strong>Total (${wagered} bet${wagered !== 1 ? 's' : ''} · $${wagered} wagered)</strong></td>
-            <td class="${totalPnl >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}$${totalPnl.toFixed(2)}</strong></td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>`;
+  const totalReturnPct = (totalPnl / wagered) * 100;
+  const totalReturnSign = totalReturnPct >= 0 ? '+' : '';
 
-  const recapContent = document.querySelector('.recap-content');
-  if (recapContent) {
-    recapContent.insertAdjacentHTML('beforebegin', html);
+  const html = `
+    <table class="odds-table">
+      <thead>
+        <tr>
+          <th>Fight</th>
+          <th>Pick</th>
+          <th>Result</th>
+          <th>Odds</th>
+          <th>P&amp;L</th>
+          <th>Return</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${rows.map(r => `
+        <tr>
+          <td class="odds-fight">${r.matchup}</td>
+          <td>${r.pick}</td>
+          <td class="${r.isCorrect ? 'prediction-correct' : 'prediction-incorrect'}">${r.result} ${r.isCorrect ? '✓' : '✗'}</td>
+          <td class="odds-value">${r.american}</td>
+          <td class="${r.pnl >= 0 ? 'pnl-positive' : 'pnl-negative'}">${r.pnl >= 0 ? '+' : ''}$${r.pnl.toFixed(2)}</td>
+          <td class="${r.returnPct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${r.returnPct >= 0 ? '+' : ''}${r.returnPct.toFixed(0)}%</td>
+        </tr>`).join('')}
+      </tbody>
+      <tfoot>
+        <tr class="odds-total">
+          <td colspan="4"><strong>Total (${wagered} bet${wagered !== 1 ? 's' : ''} · $${wagered} wagered)</strong></td>
+          <td class="${totalPnl >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}$${totalPnl.toFixed(2)}</strong></td>
+          <td class="${totalReturnPct >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${totalReturnSign}${totalReturnPct.toFixed(1)}%</strong></td>
+        </tr>
+      </tfoot>
+    </table>`;
+
+  const bettingDiv = document.querySelector('.betting-results');
+  if (bettingDiv) {
+    bettingDiv.innerHTML = html;
   }
 }
 
