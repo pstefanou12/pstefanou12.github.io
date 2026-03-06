@@ -1,6 +1,1333 @@
 {
   "cards": [
     {
+      "id": "ufc-326",
+      "title": "UFC 326",
+      "subtitle": "Holloway vs. Oliveira 2",
+      "date": "2026-03-05",
+      "rating": null,
+      "poster": "/mma/img/ufc_326_poster.jpg",
+      "recapUrl": null,
+      "previewUrl": "previews/ufc-326.html",
+      "location": "Octagon",
+      "eventTime": "Saturday 03.07.2026 at 05:00 PM ET",
+      "fights": {
+        "Max Holloway vs. Charles Oliveira": {
+          "prediction": {
+            "winner": "Charles Oliveira",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "Bovada": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "MyBookie": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "BetUS": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "Bet105": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "BookMaker": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "DraftKings": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "FanDuel": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "4Cx": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "BetAnything": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "Circa": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "BetRivers": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "HardRocketBet": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "BetMGM": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "Caesars": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "Jazz": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "Polymarket": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "Pinnacle": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "Betway": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "Stake": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "Cloudbet": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "4casters": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            },
+            "SXBet": {
+              "Max Holloway": null,
+              "Charles Oliveira": null
+            }
+          }
+        },
+        "Caio Borralho vs. Reinier de Ridder": {
+          "prediction": {
+            "winner": "Reinier de Ridder",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "Bovada": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "MyBookie": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "BetUS": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "Bet105": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "BookMaker": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "DraftKings": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "FanDuel": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "4Cx": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "BetAnything": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "Circa": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "BetRivers": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "HardRocketBet": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "BetMGM": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "Caesars": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "Jazz": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "Polymarket": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "Pinnacle": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "Betway": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "Stake": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "Cloudbet": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "4casters": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            },
+            "SXBet": {
+              "Caio Borralho": null,
+              "Reinier de Ridder": null
+            }
+          }
+        },
+        "Rob Font vs. Raul Rosas Jr.": {
+          "prediction": {
+            "winner": "Raul Rosas Jr.",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "Bovada": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "MyBookie": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "BetUS": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "Bet105": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "BookMaker": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "DraftKings": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "FanDuel": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "4Cx": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "BetAnything": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "Circa": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "BetRivers": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "HardRocketBet": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "BetMGM": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "Caesars": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "Jazz": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "Polymarket": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "Pinnacle": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "Betway": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "Stake": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "Cloudbet": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "4casters": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            },
+            "SXBet": {
+              "Rob Font": null,
+              "Raul Rosas Jr.": null
+            }
+          }
+        },
+        "Drew Dober vs. Michael Johnson": {
+          "prediction": {
+            "winner": "Michael Johnson",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "Bovada": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "MyBookie": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "BetUS": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "Bet105": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "BookMaker": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "DraftKings": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "FanDuel": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "4Cx": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "BetAnything": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "Circa": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "BetRivers": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "HardRocketBet": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "BetMGM": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "Caesars": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "Jazz": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "Polymarket": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "Pinnacle": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "Betway": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "Stake": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "Cloudbet": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "4casters": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            },
+            "SXBet": {
+              "Drew Dober": null,
+              "Michael Johnson": null
+            }
+          }
+        },
+        "Gregory Rodrigues vs. Brunno Ferreira": {
+          "prediction": {
+            "winner": "Brunno Ferreira",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "Bovada": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "MyBookie": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "BetUS": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "Bet105": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "BookMaker": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "DraftKings": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "FanDuel": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "4Cx": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "BetAnything": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "Circa": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "BetRivers": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "HardRocketBet": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "BetMGM": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "Caesars": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "Jazz": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "Polymarket": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "Pinnacle": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "Betway": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "Stake": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "Cloudbet": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "4casters": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            },
+            "SXBet": {
+              "Gregory Rodrigues": null,
+              "Brunno Ferreira": null
+            }
+          }
+        },
+        "Cody Garbrandt vs. Long Xiao": {
+          "prediction": {
+            "winner": "Cody Garbrandt",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "Bovada": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "MyBookie": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "BetUS": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "Bet105": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "BookMaker": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "DraftKings": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "FanDuel": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "4Cx": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "BetAnything": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "Circa": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "BetRivers": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "HardRocketBet": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "BetMGM": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "Caesars": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "Jazz": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "Polymarket": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "Pinnacle": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "Betway": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "Stake": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "Cloudbet": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "4casters": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            },
+            "SXBet": {
+              "Cody Garbrandt": null,
+              "Long Xiao": null
+            }
+          }
+        },
+        "Donte Johnson vs. Cody Brundage": {
+          "prediction": {
+            "winner": "Donte Johnson",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "Bovada": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "MyBookie": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "BetUS": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "Bet105": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "BookMaker": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "DraftKings": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "FanDuel": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "4Cx": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "BetAnything": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "Circa": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "BetRivers": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "HardRocketBet": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "BetMGM": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "Caesars": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "Jazz": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "Polymarket": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "Pinnacle": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "Betway": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "Stake": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "Cloudbet": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "4casters": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            },
+            "SXBet": {
+              "Donte Johnson": null,
+              "Cody Brundage": null
+            }
+          }
+        },
+        "Alberto Montes vs. Ricky Turcios": {
+          "prediction": {
+            "winner": "Alberto Montes",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "Bovada": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "MyBookie": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "BetUS": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "Bet105": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "BookMaker": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "DraftKings": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "FanDuel": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "4Cx": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "BetAnything": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "Circa": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "BetRivers": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "HardRocketBet": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "BetMGM": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "Caesars": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "Jazz": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "Polymarket": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "Pinnacle": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "Betway": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "Stake": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "Cloudbet": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "4casters": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            },
+            "SXBet": {
+              "Alberto Montes": null,
+              "Ricky Turcios": null
+            }
+          }
+        },
+        "Cody Durden vs. N. Tumendemberel": {
+          "prediction": {
+            "winner": "N. Tumendemberel",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "Bovada": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "MyBookie": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "BetUS": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "Bet105": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "BookMaker": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "DraftKings": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "FanDuel": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "4Cx": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "BetAnything": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "Circa": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "BetRivers": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "HardRocketBet": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "BetMGM": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "Caesars": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "Jazz": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "Polymarket": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "Pinnacle": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "Betway": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "Stake": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "Cloudbet": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "4casters": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            },
+            "SXBet": {
+              "Cody Durden": null,
+              "N. Tumendemberel": null
+            }
+          }
+        },
+        "Sumudaerji vs. Jesus Aguilar": {
+          "prediction": {
+            "winner": "Jesus Aguilar",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "Bovada": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "MyBookie": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "BetUS": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "Bet105": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "BookMaker": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "DraftKings": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "FanDuel": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "4Cx": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "BetAnything": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "Circa": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "BetRivers": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "HardRocketBet": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "BetMGM": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "Caesars": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "Jazz": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "Polymarket": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "Pinnacle": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "Betway": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "Stake": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "Cloudbet": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "4casters": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            },
+            "SXBet": {
+              "Sumudaerji": null,
+              "Jesus Aguilar": null
+            }
+          }
+        },
+        "Rafael Tobias vs. Diyar Nurgozhay": {
+          "prediction": {
+            "winner": "Rafael Tobias",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "Bovada": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "MyBookie": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "BetUS": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "Bet105": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "BookMaker": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "DraftKings": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "FanDuel": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "4Cx": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "BetAnything": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "Circa": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "BetRivers": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "HardRocketBet": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "BetMGM": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "Caesars": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "Jazz": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "Polymarket": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "Pinnacle": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "Betway": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "Stake": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "Cloudbet": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "4casters": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            },
+            "SXBet": {
+              "Rafael Tobias": null,
+              "Diyar Nurgozhay": null
+            }
+          }
+        },
+        "Gaston Bolaños vs. Jeong Yeong Lee": {
+          "prediction": {
+            "winner": "Jeong Yeong Lee",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "Bovada": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "MyBookie": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "BetUS": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "Bet105": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "BookMaker": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "DraftKings": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "FanDuel": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "4Cx": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "BetAnything": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "Circa": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "BetRivers": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "HardRocketBet": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "BetMGM": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "Caesars": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "Jazz": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "Polymarket": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "Pinnacle": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "Betway": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "Stake": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "Cloudbet": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "4casters": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            },
+            "SXBet": {
+              "Gaston Bolaños": null,
+              "Jeong Yeong Lee": null
+            }
+          }
+        },
+        "Luke Fernandez vs. Rodolfo Bellato": {
+          "prediction": {
+            "winner": "Luke Fernandez",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "Bovada": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "MyBookie": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "BetUS": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "Bet105": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "BookMaker": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "DraftKings": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "FanDuel": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "4Cx": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "BetAnything": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "Circa": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "BetRivers": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "HardRocketBet": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "BetMGM": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "Caesars": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "Jazz": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "Polymarket": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "Pinnacle": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "Betway": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "Stake": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "Cloudbet": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "4casters": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            },
+            "SXBet": {
+              "Luke Fernandez": null,
+              "Rodolfo Bellato": null
+            }
+          }
+        }
+      }
+    },
+    {
       "id": "ufc-fight-night-moreno-kavanagh",
       "title": "UFC Fight Night",
       "subtitle": "Moreno vs. Kavanagh",

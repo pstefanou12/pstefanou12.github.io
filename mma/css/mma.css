@@ -5,6 +5,7 @@ html {
 body, p {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
   
 ul {
@@ -36,9 +37,9 @@ h3, h4, h5 {
 
 /* Sections */
 .section {
-  width: 75%;
+  width: 95%;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 20px;
   padding-bottom: 40px;
   border-bottom: 3px solid #8BE9FD;;
   mask-size: 100px 10px;
@@ -53,25 +54,28 @@ h3, h4, h5 {
 }
   
 .section-header {
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-size: 2.5em;
-  color: #69FF94;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
-  gap: 30px;
   position: sticky;
   top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px 12.5% 10px;
   background-color: #282A36;
-  padding: 12px 0;
   z-index: 100;
-  border-bottom: 1px solid #44475a;
+  border-bottom: 3px solid #000;
 }
 
-#logo { 
-  text-align: left;
-  width: 200px;
+#logo-link {
+  position: fixed;
+  top: 8px;
+  left: 20px;
+  z-index: 200;
+}
+
+#logo {
+  width: 80px;
+  display: block;
 }
 
 .blog-grid {
@@ -288,7 +292,7 @@ h3, h4, h5 {
 .mma-nav a {
   text-decoration: none;
   color: #BD93F9;
-  font-size: 0.95em;
+  font-size: 1.25em;
   font-weight: normal;
   transition: color 0.2s;
 }
@@ -414,9 +418,13 @@ h3, h4, h5 {
 /* Main two-column layout */
 .main-layout {
   display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 50px;
+  grid-template-columns: 1fr 260px;
+  gap: 30px;
   align-items: start;
+}
+
+.main-content {
+  min-width: 0;
 }
 
 .sidebar {
