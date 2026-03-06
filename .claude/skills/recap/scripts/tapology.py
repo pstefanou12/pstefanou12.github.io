@@ -13,6 +13,8 @@ PLATFORMS = [
     'Betway', 'Stake', 'Cloudbet', '4casters', 'SXBet',
 ]
 
+FIGHTODDS_GQL = "https://api.fightodds.io/gql"
+
 def scrape_tapology_event(url, mode='both'):
     """Scrape fight data from Tapology event page"""
     headers = {
@@ -597,7 +599,8 @@ def generate_preview_template(event_data):
             html += f'          <li><a href="#{fight_id}">{fight["fighter1"]} vs. {fight["fighter2"]}</a></li>\n'
         html += '        </ul>\n'
         html += '      </li>\n'
-    
+
+    html += '      <li><a href="#projected-betting-returns">Projected Betting Returns</a></li>\n'
     html += '''    </ul>
 
     <div class="recap-content">
@@ -637,12 +640,16 @@ def generate_preview_template(event_data):
           </div>
         </div>
       </div>
-      
+
 '''
-    
-    html += '''    </div>
+
+    html += '''      <h2 id="projected-betting-returns">Projected Betting Returns</h2>
+      <div class="projected-betting-returns">
+      </div>
+
+    </div>
   </div>
-  
+
   <div class="footer">
     <div class="footer-side" id="left">
       <div>Copyright © Patroklos Stefanou</div>

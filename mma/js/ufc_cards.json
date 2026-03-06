@@ -19,97 +19,93 @@
           },
           "result": null,
           "odds": {
-            "BetOnline": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "Bovada": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "MyBookie": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
             "BetUS": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "Bet105": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "BookMaker": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "DraftKings": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "FanDuel": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "4Cx": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
+              "Max Holloway": -200,
+              "Charles Oliveira": 166
             },
             "BetAnything": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "Circa": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "BetRivers": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "HardRocketBet": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "BetMGM": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "Caesars": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "Jazz": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "Polymarket": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "Pinnacle": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "Betway": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "Stake": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "Cloudbet": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
-            },
-            "4casters": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
+              "Max Holloway": -220,
+              "Charles Oliveira": 170
             },
             "SXBet": {
-              "Max Holloway": null,
-              "Charles Oliveira": null
+              "Max Holloway": -220,
+              "Charles Oliveira": 168
+            },
+            "Circa": {
+              "Max Holloway": -215,
+              "Charles Oliveira": 185
+            },
+            "Bookmaker": {
+              "Max Holloway": -207,
+              "Charles Oliveira": 173
+            },
+            "4Cx": {
+              "Max Holloway": -207,
+              "Charles Oliveira": 178
+            },
+            "4casters": {
+              "Max Holloway": -203,
+              "Charles Oliveira": 182
+            },
+            "Pinnacle": {
+              "Max Holloway": -215,
+              "Charles Oliveira": 181
+            },
+            "Bet105": {
+              "Max Holloway": -216,
+              "Charles Oliveira": 182
+            },
+            "Polymarket": {
+              "Max Holloway": -186,
+              "Charles Oliveira": 178
+            },
+            "BetOnline": {
+              "Max Holloway": -200,
+              "Charles Oliveira": 170
+            },
+            "Bovada": {
+              "Max Holloway": -215,
+              "Charles Oliveira": 178
+            },
+            "Caesars": {
+              "Max Holloway": -225,
+              "Charles Oliveira": 185
+            },
+            "Stake": {
+              "Max Holloway": -204,
+              "Charles Oliveira": 170
+            },
+            "BetMGM": {
+              "Max Holloway": -235,
+              "Charles Oliveira": 190
+            },
+            "MyBookie": {
+              "Max Holloway": -222,
+              "Charles Oliveira": 177
+            },
+            "HardRockBet": {
+              "Max Holloway": -225,
+              "Charles Oliveira": 180
+            },
+            "BetRivers": {
+              "Max Holloway": -227,
+              "Charles Oliveira": 180
+            },
+            "Cloudbet": {
+              "Max Holloway": -215,
+              "Charles Oliveira": 181
+            },
+            "FanDuel": {
+              "Max Holloway": -215,
+              "Charles Oliveira": 172
+            },
+            "Betway": {
+              "Max Holloway": -225,
+              "Charles Oliveira": 175
+            },
+            "DraftKings": {
+              "Max Holloway": -220,
+              "Charles Oliveira": 170
             }
           }
         },
@@ -120,97 +116,93 @@
           },
           "result": null,
           "odds": {
-            "BetOnline": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "Bovada": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "MyBookie": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
             "BetUS": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "Bet105": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "BookMaker": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "DraftKings": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "FanDuel": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "4Cx": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
+              "Caio Borralho": -230,
+              "Reinier de Ridder": 190
             },
             "BetAnything": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "Circa": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "BetRivers": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "HardRocketBet": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "BetMGM": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "Caesars": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "Jazz": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
+              "Caio Borralho": -235,
+              "Reinier de Ridder": 185
             },
             "Polymarket": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "Pinnacle": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "Betway": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "Stake": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "Cloudbet": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
-            },
-            "4casters": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
+              "Caio Borralho": -223,
+              "Reinier de Ridder": 203
             },
             "SXBet": {
-              "Caio Borralho": null,
-              "Reinier de Ridder": null
+              "Caio Borralho": -225,
+              "Reinier de Ridder": 184
+            },
+            "BetMGM": {
+              "Caio Borralho": -235,
+              "Reinier de Ridder": 190
+            },
+            "Circa": {
+              "Caio Borralho": -235,
+              "Reinier de Ridder": 200
+            },
+            "4Cx": {
+              "Caio Borralho": -217,
+              "Reinier de Ridder": 199
+            },
+            "Bookmaker": {
+              "Caio Borralho": -235,
+              "Reinier de Ridder": 195
+            },
+            "4casters": {
+              "Caio Borralho": -213,
+              "Reinier de Ridder": 203
+            },
+            "Cloudbet": {
+              "Caio Borralho": -238,
+              "Reinier de Ridder": 198
+            },
+            "Pinnacle": {
+              "Caio Borralho": -237,
+              "Reinier de Ridder": 198
+            },
+            "Bet105": {
+              "Caio Borralho": -237,
+              "Reinier de Ridder": 198
+            },
+            "Caesars": {
+              "Caio Borralho": -240,
+              "Reinier de Ridder": 200
+            },
+            "BetRivers": {
+              "Caio Borralho": -270,
+              "Reinier de Ridder": 210
+            },
+            "HardRockBet": {
+              "Caio Borralho": -275,
+              "Reinier de Ridder": 210
+            },
+            "MyBookie": {
+              "Caio Borralho": -238,
+              "Reinier de Ridder": 190
+            },
+            "Bovada": {
+              "Caio Borralho": -245,
+              "Reinier de Ridder": 205
+            },
+            "Betway": {
+              "Caio Borralho": -275,
+              "Reinier de Ridder": 210
+            },
+            "Stake": {
+              "Caio Borralho": -233,
+              "Reinier de Ridder": 195
+            },
+            "BetOnline": {
+              "Caio Borralho": -230,
+              "Reinier de Ridder": 195
+            },
+            "FanDuel": {
+              "Caio Borralho": -265,
+              "Reinier de Ridder": 210
+            },
+            "DraftKings": {
+              "Caio Borralho": -258,
+              "Reinier de Ridder": 210
             }
           }
         },
@@ -221,97 +213,89 @@
           },
           "result": null,
           "odds": {
-            "BetOnline": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "Bovada": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "MyBookie": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
             "BetUS": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "Bet105": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "BookMaker": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "DraftKings": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "FanDuel": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "4Cx": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
+              "Rob Font": 214,
+              "Raul Rosas Jr.": -260
             },
             "BetAnything": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "Circa": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "BetRivers": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "HardRocketBet": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "BetMGM": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "Caesars": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "Jazz": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "Polymarket": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
-            },
-            "Pinnacle": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
+              "Rob Font": 185,
+              "Raul Rosas Jr.": -235
             },
             "Betway": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
+              "Rob Font": 175,
+              "Raul Rosas Jr.": -225
             },
-            "Stake": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
+            "BetRivers": {
+              "Rob Font": 180,
+              "Raul Rosas Jr.": -227
             },
-            "Cloudbet": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
+            "BetMGM": {
+              "Rob Font": 190,
+              "Raul Rosas Jr.": -235
+            },
+            "HardRockBet": {
+              "Rob Font": 180,
+              "Raul Rosas Jr.": -225
+            },
+            "Circa": {
+              "Rob Font": 200,
+              "Raul Rosas Jr.": -235
+            },
+            "Bookmaker": {
+              "Rob Font": 199,
+              "Raul Rosas Jr.": -240
+            },
+            "4Cx": {
+              "Rob Font": 213,
+              "Raul Rosas Jr.": -238
             },
             "4casters": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
+              "Rob Font": 218,
+              "Raul Rosas Jr.": -233
             },
-            "SXBet": {
-              "Rob Font": null,
-              "Raul Rosas Jr.": null
+            "Cloudbet": {
+              "Rob Font": 201,
+              "Raul Rosas Jr.": -240
+            },
+            "Pinnacle": {
+              "Rob Font": 194,
+              "Raul Rosas Jr.": -231
+            },
+            "Bet105": {
+              "Rob Font": 202,
+              "Raul Rosas Jr.": -241
+            },
+            "FanDuel": {
+              "Rob Font": 176,
+              "Raul Rosas Jr.": -220
+            },
+            "Caesars": {
+              "Rob Font": 200,
+              "Raul Rosas Jr.": -240
+            },
+            "Stake": {
+              "Rob Font": 215,
+              "Raul Rosas Jr.": -263
+            },
+            "DraftKings": {
+              "Rob Font": 205,
+              "Raul Rosas Jr.": -250
+            },
+            "Polymarket": {
+              "Rob Font": 212,
+              "Raul Rosas Jr.": -223
+            },
+            "MyBookie": {
+              "Rob Font": 210,
+              "Raul Rosas Jr.": -265
+            },
+            "Bovada": {
+              "Rob Font": 195,
+              "Raul Rosas Jr.": -235
+            },
+            "BetOnline": {
+              "Rob Font": 220,
+              "Raul Rosas Jr.": -260
             }
           }
         },
@@ -323,96 +307,92 @@
           "result": null,
           "odds": {
             "BetOnline": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "Bovada": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "MyBookie": {
-              "Drew Dober": null,
-              "Michael Johnson": null
+              "Drew Dober": -110,
+              "Michael Johnson": -110
             },
             "BetUS": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "Bet105": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "BookMaker": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "DraftKings": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "FanDuel": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "4Cx": {
-              "Drew Dober": null,
-              "Michael Johnson": null
+              "Drew Dober": 100,
+              "Michael Johnson": -120
             },
             "BetAnything": {
-              "Drew Dober": null,
-              "Michael Johnson": null
+              "Drew Dober": 100,
+              "Michael Johnson": -130
             },
-            "Circa": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "BetRivers": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "HardRocketBet": {
-              "Drew Dober": null,
-              "Michael Johnson": null
+            "FanDuel": {
+              "Drew Dober": -105,
+              "Michael Johnson": -115
             },
             "BetMGM": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "Caesars": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "Jazz": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "Polymarket": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "Pinnacle": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "Betway": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "Stake": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "Cloudbet": {
-              "Drew Dober": null,
-              "Michael Johnson": null
-            },
-            "4casters": {
-              "Drew Dober": null,
-              "Michael Johnson": null
+              "Drew Dober": 100,
+              "Michael Johnson": -120
             },
             "SXBet": {
-              "Drew Dober": null,
-              "Michael Johnson": null
+              "Drew Dober": -109,
+              "Michael Johnson": -111
+            },
+            "Stake": {
+              "Drew Dober": -108,
+              "Michael Johnson": -110
+            },
+            "MyBookie": {
+              "Drew Dober": -109,
+              "Michael Johnson": -112
+            },
+            "BetRivers": {
+              "Drew Dober": 100,
+              "Michael Johnson": -122
+            },
+            "DraftKings": {
+              "Drew Dober": -102,
+              "Michael Johnson": -118
+            },
+            "Polymarket": {
+              "Drew Dober": 108,
+              "Michael Johnson": -113
+            },
+            "HardRockBet": {
+              "Drew Dober": 100,
+              "Michael Johnson": -120
+            },
+            "Circa": {
+              "Drew Dober": 100,
+              "Michael Johnson": -120
+            },
+            "Caesars": {
+              "Drew Dober": 100,
+              "Michael Johnson": -120
+            },
+            "4Cx": {
+              "Drew Dober": 102,
+              "Michael Johnson": -114
+            },
+            "Bookmaker": {
+              "Drew Dober": -103,
+              "Michael Johnson": -117
+            },
+            "4casters": {
+              "Drew Dober": 104,
+              "Michael Johnson": -113
+            },
+            "Cloudbet": {
+              "Drew Dober": -100,
+              "Michael Johnson": -117
+            },
+            "Pinnacle": {
+              "Drew Dober": 105,
+              "Michael Johnson": -123
+            },
+            "Bet105": {
+              "Drew Dober": 101,
+              "Michael Johnson": -118
+            },
+            "Betway": {
+              "Drew Dober": -105,
+              "Michael Johnson": -120
+            },
+            "Bovada": {
+              "Drew Dober": -110,
+              "Michael Johnson": -110
             }
           }
         },
@@ -423,97 +403,93 @@
           },
           "result": null,
           "odds": {
-            "BetOnline": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "Bovada": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "MyBookie": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
             "BetUS": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "Bet105": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "BookMaker": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "DraftKings": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "FanDuel": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "4Cx": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
+              "Brunno Ferreira": 146,
+              "Gregory Rodrigues": -175
             },
             "BetAnything": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
+              "Brunno Ferreira": 150,
+              "Gregory Rodrigues": -180
             },
-            "Circa": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "BetRivers": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "HardRocketBet": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "BetMGM": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "Caesars": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "Jazz": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "Polymarket": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "Pinnacle": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "Betway": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "Stake": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "Cloudbet": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
-            },
-            "4casters": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
+            "DraftKings": {
+              "Brunno Ferreira": 145,
+              "Gregory Rodrigues": -175
             },
             "SXBet": {
-              "Gregory Rodrigues": null,
-              "Brunno Ferreira": null
+              "Brunno Ferreira": 146,
+              "Gregory Rodrigues": -175
+            },
+            "BetRivers": {
+              "Brunno Ferreira": 155,
+              "Gregory Rodrigues": -192
+            },
+            "BetMGM": {
+              "Brunno Ferreira": 145,
+              "Gregory Rodrigues": -180
+            },
+            "HardRockBet": {
+              "Brunno Ferreira": 155,
+              "Gregory Rodrigues": -190
+            },
+            "Circa": {
+              "Brunno Ferreira": 155,
+              "Gregory Rodrigues": -180
+            },
+            "Bookmaker": {
+              "Brunno Ferreira": 148,
+              "Gregory Rodrigues": -170
+            },
+            "4Cx": {
+              "Brunno Ferreira": 147,
+              "Gregory Rodrigues": -162
+            },
+            "4casters": {
+              "Brunno Ferreira": 151,
+              "Gregory Rodrigues": -158
+            },
+            "Cloudbet": {
+              "Brunno Ferreira": 148,
+              "Gregory Rodrigues": -175
+            },
+            "Pinnacle": {
+              "Brunno Ferreira": 148,
+              "Gregory Rodrigues": -175
+            },
+            "Bet105": {
+              "Brunno Ferreira": 147,
+              "Gregory Rodrigues": -174
+            },
+            "Polymarket": {
+              "Brunno Ferreira": 144,
+              "Gregory Rodrigues": -150
+            },
+            "FanDuel": {
+              "Brunno Ferreira": 146,
+              "Gregory Rodrigues": -180
+            },
+            "Caesars": {
+              "Brunno Ferreira": 150,
+              "Gregory Rodrigues": -180
+            },
+            "MyBookie": {
+              "Brunno Ferreira": 147,
+              "Gregory Rodrigues": -182
+            },
+            "Bovada": {
+              "Brunno Ferreira": 147,
+              "Gregory Rodrigues": -172
+            },
+            "Stake": {
+              "Brunno Ferreira": 139,
+              "Gregory Rodrigues": -164
+            },
+            "Betway": {
+              "Brunno Ferreira": 140,
+              "Gregory Rodrigues": -175
+            },
+            "BetOnline": {
+              "Brunno Ferreira": 140,
+              "Gregory Rodrigues": -160
             }
           }
         },
@@ -524,97 +500,93 @@
           },
           "result": null,
           "odds": {
-            "BetOnline": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "Bovada": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "MyBookie": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
             "BetUS": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "Bet105": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "BookMaker": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "DraftKings": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "FanDuel": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "4Cx": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
+              "Cody Garbrandt": 146,
+              "Long Xiao": -175
             },
             "BetAnything": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "Circa": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "BetRivers": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "HardRocketBet": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "BetMGM": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "Caesars": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "Jazz": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "Polymarket": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "Pinnacle": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "Betway": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "Stake": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "Cloudbet": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
-            },
-            "4casters": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
+              "Cody Garbrandt": 130,
+              "Long Xiao": -160
             },
             "SXBet": {
-              "Cody Garbrandt": null,
-              "Long Xiao": null
+              "Cody Garbrandt": 132,
+              "Long Xiao": -158
+            },
+            "BetMGM": {
+              "Cody Garbrandt": 135,
+              "Long Xiao": -160
+            },
+            "Circa": {
+              "Cody Garbrandt": 135,
+              "Long Xiao": -155
+            },
+            "Bookmaker": {
+              "Cody Garbrandt": 144,
+              "Long Xiao": -165
+            },
+            "4Cx": {
+              "Cody Garbrandt": 144,
+              "Long Xiao": -160
+            },
+            "4casters": {
+              "Cody Garbrandt": 149,
+              "Long Xiao": -156
+            },
+            "Cloudbet": {
+              "Cody Garbrandt": 136,
+              "Long Xiao": -160
+            },
+            "Pinnacle": {
+              "Cody Garbrandt": 132,
+              "Long Xiao": -155
+            },
+            "Bet105": {
+              "Cody Garbrandt": 136,
+              "Long Xiao": -160
+            },
+            "Caesars": {
+              "Cody Garbrandt": 135,
+              "Long Xiao": -160
+            },
+            "FanDuel": {
+              "Cody Garbrandt": 124,
+              "Long Xiao": -152
+            },
+            "BetRivers": {
+              "Cody Garbrandt": 120,
+              "Long Xiao": -147
+            },
+            "Polymarket": {
+              "Cody Garbrandt": 138,
+              "Long Xiao": -144
+            },
+            "HardRockBet": {
+              "Cody Garbrandt": 120,
+              "Long Xiao": -145
+            },
+            "MyBookie": {
+              "Cody Garbrandt": 144,
+              "Long Xiao": -178
+            },
+            "Bovada": {
+              "Cody Garbrandt": 137,
+              "Long Xiao": -163
+            },
+            "DraftKings": {
+              "Cody Garbrandt": 140,
+              "Long Xiao": -166
+            },
+            "Stake": {
+              "Cody Garbrandt": 147,
+              "Long Xiao": -175
+            },
+            "Betway": {
+              "Cody Garbrandt": 120,
+              "Long Xiao": -150
+            },
+            "BetOnline": {
+              "Cody Garbrandt": 150,
+              "Long Xiao": -175
             }
           }
         },
@@ -625,97 +597,93 @@
           },
           "result": null,
           "odds": {
-            "BetOnline": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "Bovada": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "MyBookie": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
             "BetUS": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "Bet105": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "BookMaker": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "DraftKings": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "FanDuel": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "4Cx": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
+              "Donte Johnson": -900,
+              "Cody Brundage": 575
             },
             "BetAnything": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "Circa": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "BetRivers": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "HardRocketBet": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "BetMGM": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "Caesars": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "Jazz": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
+              "Donte Johnson": -900,
+              "Cody Brundage": 485
             },
             "Polymarket": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
+              "Donte Johnson": -733,
+              "Cody Brundage": 567
             },
-            "Pinnacle": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
+            "DraftKings": {
+              "Donte Johnson": -850,
+              "Cody Brundage": 575
             },
-            "Betway": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
+            "FanDuel": {
+              "Donte Johnson": -800,
+              "Cody Brundage": 520
             },
             "Stake": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
+              "Donte Johnson": -909,
+              "Cody Brundage": 600
             },
-            "Cloudbet": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
-            },
-            "4casters": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
+            "MyBookie": {
+              "Donte Johnson": -901,
+              "Cody Brundage": 580
             },
             "SXBet": {
-              "Donte Johnson": null,
-              "Cody Brundage": null
+              "Donte Johnson": -760,
+              "Cody Brundage": 545
+            },
+            "Caesars": {
+              "Donte Johnson": -900,
+              "Cody Brundage": 600
+            },
+            "BetMGM": {
+              "Donte Johnson": -900,
+              "Cody Brundage": 600
+            },
+            "HardRockBet": {
+              "Donte Johnson": -750,
+              "Cody Brundage": 500
+            },
+            "Circa": {
+              "Donte Johnson": -900,
+              "Cody Brundage": 625
+            },
+            "BetRivers": {
+              "Donte Johnson": -1000,
+              "Cody Brundage": 650
+            },
+            "Bookmaker": {
+              "Donte Johnson": -800,
+              "Cody Brundage": 562
+            },
+            "4Cx": {
+              "Donte Johnson": -725,
+              "Cody Brundage": 587
+            },
+            "4casters": {
+              "Donte Johnson": -707,
+              "Cody Brundage": 599
+            },
+            "Bovada": {
+              "Donte Johnson": -900,
+              "Cody Brundage": 575
+            },
+            "Cloudbet": {
+              "Donte Johnson": -806,
+              "Cody Brundage": 571
+            },
+            "Pinnacle": {
+              "Donte Johnson": -748,
+              "Cody Brundage": 540
+            },
+            "Bet105": {
+              "Donte Johnson": -806,
+              "Cody Brundage": 571
+            },
+            "Betway": {
+              "Donte Johnson": -800,
+              "Cody Brundage": 500
+            },
+            "BetOnline": {
+              "Donte Johnson": -900,
+              "Cody Brundage": 600
             }
           }
         },
@@ -726,97 +694,93 @@
           },
           "result": null,
           "odds": {
-            "BetOnline": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "Bovada": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "MyBookie": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "BetUS": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "Bet105": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "BookMaker": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "DraftKings": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "FanDuel": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "4Cx": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "BetAnything": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "Circa": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "BetRivers": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "HardRocketBet": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "BetMGM": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
+            "HardRockBet": {
+              "Alberto Montes": -190,
+              "Ricky Turcios": 155
             },
             "Caesars": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
+              "Alberto Montes": -190,
+              "Ricky Turcios": 160
             },
-            "Jazz": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
+            "BetMGM": {
+              "Alberto Montes": -190,
+              "Ricky Turcios": 155
             },
-            "Polymarket": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
+            "BetUS": {
+              "Alberto Montes": -185,
+              "Ricky Turcios": 154
             },
-            "Pinnacle": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
+            "BetAnything": {
+              "Alberto Montes": -185,
+              "Ricky Turcios": 155
             },
-            "Betway": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "Stake": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "Cloudbet": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
-            },
-            "4casters": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
+            "FanDuel": {
+              "Alberto Montes": -192,
+              "Ricky Turcios": 154
             },
             "SXBet": {
-              "Alberto Montes": null,
-              "Ricky Turcios": null
+              "Alberto Montes": -197,
+              "Ricky Turcios": 144
+            },
+            "DraftKings": {
+              "Alberto Montes": -180,
+              "Ricky Turcios": 150
+            },
+            "Polymarket": {
+              "Alberto Montes": -170,
+              "Ricky Turcios": 156
+            },
+            "Circa": {
+              "Alberto Montes": -185,
+              "Ricky Turcios": 160
+            },
+            "4Cx": {
+              "Alberto Montes": -167,
+              "Ricky Turcios": 151
+            },
+            "BetRivers": {
+              "Alberto Montes": -192,
+              "Ricky Turcios": 155
+            },
+            "Bookmaker": {
+              "Alberto Montes": -180,
+              "Ricky Turcios": 155
+            },
+            "4casters": {
+              "Alberto Montes": -163,
+              "Ricky Turcios": 155
+            },
+            "Cloudbet": {
+              "Alberto Montes": -181,
+              "Ricky Turcios": 154
+            },
+            "Pinnacle": {
+              "Alberto Montes": -181,
+              "Ricky Turcios": 154
+            },
+            "Bet105": {
+              "Alberto Montes": -181,
+              "Ricky Turcios": 154
+            },
+            "Betway": {
+              "Alberto Montes": -188,
+              "Ricky Turcios": 150
+            },
+            "Bovada": {
+              "Alberto Montes": -190,
+              "Ricky Turcios": 163
+            },
+            "Stake": {
+              "Alberto Montes": -189,
+              "Ricky Turcios": 160
+            },
+            "MyBookie": {
+              "Alberto Montes": -193,
+              "Ricky Turcios": 155
+            },
+            "BetOnline": {
+              "Alberto Montes": -185,
+              "Ricky Turcios": 160
             }
           }
         },
@@ -827,97 +791,93 @@
           },
           "result": null,
           "odds": {
-            "BetOnline": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "Bovada": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "MyBookie": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
             "BetUS": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "Bet105": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "BookMaker": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "DraftKings": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "FanDuel": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "4Cx": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
+              "Cody Durden": 146,
+              "N. Tumendemberel": -175
             },
             "BetAnything": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
+              "Cody Durden": 145,
+              "N. Tumendemberel": -175
             },
-            "Circa": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "BetRivers": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "HardRocketBet": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "BetMGM": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "Caesars": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "Jazz": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "Polymarket": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "Pinnacle": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "Betway": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "Stake": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "Cloudbet": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
-            },
-            "4casters": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
+            "DraftKings": {
+              "Cody Durden": 140,
+              "N. Tumendemberel": -166
             },
             "SXBet": {
-              "Cody Durden": null,
-              "N. Tumendemberel": null
+              "Cody Durden": 136,
+              "N. Tumendemberel": -150
+            },
+            "BetMGM": {
+              "Cody Durden": 140,
+              "N. Tumendemberel": -170
+            },
+            "HardRockBet": {
+              "Cody Durden": 120,
+              "N. Tumendemberel": -150
+            },
+            "Circa": {
+              "Cody Durden": 140,
+              "N. Tumendemberel": -160
+            },
+            "4casters": {
+              "Cody Durden": 145,
+              "N. Tumendemberel": -154
+            },
+            "Caesars": {
+              "Cody Durden": 140,
+              "N. Tumendemberel": -165
+            },
+            "BetRivers": {
+              "Cody Durden": 120,
+              "N. Tumendemberel": -149
+            },
+            "Bookmaker": {
+              "Cody Durden": 138,
+              "N. Tumendemberel": -158
+            },
+            "4Cx": {
+              "Cody Durden": 142,
+              "N. Tumendemberel": -156
+            },
+            "Cloudbet": {
+              "Cody Durden": 136,
+              "N. Tumendemberel": -160
+            },
+            "Pinnacle": {
+              "Cody Durden": 136,
+              "N. Tumendemberel": -160
+            },
+            "Bet105": {
+              "Cody Durden": 137,
+              "N. Tumendemberel": -161
+            },
+            "FanDuel": {
+              "Cody Durden": 124,
+              "N. Tumendemberel": -152
+            },
+            "Polymarket": {
+              "Cody Durden": 144,
+              "N. Tumendemberel": -150
+            },
+            "MyBookie": {
+              "Cody Durden": 140,
+              "N. Tumendemberel": -172
+            },
+            "Bovada": {
+              "Cody Durden": 145,
+              "N. Tumendemberel": -170
+            },
+            "Stake": {
+              "Cody Durden": 143,
+              "N. Tumendemberel": -169
+            },
+            "Betway": {
+              "Cody Durden": 110,
+              "N. Tumendemberel": -138
+            },
+            "BetOnline": {
+              "Cody Durden": 150,
+              "N. Tumendemberel": -175
             }
           }
         },
@@ -928,97 +888,89 @@
           },
           "result": null,
           "odds": {
-            "BetOnline": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "Bovada": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "MyBookie": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
+            "Polymarket": {
+              "Sumudaerji": -203,
+              "Jesus Aguilar": 194
             },
             "BetUS": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "Bet105": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "BookMaker": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "DraftKings": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "FanDuel": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "4Cx": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
+              "Sumudaerji": -225,
+              "Jesus Aguilar": 186
             },
             "BetAnything": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "Circa": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "BetRivers": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "HardRocketBet": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "BetMGM": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "Caesars": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "Jazz": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "Polymarket": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "Pinnacle": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "Betway": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
+              "Sumudaerji": -220,
+              "Jesus Aguilar": 170
             },
             "Stake": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "Cloudbet": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
-            },
-            "4casters": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
+              "Sumudaerji": -233,
+              "Jesus Aguilar": 195
             },
             "SXBet": {
-              "Sumudaerji": null,
-              "Jesus Aguilar": null
+              "Sumudaerji": -215,
+              "Jesus Aguilar": 181
+            },
+            "Circa": {
+              "Sumudaerji": -215,
+              "Jesus Aguilar": 185
+            },
+            "Caesars": {
+              "Sumudaerji": -240,
+              "Jesus Aguilar": 200
+            },
+            "4Cx": {
+              "Sumudaerji": -211,
+              "Jesus Aguilar": 189
+            },
+            "Bookmaker": {
+              "Sumudaerji": -225,
+              "Jesus Aguilar": 188
+            },
+            "4casters": {
+              "Sumudaerji": -207,
+              "Jesus Aguilar": 193
+            },
+            "HardRockBet": {
+              "Sumudaerji": -240,
+              "Jesus Aguilar": 185
+            },
+            "Cloudbet": {
+              "Sumudaerji": -225,
+              "Jesus Aguilar": 189
+            },
+            "Pinnacle": {
+              "Sumudaerji": -225,
+              "Jesus Aguilar": 189
+            },
+            "Bet105": {
+              "Sumudaerji": -223,
+              "Jesus Aguilar": 188
+            },
+            "FanDuel": {
+              "Sumudaerji": -230,
+              "Jesus Aguilar": 184
+            },
+            "BetRivers": {
+              "Sumudaerji": -238,
+              "Jesus Aguilar": 185
+            },
+            "MyBookie": {
+              "Sumudaerji": -234,
+              "Jesus Aguilar": 186
+            },
+            "Bovada": {
+              "Sumudaerji": -235,
+              "Jesus Aguilar": 195
+            },
+            "DraftKings": {
+              "Sumudaerji": -230,
+              "Jesus Aguilar": 190
+            },
+            "Betway": {
+              "Sumudaerji": -250,
+              "Jesus Aguilar": 200
+            },
+            "BetOnline": {
+              "Sumudaerji": -225,
+              "Jesus Aguilar": 190
             }
           }
         },
@@ -1029,97 +981,89 @@
           },
           "result": null,
           "odds": {
-            "BetOnline": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
-            },
-            "Bovada": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
-            },
-            "MyBookie": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
-            },
             "BetUS": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
-            },
-            "Bet105": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
-            },
-            "BookMaker": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
-            },
-            "DraftKings": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
-            },
-            "FanDuel": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
-            },
-            "4Cx": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+              "Rafael Tobias": -180,
+              "Diyar Nurgozhay": 150
             },
             "BetAnything": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+              "Rafael Tobias": -180,
+              "Diyar Nurgozhay": 150
             },
-            "Circa": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+            "FanDuel": {
+              "Rafael Tobias": -205,
+              "Diyar Nurgozhay": 164
             },
-            "BetRivers": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
-            },
-            "HardRocketBet": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
-            },
-            "BetMGM": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+            "DraftKings": {
+              "Rafael Tobias": -175,
+              "Diyar Nurgozhay": 145
             },
             "Caesars": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+              "Rafael Tobias": -195,
+              "Diyar Nurgozhay": 165
             },
-            "Jazz": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+            "BetMGM": {
+              "Rafael Tobias": -185,
+              "Diyar Nurgozhay": 150
+            },
+            "HardRockBet": {
+              "Rafael Tobias": -200,
+              "Diyar Nurgozhay": 165
             },
             "Polymarket": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+              "Rafael Tobias": -376,
+              "Diyar Nurgozhay": -525
             },
-            "Pinnacle": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+            "Circa": {
+              "Rafael Tobias": -180,
+              "Diyar Nurgozhay": 155
             },
-            "Betway": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+            "BetRivers": {
+              "Rafael Tobias": -204,
+              "Diyar Nurgozhay": 163
             },
-            "Stake": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+            "Bookmaker": {
+              "Rafael Tobias": -178,
+              "Diyar Nurgozhay": 153
             },
-            "Cloudbet": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+            "4Cx": {
+              "Rafael Tobias": -167,
+              "Diyar Nurgozhay": 149
             },
             "4casters": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+              "Rafael Tobias": -163,
+              "Diyar Nurgozhay": 153
             },
-            "SXBet": {
-              "Rafael Tobias": null,
-              "Diyar Nurgozhay": null
+            "Cloudbet": {
+              "Rafael Tobias": -175,
+              "Diyar Nurgozhay": 149
+            },
+            "Pinnacle": {
+              "Rafael Tobias": -178,
+              "Diyar Nurgozhay": 151
+            },
+            "Bet105": {
+              "Rafael Tobias": -179,
+              "Diyar Nurgozhay": 152
+            },
+            "Betway": {
+              "Rafael Tobias": -225,
+              "Diyar Nurgozhay": 175
+            },
+            "Stake": {
+              "Rafael Tobias": -179,
+              "Diyar Nurgozhay": 150
+            },
+            "MyBookie": {
+              "Rafael Tobias": -181,
+              "Diyar Nurgozhay": 147
+            },
+            "Bovada": {
+              "Rafael Tobias": -183,
+              "Diyar Nurgozhay": 158
+            },
+            "BetOnline": {
+              "Rafael Tobias": -175,
+              "Diyar Nurgozhay": 150
             }
           }
         },
@@ -1131,96 +1075,96 @@
           "result": null,
           "odds": {
             "BetOnline": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 285,
+              "Jeong Yeong Lee": -350 
             },
             "Bovada": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 270,
+              "Jeong Yeong Lee": -340 
             },
             "MyBookie": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 270,
+              "Jeong Yeong Lee": -350 
             },
             "BetUS": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 279,
+              "Jeong Yeong Lee": -350 
             },
             "Bet105": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 258,
+              "Jeong Yeong Lee": -316 
             },
             "BookMaker": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 256,
+              "Jeong Yeong Lee": -315 
             },
             "DraftKings": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 260,
+              "Jeong Yeong Lee": -325 
             },
             "FanDuel": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 260,
+              "Jeong Yeong Lee": -340 
             },
             "4Cx": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 290,
+              "Jeong Yeong Lee": -318 
             },
             "BetAnything": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 250,
+              "Jeong Yeong Lee": -330 
             },
             "Circa": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 280,
+              "Jeong Yeong Lee": -340 
             },
             "BetRivers": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 265,
+              "Jeong Yeong Lee": -345
             },
             "HardRocketBet": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 260,
+              "Jeong Yeong Lee": -350 
             },
             "BetMGM": {
               "Gaston Bolaños": null,
               "Jeong Yeong Lee": null
             },
             "Caesars": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 280,
+              "Jeong Yeong Lee": -360 
             },
             "Jazz": {
               "Gaston Bolaños": null,
               "Jeong Yeong Lee": null
             },
             "Polymarket": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 270,
+              "Jeong Yeong Lee": -300 
             },
             "Pinnacle": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 258,
+              "Jeong Yeong Lee": -315
             },
             "Betway": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 210,
+              "Jeong Yeong Lee": -275 
             },
             "Stake": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 275,
+              "Jeong Yeong Lee": -345 
             },
             "Cloudbet": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 258,
+              "Jeong Yeong Lee": -316 
             },
             "4casters": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 297,
+              "Jeong Yeong Lee": -313 
             },
             "SXBet": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
+              "Gaston Bolaños": 249,
+              "Jeong Yeong Lee": -306 
             }
           }
         },
@@ -1231,97 +1175,93 @@
           },
           "result": null,
           "odds": {
-            "BetOnline": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "Bovada": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "MyBookie": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
+            "Polymarket": {
+              "Luke Fernandez": -212,
+              "Rodolfo Bellato": 203
             },
             "BetUS": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "Bet105": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "BookMaker": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "DraftKings": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "FanDuel": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "4Cx": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
+              "Luke Fernandez": -215,
+              "Rodolfo Bellato": 178
             },
             "BetAnything": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
+              "Luke Fernandez": -230,
+              "Rodolfo Bellato": 180
             },
-            "Circa": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "BetRivers": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "HardRocketBet": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "BetMGM": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "Caesars": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "Jazz": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "Polymarket": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "Pinnacle": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
+            "DraftKings": {
+              "Luke Fernandez": -225,
+              "Rodolfo Bellato": 185
             },
             "Betway": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "Stake": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "Cloudbet": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
-            },
-            "4casters": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
+              "Luke Fernandez": -225,
+              "Rodolfo Bellato": 175
             },
             "SXBet": {
-              "Luke Fernandez": null,
-              "Rodolfo Bellato": null
+              "Luke Fernandez": -235,
+              "Rodolfo Bellato": 193
+            },
+            "BetMGM": {
+              "Luke Fernandez": -235,
+              "Rodolfo Bellato": 190
+            },
+            "HardRockBet": {
+              "Luke Fernandez": -240,
+              "Rodolfo Bellato": 190
+            },
+            "Circa": {
+              "Luke Fernandez": -220,
+              "Rodolfo Bellato": 190
+            },
+            "Caesars": {
+              "Luke Fernandez": -235,
+              "Rodolfo Bellato": 195
+            },
+            "BetRivers": {
+              "Luke Fernandez": -244,
+              "Rodolfo Bellato": 190
+            },
+            "Bookmaker": {
+              "Luke Fernandez": -230,
+              "Rodolfo Bellato": 192
+            },
+            "4Cx": {
+              "Luke Fernandez": -201,
+              "Rodolfo Bellato": 185
+            },
+            "4casters": {
+              "Luke Fernandez": -197,
+              "Rodolfo Bellato": 188
+            },
+            "Cloudbet": {
+              "Luke Fernandez": -230,
+              "Rodolfo Bellato": 193
+            },
+            "Pinnacle": {
+              "Luke Fernandez": -230,
+              "Rodolfo Bellato": 193
+            },
+            "Bet105": {
+              "Luke Fernandez": -230,
+              "Rodolfo Bellato": 193
+            },
+            "FanDuel": {
+              "Luke Fernandez": -225,
+              "Rodolfo Bellato": 180
+            },
+            "MyBookie": {
+              "Luke Fernandez": -224,
+              "Rodolfo Bellato": 180
+            },
+            "Bovada": {
+              "Luke Fernandez": -230,
+              "Rodolfo Bellato": 190
+            },
+            "Stake": {
+              "Luke Fernandez": -238,
+              "Rodolfo Bellato": 195
+            },
+            "BetOnline": {
+              "Luke Fernandez": -215,
+              "Rodolfo Bellato": 185
             }
           }
         }

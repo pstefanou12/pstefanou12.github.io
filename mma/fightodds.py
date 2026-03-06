@@ -1,0 +1,170 @@
+#!/usr/bin/env python3
+"""Scrape odds from fightodds.io and update ufc_cards.json.
+
+Usage:
+    python3 mma/fightodds.py <pk_or_url> <card_id>
+
+Examples:
+    python3 mma/fightodds.py 8823 ufc-326
+    python3 mma/fightodds.py https://fightodds.io/mma-events/8823/ufc-326-holloway-vs-oliveira-2/odds ufc-326
+"""
+
+import argparse
+import json
+import os
+import re
+import requests
+
+FIGHTODDS_GQL = "https://api.fightodds.io/gql"
+JSON_PATH = "./mma/js/ufc_cards.json"
+
+
+def _last_name(name):
+    return name.strip().split()[-1].lower()
+
+
+def _names_match(tap_name, fo_name):
+    t, f = _last_name(tap_name), _last_name(fo_name)
+    return t in f or f in t
+
+
+def scrape_fightodds(event_pk):
+    """Fetch odds from fightodds.io GraphQL API for the given event PK."""
+    query = """
+    query EventOddsQuery($eventPk: Int!) {
+      eventOfferTable(pk: $eventPk) {
+        fightOffers {
+          edges {
+            node {
+              fighter1 { firstName lastName }
+              fighter2 { firstName lastName }
+              straightOffers {
+                edges {
+                  node {
+                    sportsbook { shortName }
+                    outcome1 { odds }
+                    outcome2 { odds }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+    payload = {
+        "operationName": "EventOddsQuery",
+        "query": query,
+        "variables": {"eventPk": int(event_pk)},
+    }
+    resp = requests.post(
+        FIGHTODDS_GQL,
+        json=payload,
+        headers={"Content-Type": "application/json"},
+        timeout=60,
+    )
+    resp.raise_for_status()
+    edges = (
+        resp.json()
+        .get("data", {})
+        .get("eventOfferTable", {})
+        .get("fightOffers", {})
+        .get("edges", [])
+    )
+
+    result = []
+    for edge in edges:
+        node = edge.get("node", {})
+        f1_data = node.get("fighter1", {})
+        f2_data = node.get("fighter2", {})
+        if not f1_data or not f2_data:
+            continue
+        fo_f1 = f"{f1_data['firstName']} {f1_data['lastName']}"
+        fo_f2 = f"{f2_data['firstName']} {f2_data['lastName']}"
+        books = {}
+        for offer_edge in node.get("straightOffers", {}).get("edges", []):
+            offer = offer_edge.get("node", {})
+            short = (offer.get("sportsbook") or {}).get("shortName")
+            if not short:
+                continue
+            o1 = (offer.get("outcome1") or {}).get("odds")
+            o2 = (offer.get("outcome2") or {}).get("odds")
+            if o1 is not None or o2 is not None:
+                books[short] = {fo_f1: o1, fo_f2: o2}
+        if books:
+            result.append({"f1": fo_f1, "f2": fo_f2, "books": books})
+    return result
+
+
+def update_odds_in_json(card_id, fightodds_fights, json_path=JSON_PATH):
+    """Match fightodds fights to card fights by last name and write odds into ufc_cards.json."""
+    with open(json_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    card = next((c for c in data["cards"] if c["id"] == card_id), None)
+    if not card:
+        print(f"Error: Card '{card_id}' not found in {json_path}")
+        return
+
+    fights = card.get("fights", {})
+    matched = 0
+
+    for fo_fight in fightodds_fights:
+        fo_f1, fo_f2 = fo_fight["f1"], fo_fight["f2"]
+
+        matched_key = None
+        for matchup in fights:
+            tap_f1, tap_f2 = matchup.split(" vs. ", 1)
+            if (_names_match(tap_f1, fo_f1) and _names_match(tap_f2, fo_f2)) or \
+               (_names_match(tap_f1, fo_f2) and _names_match(tap_f2, fo_f1)):
+                matched_key = matchup
+                break
+
+        if not matched_key:
+            print(f"  Warning: No match for '{fo_f1} vs {fo_f2}'")
+            continue
+
+        tap_f1, tap_f2 = matched_key.split(" vs. ", 1)
+        fo_to_tap = {fo_f1: tap_f1, fo_f2: tap_f2} if _names_match(tap_f1, fo_f1) \
+                    else {fo_f1: tap_f2, fo_f2: tap_f1}
+
+        odds = {}
+        for book_name, book_odds in fo_fight["books"].items():
+            odds[book_name] = {
+                fo_to_tap[fo_f1]: book_odds.get(fo_f1),
+                fo_to_tap[fo_f2]: book_odds.get(fo_f2),
+            }
+        fights[matched_key]["odds"] = odds
+        matched += 1
+        print(f"  {matched_key} — {len(odds)} books")
+
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    print(f"\nOdds written for {matched}/{len(fightodds_fights)} fights in '{card_id}'")
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Scrape fightodds.io odds and update ufc_cards.json"
+    )
+    parser.add_argument("event", help="fightodds.io event PK (e.g. 8823) or full URL")
+    parser.add_argument("card_id", help="Card ID in ufc_cards.json (e.g. ufc-326)")
+    args = parser.parse_args()
+
+    pk_match = re.search(r"(\d+)", args.event)
+    if not pk_match:
+        print("Error: Could not parse event PK from argument")
+        return
+    event_pk = pk_match.group(1)
+
+    print(f"Scraping odds for event PK {event_pk}...")
+    fightodds_fights = scrape_fightodds(event_pk)
+    print(f"Found {len(fightodds_fights)} fights with odds\n")
+
+    update_odds_in_json(args.card_id, fightodds_fights)
+
+
+if __name__ == "__main__":
+    main()

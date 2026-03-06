@@ -133,43 +133,40 @@ function renderOddsTable(card) {
   const avgReturn = ((totalProfit / wagered) * 100).toFixed(1);
 
   const html = `
-    <div class="odds-section" id="projected-betting-returns">
-      <h2>Projected Betting Returns ($1/pick)</h2>
-      <table class="odds-table">
-        <thead>
-          <tr>
-            <th>Fight</th>
-            <th>Pick</th>
-            <th>Platform</th>
-            <th>Odds</th>
-            <th>Profit</th>
-            <th>Return</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${rows.map(r => `
-          <tr>
-            <td class="odds-fight">${r.matchup}</td>
-            <td>${r.winner}</td>
-            <td class="odds-platform">${r.platform}</td>
-            <td class="odds-value">${r.american}</td>
-            <td class="pnl-positive">+$${r.profit.toFixed(2)}</td>
-            <td class="pnl-positive">+${r.returnPct}%</td>
-          </tr>`).join('')}
-        </tbody>
-        <tfoot>
-          <tr class="odds-total">
-            <td colspan="4"><strong>Total (${wagered} pick${wagered !== 1 ? 's' : ''} · $${wagered} wagered)</strong></td>
-            <td class="${totalProfit >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}$${totalProfit.toFixed(2)}</strong></td>
-            <td class="${totalProfit >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}${avgReturn}%</strong></td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>`;
+    <table class="odds-table">
+      <thead>
+        <tr>
+          <th>Fight</th>
+          <th>Pick</th>
+          <th>Platform</th>
+          <th>Odds</th>
+          <th>Profit</th>
+          <th>Return</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${rows.map(r => `
+        <tr>
+          <td class="odds-fight">${r.matchup}</td>
+          <td>${r.winner}</td>
+          <td class="odds-platform">${r.platform}</td>
+          <td class="odds-value">${r.american}</td>
+          <td class="pnl-positive">+$${r.profit.toFixed(2)}</td>
+          <td class="pnl-positive">+${r.returnPct}%</td>
+        </tr>`).join('')}
+      </tbody>
+      <tfoot>
+        <tr class="odds-total">
+          <td colspan="4"><strong>Total (${wagered} pick${wagered !== 1 ? 's' : ''} · $${wagered} wagered)</strong></td>
+          <td class="${totalProfit >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}$${totalProfit.toFixed(2)}</strong></td>
+          <td class="${totalProfit >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}${avgReturn}%</strong></td>
+        </tr>
+      </tfoot>
+    </table>`;
 
-  const recapContent = document.querySelector('.recap-content');
-  if (recapContent) {
-    recapContent.insertAdjacentHTML('beforeend', html);
+  const container = document.querySelector('.projected-betting-returns');
+  if (container) {
+    container.innerHTML = html;
   }
 }
 
