@@ -1,4 +1,4 @@
-import requests
+import cloudscraper
 from bs4 import BeautifulSoup
 import re
 from datetime import datetime
@@ -17,11 +17,8 @@ FIGHTODDS_GQL = "https://api.fightodds.io/gql"
 
 def scrape_tapology_event(url, mode='both'):
     """Scrape fight data from Tapology event page"""
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-    }
-    
-    response = requests.get(url, headers=headers)
+    scraper = cloudscraper.create_scraper()
+    response = scraper.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     
     # Extract event name from title tag

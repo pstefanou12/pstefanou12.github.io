@@ -4,20 +4,24 @@
       "id": "ufc-326",
       "title": "UFC 326",
       "subtitle": "Holloway vs. Oliveira 2",
-      "date": "2026-03-05",
-      "rating": null,
+      "date": "2026-03-08",
+      "rating": 6.1,
       "poster": "/mma/img/ufc_326_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "recaps/ufc-326.html",
       "previewUrl": "previews/ufc-326.html",
       "location": "Octagon",
-      "eventTime": "Saturday 03.07.2026 at 05:00 PM ET",
+      "eventTime": "Saturday 03.07.2026 at 05:30 PM ET",
       "fights": {
-        "Max Holloway vs. Charles Oliveira": {
+        "Charles Oliveira vs. Max Holloway": {
           "prediction": {
             "winner": "Charles Oliveira",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Charles Oliveira",
+            "method": "Decision, Unanimous",
+            "time": "5 Rounds, 25:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Max Holloway": -200,
@@ -114,7 +118,11 @@
             "winner": "Reinier de Ridder",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Caio Borralho",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Caio Borralho": -230,
@@ -206,12 +214,16 @@
             }
           }
         },
-        "Rob Font vs. Raul Rosas Jr.": {
+        "Raul Rosas Jr. vs. Rob Font": {
           "prediction": {
             "winner": "Raul Rosas Jr.",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Raul Rosas Jr.",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Rob Font": 214,
@@ -304,7 +316,11 @@
             "winner": "Michael Johnson",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Drew Dober",
+            "method": "KO/TKO, Straight Left",
+            "time": "1:53 Round 2 of 3, 6:53 Total"
+          },
           "odds": {
             "BetOnline": {
               "Drew Dober": -110,
@@ -401,7 +417,11 @@
             "winner": "Brunno Ferreira",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Gregory Rodrigues",
+            "method": "KO/TKO, Straight Right",
+            "time": "1:47 Round 1 of 3"
+          },
           "odds": {
             "BetUS": {
               "Brunno Ferreira": 146,
@@ -498,7 +518,11 @@
             "winner": "Cody Garbrandt",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Cody Garbrandt",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Cody Garbrandt": 146,
@@ -595,7 +619,11 @@
             "winner": "Donte Johnson",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Donte Johnson",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Donte Johnson": -900,
@@ -692,7 +720,11 @@
             "winner": "Alberto Montes",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Alberto Montes",
+            "method": "Submission, Technical (D'arce Choke)",
+            "time": "0:40 Round 2 of 3, 5:40 Total"
+          },
           "odds": {
             "HardRockBet": {
               "Alberto Montes": -190,
@@ -784,12 +816,16 @@
             }
           }
         },
-        "Cody Durden vs. N. Tumendemberel": {
+        "N. Tumendemberel vs. Cody Durden": {
           "prediction": {
             "winner": "N. Tumendemberel",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "N. Tumendemberel",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Cody Durden": 146,
@@ -886,7 +922,11 @@
             "winner": "Jesus Aguilar",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Sumudaerji",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Polymarket": {
               "Sumudaerji": -203,
@@ -974,12 +1014,16 @@
             }
           }
         },
-        "Rafael Tobias vs. Diyar Nurgozhay": {
+        "Diyar Nurgozhay vs. Rafael Tobias": {
           "prediction": {
             "winner": "Rafael Tobias",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Diyar Nurgozhay",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Rafael Tobias": -180,
@@ -1067,113 +1111,16 @@
             }
           }
         },
-        "Gaston Bolaños vs. Jeong Yeong Lee": {
-          "prediction": {
-            "winner": "Jeong Yeong Lee",
-            "method": "Decision"
-          },
-          "result": null,
-          "odds": {
-            "BetOnline": {
-              "Gaston Bolaños": 285,
-              "Jeong Yeong Lee": -350 
-            },
-            "Bovada": {
-              "Gaston Bolaños": 270,
-              "Jeong Yeong Lee": -340 
-            },
-            "MyBookie": {
-              "Gaston Bolaños": 270,
-              "Jeong Yeong Lee": -350 
-            },
-            "BetUS": {
-              "Gaston Bolaños": 279,
-              "Jeong Yeong Lee": -350 
-            },
-            "Bet105": {
-              "Gaston Bolaños": 258,
-              "Jeong Yeong Lee": -316 
-            },
-            "BookMaker": {
-              "Gaston Bolaños": 256,
-              "Jeong Yeong Lee": -315 
-            },
-            "DraftKings": {
-              "Gaston Bolaños": 260,
-              "Jeong Yeong Lee": -325 
-            },
-            "FanDuel": {
-              "Gaston Bolaños": 260,
-              "Jeong Yeong Lee": -340 
-            },
-            "4Cx": {
-              "Gaston Bolaños": 290,
-              "Jeong Yeong Lee": -318 
-            },
-            "BetAnything": {
-              "Gaston Bolaños": 250,
-              "Jeong Yeong Lee": -330 
-            },
-            "Circa": {
-              "Gaston Bolaños": 280,
-              "Jeong Yeong Lee": -340 
-            },
-            "BetRivers": {
-              "Gaston Bolaños": 265,
-              "Jeong Yeong Lee": -345
-            },
-            "HardRocketBet": {
-              "Gaston Bolaños": 260,
-              "Jeong Yeong Lee": -350 
-            },
-            "BetMGM": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
-            },
-            "Caesars": {
-              "Gaston Bolaños": 280,
-              "Jeong Yeong Lee": -360 
-            },
-            "Jazz": {
-              "Gaston Bolaños": null,
-              "Jeong Yeong Lee": null
-            },
-            "Polymarket": {
-              "Gaston Bolaños": 270,
-              "Jeong Yeong Lee": -300 
-            },
-            "Pinnacle": {
-              "Gaston Bolaños": 258,
-              "Jeong Yeong Lee": -315
-            },
-            "Betway": {
-              "Gaston Bolaños": 210,
-              "Jeong Yeong Lee": -275 
-            },
-            "Stake": {
-              "Gaston Bolaños": 275,
-              "Jeong Yeong Lee": -345 
-            },
-            "Cloudbet": {
-              "Gaston Bolaños": 258,
-              "Jeong Yeong Lee": -316 
-            },
-            "4casters": {
-              "Gaston Bolaños": 297,
-              "Jeong Yeong Lee": -313 
-            },
-            "SXBet": {
-              "Gaston Bolaños": 249,
-              "Jeong Yeong Lee": -306 
-            }
-          }
-        },
-        "Luke Fernandez vs. Rodolfo Bellato": {
+        "Rodolfo Bellato vs. Luke Fernandez": {
           "prediction": {
             "winner": "Luke Fernandez",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Rodolfo Bellato",
+            "method": "KO/TKO, Left Hook to Ground Punches",
+            "time": "2:42 Round 1 of 3"
+          },
           "odds": {
             "Polymarket": {
               "Luke Fernandez": -212,
