@@ -1,0 +1,224 @@
+import type { Card, CardsData, FightEntry, Prediction } from './interfaces.js';
+
+interface BettingRow {
+  matchup: string;
+  pick: string;
+  result: string;
+  pTrue: number;
+  platform: string;
+  american: string;
+  ev: number;
+  isCorrect: boolean;
+  pnl: number;
+  returnPct: number;
+}
+
+async function loadRecapHeader(): Promise<void> {
+  try {
+    const pageUrl = window.location.pathname;
+    const filename = pageUrl.split('/').pop() ?? '';
+    const cardId = filename.replace('.html', '').toLowerCase().replace(/_/g, '-');
+
+    const response = await fetch('../cards.json');
+    const data: CardsData = await response.json();
+
+    const card = data.cards.find(c => c.id === cardId);
+
+    if (card) {
+      const titleElement = document.querySelector('h1');
+      if (titleElement) {
+        titleElement.textContent = card.subtitle
+          ? `${card.title}: ${card.subtitle} Recap`
+          : `${card.title} Recap`;
+      }
+
+      const dateElement = document.querySelector('.event-date');
+      if (dateElement && card.location && card.eventTime) {
+        dateElement.textContent = `${card.eventTime} • ${card.location}`;
+      }
+
+      const posterElement = document.querySelector<HTMLImageElement>('.event-poster');
+      if (posterElement) {
+        posterElement.src = card.poster;
+        posterElement.alt = `${card.title} Poster`;
+      }
+
+      const ratingFill = document.querySelector<HTMLElement>('.event-rating .rating-fill');
+      const ratingScore = document.querySelector('.event-rating .rating-score');
+      if (ratingFill && ratingScore && card.rating !== undefined) {
+        ratingFill.style.width = `${card.rating * 10}%`;
+        ratingFill.className = `rating-fill ${getRatingClass(card.rating)}`;
+        ratingScore.textContent = `${card.rating}/10`;
+      }
+
+      if (card.fights) {
+        const fightDivs = document.querySelectorAll<HTMLElement>('.fight');
+        let correctCount = 0;
+        let totalPredictions = 0;
+
+        for (const fightDiv of fightDivs) {
+          const h3 = fightDiv.querySelector('h3');
+          if (!h3) continue;
+
+          const fighters = (h3.textContent ?? '').split(' vs. ');
+          if (fighters.length < 2) continue;
+          const fighter1 = fighters[0].trim();
+          const fighter2 = fighters[1].trim();
+
+          let prediction: Prediction | undefined;
+          for (const [matchup, fightEntry] of Object.entries(card.fights)) {
+            if (matchup.toLowerCase().includes(fighter1.toLowerCase()) &&
+                matchup.toLowerCase().includes(fighter2.toLowerCase())) {
+              prediction = fightEntry.prediction;
+              break;
+            }
+          }
+
+          if (!prediction?.winner) continue;
+
+          totalPredictions++;
+          const isCorrect = prediction.winner.toLowerCase().trim() === fighter1.toLowerCase().trim();
+          if (isCorrect) correctCount++;
+
+          const predEl = fightDiv.querySelector('.fight-prediction');
+          if (predEl) {
+            const symbol = isCorrect ? '\u2713' : '\u2717';
+            const methodStr = prediction.method ? ` via ${prediction.method}` : '';
+            predEl.className = `fight-prediction ${isCorrect ? 'prediction-correct' : 'prediction-incorrect'}`;
+            predEl.innerHTML = `<strong>Prediction: </strong>${prediction.winner}${methodStr} ${symbol}`;
+          }
+        }
+
+        if (totalPredictions > 0) {
+          const scoreEl = document.querySelector('.predictions-score');
+          if (scoreEl) {
+            scoreEl.innerHTML = `Predictions: <strong>${correctCount}/${totalPredictions}</strong>`;
+          }
+        }
+
+        renderBettingResults(card, fightDivs);
+      }
+    } else {
+      console.warn('Card not found for ID:', cardId);
+    }
+  } catch (error) {
+    console.error('Error loading recap header:', error);
+  }
+}
+
+function toProfit(american: number): number {
+  return american > 0 ? american / 100 : 100 / Math.abs(american);
+}
+
+function renderBettingResults(card: Card, fightDivs: NodeListOf<HTMLElement>): void {
+  const fights = card.fights;
+  if (!fights) return;
+
+  const rows: BettingRow[] = [];
+  let totalPnl = 0;
+
+  for (const fightDiv of fightDivs) {
+    const h3 = fightDiv.querySelector('h3');
+    if (!h3) continue;
+
+    const fighters = (h3.textContent ?? '').split(' vs. ');
+    if (fighters.length < 2) continue;
+    const fighter1 = fighters[0].trim();
+    const fighter2 = fighters[1].trim();
+
+    let matchup: string | null = null;
+    let fightEntry: FightEntry | null = null;
+    for (const [key, entry] of Object.entries(fights)) {
+      if (key.toLowerCase().includes(fighter1.toLowerCase()) &&
+          key.toLowerCase().includes(fighter2.toLowerCase())) {
+        matchup = key;
+        fightEntry = entry;
+        break;
+      }
+    }
+
+    if (!matchup || !fightEntry?.prediction || !fightEntry.result) continue;
+    if (!fightEntry.bestOdds) continue;
+
+    const pick = fightEntry.prediction.winner;
+    const { groundTruthProb, bestOdds: best, bestEv } = fightEntry.bestOdds;
+    if (!best || best.odds === null) continue;
+
+    const profit = toProfit(best.odds);
+    const isCorrect = pick.toLowerCase().trim() === fighter1.toLowerCase().trim();
+    const pnl = isCorrect ? profit : -1;
+    totalPnl += pnl;
+
+    const sign = best.odds > 0 ? '+' : '';
+    rows.push({
+      matchup, pick,
+      result: `${fighter1} wins`,
+      pTrue: groundTruthProb,
+      platform: best.platform,
+      american: `${sign}${best.odds}`,
+      ev: bestEv,
+      isCorrect, pnl,
+      returnPct: pnl * 100,
+    });
+  }
+
+  if (rows.length === 0) return;
+
+  const wagered = rows.length;
+  const netSign = totalPnl >= 0 ? '+' : '';
+  const totalReturnPct = (totalPnl / wagered) * 100;
+  const totalReturnSign = totalReturnPct >= 0 ? '+' : '';
+
+  const html = `
+    <table class="odds-table">
+      <thead>
+        <tr>
+          <th>Fight</th>
+          <th>Pick</th>
+          <th>Result</th>
+          <th>Win Prob</th>
+          <th>Best Book</th>
+          <th>Odds</th>
+          <th>EV</th>
+          <th>P&amp;L</th>
+          <th>Return</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${rows.map(r => `
+        <tr>
+          <td class="odds-fight">${r.matchup}</td>
+          <td>${r.pick}</td>
+          <td class="${r.isCorrect ? 'prediction-correct' : 'prediction-incorrect'}">${r.result} ${r.isCorrect ? '✓' : '✗'}</td>
+          <td class="odds-value">${(r.pTrue * 100).toFixed(1)}%</td>
+          <td class="odds-platform">${r.platform}</td>
+          <td class="odds-value">${r.american}</td>
+          <td class="${r.ev >= 0 ? 'pnl-positive' : 'pnl-negative'}">${r.ev >= 0 ? '+' : ''}$${r.ev.toFixed(2)}</td>
+          <td class="${r.pnl >= 0 ? 'pnl-positive' : 'pnl-negative'}">${r.pnl >= 0 ? '+' : ''}$${r.pnl.toFixed(2)}</td>
+          <td class="${r.returnPct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${r.returnPct >= 0 ? '+' : ''}${r.returnPct.toFixed(0)}%</td>
+        </tr>`).join('')}
+      </tbody>
+      <tfoot>
+        <tr class="odds-total">
+          <td colspan="7"><strong>Total (${wagered} bet${wagered !== 1 ? 's' : ''} · $${wagered} wagered)</strong></td>
+          <td class="${totalPnl >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}$${totalPnl.toFixed(2)}</strong></td>
+          <td class="${totalReturnPct >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${totalReturnSign}${totalReturnPct.toFixed(1)}%</strong></td>
+        </tr>
+      </tfoot>
+    </table>`;
+
+  const bettingDiv = document.querySelector('.betting-results');
+  if (bettingDiv) {
+    bettingDiv.innerHTML = html;
+  }
+}
+
+function getRatingClass(rating: number): string {
+  if (rating >= 8.0) return 'excellent';
+  if (rating >= 7.0) return 'good';
+  if (rating >= 5.0) return 'average';
+  if (rating >= 3.0) return 'below-average';
+  return 'poor';
+}
+
+document.addEventListener('DOMContentLoaded', loadRecapHeader);

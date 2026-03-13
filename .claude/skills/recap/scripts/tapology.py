@@ -163,7 +163,7 @@ def extract_subtitle(event_name):
     
     return None
 
-def update_json_metadata(event_data, card_id, rating, fights=None, json_path='./mma/js/ufc_cards.json'):
+def update_json_metadata(event_data, card_id, rating, fights=None, json_path='./mma/js/cards.json'):
     """
     Add or update card metadata in the JSON file
     """
@@ -283,7 +283,7 @@ def generate_html_template(event_data):
   <title>{event_data['event_name']} Recap</title>
   <link rel="stylesheet" href="../css/mma.css">
   <link rel="icon" type="image/png" href="../img/hardcore_mma.png">
-  <script src="../js/ufc_recaps.js"></script>
+  <script src="../js/recap.js"></script>
 </head>
 <body>
   
@@ -482,7 +482,7 @@ def main():
 
     # Load existing fights from JSON (contains predictions filled in during preview mode)
     existing_fights = {}
-    json_path = './mma/js/ufc_cards.json'
+    json_path = './mma/js/cards.json'
     if os.path.exists(json_path):
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -567,7 +567,7 @@ def generate_preview_template(event_data):
     <title>{event_data['event_name']} Preview</title>
     <link rel="stylesheet" href="../css/mma.css">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/hardcore_mma.png">
-    <script src="../js/ufc_previews.js"></script>
+    <script src="../js/preview.js"></script>
   </head>
   <body>
 
@@ -684,7 +684,7 @@ def generate_preview_template(event_data):
     
     return html
 
-def update_json_with_preview(preview_card, json_path='./mma/js/ufc_cards.json'):
+def update_json_with_preview(preview_card, json_path='./mma/js/cards.json'):
     """Update JSON with preview URL only"""
     if os.path.exists(json_path):
         with open(json_path, 'r', encoding='utf-8') as f:

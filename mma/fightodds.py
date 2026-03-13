@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scrape odds from fightodds.io and update ufc_cards.json.
+"""Scrape odds from fightodds.io and update cards.json.
 
 Usage:
     python3 mma/fightodds.py <pk_or_url> <card_id>
@@ -16,7 +16,59 @@ import re
 import requests
 
 FIGHTODDS_GQL = "https://api.fightodds.io/gql"
-JSON_PATH = "./mma/js/ufc_cards.json"
+JSON_PATH = "./mma/db/cards.json"
+GROUND_TRUTH_BOOK = "DraftKings"
+
+
+def _implied_probability(odds):
+    if odds > 0:
+        return 100 / (odds + 100)
+    return abs(odds) / (abs(odds) + 100)
+
+
+def _american_to_profit(odds):
+    return odds / 100 if odds > 0 else 100 / abs(odds)
+
+
+def compute_best_odds(fights, ground_truth_book=GROUND_TRUTH_BOOK):
+    """Compute and store groundTruthProb + best EV book for each fight with a prediction."""
+    for matchup, entry in fights.items():
+        odds_data = entry.get("odds", {})
+        pick = (entry.get("prediction") or {}).get("winner")
+
+        if not pick or not odds_data:
+            entry["bestOdds"] = None
+            continue
+
+        # Ground-truth probability from the configured book
+        gt_lines = odds_data.get(ground_truth_book, {})
+        pick_lower = pick.lower()
+        p_true = None
+        for fighter, odds in gt_lines.items():
+            if fighter.lower() == pick_lower and odds is not None:
+                p_true = _implied_probability(odds)
+                break
+
+        if p_true is None:
+            entry["bestOdds"] = None
+            continue
+
+        # Find book with highest EV using ground-truth probability
+        best_platform, best_ev, best_odds = None, None, None
+        for platform, lines in odds_data.items():
+            for fighter, odds in lines.items():
+                if fighter.lower() == pick_lower and odds is not None:
+                    ev = p_true * _american_to_profit(odds) - (1 - p_true) * 1
+                    if best_ev is None or ev > best_ev:
+                        best_ev = ev
+                        best_platform = platform
+                        best_odds = odds
+
+        entry["bestOdds"] = {
+            "groundTruthProb": round(p_true, 4),
+            "bestOdds": {"platform": best_platform, "odds": best_odds},
+            "bestEv": round(best_ev, 4) if best_ev is not None else None,
+        }
 
 
 def _last_name(name):
@@ -98,7 +150,7 @@ def scrape_fightodds(event_pk):
 
 
 def update_odds_in_json(card_id, fightodds_fights, json_path=JSON_PATH):
-    """Match fightodds fights to card fights by last name and write odds into ufc_cards.json."""
+    """Match fightodds fights to card fights by last name and write odds into cards.json."""
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -139,6 +191,8 @@ def update_odds_in_json(card_id, fightodds_fights, json_path=JSON_PATH):
         matched += 1
         print(f"  {matched_key} — {len(odds)} books")
 
+    compute_best_odds(fights)
+
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
@@ -147,10 +201,10 @@ def update_odds_in_json(card_id, fightodds_fights, json_path=JSON_PATH):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Scrape fightodds.io odds and update ufc_cards.json"
+        description="Scrape fightodds.io odds and update cards.json"
     )
     parser.add_argument("event", help="fightodds.io event PK (e.g. 8823) or full URL")
-    parser.add_argument("card_id", help="Card ID in ufc_cards.json (e.g. ufc-326)")
+    parser.add_argument("card_id", help="Card ID in cards.json (e.g. ufc-326)")
     args = parser.parse_args()
 
     pk_match = re.search(r"(\d+)", args.event)
