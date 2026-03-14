@@ -1,5 +1,7 @@
-import requests
+import cloudscraper
 from bs4 import BeautifulSoup
+
+_scraper = cloudscraper.create_scraper()
 import re
 from datetime import datetime
 import pprint
@@ -19,7 +21,7 @@ def scrape_tapology_event(url, mode='both'):
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
     }
     
-    response = requests.get(url, headers=headers)
+    response = _scraper.get(url, headers=headers)
     soup = BeautifulSoup(response.content, 'html.parser')
     
     # Extract event name from title tag

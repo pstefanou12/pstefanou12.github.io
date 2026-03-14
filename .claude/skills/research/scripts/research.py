@@ -24,8 +24,10 @@ import sys
 import time
 from datetime import datetime
 
-import requests
+import cloudscraper
 from bs4 import BeautifulSoup
+
+_scraper = cloudscraper.create_scraper()
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', '..'))
 sys.path.insert(0, os.path.join(PROJECT_ROOT, 'mma'))
@@ -68,7 +70,7 @@ STATUS_MAP = {
 # ---------------------------------------------------------------------------
 
 def fetch(url):
-    resp = requests.get(url, headers=HEADERS, timeout=15)
+    resp = _scraper.get(url, headers=HEADERS, timeout=15)
     resp.raise_for_status()
     return BeautifulSoup(resp.content, 'html.parser')
 
