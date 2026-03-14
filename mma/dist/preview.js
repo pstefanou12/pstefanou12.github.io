@@ -3,7 +3,6 @@ async function loadPreviewHeader() {
         const pageUrl = window.location.pathname;
         const filename = pageUrl.split('/').pop() ?? '';
         const cardId = filename.replace('.html', '');
-        console.log('card id:' + cardId);
         const response = await fetch('../cards.json');
         const data = await response.json();
         const card = data.cards.find(c => c.id === cardId);
