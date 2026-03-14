@@ -12,7 +12,7 @@ pip install requests beautifulsoup4
 
 ## `tapology.py` — Template & Metadata Generator
 
-Scrapes Tapology event pages to generate HTML templates and update `ufc_cards.json`.
+Scrapes Tapology event pages to generate HTML templates and update `cards.json`.
 
 ### Usage
 
@@ -24,7 +24,7 @@ python mma/tapology.py "https://www.tapology.com/fightcenter/events/..." --mode 
 
 **Output:**
 - `mma/previews/{card-id}.html` — Preview template with per-fight pick sections
-- Updates `ufc_cards.json` with event metadata and a `fights` scaffold:
+- Updates `cards.json` with event metadata and a `fights` scaffold:
   ```json
   "fights": {
     "Fighter A vs. Fighter B": {
@@ -42,7 +42,7 @@ python mma/tapology.py "https://www.tapology.com/fightcenter/events/..." --mode 
 
 **Output:**
 - `mma/recaps/{card-id}.html` — Recap template with fight sections pre-filled with result data
-- Updates `ufc_cards.json`: merges scraped results into the existing `fights` entries and sets the rating:
+- Updates `cards.json`: merges scraped results into the existing `fights` entries and sets the rating:
   ```json
   "fights": {
     "Fighter A vs. Fighter B": {
@@ -70,7 +70,7 @@ Card IDs are generated automatically:
 
 ### JSON Schema
 
-`ufc_cards.json` entries follow this structure:
+`cards.json` entries follow this structure:
 
 ```json
 {
@@ -102,7 +102,7 @@ python mma/tapology.py "https://www.tapology.com/..." --mode preview
 
 # 2. Add poster to mma/img/{card-id}_poster.jpg
 
-# 3. Fill in prediction winner/method in ufc_cards.json for each fight
+# 3. Fill in prediction winner/method in cards.json for each fight
 
 # 4. Generate the recap prompt and write preview content (see generate_prompt.py below)
 ```
@@ -128,7 +128,7 @@ python mma/generate_prompt.py <mode> <card-id> <notes.txt>
 ```
 
 - `mode` — `recap` or `preview`
-- `card-id` — must exist in `ufc_cards.json` (validated at runtime)
+- `card-id` — must exist in `cards.json` (validated at runtime)
 - `notes.txt` — path to your handwritten event notes
 
 **Example:**
@@ -157,7 +157,7 @@ Paste the contents into any model to produce a fully written recap or preview.
 
 ### Betting odds
 
-Preview mode automatically generates a null-filled odds scaffold in `ufc_cards.json` for all known platforms:
+Preview mode automatically generates a null-filled odds scaffold in `cards.json` for all known platforms:
 
 ```json
 "odds": {
@@ -191,6 +191,6 @@ BetOnline, Bovada, MyBookie, BetUS, Bet105, BookMaker, DraftKings, FanDuel, 4Cx,
 
 **Date parsing** — If Tapology's date format can't be parsed, the script falls back to the current date. Check the JSON and correct manually if needed.
 
-**Card ID mismatch** — `generate_prompt.py` will error and list all valid IDs if the provided card ID isn't found in `ufc_cards.json`.
+**Card ID mismatch** — `generate_prompt.py` will error and list all valid IDs if the provided card ID isn't found in `cards.json`.
 
 **Poster files** — Add the poster image to `mma/img/` using the exact filename shown in the script output (e.g., `ufc_326_poster.jpg`).

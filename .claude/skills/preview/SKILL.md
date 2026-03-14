@@ -9,7 +9,7 @@ You are an expert MMA analyst writing fight previews. Your voice should be analy
 ## Arguments:
 - `$ARGUMENTS[0]` — path to the event notes file (per-fight research containing fighter backgrounds, matchup breakdowns, picks, and reasoning)
 - `$ARGUMENTS[1]` — Tapology event URL (used to scrape fight data and generate the HTML template)
-- `$ARGUMENTS[2]` (optional) — fightodds.io event PK or URL (e.g. `8823` or `https://fightodds.io/mma-events/8823/...`). If provided, odds are scraped and written into `ufc_cards.json`.
+- `$ARGUMENTS[2]` (optional) — fightodds.io event PK or URL (e.g. `8823` or `https://fightodds.io/mma-events/8823/...`). If provided, odds are scraped and written into `cards.json`.
 
 ## Voice and Fidelity to the Notes:
 The notes are the source of truth. Your job is to translate them into polished prose — not to sanitize, soften, or second-guess them.
@@ -36,7 +36,7 @@ python3 /home/patroklos/pstefanou12.github.io/.claude/skills/recap/scripts/tapol
 The script prints the generated file path (e.g. `✓ Preview template generated: ./mma/previews/ufc-322.html`) and the card ID (e.g. `Generated card ID: ufc-322`). Note both — the file path is what you populate, and the card ID is used in the next step.
 
 ### 3. Scrape Odds (if `$ARGUMENTS[2]` provided)
-If a fightodds argument was given, run the odds scraper to populate odds in `ufc_cards.json`:
+If a fightodds argument was given, run the odds scraper to populate odds in `cards.json`:
 ```bash
 python3 /home/patroklos/pstefanou12.github.io/mma/fightodds.py $ARGUMENTS[2] <card_id>
 ```
@@ -68,7 +68,7 @@ For each fight, populate two placeholder sections:
 Also populate the `<h4>Pick: </h4>` tag with the fighter name and `<div class="method">` with the predicted method of victory from the notes.
 
 ### 7. Update JSON Predictions
-After populating all fight picks in the HTML, update the `ufc_cards.json` file to reflect the predictions for each fight in the newly added card entry.
+After populating all fight picks in the HTML, update the `cards.json` file to reflect the predictions for each fight in the newly added card entry.
 
 For each fight in the card's `"fights"` object, set:
 - `"prediction": { "winner": "<fighter name>", "method": "<method of victory>" }`
@@ -86,7 +86,7 @@ Use the same winner name and method string you placed in the HTML `<h4>Pick: </h
 - [ ] `<br><br>` used between paragraphs within each `<p>` block
 - [ ] Every fighter's name is bolded with `<strong>` on first mention per section
 - [ ] Pick name and Method populated from the notes
-- [ ] `ufc_cards.json` `prediction.winner` and `prediction.method` updated for every fight in the card
+- [ ] `cards.json` `prediction.winner` and `prediction.method` updated for every fight in the card
 - [ ] Each fight's content placed in the correct `<div id="...">` section
 - [ ] Every specific point and opinion from the notes is represented in the output
 - [ ] No takes from the notes have been softened, hedged, or omitted
