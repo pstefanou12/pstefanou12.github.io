@@ -16,7 +16,6 @@ async function loadPreviewHeader(): Promise<void> {
     const pageUrl = window.location.pathname;
     const filename = pageUrl.split('/').pop() ?? '';
     const cardId = filename.replace('.html', '');
-    console.log('card id:' + cardId);
 
     const response = await fetch('../cards.json');
     const data: CardsData = await response.json();
