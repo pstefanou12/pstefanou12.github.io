@@ -114,7 +114,7 @@ function renderBettingResults(card, fightDivs) {
         if (!fightEntry.bestOdds)
             continue;
         const pick = fightEntry.prediction.winner;
-        const { groundTruthProb, bestOdds: best, bestEv } = fightEntry.bestOdds;
+        const { bestOdds: best } = fightEntry.bestOdds;
         if (!best || best.odds === null)
             continue;
         const profit = toProfit(best.odds);
@@ -125,10 +125,8 @@ function renderBettingResults(card, fightDivs) {
         rows.push({
             matchup, pick,
             result: `${fighter1} wins`,
-            pTrue: groundTruthProb,
             platform: best.platform,
             american: `${sign}${best.odds}`,
-            ev: bestEv,
             isCorrect, pnl,
             returnPct: pnl * 100,
         });
@@ -146,10 +144,8 @@ function renderBettingResults(card, fightDivs) {
           <th>Fight</th>
           <th>Pick</th>
           <th>Result</th>
-          <th>Win Prob</th>
           <th>Best Book</th>
           <th>Odds</th>
-          <th>EV</th>
           <th>P&amp;L</th>
           <th>Return</th>
         </tr>
@@ -160,17 +156,15 @@ function renderBettingResults(card, fightDivs) {
           <td class="odds-fight">${r.matchup}</td>
           <td>${r.pick}</td>
           <td class="${r.isCorrect ? 'prediction-correct' : 'prediction-incorrect'}">${r.result} ${r.isCorrect ? '✓' : '✗'}</td>
-          <td class="odds-value">${(r.pTrue * 100).toFixed(1)}%</td>
           <td class="odds-platform">${r.platform}</td>
           <td class="odds-value">${r.american}</td>
-          <td class="${r.ev >= 0 ? 'pnl-positive' : 'pnl-negative'}">${r.ev >= 0 ? '+' : ''}$${r.ev.toFixed(2)}</td>
           <td class="${r.pnl >= 0 ? 'pnl-positive' : 'pnl-negative'}">${r.pnl >= 0 ? '+' : ''}$${r.pnl.toFixed(2)}</td>
           <td class="${r.returnPct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${r.returnPct >= 0 ? '+' : ''}${r.returnPct.toFixed(0)}%</td>
         </tr>`).join('')}
       </tbody>
       <tfoot>
         <tr class="odds-total">
-          <td colspan="7"><strong>Total (${wagered} bet${wagered !== 1 ? 's' : ''} · $${wagered} wagered)</strong></td>
+          <td colspan="5"><strong>Total (${wagered} bet${wagered !== 1 ? 's' : ''} · $${wagered} wagered)</strong></td>
           <td class="${totalPnl >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}$${totalPnl.toFixed(2)}</strong></td>
           <td class="${totalReturnPct >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${totalReturnSign}${totalReturnPct.toFixed(1)}%</strong></td>
         </tr>

@@ -17,14 +17,35 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/chibili.jpeg">
   </head>
   <body>
+    <div class="social-icons">
+      <a class="platform" target="_blank" href="https://www.linkedin.com/in/patroklos-stefanou/" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a class="platform" target="_blank" href="https://github.com/pstefanou12">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+        </svg>
+      </a>
+      <a class="platform" target="_blank" href="https://x.com/formyxscarfalo1/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+        </svg>
+      </a>
+      <a class="platform" target="_blank" href="https://www.strava.com/athletes/23695440">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/>
+        </svg>
+      </a>
+    </div>
     <div class="nav-bar" style="display:none;">
       <div class="menu-button"><img src="./img/menu-button.png" /></div>
       <div class="nav-items">
         <div class="nav-item" id="resume"><a target="_blank" href="./resources/patroklos_cv.pdf">My Resume</a></div>
         <div class="nav-item" data-scroll-to="about-me"><a>About Me</a></div>
         <div class="nav-item" data-scroll-to="links"><a>Links</a></div>
-        <div class="nav-item" data-scroll-to="portfolio"><a>Portfolio</a></div>
-        <div class="nav-item" data-scroll-to="experience"><a>Experience</a></div>
         <div class="nav-item" data-scroll-to="racing"><a>Racing</a></div>
       </div>
     </div>
@@ -39,11 +60,7 @@
       <div class="section-header">About Me</div>
       <div class="about-me-body">
         <div class="about-me-description">
-          Hi, my name is Pat Stefanou. I am originally from Greenwich, Connecticut but moved away to Boston to study and play water polo at the Massachusetts
-          Institute of Technology. After graduating with both a BS in Computer Science and an MEng in Machine Learning,
-          I moved to Seattle, Washington to work as a Software Engineer for Stripe. I have a passion for innovation and technology, and my main interests
-          are full-stack web development, cloud infrastructure, and machine learning. Outside of technology, I love training for both marathons and triathlons, watching UFC, and hanging out with 
-          friends and family. I hope you enjoy my website!
+          I am a software engineer, endurance athlete, and MMA obsessive from Greenwich, Connecticut. I studied at MIT, where I played water polo and graduated with a BS in Computer Science and an MEng in Machine Learning. I've worked at Stripe and have a deep interest in distributed systems, machine learning, and building things that are fast and reliable.
         </div>
       </div>
     </div>
@@ -53,97 +70,11 @@
         <ul id="link-list">
           <li><a href="mma/mma.html">hardcore.MMA</a></li>
           <li><a target="_blank" href="https://github.com/pstefanou12/delphi.ai">delphi.ai</a></li>
+          <li><a target="_blank" href="https://arxiv.org/abs/2208.12042">Efficient Truncated Regression with Unknown Noise Variance (NeurIPS 2021)</a></li>
+          <li><a target="_blank" href="https://youtu.be/q7zA-whlDYk?si=NpZXzqanE4vTLrGg">Confluent Current 2024 Talk</a></li>
+          <li><a target="_blank" href="https://youtu.be/aF4SHzsxgSc?si=R_ReGuBDT5IEm7ls">Temporal Replay 2023 Talk</a></li>
           <li><a target="_blank" href="https://x.com/formyxscarfalo1/">@formyxscarfalo1</a></li>
         </ul>
-      </div>
-    </div>
-    <div class="section" id="portfolio">
-      <div class="section-header">Portfolio</div>
-        <div class="portfolio-item">
-          <div class="item-body">
-            <div class="item-name">Features</div>
-              <ul class="description">
-                <li>Main focus of contributions while at Stripe was to the Kafka Control Plane; a distributed system written using Temporal in Scala. The Kafka Control Plane is the service that we use to automate maintenance operations for our kafka clusters. For example, operations such as cluster rebalancing, broker replacements, and cluster rolling restarts.</li>
-                <li>Contributed topic configuration management workflow to Kafka Control Plane that manages all topic configurations for all users, across all Kafka clusters at Stripe</li>
-                <li>Workflow coordination mechanism that prevents multiple cluster operations from being applied to a Kafka cluster at the same time.
-                  <ul>
-                    <li>Implemented a locking mechanism that leverages Temporal's mutual exclusion Workflow Id principles. Whenever an operation is to be run on a Kafka cluster, a LockWorkflow is spawned with the name of the Kafka cluster it is operating on.</li>
-                    <li>For example, if you have a Kafka cluster named kafka-00 and you want to replace a broker on said cluster, a LockWorkflow must be spawned with the cluster name. If there is a lock that is already acquired on the cluster, then the operation trying to acquire the lock will spin until it can acquire the lock, and proceed as normal.</li>
-                    <li>This doesn't help with providing ordering and priority to specific operations, but it prevents multiple operations being applied to a cluster at once that could result in dire states, such as under the minimum number of in-sync replicas.</li>
-                  </ul>
-                </li>
-              </ul>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="item-body">
-            <div class="item-name">Efficient Truncated Regression with Unknown Noise Variance - <a target="_blank" href="https://arxiv.org/abs/2208.12042">arxiv</a></div>
-              <ul class="description">
-                <li>Selected to NeurIPS 2021</li>
-                <li>We provide the first computationally and statistically efficient estimators for truncated linear regression when the noise variance is unknown, estimating both the linear model and the variance of the noise. Our estimator is based on an efficient implementation of Projected Stochastic Gradient Descent on the negative log-likelihood of the truncated sample. Importantly, we show that the error of our estimates is asymptotically normal, and we use this to provide explicit confidence regions for our estimates</li>
-                <li>Conducted experiments on both synthetic and semi-synthetic data to show the algorithm's performance in practice; <a target="_blank" href="https://github.com/pstefanou12/Truncated-Regression-With-Unknown-Noise-Variance-NeurIPS-2021">see github</a></li>
-              </ul>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="item-body">
-            <div class="item-name">delphi.ai - <a target="_blank" href="https://github.com/pstefanou12/delphi.ai">see github</a></div>
-            <ul class="description">
-              <li>Developed a package to remove bias from statistical models that are impacted by truncation</li>
-              <li>I wrote the package in Python using PyTorch’s built in autograd framework. Although it may have made sense to use a framework like NumPy instead for the package, I chose PyTorch because we were trying to remove bias from DNNs. delphi.ai has a trainer module that allows you to pass in different statistical models and gradients and perform gradient descent on them. Because of this design goal, PyTorch seemed like the sensible choice for this.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="item-body">
-            <div class="item-name">Confluent Current 2024 - <a  target="_blank" href="https://youtu.be/q7zA-whlDYk?si=NpZXzqanE4vTLrGg">watch talk</a></div>
-              I gave a talk on the Kafka Control Plane at Confluent Current 2024 in Austin, Texas 
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <div class="item-body">
-            <div class="item-name">Temporal Replay 2023 - <a  target="_blank" href="https://youtu.be/aF4SHzsxgSc?si=R_ReGuBDT5IEm7ls">watch talk</a></div>
-              I gave a similar talk on the Kafka Control Plane at Temporal Replay 2023 in Bellevue, Washington. This was my first conference talk. Although it wasn’t the best presentation, I am glad that I stepped out of my comfort zone and gave a presentation in front of an audience of developers. I’d like to continue to give talks and contribute more to the open source community. 
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section" id="experience">
-      <div class="section-header">Work Experience</div>
-      <div class="experience-items">
-        <div class="experience-item" id="stripe">
-          <div class="item-body">
-            <div class="item-name h1">Stripe
-              <div class="item-subtitle h2">Software Engineer - Stream Infrastructure</div>
-            </div>
-            <ul class="description">
-              <li>Stream Infrastructure has a large surface of infrastructure that it manages. The team manages over 50 Kafka clusters over three different environments. A proxy layer called Kproxy that is used for ensuring high availability publishes to Kafka clusters over a multi cluster setup. A Kafka Control Plane that performs maintenance operations on Kafka clusters. A Kafka Archiver that writes data from Kafka Clusters to S3.</li>
-              <li>Over the course of my time at Stripe, I have had the opportunity to take a handful of responsibilities. I held the pager and responded to incidents during on-call, spun up new team members, designed and implemented components of a distributed system, and learned about Kafka internals.</li>
-              <li>The majority of the code was done in Java and Scala, but I also worked with other programming languages such as Go, Ruby, and Python.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experience-item" id="inspirit">
-          <div class="item-body">
-            <div class="item-name">Inspirit.ai 
-              <div class="item-subtitle">Instructor</div>
-            </div>
-            <ul class="description">
-              <li>I worked as an instructor for Inspirit AI. During my time there, I taught high school students a variety of topics including but not limited to Linear Regression, Computer Vision, NLP, and Reinforcement Learning</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experience-item" id="csail">
-          <div class="item-body">
-            <div class="item-name">MIT CSAIL
-              <div class="item-subtitle">Theory of Computation Group - Professor Constantinos Daskalakis</div>
-            </div>
-            <ul class="description">
-              <li>Did research in the implementation of algorithms in truncated statistics</li>
-              <li>Worked on developing a Python package built with PyTorch for correcting statistical models biased by truncation</li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
     <div class="section" id="racing">
@@ -156,90 +87,47 @@
                 <div class="race">
                     California International Marathon 2024
                 </div>
-                <div class="date"> 
+                <div class="date">
                     12-08-2024
                 </div>
                 <div class="time">
                     2:47:01
                 </div>
-                <div class="race-thoughts">
-                    Good race. Great bounceback for Grandma's and 70.3 Boulder. However, still hungry for more.
-                </div>
             </div>
             <div class="racing-item">
                 <div class="race">
-                    Grandma's Marathon 2024 
+                    Grandma's Marathon 2024
                 </div>
-                <div class="date"> 
+                <div class="date">
                     06-22-2024
                 </div>
                 <div class="time">
-                    DNF 
-                </div>
-                <div class="race-thoughts">
-                    Another unfortunate result. 
+                    DNF
                 </div>
             </div>
             <div class="racing-item">
                 <div class="race">
-                    70.3 Boulder 2024 
+                    70.3 Boulder 2024
                 </div>
-                <div class="date"> 
+                <div class="date">
                     06-08-2024
                 </div>
                 <div class="time">
                     6:00:13
                 </div>
-                <div class="race-thoughts">
-                    Terrible race, was not prepared, and fully paid for it on the run.
-                </div>
             </div>
             <div class="racing-item">
                 <div class="race">
-                    Cherry Blossom Half Marathon 
+                    Cherry Blossom Half Marathon
                 </div>
-                <div class="date"> 
+                <div class="date">
                     03-24-2024
                 </div>
                 <div class="time">
-                   1:30:46 
-                </div>
-                <div class="race-thoughts">
-                    Had only been training intensely for running for a couple of months and didn't know what to expect going in. Happy with the result. 
+                   1:30:46
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-      <div class="footer-side" id="left">
-        <div>Copyright © Patroklos Stefanou</div>
-      </div>
-      <div class="social-media">
-        <a class="platform" target="_blank" href="https://www.linkedin.com/in/patroklos-stefanou/" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
-        </a>
-        <a class="platform" target="_blank" href="https://github.com/pstefanou12">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
-          </svg>
-        </a>
-        <a class="platform" target="_blank" href="https://x.com/formyxscarfalo1/">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
-          </svg>
-        </a>
-        <a class="platform" target="_blank" href="https://www.strava.com/athletes/23695440">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/>
-          </svg>
-        </a>
-      </div>
-      <div class="footer-side" id="right">
-        <div>Email: <a href="mailto:patstefanou@gmail.com">patstefanou@gmail.com</a></div>
-      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/index.js"></script>

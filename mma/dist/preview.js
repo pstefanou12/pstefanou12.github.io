@@ -71,6 +71,7 @@ function renderOddsTable(card) {
         return;
     const rows = [];
     let totalProfit = 0;
+    let totalEv = 0;
     for (const [matchup, entry] of Object.entries(fights)) {
         const pick = entry.prediction?.winner;
         if (!pick || !entry.bestOdds)
@@ -83,12 +84,16 @@ function renderOddsTable(card) {
         const sign = best.odds > 0 ? '+' : '';
         rows.push({ matchup, pick, pTrue: groundTruthProb, platform: best.platform, american: `${sign}${best.odds}`, ev: bestEv, profit, returnPct });
         totalProfit += profit;
+        totalEv += bestEv;
     }
     if (rows.length === 0)
         return;
     const wagered = rows.length;
     const netSign = totalProfit >= 0 ? '+' : '';
     const avgReturn = ((totalProfit / wagered) * 100).toFixed(1);
+    const evSign = totalEv >= 0 ? '+' : '';
+    const evReturn = ((totalEv / wagered) * 100).toFixed(1);
+    const evReturnSign = parseFloat(evReturn) >= 0 ? '+' : '';
     const html = `
     <table class="odds-table">
       <thead>
@@ -119,7 +124,7 @@ function renderOddsTable(card) {
       <tfoot>
         <tr class="odds-total">
           <td colspan="5"><strong>Total (${wagered} pick${wagered !== 1 ? 's' : ''} · $${wagered} wagered)</strong></td>
-          <td></td>
+          <td class="${totalEv >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>EV: ${evSign}$${totalEv.toFixed(2)} (${evReturnSign}${evReturn}%)</strong></td>
           <td class="${totalProfit >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}$${totalProfit.toFixed(2)}</strong></td>
           <td class="${totalProfit >= 0 ? 'pnl-positive' : 'pnl-negative'}"><strong>${netSign}${avgReturn}%</strong></td>
         </tr>

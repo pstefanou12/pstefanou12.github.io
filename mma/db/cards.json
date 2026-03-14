@@ -111,6 +111,14 @@
               "Max Holloway": -220,
               "Charles Oliveira": 170
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.3704,
+            "bestOdds": {
+              "platform": "BetMGM",
+              "odds": 190
+            },
+            "bestEv": 0.0741
           }
         },
         "Caio Borralho vs. Reinier de Ridder": {
@@ -212,6 +220,14 @@
               "Caio Borralho": -258,
               "Reinier de Ridder": 210
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.3226,
+            "bestOdds": {
+              "platform": "BetRivers",
+              "odds": 210
+            },
+            "bestEv": 0.0
           }
         },
         "Raul Rosas Jr. vs. Rob Font": {
@@ -309,6 +325,14 @@
               "Rob Font": 220,
               "Raul Rosas Jr.": -260
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7143,
+            "bestOdds": {
+              "platform": "FanDuel",
+              "odds": -220
+            },
+            "bestEv": 0.039
           }
         },
         "Drew Dober vs. Michael Johnson": {
@@ -410,6 +434,14 @@
               "Drew Dober": -110,
               "Michael Johnson": -110
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.5413,
+            "bestOdds": {
+              "platform": "BetOnline",
+              "odds": -110
+            },
+            "bestEv": 0.0334
           }
         },
         "Gregory Rodrigues vs. Brunno Ferreira": {
@@ -511,6 +543,14 @@
               "Brunno Ferreira": 140,
               "Gregory Rodrigues": -160
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.4082,
+            "bestOdds": {
+              "platform": "BetRivers",
+              "odds": 155
+            },
+            "bestEv": 0.0408
           }
         },
         "Cody Garbrandt vs. Long Xiao": {
@@ -612,6 +652,14 @@
               "Cody Garbrandt": 150,
               "Long Xiao": -175
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.4167,
+            "bestOdds": {
+              "platform": "BetOnline",
+              "odds": 150
+            },
+            "bestEv": 0.0417
           }
         },
         "Donte Johnson vs. Cody Brundage": {
@@ -713,6 +761,14 @@
               "Donte Johnson": -900,
               "Cody Brundage": 600
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8947,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": -707
+            },
+            "bestEv": 0.0213
           }
         },
         "Alberto Montes vs. Ricky Turcios": {
@@ -814,6 +870,14 @@
               "Alberto Montes": -185,
               "Ricky Turcios": 160
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6429,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": -163
+            },
+            "bestEv": 0.0372
           }
         },
         "N. Tumendemberel vs. Cody Durden": {
@@ -915,6 +979,14 @@
               "Cody Durden": 150,
               "N. Tumendemberel": -175
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6241,
+            "bestOdds": {
+              "platform": "Betway",
+              "odds": -138
+            },
+            "bestEv": 0.0763
           }
         },
         "Sumudaerji vs. Jesus Aguilar": {
@@ -1012,6 +1084,14 @@
               "Sumudaerji": -225,
               "Jesus Aguilar": 190
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.3448,
+            "bestOdds": {
+              "platform": "Caesars",
+              "odds": 200
+            },
+            "bestEv": 0.0345
           }
         },
         "Diyar Nurgozhay vs. Rafael Tobias": {
@@ -1109,6 +1189,14 @@
               "Rafael Tobias": -175,
               "Diyar Nurgozhay": 150
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6364,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": -163
+            },
+            "bestEv": 0.0268
           }
         },
         "Rodolfo Bellato vs. Luke Fernandez": {
@@ -1210,14 +1298,22 @@
               "Luke Fernandez": -215,
               "Rodolfo Bellato": 185
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6923,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": -197
+            },
+            "bestEv": 0.0437
           }
         }
       }
     },
     {
       "id": "ufc-fight-night-moreno-kavanagh",
-      "title": "UFC Fight Night",
-      "subtitle": "Moreno vs. Kavanagh",
+      "title": "UFC Fight Night: Moreno vs Kavanagh",
+      "subtitle": null,
       "date": "2026-03-01",
       "rating": 6.8,
       "poster": "/mma/db/img/ufc_fight_night_moreno_kavanagh_poster.jpg",
@@ -1329,6 +1425,14 @@
               "Brandon Moreno": -286,
               "Lone'er Kavanagh": 181
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7143,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -213
+            },
+            "bestEv": 0.0496
           }
         },
         "David Martinez vs. Marlon Vera": {
@@ -1434,6 +1538,14 @@
               "Marlon Vera": null,
               "David Martinez": null
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7207,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -212
+            },
+            "bestEv": 0.0606
           }
         },
         "King Green vs. Daniel Zellhuber": {
@@ -1539,6 +1651,14 @@
               "Daniel Zellhuber": null,
               "King Green": null
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8374,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -317
+            },
+            "bestEv": 0.1016
           }
         },
         "Edgar Cháirez vs. Felipe Bunes": {
@@ -1644,6 +1764,14 @@
               "Edgar Cháirez": -335,
               "Felipe Bunes": 223
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7561,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -245
+            },
+            "bestEv": 0.0647
           }
         },
         "Imanol Rodriguez vs. Kevin Borjas": {
@@ -1749,6 +1877,14 @@
               "Imanol Rodriguez": null,
               "Kevin Borjas": null
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8095,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -300
+            },
+            "bestEv": 0.0794
           }
         },
         "Santiago Luna vs. Angel Pacheco": {
@@ -1854,6 +1990,14 @@
               "Santiago Luna": null,
               "Angel Pacheco": null
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8291,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -400
+            },
+            "bestEv": 0.0363
           }
         },
         "Ryan Gandra vs. José Medina": {
@@ -1959,6 +2103,14 @@
               "José Medina": null,
               "Ryan Gandra": null
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8519,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -400
+            },
+            "bestEv": 0.0648
           }
         },
         "Ailín Pérez vs. Macy Chiasson": {
@@ -2064,6 +2216,14 @@
               "Macy Chiasson": 148,
               "Ailín Pérez": -184
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.4082,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": 163
+            },
+            "bestEv": 0.0735
           }
         },
         "Cristian Quiñonez vs. Kris Moutinho": {
@@ -2169,6 +2329,14 @@
               "Cristian Quiñonez": -716,
               "Kris Moutinho": 484
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.1802,
+            "bestOdds": {
+              "platform": "Circa",
+              "odds": 500
+            },
+            "bestEv": 0.0811
           }
         },
         "Javier Reyes vs. D. Silva de Andrade": {
@@ -2274,6 +2442,14 @@
               "D. Silva de Andrade": 183,
               "Javier Reyes": -229
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6923,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -203
+            },
+            "bestEv": 0.0333
           }
         },
         "Regina Tarin vs. Ernesta Kareckaite": {
@@ -2285,7 +2461,8 @@
             "winner": "Regina Tarin",
             "method": "Decision, Unanimous",
             "time": "3 Rounds, 15:00 Total"
-          }
+          },
+          "bestOdds": null
         },
         "Francis Marshall vs. Erik Silva": {
           "prediction": {
@@ -2390,6 +2567,14 @@
               "Erik Silva": null,
               "Francis Marshall": null
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8387,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -456
+            },
+            "bestEv": 0.0226
           }
         },
         "Damian Pinas vs. Wes Schultz": {
@@ -2495,6 +2680,14 @@
               "Wes Schultz": 220,
               "Damian Pinas": -290
             }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7297,
+            "bestOdds": {
+              "platform": "Jazz",
+              "odds": -212
+            },
+            "bestEv": 0.0739
           }
         }
       }
