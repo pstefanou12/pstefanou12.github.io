@@ -284,15 +284,15 @@ def generate_html_template(event_data):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{event_data['event_name']} Recap</title>
-  <link rel="stylesheet" href="../css/mma.css">
-  <link rel="icon" type="image/png" href="../img/hardcore_mma.png">
-  <script src="../js/recap.js"></script>
+  <link rel="stylesheet" href="../../css/mma.css">
+  <link rel="icon" type="image/png" href="../../db/img/hardcore_mma.png">
+  <script type="module" src="../../dist/recap.js"></script>
 </head>
 <body>
   
   <div class="section">
-    <a href="../mma.html">
-      <img id="logo" src="../img/hardcore_mma.png">
+    <a href="../../mma.html">
+      <img id="logo" src="../../img/hardcore_mma.png">
     </a>
 
     <h1>Loading...</h1>
@@ -530,15 +530,15 @@ def generate_preview_template(event_data):
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{event_data['event_name']} Preview</title>
-    <link rel="stylesheet" href="../css/mma.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/hardcore_mma.png">
-    <script src="../js/preview.js"></script>
+    <link rel="stylesheet" href="../../css/mma.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/hardcore_mma.png">
+    <script type="module" src="../../dist/preview.js"></script>
   </head>
   <body>
 
   <div class="section">
-    <a href="../mma.html">
-      <img id="logo" src="../img/hardcore_mma.png">
+    <a href="../../mma.html">
+      <img id="logo" src="../../img/hardcore_mma.png">
     </a>
 
     <!-- This content will be populated by preview.js -->

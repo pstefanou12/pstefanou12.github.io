@@ -163,7 +163,7 @@ def extract_subtitle(event_name):
     
     return None
 
-def update_json_metadata(event_data, card_id, rating, fights=None, json_path='./mma/js/cards.json'):
+def update_json_metadata(event_data, card_id, rating, fights=None, json_path='./mma/db/cards.json'):
     """
     Add or update card metadata in the JSON file
     """
@@ -463,7 +463,7 @@ def main():
 
         # Generate preview HTML template
         preview_html = generate_preview_template(event_data)
-        preview_filename = f"./mma/previews/{card_id}.html"
+        preview_filename = f"./mma/db/previews/{card_id}.html"
         with open(preview_filename, 'w', encoding='utf-8') as f:
             f.write(preview_html)
 
@@ -482,7 +482,7 @@ def main():
 
     # Load existing fights from JSON (contains predictions filled in during preview mode)
     existing_fights = {}
-    json_path = './mma/js/cards.json'
+    json_path = './mma/db/cards.json'
     if os.path.exists(json_path):
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -516,7 +516,7 @@ def main():
     html_content = generate_html_template(event_data)
 
     # Save to file using card_id as filename
-    filename = f"./mma/recaps/{card_id}.html"
+    filename = f"./mma/db/recaps/{card_id}.html"
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(html_content)
 
@@ -684,7 +684,7 @@ def generate_preview_template(event_data):
     
     return html
 
-def update_json_with_preview(preview_card, json_path='./mma/js/cards.json'):
+def update_json_with_preview(preview_card, json_path='./mma/db/cards.json'):
     """Update JSON with preview URL only"""
     if os.path.exists(json_path):
         with open(json_path, 'r', encoding='utf-8') as f:
