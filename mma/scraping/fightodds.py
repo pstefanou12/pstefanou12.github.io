@@ -1,23 +1,22 @@
-#!/usr/bin/env python3
-"""Scrape odds from fightodds.io and update cards.json.
-
-Usage:
-    python3 mma/fightodds.py <pk_or_url> <card_id>
-
-Examples:
-    python3 mma/fightodds.py 8823 ufc-326
-    python3 mma/fightodds.py https://fightodds.io/mma-events/8823/ufc-326-holloway-vs-oliveira-2/odds ufc-326
 """
+Fightodds — fetches moneyline odds from fightodds.io and writes them to cards.json.
 
-import argparse
+Queries the fightodds.io GraphQL API for all sportsbook odds for a given event,
+matches fights to existing card entries by fighter last name, and computes the
+best EV book for each predicted winner.
+
+Public API:
+    run(args)  — args.event (event PK or URL), args.card_id
+"""
 import json
-import os
 import re
 import requests
 
-FIGHTODDS_GQL = "https://api.fightodds.io/gql"
-JSON_PATH = "./mma/db/cards.json"
-GROUND_TRUTH_BOOK = "DraftKings"
+from scraping import constants
+
+
+def _american_to_profit(odds):
+    return odds / 100 if odds > 0 else 100 / abs(odds)
 
 
 def _implied_probability(odds):
@@ -26,11 +25,16 @@ def _implied_probability(odds):
     return abs(odds) / (abs(odds) + 100)
 
 
-def _american_to_profit(odds):
-    return odds / 100 if odds > 0 else 100 / abs(odds)
+def _last_name(name):
+    return name.strip().split()[-1].lower()
 
 
-def compute_best_odds(fights, ground_truth_book=GROUND_TRUTH_BOOK):
+def _names_match(tap_name, fo_name):
+    t, f = _last_name(tap_name), _last_name(fo_name)
+    return t in f or f in t
+
+
+def compute_best_odds(fights, ground_truth_book=constants.GROUND_TRUTH_BOOK):
     """Compute and store groundTruthProb + best EV book for each fight with a prediction."""
     for matchup, entry in fights.items():
         odds_data = entry.get("odds", {})
@@ -40,7 +44,6 @@ def compute_best_odds(fights, ground_truth_book=GROUND_TRUTH_BOOK):
             entry["bestOdds"] = None
             continue
 
-        # Ground-truth probability from the configured book
         gt_lines = odds_data.get(ground_truth_book, {})
         pick_lower = pick.lower()
         p_true = None
@@ -53,7 +56,6 @@ def compute_best_odds(fights, ground_truth_book=GROUND_TRUTH_BOOK):
             entry["bestOdds"] = None
             continue
 
-        # Find book with highest EV using ground-truth probability
         best_platform, best_ev, best_odds = None, None, None
         for platform, lines in odds_data.items():
             for fighter, odds in lines.items():
@@ -69,15 +71,6 @@ def compute_best_odds(fights, ground_truth_book=GROUND_TRUTH_BOOK):
             "bestOdds": {"platform": best_platform, "odds": best_odds},
             "bestEv": round(best_ev, 4) if best_ev is not None else None,
         }
-
-
-def _last_name(name):
-    return name.strip().split()[-1].lower()
-
-
-def _names_match(tap_name, fo_name):
-    t, f = _last_name(tap_name), _last_name(fo_name)
-    return t in f or f in t
 
 
 def scrape_fightodds(event_pk):
@@ -111,7 +104,7 @@ def scrape_fightodds(event_pk):
         "variables": {"eventPk": int(event_pk)},
     }
     resp = requests.post(
-        FIGHTODDS_GQL,
+        constants.FIGHTODDS_GQL,
         json=payload,
         headers={"Content-Type": "application/json"},
         timeout=60,
@@ -149,7 +142,7 @@ def scrape_fightodds(event_pk):
     return result
 
 
-def update_odds_in_json(card_id, fightodds_fights, json_path=JSON_PATH):
+def update_odds_in_json(card_id, fightodds_fights, json_path=constants.JSON_PATH):
     """Match fightodds fights to card fights by last name and write odds into cards.json."""
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -199,14 +192,8 @@ def update_odds_in_json(card_id, fightodds_fights, json_path=JSON_PATH):
     print(f"\nOdds written for {matched}/{len(fightodds_fights)} fights in '{card_id}'")
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description="Scrape fightodds.io odds and update cards.json"
-    )
-    parser.add_argument("event", help="fightodds.io event PK (e.g. 8823) or full URL")
-    parser.add_argument("card_id", help="Card ID in cards.json (e.g. ufc-326)")
-    args = parser.parse_args()
-
+def run(args):
+    """Execute fightodds scraping based on parsed CLI args."""
     pk_match = re.search(r"(\d+)", args.event)
     if not pk_match:
         print("Error: Could not parse event PK from argument")
@@ -218,7 +205,3 @@ def main():
     print(f"Found {len(fightodds_fights)} fights with odds\n")
 
     update_odds_in_json(args.card_id, fightodds_fights)
-
-
-if __name__ == "__main__":
-    main()

@@ -31,14 +31,14 @@ Read the notes file at `$ARGUMENTS[0]` to understand the per-fight research befo
 ### 2. Run the HTML Template Script
 Scrape the Tapology event page and generate the HTML preview template:
 ```bash
-python3 /home/patroklos/pstefanou12.github.io/.claude/skills/recap/scripts/tapology.py $ARGUMENTS[1] --mode preview
+cd /home/patroklos/pstefanou12.github.io/mma && python3 -m scraping.bin.scraping_main --preview $ARGUMENTS[1]
 ```
 The script prints the generated file path (e.g. `✓ Preview template generated: ./mma/previews/ufc-322.html`) and the card ID (e.g. `Generated card ID: ufc-322`). Note both — the file path is what you populate, and the card ID is used in the next step.
 
 ### 3. Scrape Odds (if `$ARGUMENTS[2]` provided)
 If a fightodds argument was given, run the odds scraper to populate odds in `cards.json`:
 ```bash
-python3 /home/patroklos/pstefanou12.github.io/mma/fightodds.py $ARGUMENTS[2] <card_id>
+cd /home/patroklos/pstefanou12.github.io/mma && python3 -m scraping.bin.scraping_main --fightodds $ARGUMENTS[2] --card-id <card_id>
 ```
 Replace `<card_id>` with the card ID printed by the previous script (e.g. `ufc-326`). This overwrites the null odds scaffold with real sportsbook odds.
 
