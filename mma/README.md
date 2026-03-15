@@ -1,66 +1,130 @@
-# UFC Event Scripts
+# MMA Scraping
 
-Two Python scripts for generating UFC event templates and LLM-ready recap/preview prompts.
+Python package for scraping UFC event data from Tapology and fightodds.io, generating HTML templates, and updating `cards.json`.
 
 ## Installation
 
 ```bash
-pip install requests beautifulsoup4
+pip install cloudscraper beautifulsoup4 requests
 ```
 
 ---
 
-## `tapology.py` — Template & Metadata Generator
+## Usage
 
-Scrapes Tapology event pages to generate HTML templates and update `cards.json`.
-
-### Usage
-
-#### Preview mode (before event)
+All commands are run from the `mma/` directory via the single entry point:
 
 ```bash
-python mma/tapology.py "https://www.tapology.com/fightcenter/events/..." --mode preview
+python3 -m scraping.bin.scraping_main <--flag> [options]
+```
+
+### Research (before the event)
+
+Scrapes every fighter's Tapology profile — record, streak, last 5 fights — and saves structured JSON notes to `notes/<card-id>.json`.
+
+```bash
+python3 -m scraping.bin.scraping_main --research https://www.tapology.com/fightcenter/events/...
+```
+
+### Preview (before the event)
+
+Scrapes the event page, generates an HTML preview template, and adds the card to `cards.json` with an empty predictions and odds scaffold.
+
+```bash
+python3 -m scraping.bin.scraping_main --preview https://www.tapology.com/fightcenter/events/...
 ```
 
 **Output:**
-- `mma/previews/{card-id}.html` — Preview template with per-fight pick sections
-- Updates `cards.json` with event metadata and a `fights` scaffold:
+- `db/previews/{card-id}.html` — preview template with per-fight pick sections
+- `db/cards.json` — new card entry with fight scaffold:
   ```json
-  "fights": {
-    "Fighter A vs. Fighter B": {
-      "prediction": {"winner": "", "method": ""},
-      "result": null
-    }
+  "Fighter A vs. Fighter B": {
+    "prediction": {"winner": "", "method": ""},
+    "result": null,
+    "odds": {"DraftKings": {"Fighter A": null, "Fighter B": null}, ...}
   }
   ```
 
-#### Recap mode (after event)
+### Odds (before the event)
+
+Fetches moneyline odds from fightodds.io and writes them into the card's `odds` fields in `cards.json`. Computes the best EV book for each predicted winner.
 
 ```bash
-python mma/tapology.py "https://www.tapology.com/fightcenter/events/..." --mode recap --rating 7.6
+python3 -m scraping.bin.scraping_main --fightodds <event-pk-or-url> --card-id <card-id>
+```
+
+**Example:**
+```bash
+python3 -m scraping.bin.scraping_main --fightodds https://fightodds.io/mma-events/8823/ufc-326/odds --card-id ufc-326
+```
+
+### Recap (after the event)
+
+Scrapes results from the event page, merges them with existing predictions and odds in `cards.json`, and generates an HTML recap template.
+
+```bash
+python3 -m scraping.bin.scraping_main --recap https://www.tapology.com/fightcenter/events/... --rating 7.6
 ```
 
 **Output:**
-- `mma/recaps/{card-id}.html` — Recap template with fight sections pre-filled with result data
-- Updates `cards.json`: merges scraped results into the existing `fights` entries and sets the rating:
+- `db/recaps/{card-id}.html` — recap template pre-filled with fight results
+- `db/cards.json` — updated with results, rating, and `recapUrl`:
   ```json
-  "fights": {
-    "Fighter A vs. Fighter B": {
-      "prediction": {"winner": "Fighter A", "method": "Decision"},
-      "result": {"winner": "Fighter A", "method": "Decision, Unanimous", "time": "3 Rounds, 15:00 Total"}
-    }
+  "Fighter A vs. Fighter B": {
+    "prediction": {"winner": "Fighter A", "method": "Decision"},
+    "result": {"winner": "Fighter A", "method": "Decision, Unanimous", "time": "3 Rounds, 15:00 Total"}
   }
   ```
 
-#### Both modes
+---
 
+## Typical Workflow
+
+**Before the event:**
 ```bash
-python mma/tapology.py "https://www.tapology.com/fightcenter/events/..." --rating 7.6
+# 1. Research fighter profiles
+python3 -m scraping.bin.scraping_main --research https://www.tapology.com/fightcenter/events/...
+
+# 2. Generate preview template
+python3 -m scraping.bin.scraping_main --preview https://www.tapology.com/fightcenter/events/...
+
+# 3. Populate odds
+python3 -m scraping.bin.scraping_main --fightodds <event-pk> --card-id <card-id>
+
+# 4. Add poster image to db/img/{card-id}_poster.jpg
+
+# 5. Fill in predictions and write preview content
 ```
 
-### File Naming Convention
+**After the event:**
+```bash
+# 1. Generate recap template
+python3 -m scraping.bin.scraping_main --recap https://www.tapology.com/fightcenter/events/... --rating 7.6
 
-Card IDs are generated automatically:
+# 2. Write recap content
+```
+
+---
+
+## Package Structure
+
+```
+scraping/
+  bin/
+    scraping_main.py  — CLI entry point
+  constants.py        — shared config, platform list, HTML templates
+  tapology.py         — Tapology scraping and shared utilities
+  research.py         — run() for research mode
+  preview.py          — run() for preview mode
+  recap.py            — run() for recap mode
+  fightodds.py        — run() for odds scraping
+```
+
+---
+
+## Card ID Convention
+
+Card IDs are derived automatically from the event name:
 
 | Event Name | Card ID |
 |---|---|
@@ -68,129 +132,51 @@ Card IDs are generated automatically:
 | UFC Fight Night: Royval vs Kape | `ufc-fight-night-royval-kape` |
 | UFC Qatar: Tsarukyan vs Hooker | `ufc-qatar-tsarukyan-hooker` |
 
-### JSON Schema
+---
 
-`cards.json` entries follow this structure:
+## cards.json Schema
 
 ```json
 {
   "id": "ufc-326",
   "title": "UFC 326",
-  "subtitle": "Jones vs. Aspinall",
-  "date": "2026-03-15",
+  "subtitle": "Holloway vs. Oliveira 2",
+  "date": "2025-07-19",
   "rating": 7.6,
-  "poster": "/mma/img/ufc_326_poster.jpg",
-  "recapUrl": "recaps/ufc-326.html",
-  "previewUrl": "previews/ufc-326.html",
+  "poster": "/mma/db/img/ufc_326_poster.jpg",
+  "recapUrl": "db/recaps/ufc-326.html",
+  "previewUrl": "db/previews/ufc-326.html",
   "location": "Las Vegas, Nevada, United States",
-  "eventTime": "Sat. 03.15.2026",
+  "eventTime": "Sat. 07.19.2025",
   "fights": {
     "Fighter A vs. Fighter B": {
       "prediction": {"winner": "Fighter A", "method": "Decision"},
-      "result": {"winner": "Fighter A", "method": "Decision, Unanimous", "time": "3 Rounds, 15:00 Total"}
+      "result": {"winner": "Fighter A", "method": "Decision, Unanimous", "time": "3 Rounds, 15:00 Total"},
+      "odds": {
+        "DraftKings": {"Fighter A": -180, "Fighter B": +150}
+      },
+      "bestOdds": {
+        "groundTruthProb": 0.6429,
+        "bestOdds": {"platform": "Pinnacle", "odds": -165},
+        "bestEv": 0.0412
+      }
     }
   }
 }
 ```
 
-### Typical Workflow
-
-**Before the event:**
-```bash
-# 1. Generate preview template and fights scaffold
-python mma/tapology.py "https://www.tapology.com/..." --mode preview
-
-# 2. Add poster to mma/img/{card-id}_poster.jpg
-
-# 3. Fill in prediction winner/method in cards.json for each fight
-
-# 4. Generate the recap prompt and write preview content (see generate_prompt.py below)
-```
-
-**After the event:**
-```bash
-# 1. Generate recap template (populates results from Tapology, preserves predictions)
-python mma/tapology.py "https://www.tapology.com/..." --mode recap --rating 7.6
-
-# 2. Generate the recap prompt and write recap content (see generate_prompt.py below)
-```
-
 ---
 
-## `generate_prompt.py` — LLM Prompt Assembler
+## Supported Sportsbooks
 
-Combines a prompt template, your event notes, and the HTML template into a single file ready to paste into any model.
-
-### Usage
-
-```bash
-python mma/generate_prompt.py <mode> <card-id> <notes.txt>
-```
-
-- `mode` — `recap` or `preview`
-- `card-id` — must exist in `cards.json` (validated at runtime)
-- `notes.txt` — path to your handwritten event notes
-
-**Example:**
-```bash
-python mma/generate_prompt.py recap ufc-fight-night-strickland-hernandez ~/Downloads/"UFC Fight Night Strickland vs Hernandez.txt"
-```
-
-**Output:**
-- `mma/prompts/generated_prompts/{card-id}-{mode}.md` — assembled prompt (gitignored)
-
-The generated file contains:
-1. The prompt template (`mma/prompts/RECAP.md` or `mma/prompts/PREVIEW.md`)
-2. Your event notes under `## Event Notes`
-3. The HTML template under `## HTML Template`
-
-Paste the contents into any model to produce a fully written recap or preview.
-
-### Prompt Templates
-
-| File | Purpose |
-|---|---|
-| `mma/prompts/RECAP.md` | Role, task, and formatting rules for recap writing |
-| `mma/prompts/PREVIEW.md` | Role, task, and formatting rules for preview writing |
-
----
-
-### Betting odds
-
-Preview mode automatically generates a null-filled odds scaffold in `cards.json` for all known platforms:
-
-```json
-"odds": {
-  "BetOnline":  {"Fighter A": null, "Fighter B": null},
-  "Bovada":     {"Fighter A": null, "Fighter B": null},
-  "DraftKings": {"Fighter A": null, "Fighter B": null},
-  ...
-}
-```
-
-Fill in the values manually before publishing the preview. The JS finds the best non-null payout for the predicted winner at render time.
-
-#### Supported platforms
-
-BetOnline, Bovada, MyBookie, BetUS, Bet105, BookMaker, DraftKings, FanDuel, 4Cx, Circa, BetAnything, BetRivers, HardRocketBet, BetMGM, Caesars, Jazz, Polymarket, Pinnacle, Betway, Stake, Cloudbet, 4casters, SXBet
-
-#### American odds reference
-
-| Odds | Profit per $1 |
-|------|--------------|
-| -200 | $0.50 |
-| -150 | $0.67 |
-| -110 | $0.91 |
-| +100 | $1.00 |
-| +150 | $1.50 |
-| +200 | $2.00 |
+BetOnline, Bovada, MyBookie, BetUS, Bet105, BookMaker, DraftKings, FanDuel, 4Cx, BetAnything, Circa, BetRivers, HardRocketBet, BetMGM, Caesars, Jazz, Polymarket, Pinnacle, Betway, Stake, Cloudbet, 4casters, SXBet
 
 ---
 
 ## Common Issues
 
-**Date parsing** — If Tapology's date format can't be parsed, the script falls back to the current date. Check the JSON and correct manually if needed.
+**Date parsing** — If Tapology's date format can't be parsed, the event date falls back to today. Check `cards.json` and correct manually if needed.
 
-**Card ID mismatch** — `generate_prompt.py` will error and list all valid IDs if the provided card ID isn't found in `cards.json`.
+**Fighter name matching** — Odds matching uses last-name fuzzy matching. If a fight shows `Warning: No match for '...'`, check for accented characters or name discrepancies between Tapology and fightodds.io.
 
-**Poster files** — Add the poster image to `mma/img/` using the exact filename shown in the script output (e.g., `ufc_326_poster.jpg`).
+**Poster files** — Add the poster image to `db/img/` using the filename printed by the script (e.g. `ufc_326_poster.jpg`).

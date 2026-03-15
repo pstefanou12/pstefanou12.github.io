@@ -31,7 +31,7 @@ Read the notes file at `$ARGUMENTS[0]` to understand the fight-by-fight observat
 ### 2. Run the HTML Template Script
 Scrape the Tapology event page and generate the HTML recap template:
 ```bash
-python3 /home/patroklos/pstefanou12.github.io/.claude/skills/recap/scripts/tapology.py $ARGUMENTS[1] --mode recap --rating $ARGUMENTS[2]
+cd /home/patroklos/pstefanou12.github.io/mma && python3 -m scraping.bin.scraping_main --recap $ARGUMENTS[1] --rating $ARGUMENTS[2]
 ```
 The script prints the generated file path (e.g. `✓ HTML template generated: ./mma/recaps/ufc-322.html`). Note this path — it is the file you will populate in the next steps.
 

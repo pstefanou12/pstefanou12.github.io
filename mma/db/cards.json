@@ -2,22 +2,26 @@
   "cards": [
     {
       "id": "ufc-fight-night-emmett-vallejos",
-      "title": "UFC Fight Night: Emmett vs. Vallejos",
-      "subtitle": null,
-      "date": "2026-03-13",
-      "rating": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Emmett vs. Vallejos",
+      "date": "2026-03-15",
+      "rating": 6.9,
       "poster": "/mma/db/img/ufc_fight_night_emmett_vallejos_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-emmett-vallejos.html",
       "previewUrl": "db/previews/ufc-fight-night-emmett-vallejos.html",
       "location": "Octagon",
       "eventTime": "Saturday 03.14.2026 at 05:00 PM ET",
       "fights": {
-        "Josh Emmett vs. Kevin Vallejos": {
+        "Kevin Vallejos vs. Josh Emmett": {
           "prediction": {
             "winner": "Kevin Vallejos",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Kevin Vallejos",
+            "method": "KO/TKO, Punches, Knees, and Elbows",
+            "time": "3:33 Round 1 of 5"
+          },
           "odds": {
             "Bovada": {
               "Josh Emmett": 410,
@@ -117,12 +121,16 @@
             "bestEv": 0.0448
           }
         },
-        "Amanda Lemos vs. Gillian Robertson": {
+        "Gillian Robertson vs. Amanda Lemos": {
           "prediction": {
             "winner": "Gillian Robertson",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Gillian Robertson",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Caesars": {
               "Amanda Lemos": 180,
@@ -222,117 +230,28 @@
             "bestEv": 0.0296
           }
         },
-        "Andre Fili vs. José Delgado": {
+        "Jose Delgado vs. Andre Fili": {
           "prediction": {
-            "winner": "José Delgado",
+            "winner": "Jose Delgado",
             "method": "Decision"
           },
-          "result": null,
-          "odds": {
-            "Pinnacle": {
-              "Andre Fili": 343,
-              "José Delgado": -421
-            },
-            "BetUS": {
-              "Andre Fili": 339,
-              "José Delgado": -450
-            },
-            "BetAnything": {
-              "Andre Fili": 285,
-              "José Delgado": -450
-            },
-            "FanDuel": {
-              "Andre Fili": 310,
-              "José Delgado": -420
-            },
-            "HardRockBet": {
-              "Andre Fili": 300,
-              "José Delgado": -425
-            },
-            "Cloudbet": {
-              "Andre Fili": 343,
-              "José Delgado": -422
-            },
-            "MyBookie": {
-              "Andre Fili": 340,
-              "José Delgado": -461
-            },
-            "BetRivers": {
-              "Andre Fili": 310,
-              "José Delgado": -417
-            },
-            "BetMGM": {
-              "Andre Fili": 310,
-              "José Delgado": -425
-            },
-            "SXBet": {
-              "Andre Fili": 332,
-              "José Delgado": -397
-            },
-            "Circa": {
-              "Andre Fili": 360,
-              "José Delgado": -450
-            },
-            "Bookmaker": {
-              "Andre Fili": 334,
-              "José Delgado": -425
-            },
-            "4Cx": {
-              "Andre Fili": 332,
-              "José Delgado": -433
-            },
-            "4casters": {
-              "Andre Fili": 341,
-              "José Delgado": -424
-            },
-            "Bovada": {
-              "Andre Fili": 335,
-              "José Delgado": -450
-            },
-            "Betway": {
-              "Andre Fili": 260,
-              "José Delgado": -350
-            },
-            "DraftKings": {
-              "Andre Fili": 340,
-              "José Delgado": -440
-            },
-            "Caesars": {
-              "Andre Fili": 340,
-              "José Delgado": -440
-            },
-            "Stake": {
-              "Andre Fili": 350,
-              "José Delgado": -455
-            },
-            "Bet105": {
-              "Andre Fili": 343,
-              "José Delgado": -421
-            },
-            "Polymarket": {
-              "Andre Fili": 355,
-              "José Delgado": -400
-            },
-            "BetOnline": {
-              "Andre Fili": 350,
-              "José Delgado": -450
-            }
+          "result": {
+            "winner": "Jose Delgado",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
           },
-          "bestOdds": {
-            "groundTruthProb": 0.8148,
-            "bestOdds": {
-              "platform": "Betway",
-              "odds": -350
-            },
-            "bestEv": 0.0476
-          }
+          "bestOdds": null
         },
         "Marwan Rahiki vs. Harry Hardwick": {
           "prediction": {
             "winner": "Marwan Rahiki",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Marwan Rahiki",
+            "method": "KO/TKO, Corner Stoppage",
+            "time": "5:00 Round 2 of 3, 10:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Harry Hardwick": 220,
@@ -432,12 +351,16 @@
             "bestEv": 0.0376
           }
         },
-        "Oumar Sy vs. Ion Cutelaba": {
+        "Ion Cutelaba vs. Oumar Sy": {
           "prediction": {
             "winner": "Oumar Sy",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Ion Cutelaba",
+            "method": "Submission, Mounted Guillotine Choke",
+            "time": "4:24 Round 1 of 3"
+          },
           "odds": {
             "4casters": {
               "Oumar Sy": -256,
@@ -537,12 +460,16 @@
             "bestEv": 0.0356
           }
         },
-        "Bruno Silva vs. Charles Johnson": {
+        "Charles Johnson vs. Bruno Silva": {
           "prediction": {
             "winner": "Bruno Silva",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Charles Johnson",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Bruno Silva": 134,
@@ -642,12 +569,16 @@
             "bestEv": 0.0417
           }
         },
-        "Chris Curtis vs. Myktybek Orolbai": {
+        "Myktybek Orolbai vs. Chris Curtis": {
           "prediction": {
             "winner": "Chris Curtis",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Myktybek Orolbai",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Chris Curtis": 279,
@@ -752,7 +683,11 @@
             "winner": "Steven Asplund",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Vitor Petrino",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "FanDuel": {
               "Steven Asplund": 190,
@@ -857,7 +792,11 @@
             "winner": "Elijah Smith",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Elijah Smith",
+            "method": "Submission, Rear Naked Choke",
+            "time": "1:04 Round 2 of 3, 6:04 Total"
+          },
           "odds": {
             "BetOnline": {
               "Elijah Smith": null,
@@ -954,12 +893,16 @@
           },
           "bestOdds": null
         },
-        "Bolaji Oki vs. Manoel Sousa": {
+        "Manoel Sousa vs. Bolaji Oki": {
           "prediction": {
             "winner": "Bolaji Oki",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Manoel Sousa",
+            "method": "KO/TKO, Straight Right",
+            "time": "4:12 Round 3 of 3, 14:12 Total"
+          },
           "odds": {
             "Bookmaker": {
               "Bolaji Oki": 218,
@@ -1059,12 +1002,16 @@
             "bestEv": 0.0476
           }
         },
-        "Brad Tavares vs. Eryk Anders": {
+        "Eryk Anders vs. Brad Tavares": {
           "prediction": {
             "winner": "Eryk Anders",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Eryk Anders",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "FanDuel": {
               "Brad Tavares": -108,
@@ -1169,7 +1116,11 @@
             "winner": "Bia Mesquita",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Bia Mesquita",
+            "method": "Submission, Rear Naked Choke",
+            "time": "2:07 Round 1 of 3"
+          },
           "odds": {
             "Bet105": {
               "Bia Mesquita": -621,
@@ -1265,12 +1216,16 @@
             "bestEv": 0.0369
           }
         },
-        "Luan Lacerda vs. Hecher Sosa": {
+        "Hecher Sosa vs. Luan Lacerda": {
           "prediction": {
             "winner": "Hecher Sosa",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Hecher Sosa",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Hecher Sosa": -235,
@@ -1367,7 +1322,11 @@
             "winner": "Piera Rodriguez",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Piera Rodriguez",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "FanDuel": {
               "Piera Rodriguez": -154,
@@ -3126,107 +3085,107 @@
             "bestEv": 0.1016
           }
         },
-        "Edgar Cháirez vs. Felipe Bunes": {
+        "Edgar Ch\u00e1irez vs. Felipe Bunes": {
           "prediction": {
-            "winner": "Edgar Cháirez",
+            "winner": "Edgar Ch\u00e1irez",
             "method": "Decision"
           },
           "result": {
-            "winner": "Edgar Cháirez",
+            "winner": "Edgar Ch\u00e1irez",
             "method": "Decision, Split",
             "time": "3 Rounds, 15:00 Total"
           },
           "odds": {
             "BetOnline": {
-              "Edgar Cháirez": -275,
+              "Edgar Ch\u00e1irez": -275,
               "Felipe Bunes": 235
             },
             "Bovada": {
-              "Edgar Cháirez": -290,
+              "Edgar Ch\u00e1irez": -290,
               "Felipe Bunes": 240
             },
             "MyBookie": {
-              "Edgar Cháirez": -295,
+              "Edgar Ch\u00e1irez": -295,
               "Felipe Bunes": 220
             },
             "BetUS": {
-              "Edgar Cháirez": -270,
+              "Edgar Ch\u00e1irez": -270,
               "Felipe Bunes": 226
             },
             "Bet105": {
-              "Edgar Cháirez": -303,
+              "Edgar Ch\u00e1irez": -303,
               "Felipe Bunes": 250
             },
             "BookMaker": {
-              "Edgar Cháirez": -285,
+              "Edgar Ch\u00e1irez": -285,
               "Felipe Bunes": 223
             },
             "DraftKings": {
-              "Edgar Cháirez": -310,
+              "Edgar Ch\u00e1irez": -310,
               "Felipe Bunes": 250
             },
             "FanDuel": {
-              "Edgar Cháirez": -295,
+              "Edgar Ch\u00e1irez": -295,
               "Felipe Bunes": 220
             },
             "4Cx": {
-              "Edgar Cháirez": -299,
+              "Edgar Ch\u00e1irez": -299,
               "Felipe Bunes": 213
             },
             "BetAnything": {
-              "Edgar Cháirez": -290,
+              "Edgar Ch\u00e1irez": -290,
               "Felipe Bunes": 220
             },
             "Circa": {
-              "Edgar Cháirez": -300,
+              "Edgar Ch\u00e1irez": -300,
               "Felipe Bunes": 250
             },
             "BetRivers": {
-              "Edgar Cháirez": -294,
+              "Edgar Ch\u00e1irez": -294,
               "Felipe Bunes": 225
             },
             "HardRocketBet": {
-              "Edgar Cháirez": -300,
+              "Edgar Ch\u00e1irez": -300,
               "Felipe Bunes": 225
             },
             "BetMGM": {
-              "Edgar Cháirez": -275,
+              "Edgar Ch\u00e1irez": -275,
               "Felipe Bunes": 220
             },
             "Caesars": {
-              "Edgar Cháirez": -270,
+              "Edgar Ch\u00e1irez": -270,
               "Felipe Bunes": 220
             },
             "Jazz": {
-              "Edgar Cháirez": -322,
+              "Edgar Ch\u00e1irez": -322,
               "Felipe Bunes": 226
             },
             "Polymarket": {
-              "Edgar Cháirez": -245,
+              "Edgar Ch\u00e1irez": -245,
               "Felipe Bunes": 212
             },
             "Pinnacle": {
-              "Edgar Cháirez": -312,
+              "Edgar Ch\u00e1irez": -312,
               "Felipe Bunes": 256
             },
             "Betway": {
-              "Edgar Cháirez": -275,
+              "Edgar Ch\u00e1irez": -275,
               "Felipe Bunes": 200
             },
             "Stake": {
-              "Edgar Cháirez": null,
+              "Edgar Ch\u00e1irez": null,
               "Felipe Bunes": null
             },
             "Cloudbet": {
-              "Edgar Cháirez": -312,
+              "Edgar Ch\u00e1irez": -312,
               "Felipe Bunes": 256
             },
             "4casters": {
-              "Edgar Cháirez": -292,
+              "Edgar Ch\u00e1irez": -292,
               "Felipe Bunes": 218
             },
             "SXBet": {
-              "Edgar Cháirez": -335,
+              "Edgar Ch\u00e1irez": -335,
               "Felipe Bunes": 223
             }
           },
@@ -3291,7 +3250,7 @@
               "Kevin Borjas": 265
             },
             "Circa": {
-              "Edgar Cháirez": -405,
+              "Edgar Ch\u00e1irez": -405,
               "Felipe Bunes": 330
             },
             "BetRivers": {
@@ -3465,7 +3424,7 @@
             "bestEv": 0.0363
           }
         },
-        "Ryan Gandra vs. José Medina": {
+        "Ryan Gandra vs. Jos\u00e9 Medina": {
           "prediction": {
             "winner": "Ryan Gandra",
             "method": "KO/TKO"
@@ -3477,95 +3436,95 @@
           },
           "odds": {
             "BetOnline": {
-              "José Medina": 400,
+              "Jos\u00e9 Medina": 400,
               "Ryan Gandra": -550
             },
             "Bovada": {
-              "José Medina": 425,
+              "Jos\u00e9 Medina": 425,
               "Ryan Gandra": -600
             },
             "MyBookie": {
-              "José Medina": 360,
+              "Jos\u00e9 Medina": 360,
               "Ryan Gandra": -526
             },
             "BetUS": {
-              "José Medina": 399,
+              "Jos\u00e9 Medina": 399,
               "Ryan Gandra": -550
             },
             "Bet105": {
-              "José Medina": 429,
+              "Jos\u00e9 Medina": 429,
               "Ryan Gandra": -564
             },
             "BookMaker": {
-              "José Medina": 405,
+              "Jos\u00e9 Medina": 405,
               "Ryan Gandra": -575
             },
             "DraftKings": {
-              "José Medina": 425,
+              "Jos\u00e9 Medina": 425,
               "Ryan Gandra": -575
             },
             "FanDuel": {
-              "José Medina": 360,
+              "Jos\u00e9 Medina": 360,
               "Ryan Gandra": -530
             },
             "4Cx": {
-              "José Medina": 376,
+              "Jos\u00e9 Medina": 376,
               "Ryan Gandra": -618
             },
             "BetAnything": {
-              "José Medina": 370,
+              "Jos\u00e9 Medina": 370,
               "Ryan Gandra": -615
             },
             "Circa": {
-              "José Medina": 500,
+              "Jos\u00e9 Medina": 500,
               "Ryan Gandra": -670
             },
             "BetRivers": {
-              "José Medina": 410,
+              "Jos\u00e9 Medina": 410,
               "Ryan Gandra": -556
             },
             "HardRocketBet": {
-              "José Medina": 400,
+              "Jos\u00e9 Medina": 400,
               "Ryan Gandra": -550
             },
             "BetMGM": {
-              "José Medina": 400,
+              "Jos\u00e9 Medina": 400,
               "Ryan Gandra": -550
             },
             "Caesars": {
-              "José Medina": 400,
+              "Jos\u00e9 Medina": 400,
               "Ryan Gandra": -550
             },
             "Jazz": {
-              "José Medina": null,
+              "Jos\u00e9 Medina": null,
               "Ryan Gandra": null
             },
             "Polymarket": {
-              "José Medina": 335,
+              "Jos\u00e9 Medina": 335,
               "Ryan Gandra": -400
             },
             "Pinnacle": {
-              "José Medina": 428,
+              "Jos\u00e9 Medina": 428,
               "Ryan Gandra": -563
             },
             "Betway": {
-              "José Medina": 350,
+              "Jos\u00e9 Medina": 350,
               "Ryan Gandra": -549
             },
             "Stake": {
-              "José Medina": null,
+              "Jos\u00e9 Medina": null,
               "Ryan Gandra": null
             },
             "Cloudbet": {
-              "José Medina": 428,
+              "Jos\u00e9 Medina": 428,
               "Ryan Gandra": -565
             },
             "4casters": {
-              "José Medina": 385,
+              "Jos\u00e9 Medina": 385,
               "Ryan Gandra": -606
             },
             "SXBet": {
-              "José Medina": null,
+              "Jos\u00e9 Medina": null,
               "Ryan Gandra": null
             }
           },
@@ -3578,108 +3537,108 @@
             "bestEv": 0.0648
           }
         },
-        "Ailín Pérez vs. Macy Chiasson": {
+        "Ail\u00edn P\u00e9rez vs. Macy Chiasson": {
           "prediction": {
             "winner": "Macy Chiasson",
             "method": "Decision"
           },
           "result": {
-            "winner": "Ailín Pérez",
+            "winner": "Ail\u00edn P\u00e9rez",
             "method": "Decision, Unanimous",
             "time": "3 Rounds, 15:00 Total"
           },
           "odds": {
             "BetOnline": {
               "Macy Chiasson": 145,
-              "Ailín Pérez": -170
+              "Ail\u00edn P\u00e9rez": -170
             },
             "Bovada": {
               "Macy Chiasson": 145,
-              "Ailín Pérez": -170
+              "Ail\u00edn P\u00e9rez": -170
             },
             "MyBookie": {
               "Macy Chiasson": 134,
-              "Ailín Pérez": -172
+              "Ail\u00edn P\u00e9rez": -172
             },
             "BetUS": {
               "Macy Chiasson": 142,
-              "Ailín Pérez": -170
+              "Ail\u00edn P\u00e9rez": -170
             },
             "Bet105": {
               "Macy Chiasson": 155,
-              "Ailín Pérez": -182
+              "Ail\u00edn P\u00e9rez": -182
             },
             "BookMaker": {
               "Macy Chiasson": 143,
-              "Ailín Pérez": -177
+              "Ail\u00edn P\u00e9rez": -177
             },
             "DraftKings": {
               "Macy Chiasson": 145,
-              "Ailín Pérez": -175
+              "Ail\u00edn P\u00e9rez": -175
             },
             "FanDuel": {
               "Macy Chiasson": 134,
-              "Ailín Pérez": -172
+              "Ail\u00edn P\u00e9rez": -172
             },
             "4Cx": {
               "Macy Chiasson": 137,
-              "Ailín Pérez": -185
+              "Ail\u00edn P\u00e9rez": -185
             },
             "BetAnything": {
               "Macy Chiasson": 140,
-              "Ailín Pérez": -170
+              "Ail\u00edn P\u00e9rez": -170
             },
             "Circa": {
               "Macy Chiasson": 140,
-              "Ailín Pérez": -160
+              "Ail\u00edn P\u00e9rez": -160
             },
             "BetRivers": {
               "Macy Chiasson": 132,
-              "Ailín Pérez": -164
+              "Ail\u00edn P\u00e9rez": -164
             },
             "HardRocketBet": {
               "Macy Chiasson": 130,
-              "Ailín Pérez": -165
+              "Ail\u00edn P\u00e9rez": -165
             },
             "BetMGM": {
               "Macy Chiasson": 140,
-              "Ailín Pérez": -165
+              "Ail\u00edn P\u00e9rez": -165
             },
             "Caesars": {
               "Macy Chiasson": 140,
-              "Ailín Pérez": -165
+              "Ail\u00edn P\u00e9rez": -165
             },
             "Jazz": {
               "Macy Chiasson": 136,
-              "Ailín Pérez": -184
+              "Ail\u00edn P\u00e9rez": -184
             },
             "Polymarket": {
               "Macy Chiasson": 163,
-              "Ailín Pérez": -170
+              "Ail\u00edn P\u00e9rez": -170
             },
             "Pinnacle": {
               "Macy Chiasson": 151,
-              "Ailín Pérez": -177
+              "Ail\u00edn P\u00e9rez": -177
             },
             "Betway": {
               "Macy Chiasson": 120,
-              "Ailín Pérez": -163
+              "Ail\u00edn P\u00e9rez": -163
             },
             "Stake": {
               "Macy Chiasson": 137,
-              "Ailín Pérez": -169
+              "Ail\u00edn P\u00e9rez": -169
             },
             "Cloudbet": {
               "Macy Chiasson": 151,
-              "Ailín Pérez": -177
+              "Ail\u00edn P\u00e9rez": -177
             },
             "4casters": {
               "Macy Chiasson": 140,
-              "Ailín Pérez": -181
+              "Ail\u00edn P\u00e9rez": -181
             },
             "SXBet": {
               "Macy Chiasson": 148,
-              "Ailín Pérez": -184
+              "Ail\u00edn P\u00e9rez": -184
             }
           },
           "bestOdds": {
@@ -3691,107 +3650,107 @@
             "bestEv": 0.0735
           }
         },
-        "Cristian Quiñonez vs. Kris Moutinho": {
+        "Cristian Qui\u00f1onez vs. Kris Moutinho": {
           "prediction": {
             "winner": "Kris Moutinho",
             "method": "Submission"
           },
           "result": {
-            "winner": "Cristian Quiñonez",
+            "winner": "Cristian Qui\u00f1onez",
             "method": "Decision, Unanimous",
             "time": "3 Rounds, 15:00 Total"
           },
           "odds": {
             "BetOnline": {
-              "Cristian Quiñonez": -650,
+              "Cristian Qui\u00f1onez": -650,
               "Kris Moutinho": 475
             },
             "Bovada": {
-              "Cristian Quiñonez": -675,
+              "Cristian Qui\u00f1onez": -675,
               "Kris Moutinho": 460
             },
             "MyBookie": {
-              "Cristian Quiñonez": -699,
+              "Cristian Qui\u00f1onez": -699,
               "Kris Moutinho": 440
             },
             "BetUS": {
-              "Cristian Quiñonez": -650,
+              "Cristian Qui\u00f1onez": -650,
               "Kris Moutinho": 450
             },
             "Bet105": {
-              "Cristian Quiñonez": -634,
+              "Cristian Qui\u00f1onez": -634,
               "Kris Moutinho": 472
             },
             "BookMaker": {
-              "Cristian Quiñonez": -650,
+              "Cristian Qui\u00f1onez": -650,
               "Kris Moutinho": 445
             },
             "DraftKings": {
-              "Cristian Quiñonez": -625,
+              "Cristian Qui\u00f1onez": -625,
               "Kris Moutinho": 455
             },
             "FanDuel": {
-              "Cristian Quiñonez": -650,
+              "Cristian Qui\u00f1onez": -650,
               "Kris Moutinho": 420
             },
             "4Cx": {
-              "Cristian Quiñonez": -704,
+              "Cristian Qui\u00f1onez": -704,
               "Kris Moutinho": 452
             },
             "BetAnything": {
-              "Cristian Quiñonez": -700,
+              "Cristian Qui\u00f1onez": -700,
               "Kris Moutinho": 400
             },
             "Circa": {
-              "Cristian Quiñonez": -670,
+              "Cristian Qui\u00f1onez": -670,
               "Kris Moutinho": 500
             },
             "BetRivers": {
-              "Cristian Quiñonez": -526,
+              "Cristian Qui\u00f1onez": -526,
               "Kris Moutinho": 390
             },
             "HardRocketBet": {
-              "Cristian Quiñonez": -500,
+              "Cristian Qui\u00f1onez": -500,
               "Kris Moutinho": 375
             },
             "BetMGM": {
-              "Cristian Quiñonez": -650,
+              "Cristian Qui\u00f1onez": -650,
               "Kris Moutinho": 475
             },
             "Caesars": {
-              "Cristian Quiñonez": -700,
+              "Cristian Qui\u00f1onez": -700,
               "Kris Moutinho": 500
             },
             "Jazz": {
-              "Cristian Quiñonez": -806,
+              "Cristian Qui\u00f1onez": -806,
               "Kris Moutinho": 456
             },
             "Polymarket": {
-              "Cristian Quiñonez": -456,
+              "Cristian Qui\u00f1onez": -456,
               "Kris Moutinho": 257
             },
             "Pinnacle": {
-              "Cristian Quiñonez": -626,
+              "Cristian Qui\u00f1onez": -626,
               "Kris Moutinho": 468
             },
             "Betway": {
-              "Cristian Quiñonez": -649,
+              "Cristian Qui\u00f1onez": -649,
               "Kris Moutinho": 400
             },
             "Stake": {
-              "Cristian Quiñonez": -667,
+              "Cristian Qui\u00f1onez": -667,
               "Kris Moutinho": 460
             },
             "Cloudbet": {
-              "Cristian Quiñonez": -629,
+              "Cristian Qui\u00f1onez": -629,
               "Kris Moutinho": 468
             },
             "4casters": {
-              "Cristian Quiñonez": -686,
+              "Cristian Qui\u00f1onez": -686,
               "Kris Moutinho": 464
             },
             "SXBet": {
-              "Cristian Quiñonez": -716,
+              "Cristian Qui\u00f1onez": -716,
               "Kris Moutinho": 484
             }
           },
@@ -4358,9 +4317,9 @@
           },
           "result": null
         },
-        "Michał Oleksiejczuk vs. Marc-André Barriault": {
+        "Micha\u0142 Oleksiejczuk vs. Marc-Andr\u00e9 Barriault": {
           "prediction": {
-            "winner": "Michał Oleksiejczuk",
+            "winner": "Micha\u0142 Oleksiejczuk",
             "method": "KO/TKO"
           },
           "result": null
@@ -4414,14 +4373,14 @@
           },
           "result": null
         },
-        "Muin Gafurov vs. Jakub Wikłacz": {
+        "Muin Gafurov vs. Jakub Wik\u0142acz": {
           "prediction": {
-            "winner": "Jakub Wikłacz",
+            "winner": "Jakub Wik\u0142acz",
             "method": "Decision"
           },
           "result": null
         },
-        "Priscila Cachoeira vs. Klaudia Syguła": {
+        "Priscila Cachoeira vs. Klaudia Sygu\u0142a": {
           "prediction": {
             "winner": "Priscila Cachoeira",
             "method": "KO/TKO"
