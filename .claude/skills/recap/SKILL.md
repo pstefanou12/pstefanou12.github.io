@@ -39,17 +39,25 @@ The script prints the generated file path (e.g. `✓ HTML template generated: ./
 Read the generated HTML file so you know exactly what placeholders exist and where each fight's `<div>` is located.
 
 ### 4. Event Summary (`#summary` section)
-Replace `[Add your event summary here]` with enough paragraphs to cover the card's major fights and storylines:
+Draft enough paragraphs to cover the card's major fights and storylines:
 - Open with a one-sentence verdict on the overall event quality
 - Cover each significant fight and storyline — what happened, what it means, how the night felt
 - Address title fights separately and critically if warranted
 - Close with `<p><strong>Final Score: X/10</strong></p>`
 
+**Present the draft to the user and ask for approval before writing it to the file.** If the user requests changes, revise and present again. Only write the section to the HTML file once the user explicitly approves it.
+
 ### 5. Individual Fight Recaps
-For each fight, replace `[Add your fight recap here]` with 2–4 paragraphs structured as:
-- **Background** *(only if notable)*: records, rankings, storylines, or what was at stake
-- **Fight narrative**: who controlled early, pivotal exchanges, momentum shifts, and the finish or final rounds
-- **Final Thoughts and Aftermath**: what was the final verdict of the fight? Was it entertaining or boring? Did something notable happen? What the result means — next opponent, title implications, or career trajectory
+For each fight, one at a time:
+
+1. Draft the recap structured as:
+   - **Background** *(only if notable)*: records, rankings, storylines, or what was at stake
+   - **Fight narrative**: who controlled early, pivotal exchanges, momentum shifts, and the finish or final rounds
+   - **Final Thoughts and Aftermath**: what was the final verdict of the fight? Was it entertaining or boring? Did something notable happen? What the result means — next opponent, title implications, or career trajectory
+
+2. **Present the draft to the user and ask for approval before writing it to the file.** If the user requests changes, revise and present again. Only write the fight recap to the HTML file once the user explicitly approves it.
+
+3. Move on to the next fight and repeat.
 
 Write in past tense, as if telling a story to someone who didn't watch:
 > "From the opening bell, **X** controlled the center..."

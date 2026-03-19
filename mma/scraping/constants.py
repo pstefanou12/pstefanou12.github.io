@@ -70,7 +70,7 @@ HTML_HEAD = '''\
 
   <div class="section">
     <a href="../../mma.html">
-      <img id="logo" src="../../img/hardcore_mma.png">
+      <img id="logo" src="../../db/img/hardcore_mma.png">
     </a>
 
     <h1>Loading...</h1>
