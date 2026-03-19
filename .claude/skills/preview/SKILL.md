@@ -31,18 +31,11 @@ Read the notes file at `$ARGUMENTS[0]` to understand the per-fight research befo
 ### 2. Run the HTML Template Script
 Scrape the Tapology event page and generate the HTML preview template:
 ```bash
-cd /home/patroklos/pstefanou12.github.io/mma && python3 -m scraping.bin.scraping_main --preview $ARGUMENTS[1]
+PYTHONPATH=/home/patroklos/pstefanou12.github.io/mma python3 mma/scraping/bin/scraping_main.py --preview $ARGUMENTS[1]
 ```
-The script prints the generated file path (e.g. `✓ Preview template generated: ./mma/previews/ufc-322.html`) and the card ID (e.g. `Generated card ID: ufc-322`). Note both — the file path is what you populate, and the card ID is used in the next step.
+The script prints the generated file path (e.g. `✓ Preview template generated: ./mma/db/previews/ufc-322.html`) and the card ID (e.g. `Generated card ID: ufc-322`). Note both — the file path is what you populate, and the card ID is used later.
 
-### 3. Scrape Odds (if `$ARGUMENTS[2]` provided)
-If a fightodds argument was given, run the odds scraper to populate odds in `cards.json`:
-```bash
-cd /home/patroklos/pstefanou12.github.io/mma && python3 -m scraping.bin.scraping_main --fightodds $ARGUMENTS[2] --card-id <card_id>
-```
-Replace `<card_id>` with the card ID printed by the previous script (e.g. `ufc-326`). This overwrites the null odds scaffold with real sportsbook odds.
-
-### 4. Read the Generated HTML Template
+### 3. Read the Generated HTML Template
 Read the generated HTML file so you know exactly what placeholders exist and where each fight's `<div>` is located.
 
 ### 5. Event Overview (`#overview` section)
@@ -83,7 +76,14 @@ For each fight in the card's `"fights"` object, set:
 
 Use the same winner name and method string you placed in the HTML `<h4>Pick: </h4>` and `<div class="method">` tags. The card entry was created by the script with empty prediction fields — fill them in now so the JSON stays in sync with the HTML.
 
-### 8. Formatting Rules
+### 8. Scrape Odds (if `$ARGUMENTS[2]` provided)
+Now that predictions are written, run the odds scraper so that `compute_best_odds` has the correct winners to evaluate:
+```bash
+PYTHONPATH=/home/patroklos/pstefanou12.github.io/mma python3 mma/scraping/bin/scraping_main.py --fightodds $ARGUMENTS[2] --card-id <card_id>
+```
+Replace `<card_id>` with the card ID from step 2. This writes sportsbook odds and computes `bestOdds` for each picked fighter, which powers the projected betting returns table.
+
+### 10. Formatting Rules
 - Use `<br><br>` between paragraphs **within** each `<p>` block (not separate `<p>` tags)
 - Bold every fighter name with `<strong>Name</strong>` on **first mention** in each section
 - Do **not** modify `<h1>Loading...</h1>`, `<p class="event-date">`, `<img>` tags, or any JS-managed elements — these are auto-populated at runtime
