@@ -46,26 +46,34 @@ Replace `<card_id>` with the card ID printed by the previous script (e.g. `ufc-3
 Read the generated HTML file so you know exactly what placeholders exist and where each fight's `<div>` is located.
 
 ### 5. Event Overview (`#overview` section)
-Replace `[Add your event overview here - describe the card, main storylines, significance]` with enough paragraphs to set the scene for the whole card:
+Draft enough paragraphs to set the scene for the whole card:
 - Open with an overall assessment of the card's quality, significance, or storylines
 - Cover the major fights and what makes them interesting or concerning
 - Address title fights or headline bouts separately
 - Use `<br><br>` between paragraphs within the `<p>` block
 
+**Present the draft to the user and ask for approval before writing it to the file.** If the user requests changes, revise and present again. Only write the section to the HTML file once the user explicitly approves it.
+
 ### 6. Individual Fight Sections
-For each fight, populate two placeholder sections:
+For each fight, one at a time:
 
-**`fight-overview`** — Replace `[Add fight context: records, recent form, styles, what's at stake]` with:
-- Fighter records, rankings, recent form, and what's at stake for each
-- Stylistic matchup — who has the edge where, and why this fight is interesting
-- Any notable storylines (comeback, must-win, title implications)
+1. Draft the two placeholder sections:
 
-**`reasoning`** — Replace `[Explain your pick - why will this fighter win? What advantages do they have?]` with:
-- What advantages does the picked fighter have in this specific matchup?
-- Reference relevant past fights, tendencies, or stylistic mismatches
-- Acknowledge the opponent's strengths before explaining why the pick overcomes them
+   **`fight-overview`** — context draft:
+   - Fighter records, rankings, recent form, and what's at stake for each
+   - Stylistic matchup — who has the edge where, and why this fight is interesting
+   - Any notable storylines (comeback, must-win, title implications)
 
-Also populate the `<h4>Pick: </h4>` tag with the fighter name and `<div class="method">` with the predicted method of victory from the notes.
+   **`reasoning`** — pick reasoning draft:
+   - What advantages does the picked fighter have in this specific matchup?
+   - Reference relevant past fights, tendencies, or stylistic mismatches
+   - Acknowledge the opponent's strengths before explaining why the pick overcomes them
+
+   Also include the proposed `<h4>Pick: </h4>` fighter name and `<div class="method">` method of victory from the notes.
+
+2. **Present all drafts for the fight to the user and ask for approval before writing anything to the file.** If the user requests changes, revise and present again. Only write the fight sections to the HTML file once the user explicitly approves them.
+
+3. Move on to the next fight and repeat.
 
 ### 7. Update JSON Predictions
 After populating all fight picks in the HTML, update the `cards.json` file to reflect the predictions for each fight in the newly added card entry.
