@@ -3,7 +3,7 @@
     {
       "id": "ufc-fight-night-evloev-murphy",
       "title": "UFC Fight Night: Evloev vs. Murphy",
-      "subtitle": "Evloev vs. Murphy",
+      "subtitle": null,
       "date": "2026-03-22",
       "rating": 5.9,
       "poster": "/mma/db/img/ufc_fight_night_evloev_murphy_poster.jpg",
@@ -1458,7 +1458,7 @@
     {
       "id": "ufc-fight-night-emmett-vallejos",
       "title": "UFC Fight Night: Emmett vs Vallejos",
-      "subtitle": "Emmett vs. Vallejos",
+      "subtitle": null,
       "date": "2026-03-15",
       "rating": 6.9,
       "poster": "/mma/db/img/ufc_fight_night_emmett_vallejos_poster.jpg",
