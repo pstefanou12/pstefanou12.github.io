@@ -121,12 +121,14 @@ function getRatingClass(rating) {
     return 'poor';
 }
 function createCardHTML(card, isPreview = false) {
+    const isFightNight = card.title.toLowerCase().includes('fight night');
+    const displayTitle = (isFightNight && card.subtitle) ? `${card.title}: ${card.subtitle}` : card.title;
     if (isPreview) {
         return `
       <a href="${card.previewUrl}" class="blog-post preview">
         <img src="${card.poster}" alt="${card.title} Poster">
         <div class="blog-info">
-          <h3>${card.title} Preview</h3>
+          <h3>${displayTitle} Preview</h3>
         </div>
       </a>`;
     }
@@ -134,7 +136,7 @@ function createCardHTML(card, isPreview = false) {
     <a href="${card.recapUrl}" class="blog-post">
       <img src="${card.poster}" alt="${card.title} Poster">
       <div class="blog-info">
-        <h3>${card.title}</h3>
+        <h3>${displayTitle}</h3>
         <p>${formatDate(card.date)}</p>
         <div class="rating-container">
           <div class="rating-bar">
