@@ -2,12 +2,12 @@
   "cards": [
     {
       "id": "ufc-fight-night-evloev-murphy",
-      "title": "UFC Fight Night: Evloev vs. Murphy",
-      "subtitle": null,
-      "date": "2026-03-18",
-      "rating": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Evloev vs. Murphy",
+      "date": "2026-03-22",
+      "rating": 5.9,
       "poster": "/mma/db/img/ufc_fight_night_evloev_murphy_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-evloev-murphy.html",
       "previewUrl": "db/previews/ufc-fight-night-evloev-murphy.html",
       "location": "Octagon",
       "eventTime": "Saturday 03.21.2026 at 01:00 PM ET",
@@ -17,108 +17,112 @@
             "winner": "Movsar Evloev",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Movsar Evloev",
+            "method": "Decision, Majority",
+            "time": "5 Rounds, 25:00 Total"
+          },
           "odds": {
+            "BetUS": {
+              "Movsar Evloev": -250,
+              "Lerone Murphy": 206
+            },
+            "BetAnything": {
+              "Movsar Evloev": -245,
+              "Lerone Murphy": 195
+            },
             "Pinnacle": {
-              "Movsar Evloev": -252,
-              "Lerone Murphy": 210
+              "Movsar Evloev": -249,
+              "Lerone Murphy": 217
             },
             "ProphetX": {
-              "Movsar Evloev": -230,
-              "Lerone Murphy": 205
+              "Movsar Evloev": -280,
+              "Lerone Murphy": 215
             },
             "HardRockBet": {
-              "Movsar Evloev": -240,
-              "Lerone Murphy": 190
+              "Movsar Evloev": -275,
+              "Lerone Murphy": 210
             },
             "BetRivers": {
-              "Movsar Evloev": -250,
-              "Lerone Murphy": 200
+              "Movsar Evloev": 155,
+              "Lerone Murphy": -238
             },
             "BetMGM": {
               "Movsar Evloev": -250,
               "Lerone Murphy": 200
             },
             "SXBet": {
-              "Movsar Evloev": -232,
-              "Lerone Murphy": 193
+              "Movsar Evloev": -264,
+              "Lerone Murphy": 228
             },
             "Stake": {
               "Movsar Evloev": -250,
               "Lerone Murphy": 195
             },
             "DraftKings": {
-              "Movsar Evloev": -258,
-              "Lerone Murphy": 210
+              "Movsar Evloev": -250,
+              "Lerone Murphy": 205
             },
             "Circa": {
-              "Movsar Evloev": -260,
-              "Lerone Murphy": 220
+              "Movsar Evloev": -245,
+              "Lerone Murphy": 210
             },
             "4Cx": {
               "Movsar Evloev": -249,
-              "Lerone Murphy": 222
+              "Lerone Murphy": 228
             },
             "Bookmaker": {
-              "Movsar Evloev": -268,
-              "Lerone Murphy": 211
+              "Movsar Evloev": -250,
+              "Lerone Murphy": 207
             },
             "4casters": {
-              "Movsar Evloev": -244,
-              "Lerone Murphy": 226
-            },
-            "BetUS": {
-              "Movsar Evloev": -275,
-              "Lerone Murphy": 226
+              "Movsar Evloev": -246,
+              "Lerone Murphy": 233
             },
             "Bet105": {
-              "Movsar Evloev": -252,
-              "Lerone Murphy": 210
-            },
-            "BetAnything": {
-              "Movsar Evloev": -260,
-              "Lerone Murphy": 200
+              "Movsar Evloev": -270,
+              "Lerone Murphy": 234
             },
             "Cloudbet": {
-              "Movsar Evloev": -253,
-              "Lerone Murphy": 210
+              "Movsar Evloev": -243,
+              "Lerone Murphy": 212
             },
             "Polymarket": {
-              "Movsar Evloev": -223,
-              "Lerone Murphy": 203
+              "Movsar Evloev": -233,
+              "Lerone Murphy": 223
             },
             "FanDuel": {
-              "Movsar Evloev": -260,
-              "Lerone Murphy": 196
+              "Movsar Evloev": -240,
+              "Lerone Murphy": 198
             },
             "MyBookie": {
-              "Movsar Evloev": -250,
-              "Lerone Murphy": 199
+              "Movsar Evloev": -280,
+              "Lerone Murphy": 220
             },
             "Betway": {
-              "Movsar Evloev": -250,
-              "Lerone Murphy": 200
+              "Movsar Evloev": -225,
+              "Lerone Murphy": 175
             },
             "Bovada": {
               "Movsar Evloev": -250,
-              "Lerone Murphy": 210
+              "Lerone Murphy": 215
             },
             "Caesars": {
               "Movsar Evloev": -265,
               "Lerone Murphy": 215
             },
             "BetOnline": {
-              "Movsar Evloev": -275,
-              "Lerone Murphy": 235
+              "Movsar Evloev": -250,
+              "Lerone Murphy": 210
             }
           },
           "bestOdds": {
-            "groundTruthProb": 0.7207,
+            "groundTruthProb": 0.7143,
             "bestOdds": {
-              "platform": "Polymarket",
-              "odds": -223
+              "platform": "BetRivers",
+              "odds": 155
             },
-            "bestEv": 0.0438
+            "bestEv": 0.8214
           }
         },
         "Luke Riley vs. Michael Aswell Jr.": {
@@ -126,7 +130,11 @@
             "winner": "Luke Riley",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Luke Riley",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Luke Riley": null,
@@ -228,108 +236,112 @@
             "winner": "Michael Page",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Michael Page",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
+            "Bovada": {
+              "Michael Page": -220,
+              "Sam Patterson": 180
+            },
+            "BetUS": {
+              "Michael Page": -220,
+              "Sam Patterson": 182
+            },
+            "BetAnything": {
+              "Michael Page": -200,
+              "Sam Patterson": 170
+            },
             "SXBet": {
-              "Michael Page": -185,
-              "Sam Patterson": 161
+              "Michael Page": -214,
+              "Sam Patterson": 182
             },
             "ProphetX": {
-              "Michael Page": -180,
-              "Sam Patterson": 164
+              "Michael Page": -5250,
+              "Sam Patterson": 2400
             },
             "HardRockBet": {
               "Michael Page": -200,
               "Sam Patterson": 165
             },
             "BetRivers": {
-              "Michael Page": -192,
-              "Sam Patterson": 155
+              "Michael Page": -357,
+              "Sam Patterson": 220
             },
             "BetMGM": {
-              "Michael Page": -185,
-              "Sam Patterson": 150
+              "Michael Page": -200,
+              "Sam Patterson": 165
             },
             "BetOnline": {
-              "Michael Page": -185,
-              "Sam Patterson": 160
+              "Michael Page": -205,
+              "Sam Patterson": 175
             },
             "Circa": {
-              "Michael Page": -185,
-              "Sam Patterson": 160
+              "Michael Page": -200,
+              "Sam Patterson": 175
             },
             "FanDuel": {
-              "Michael Page": -186,
-              "Sam Patterson": 144
+              "Michael Page": -190,
+              "Sam Patterson": 160
             },
             "4Cx": {
-              "Michael Page": -187,
-              "Sam Patterson": 156
+              "Michael Page": -217,
+              "Sam Patterson": 183
             },
             "Bookmaker": {
-              "Michael Page": -190,
-              "Sam Patterson": 153
+              "Michael Page": -187,
+              "Sam Patterson": 161
             },
             "4casters": {
-              "Michael Page": -168,
-              "Sam Patterson": 160
-            },
-            "BetUS": {
-              "Michael Page": -185,
-              "Sam Patterson": 154
+              "Michael Page": -207,
+              "Sam Patterson": 185
             },
             "DraftKings": {
-              "Michael Page": -192,
-              "Sam Patterson": 160
-            },
-            "BetAnything": {
-              "Michael Page": -185,
-              "Sam Patterson": 155
+              "Michael Page": -218,
+              "Sam Patterson": 180
             },
             "Caesars": {
-              "Michael Page": -180,
-              "Sam Patterson": 150
+              "Michael Page": -205,
+              "Sam Patterson": 170
             },
             "Pinnacle": {
-              "Michael Page": -192,
-              "Sam Patterson": 163
+              "Michael Page": -215,
+              "Sam Patterson": 188
             },
             "Bet105": {
-              "Michael Page": -192,
-              "Sam Patterson": 163
+              "Michael Page": -219,
+              "Sam Patterson": 191
             },
             "Cloudbet": {
-              "Michael Page": -193,
-              "Sam Patterson": 163
-            },
-            "Bovada": {
-              "Michael Page": -190,
-              "Sam Patterson": 163
+              "Michael Page": -215,
+              "Sam Patterson": 188
             },
             "Stake": {
               "Michael Page": -185,
               "Sam Patterson": 149
             },
             "MyBookie": {
-              "Michael Page": -192,
-              "Sam Patterson": 155
+              "Michael Page": -218,
+              "Sam Patterson": 175
             },
             "Betway": {
-              "Michael Page": -175,
-              "Sam Patterson": 140
+              "Michael Page": -188,
+              "Sam Patterson": 150
             },
             "Polymarket": {
-              "Michael Page": -170,
-              "Sam Patterson": 163
+              "Michael Page": -194,
+              "Sam Patterson": 186
             }
           },
           "bestOdds": {
-            "groundTruthProb": 0.6575,
+            "groundTruthProb": 0.6855,
             "bestOdds": {
-              "platform": "4casters",
-              "odds": -168
+              "platform": "Stake",
+              "odds": -185
             },
-            "bestEv": 0.0489
+            "bestEv": 0.0561
           }
         },
         "Iwo Baraniewski vs. Austen Lane": {
@@ -337,326 +349,338 @@
             "winner": "Iwo Baraniewski",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Iwo Baraniewski",
+            "method": "KO/TKO, Left Hook to Ground Punches",
+            "time": "0:28 Round 1 of 3"
+          },
           "odds": {
+            "Caesars": {
+              "Iwo Baraniewski": -750,
+              "Austen Lane": 525
+            },
+            "Pinnacle": {
+              "Iwo Baraniewski": -685,
+              "Austen Lane": 539
+            },
+            "BetUS": {
+              "Iwo Baraniewski": -700,
+              "Austen Lane": 475
+            },
+            "BetAnything": {
+              "Iwo Baraniewski": -700,
+              "Austen Lane": 400
+            },
             "ProphetX": {
-              "Iwo Baraniewski": -570,
-              "Austen Lane": 420
+              "Iwo Baraniewski": -610,
+              "Austen Lane": 580
             },
             "HardRockBet": {
-              "Iwo Baraniewski": -650,
-              "Austen Lane": 450
+              "Iwo Baraniewski": -700,
+              "Austen Lane": 500
             },
             "BetRivers": {
-              "Iwo Baraniewski": -625,
-              "Austen Lane": 440
+              "Iwo Baraniewski": -714,
+              "Austen Lane": 510
             },
             "Bovada": {
-              "Iwo Baraniewski": -650,
-              "Austen Lane": 450
+              "Iwo Baraniewski": -700,
+              "Austen Lane": 500
             },
             "Cloudbet": {
-              "Iwo Baraniewski": -625,
-              "Austen Lane": 411
+              "Iwo Baraniewski": -690,
+              "Austen Lane": 539
             },
             "BetMGM": {
               "Iwo Baraniewski": -700,
               "Austen Lane": 500
             },
             "SXBet": {
-              "Iwo Baraniewski": -608,
-              "Austen Lane": 444
+              "Iwo Baraniewski": -677,
+              "Austen Lane": 530
             },
             "4Cx": {
-              "Iwo Baraniewski": -617,
-              "Austen Lane": 404
+              "Iwo Baraniewski": -633,
+              "Austen Lane": 496
             },
             "4casters": {
-              "Iwo Baraniewski": -605,
-              "Austen Lane": 413
+              "Iwo Baraniewski": -620,
+              "Austen Lane": 509
             },
             "Circa": {
-              "Iwo Baraniewski": -670,
-              "Austen Lane": 500
+              "Iwo Baraniewski": -710,
+              "Austen Lane": 525
             },
             "FanDuel": {
-              "Iwo Baraniewski": -620,
-              "Austen Lane": 400
+              "Iwo Baraniewski": -590,
+              "Austen Lane": 430
             },
             "Bookmaker": {
-              "Iwo Baraniewski": -630,
-              "Austen Lane": 435
-            },
-            "BetUS": {
-              "Iwo Baraniewski": -600,
-              "Austen Lane": 425
+              "Iwo Baraniewski": -735,
+              "Austen Lane": 526
             },
             "DraftKings": {
-              "Iwo Baraniewski": -575,
-              "Austen Lane": 425
-            },
-            "BetAnything": {
-              "Iwo Baraniewski": -700,
-              "Austen Lane": 400
-            },
-            "Caesars": {
               "Iwo Baraniewski": -700,
               "Austen Lane": 500
             },
-            "Pinnacle": {
-              "Iwo Baraniewski": -569,
-              "Austen Lane": 432
-            },
             "Bet105": {
-              "Iwo Baraniewski": -569,
-              "Austen Lane": 432
+              "Iwo Baraniewski": -664,
+              "Austen Lane": 525
             },
             "Stake": {
               "Iwo Baraniewski": -625,
               "Austen Lane": 420
             },
             "MyBookie": {
-              "Iwo Baraniewski": -676,
-              "Austen Lane": 460
+              "Iwo Baraniewski": -725,
+              "Austen Lane": 480
             },
             "Betway": {
-              "Iwo Baraniewski": -549,
-              "Austen Lane": 400
-            },
-            "BetOnline": {
-              "Iwo Baraniewski": -600,
+              "Iwo Baraniewski": -654,
               "Austen Lane": 450
             },
+            "BetOnline": {
+              "Iwo Baraniewski": -725,
+              "Austen Lane": 525
+            },
             "Polymarket": {
-              "Iwo Baraniewski": -525,
-              "Austen Lane": 456
+              "Iwo Baraniewski": -614,
+              "Austen Lane": 525
             }
           },
           "bestOdds": {
-            "groundTruthProb": 0.8519,
+            "groundTruthProb": 0.875,
             "bestOdds": {
-              "platform": "Polymarket",
-              "odds": -525
+              "platform": "FanDuel",
+              "odds": -590
             },
-            "bestEv": 0.0141
+            "bestEv": 0.0233
           }
         },
-        "Roman Dolidze vs. Christian Leroy Duncan": {
+        "Christian Leroy Duncan vs. Roman Dolidze": {
           "prediction": {
             "winner": "Christian Leroy Duncan",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Christian Leroy Duncan",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
+            "BetUS": {
+              "Roman Dolidze": 285,
+              "Christian Leroy Duncan": -360
+            },
+            "BetAnything": {
+              "Roman Dolidze": 250,
+              "Christian Leroy Duncan": -370
+            },
             "SXBet": {
-              "Roman Dolidze": 335,
-              "Christian Leroy Duncan": -459
+              "Roman Dolidze": 308,
+              "Christian Leroy Duncan": -352
             },
             "Cloudbet": {
-              "Roman Dolidze": 355,
-              "Christian Leroy Duncan": -526
+              "Roman Dolidze": 279,
+              "Christian Leroy Duncan": -327
             },
             "ProphetX": {
-              "Roman Dolidze": 340,
-              "Christian Leroy Duncan": -420
+              "Roman Dolidze": 1750,
+              "Christian Leroy Duncan": -3200
             },
             "Stake": {
               "Roman Dolidze": 370,
               "Christian Leroy Duncan": -500
             },
             "HardRockBet": {
-              "Roman Dolidze": 375,
-              "Christian Leroy Duncan": -500
+              "Roman Dolidze": 325,
+              "Christian Leroy Duncan": -425
             },
             "BetRivers": {
-              "Roman Dolidze": 370,
-              "Christian Leroy Duncan": -500
+              "Roman Dolidze": 295,
+              "Christian Leroy Duncan": -385
             },
             "BetMGM": {
-              "Roman Dolidze": 360,
-              "Christian Leroy Duncan": -500
+              "Roman Dolidze": 300,
+              "Christian Leroy Duncan": -375
             },
             "Circa": {
-              "Roman Dolidze": 400,
-              "Christian Leroy Duncan": -510
+              "Roman Dolidze": 295,
+              "Christian Leroy Duncan": -360
             },
             "FanDuel": {
-              "Roman Dolidze": 330,
-              "Christian Leroy Duncan": -480
+              "Roman Dolidze": 340,
+              "Christian Leroy Duncan": -430
             },
             "4Cx": {
-              "Roman Dolidze": 349,
-              "Christian Leroy Duncan": -464
+              "Roman Dolidze": 315,
+              "Christian Leroy Duncan": -359
             },
             "Bookmaker": {
-              "Roman Dolidze": 325,
-              "Christian Leroy Duncan": -440
+              "Roman Dolidze": 320,
+              "Christian Leroy Duncan": -405
             },
             "4casters": {
-              "Roman Dolidze": 358,
-              "Christian Leroy Duncan": -455
-            },
-            "BetUS": {
-              "Roman Dolidze": 369,
-              "Christian Leroy Duncan": -500
+              "Roman Dolidze": 322,
+              "Christian Leroy Duncan": -348
             },
             "DraftKings": {
-              "Roman Dolidze": 340,
-              "Christian Leroy Duncan": -440
-            },
-            "BetAnything": {
-              "Roman Dolidze": 320,
-              "Christian Leroy Duncan": -500
+              "Roman Dolidze": 270,
+              "Christian Leroy Duncan": -340
             },
             "Pinnacle": {
-              "Roman Dolidze": 330,
-              "Christian Leroy Duncan": -416
+              "Roman Dolidze": 266,
+              "Christian Leroy Duncan": -310
             },
             "Caesars": {
-              "Roman Dolidze": 350,
-              "Christian Leroy Duncan": -450
+              "Roman Dolidze": 310,
+              "Christian Leroy Duncan": -400
             },
             "Bet105": {
-              "Roman Dolidze": 330,
-              "Christian Leroy Duncan": -415
+              "Roman Dolidze": 302,
+              "Christian Leroy Duncan": -356
             },
             "Bovada": {
-              "Roman Dolidze": 335,
-              "Christian Leroy Duncan": -450
+              "Roman Dolidze": 280,
+              "Christian Leroy Duncan": -350
             },
             "MyBookie": {
-              "Roman Dolidze": 370,
-              "Christian Leroy Duncan": -500
+              "Roman Dolidze": 285,
+              "Christian Leroy Duncan": -380
             },
             "Betway": {
               "Roman Dolidze": 333,
               "Christian Leroy Duncan": -450
             },
             "BetOnline": {
-              "Roman Dolidze": 385,
-              "Christian Leroy Duncan": -500
+              "Roman Dolidze": 295,
+              "Christian Leroy Duncan": -370
             },
             "Polymarket": {
-              "Roman Dolidze": 376,
-              "Christian Leroy Duncan": -400
+              "Roman Dolidze": 300,
+              "Christian Leroy Duncan": -335
             }
           },
           "bestOdds": {
-            "groundTruthProb": 0.8148,
+            "groundTruthProb": 0.7727,
             "bestOdds": {
-              "platform": "Polymarket",
-              "odds": -400
+              "platform": "Pinnacle",
+              "odds": -310
             },
-            "bestEv": 0.0185
+            "bestEv": 0.022
           }
         },
-        "Kurtis Campbell vs. Danny Silva": {
+        "Danny Silva vs. Kurtis Campbell": {
           "prediction": {
             "winner": "Danny Silva",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Danny Silva",
+            "method": "KO/TKO, Straight Right",
+            "time": "0:31 Round 2 of 3, 5:31 Total"
+          },
           "odds": {
-            "ProphetX": {
-              "Danny Silva": 188,
-              "Kurtis Campbell": -210
-            },
-            "HardRockBet": {
-              "Danny Silva": 190,
-              "Kurtis Campbell": -240
-            },
-            "BetRivers": {
-              "Danny Silva": 190,
-              "Kurtis Campbell": -244
-            },
-            "SXBet": {
-              "Danny Silva": 176,
-              "Kurtis Campbell": -236
-            },
-            "BetMGM": {
-              "Danny Silva": 185,
-              "Kurtis Campbell": -225
-            },
-            "Caesars": {
-              "Danny Silva": 180,
-              "Kurtis Campbell": -220
-            },
-            "Circa": {
-              "Danny Silva": 190,
-              "Kurtis Campbell": -220
-            },
-            "FanDuel": {
-              "Danny Silva": 182,
-              "Kurtis Campbell": -240
-            },
-            "4Cx": {
-              "Danny Silva": 188,
-              "Kurtis Campbell": -227
-            },
-            "Bookmaker": {
-              "Danny Silva": 198,
-              "Kurtis Campbell": -250
-            },
-            "4casters": {
-              "Danny Silva": 192,
-              "Kurtis Campbell": -222
+            "Pinnacle": {
+              "Danny Silva": 252,
+              "Kurtis Campbell": -292
             },
             "BetUS": {
-              "Danny Silva": 194,
-              "Kurtis Campbell": -235
-            },
-            "DraftKings": {
-              "Danny Silva": 190,
-              "Kurtis Campbell": -230
+              "Danny Silva": 267,
+              "Kurtis Campbell": -330
             },
             "BetAnything": {
-              "Danny Silva": 195,
-              "Kurtis Campbell": -235
+              "Danny Silva": 255,
+              "Kurtis Campbell": -330
             },
-            "Pinnacle": {
-              "Danny Silva": 190,
-              "Kurtis Campbell": -227
+            "ProphetX": {
+              "Danny Silva": 225,
+              "Kurtis Campbell": -290
+            },
+            "HardRockBet": {
+              "Danny Silva": 230,
+              "Kurtis Campbell": -300
+            },
+            "BetRivers": {
+              "Danny Silva": 230,
+              "Kurtis Campbell": -294
+            },
+            "SXBet": {
+              "Danny Silva": 256,
+              "Kurtis Campbell": -294
+            },
+            "BetMGM": {
+              "Danny Silva": 240,
+              "Kurtis Campbell": -300
+            },
+            "Caesars": {
+              "Danny Silva": 240,
+              "Kurtis Campbell": -300
+            },
+            "Circa": {
+              "Danny Silva": 245,
+              "Kurtis Campbell": -290
+            },
+            "FanDuel": {
+              "Danny Silva": 225,
+              "Kurtis Campbell": -275
+            },
+            "4Cx": {
+              "Danny Silva": 267,
+              "Kurtis Campbell": -366
+            },
+            "Bookmaker": {
+              "Danny Silva": 211,
+              "Kurtis Campbell": -255
+            },
+            "4casters": {
+              "Danny Silva": 256,
+              "Kurtis Campbell": -331
+            },
+            "DraftKings": {
+              "Danny Silva": 245,
+              "Kurtis Campbell": -305
             },
             "Cloudbet": {
-              "Danny Silva": 188,
-              "Kurtis Campbell": -250
+              "Danny Silva": 241,
+              "Kurtis Campbell": -279
             },
             "Bet105": {
-              "Danny Silva": 190,
-              "Kurtis Campbell": -227
+              "Danny Silva": 247,
+              "Kurtis Campbell": -286
             },
             "Bovada": {
-              "Danny Silva": 190,
-              "Kurtis Campbell": -230
+              "Danny Silva": 240,
+              "Kurtis Campbell": -290
             },
             "Stake": {
               "Danny Silva": 195,
               "Kurtis Campbell": -244
             },
             "MyBookie": {
-              "Danny Silva": 193,
-              "Kurtis Campbell": -244
+              "Danny Silva": 230,
+              "Kurtis Campbell": -295
             },
             "Betway": {
-              "Danny Silva": 175,
-              "Kurtis Campbell": -225
+              "Danny Silva": 200,
+              "Kurtis Campbell": -250
             },
             "BetOnline": {
-              "Danny Silva": 200,
-              "Kurtis Campbell": -235
+              "Danny Silva": 235,
+              "Kurtis Campbell": -275
             },
             "Polymarket": {
-              "Danny Silva": 194,
-              "Kurtis Campbell": -212
+              "Danny Silva": 245,
+              "Kurtis Campbell": -257
             }
           },
           "bestOdds": {
-            "groundTruthProb": 0.3448,
+            "groundTruthProb": 0.2899,
             "bestOdds": {
-              "platform": "BetOnline",
-              "odds": 200
+              "platform": "BetUS",
+              "odds": 267
             },
-            "bestEv": 0.0345
+            "bestEv": 0.0638
           }
         },
         "Mason Jones vs. Axel Sola": {
@@ -664,7 +688,11 @@
             "winner": "Mason Jones",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Mason Jones",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Mason Jones": null,
@@ -766,108 +794,112 @@
             "winner": "Nathaniel Wood",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Nathaniel Wood",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
-            "ProphetX": {
-              "Nathaniel Wood": 192,
-              "Losene Keita": -215
-            },
-            "HardRockBet": {
-              "Nathaniel Wood": 210,
+            "BetUS": {
+              "Nathaniel Wood": 226,
               "Losene Keita": -275
             },
+            "BetAnything": {
+              "Nathaniel Wood": 215,
+              "Losene Keita": -285
+            },
+            "ProphetX": {
+              "Nathaniel Wood": 240,
+              "Losene Keita": -280
+            },
+            "HardRockBet": {
+              "Nathaniel Wood": 200,
+              "Losene Keita": -260
+            },
             "BetRivers": {
-              "Nathaniel Wood": 190,
-              "Losene Keita": -244
+              "Nathaniel Wood": 130,
+              "Losene Keita": -204
             },
             "SXBet": {
-              "Nathaniel Wood": 181,
-              "Losene Keita": -245
+              "Nathaniel Wood": 251,
+              "Losene Keita": -285
             },
             "BetMGM": {
-              "Nathaniel Wood": 190,
-              "Losene Keita": -235
+              "Nathaniel Wood": 225,
+              "Losene Keita": -275
             },
             "4Cx": {
-              "Nathaniel Wood": 204,
-              "Losene Keita": -253
+              "Nathaniel Wood": 244,
+              "Losene Keita": -279
             },
             "4casters": {
-              "Nathaniel Wood": 209,
-              "Losene Keita": -247
+              "Nathaniel Wood": 249,
+              "Losene Keita": -272
             },
             "Caesars": {
-              "Nathaniel Wood": 190,
-              "Losene Keita": -230
+              "Nathaniel Wood": 235,
+              "Losene Keita": -290
             },
             "Circa": {
-              "Nathaniel Wood": 205,
-              "Losene Keita": -240
+              "Nathaniel Wood": 240,
+              "Losene Keita": -285
             },
             "FanDuel": {
-              "Nathaniel Wood": 196,
+              "Nathaniel Wood": 215,
               "Losene Keita": -260
             },
             "Bookmaker": {
-              "Nathaniel Wood": 192,
-              "Losene Keita": -242
-            },
-            "BetUS": {
-              "Nathaniel Wood": 190,
-              "Losene Keita": -230
+              "Nathaniel Wood": 231,
+              "Losene Keita": -282
             },
             "DraftKings": {
-              "Nathaniel Wood": 195,
-              "Losene Keita": -238
-            },
-            "BetAnything": {
-              "Nathaniel Wood": 190,
-              "Losene Keita": -240
+              "Nathaniel Wood": 235,
+              "Losene Keita": -290
             },
             "Pinnacle": {
-              "Nathaniel Wood": 194,
-              "Losene Keita": -232
+              "Nathaniel Wood": 241,
+              "Losene Keita": -278
             },
             "Bet105": {
-              "Nathaniel Wood": 194,
-              "Losene Keita": -232
+              "Nathaniel Wood": 241,
+              "Losene Keita": -279
             },
             "Cloudbet": {
-              "Nathaniel Wood": 194,
-              "Losene Keita": -232
+              "Nathaniel Wood": 241,
+              "Losene Keita": -279
             },
             "Stake": {
               "Nathaniel Wood": 190,
               "Losene Keita": -238
             },
             "MyBookie": {
-              "Nathaniel Wood": 191,
-              "Losene Keita": -240
+              "Nathaniel Wood": 230,
+              "Losene Keita": -295
             },
             "Bovada": {
-              "Nathaniel Wood": 200,
-              "Losene Keita": -240
+              "Nathaniel Wood": 235,
+              "Losene Keita": -285
             },
             "Betway": {
-              "Nathaniel Wood": 175,
-              "Losene Keita": -225
+              "Nathaniel Wood": 210,
+              "Losene Keita": -275
             },
             "Polymarket": {
-              "Nathaniel Wood": 194,
-              "Losene Keita": -212
+              "Nathaniel Wood": 257,
+              "Losene Keita": -270
             },
             "BetOnline": {
-              "Nathaniel Wood": 197,
-              "Losene Keita": -232
+              "Nathaniel Wood": 235,
+              "Losene Keita": -275
             }
           },
           "bestOdds": {
-            "groundTruthProb": 0.339,
+            "groundTruthProb": 0.2985,
             "bestOdds": {
-              "platform": "HardRockBet",
-              "odds": 210
+              "platform": "Polymarket",
+              "odds": 257
             },
-            "bestEv": 0.0508
+            "bestEv": 0.0657
           }
         },
         "Mario Pinto vs. Felipe Franco": {
@@ -875,116 +907,124 @@
             "winner": "Mario Pinto",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Mario Pinto",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
-            "SXBet": {
-              "Mario Pinto": -967,
-              "Felipe Franco": 530
+            "MyBookie": {
+              "Mario Pinto": -1205,
+              "Felipe Franco": 700
             },
-            "FanDuel": {
-              "Mario Pinto": -950,
-              "Felipe Franco": 540
+            "BetUS": {
+              "Mario Pinto": -1250,
+              "Felipe Franco": 725
             },
-            "Cloudbet": {
-              "Mario Pinto": -847,
-              "Felipe Franco": 591
-            },
-            "Bookmaker": {
-              "Mario Pinto": -910,
-              "Felipe Franco": 571
+            "BetAnything": {
+              "Mario Pinto": -1000,
+              "Felipe Franco": 525
             },
             "ProphetX": {
-              "Mario Pinto": -720,
-              "Felipe Franco": 570
+              "Mario Pinto": -850,
+              "Felipe Franco": 770
+            },
+            "SXBet": {
+              "Mario Pinto": -996,
+              "Felipe Franco": 760
+            },
+            "FanDuel": {
+              "Mario Pinto": -850,
+              "Felipe Franco": 590
+            },
+            "Cloudbet": {
+              "Mario Pinto": -833,
+              "Felipe Franco": 550
+            },
+            "Bookmaker": {
+              "Mario Pinto": -900,
+              "Felipe Franco": 614
             },
             "Betway": {
               "Mario Pinto": -800,
               "Felipe Franco": 500
             },
             "HardRockBet": {
-              "Mario Pinto": -1000,
-              "Felipe Franco": 650
+              "Mario Pinto": -10000,
+              "Felipe Franco": 1750
             },
             "BetRivers": {
-              "Mario Pinto": -1000,
-              "Felipe Franco": 650
+              "Mario Pinto": -10000,
+              "Felipe Franco": 1050
             },
             "BetMGM": {
-              "Mario Pinto": -900,
+              "Mario Pinto": -1100,
               "Felipe Franco": 600
             },
             "Pinnacle": {
-              "Mario Pinto": -841,
-              "Felipe Franco": 591
+              "Mario Pinto": -1111,
+              "Felipe Franco": 795
             },
             "Caesars": {
-              "Mario Pinto": -900,
-              "Felipe Franco": 600
+              "Mario Pinto": -450,
+              "Felipe Franco": 310
             },
             "Circa": {
-              "Mario Pinto": -850,
-              "Felipe Franco": 600
+              "Mario Pinto": -1300,
+              "Felipe Franco": 825
             },
             "4Cx": {
-              "Mario Pinto": -935,
-              "Felipe Franco": 542
+              "Mario Pinto": -985,
+              "Felipe Franco": 765
             },
             "4casters": {
-              "Mario Pinto": -910,
-              "Felipe Franco": 554
-            },
-            "BetUS": {
-              "Mario Pinto": -900,
-              "Felipe Franco": 575
+              "Mario Pinto": -959,
+              "Felipe Franco": 782
             },
             "DraftKings": {
-              "Mario Pinto": -900,
-              "Felipe Franco": 600
-            },
-            "BetAnything": {
-              "Mario Pinto": -900,
-              "Felipe Franco": 485
+              "Mario Pinto": -1200,
+              "Felipe Franco": 750
             },
             "Bet105": {
-              "Mario Pinto": -841,
-              "Felipe Franco": 591
+              "Mario Pinto": -1105,
+              "Felipe Franco": 792
             },
             "Bovada": {
-              "Mario Pinto": -1200,
-              "Felipe Franco": 700
+              "Mario Pinto": -1300,
+              "Felipe Franco": 725
             },
             "Stake": {
               "Mario Pinto": -909,
               "Felipe Franco": 580
             },
-            "MyBookie": {
-              "Mario Pinto": -952,
-              "Felipe Franco": 580
-            },
             "BetOnline": {
-              "Mario Pinto": -900,
-              "Felipe Franco": 600
+              "Mario Pinto": -1000,
+              "Felipe Franco": 675
             },
             "Polymarket": {
-              "Mario Pinto": -733,
-              "Felipe Franco": 614
+              "Mario Pinto": -900,
+              "Felipe Franco": 809
             }
           },
           "bestOdds": {
-            "groundTruthProb": 0.9,
+            "groundTruthProb": 0.9231,
             "bestOdds": {
-              "platform": "ProphetX",
-              "odds": -720
+              "platform": "Caesars",
+              "odds": -450
             },
-            "bestEv": 0.025
+            "bestEv": 0.1282
           }
         },
-        "Antonio Trócoli vs. Mantas Kondratavičius": {
+        "Mantas Kondratavičius vs. Antonio Trócoli": {
           "prediction": {
             "winner": "Mantas Kondratavičius",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Mantas Kondratavičius",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Antonio Trócoli": null,
@@ -1081,12 +1121,16 @@
           },
           "bestOdds": null
         },
-        "Louie Sutherland vs. Brando Peričić": {
+        "Brando Peričić vs. Louie Sutherland": {
           "prediction": {
             "winner": "Brando Peričić",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Brando Peričić",
+            "method": "KO/TKO, Punches",
+            "time": "1:48 Round 1 of 3"
+          },
           "odds": {
             "BetOnline": {
               "Louie Sutherland": null,
@@ -1183,113 +1227,117 @@
           },
           "bestOdds": null
         },
-        "Shem Rock vs. A. Al-Selwady": {
+        "A. Al-Selwady vs. Shem Rock": {
           "prediction": {
             "winner": "Shem Rock",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "A. Al-Selwady",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
+            "BetUS": {
+              "Shem Rock": -150,
+              "A. Al-Selwady": 126
+            },
+            "BetAnything": {
+              "Shem Rock": -145,
+              "A. Al-Selwady": 115
+            },
+            "Pinnacle": {
+              "Shem Rock": -135,
+              "A. Al-Selwady": 120
+            },
             "Cloudbet": {
-              "Shem Rock": -102,
-              "A. Al-Selwady": -125
+              "Shem Rock": -142,
+              "A. Al-Selwady": 126
             },
             "BetOnline": {
-              "Shem Rock": 101,
-              "A. Al-Selwady": -121
-            },
-            "4Cx": {
-              "Shem Rock": 105,
-              "A. Al-Selwady": -124
+              "Shem Rock": -145,
+              "A. Al-Selwady": 125
             },
             "ProphetX": {
-              "Shem Rock": 107,
-              "A. Al-Selwady": -115
+              "Shem Rock": -127,
+              "A. Al-Selwady": 125
+            },
+            "4Cx": {
+              "Shem Rock": -141,
+              "A. Al-Selwady": 124
             },
             "HardRockBet": {
-              "Shem Rock": 100,
-              "A. Al-Selwady": -125
+              "Shem Rock": -135,
+              "A. Al-Selwady": 110
             },
             "SXBet": {
-              "Shem Rock": 103,
-              "A. Al-Selwady": -122
+              "Shem Rock": -140,
+              "A. Al-Selwady": 122
             },
             "BetRivers": {
-              "Shem Rock": 102,
-              "A. Al-Selwady": -125
+              "Shem Rock": 270,
+              "A. Al-Selwady": -476
             },
             "BetMGM": {
-              "Shem Rock": 110,
-              "A. Al-Selwady": -135
+              "Shem Rock": -135,
+              "A. Al-Selwady": 110
             },
             "Stake": {
               "Shem Rock": 104,
               "A. Al-Selwady": -127
             },
             "4casters": {
-              "Shem Rock": 105,
-              "A. Al-Selwady": -111
+              "Shem Rock": -138,
+              "A. Al-Selwady": 126
             },
             "Caesars": {
-              "Shem Rock": 110,
-              "A. Al-Selwady": -130
+              "Shem Rock": -140,
+              "A. Al-Selwady": 118
             },
             "Circa": {
-              "Shem Rock": 100,
-              "A. Al-Selwady": -120
+              "Shem Rock": -155,
+              "A. Al-Selwady": 135
             },
             "FanDuel": {
-              "Shem Rock": 102,
-              "A. Al-Selwady": -130
-            },
-            "BetUS": {
-              "Shem Rock": 100,
-              "A. Al-Selwady": -120
+              "Shem Rock": -124,
+              "A. Al-Selwady": 106
             },
             "Bookmaker": {
-              "Shem Rock": 109,
-              "A. Al-Selwady": -133
+              "Shem Rock": -134,
+              "A. Al-Selwady": 114
             },
             "DraftKings": {
-              "Shem Rock": 105,
-              "A. Al-Selwady": -125
+              "Shem Rock": -148,
+              "A. Al-Selwady": 124
             },
             "Bet105": {
-              "Shem Rock": 106,
-              "A. Al-Selwady": -124
-            },
-            "BetAnything": {
-              "Shem Rock": -110,
-              "A. Al-Selwady": -120
-            },
-            "Pinnacle": {
-              "Shem Rock": 107,
-              "A. Al-Selwady": -125
+              "Shem Rock": -144,
+              "A. Al-Selwady": 128
             },
             "Bovada": {
-              "Shem Rock": 107,
-              "A. Al-Selwady": -128
+              "Shem Rock": -137,
+              "A. Al-Selwady": 117
             },
             "MyBookie": {
-              "Shem Rock": 100,
-              "A. Al-Selwady": -123
+              "Shem Rock": -135,
+              "A. Al-Selwady": 110
             },
             "Betway": {
-              "Shem Rock": -100,
-              "A. Al-Selwady": -125
+              "Shem Rock": -110,
+              "A. Al-Selwady": -110
             },
             "Polymarket": {
-              "Shem Rock": 108,
-              "A. Al-Selwady": -113
+              "Shem Rock": -127,
+              "A. Al-Selwady": 122
             }
           },
           "bestOdds": {
-            "groundTruthProb": 0.4878,
+            "groundTruthProb": 0.5968,
             "bestOdds": {
-              "platform": "BetMGM",
-              "odds": 110
+              "platform": "BetRivers",
+              "odds": 270
             },
-            "bestEv": 0.0244
+            "bestEv": 1.2081
           }
         },
         "Shanelle Dyer vs. Ravena Oliveira": {
@@ -1297,217 +1345,112 @@
             "winner": "Shanelle Dyer",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Shanelle Dyer",
+            "method": "KO/TKO, Knees and Punches",
+            "time": "1:17 Round 2 of 3, 6:17 Total"
+          },
           "odds": {
-            "SXBet": {
-              "Ravena Oliveira": 368,
-              "Shanelle Dyer": -525
+            "BetUS": {
+              "Ravena Oliveira": 410,
+              "Shanelle Dyer": -570
+            },
+            "BetAnything": {
+              "Ravena Oliveira": 360,
+              "Shanelle Dyer": -570
             },
             "Pinnacle": {
-              "Ravena Oliveira": 375,
-              "Shanelle Dyer": -481
+              "Ravena Oliveira": 431,
+              "Shanelle Dyer": -528
+            },
+            "SXBet": {
+              "Ravena Oliveira": 365,
+              "Shanelle Dyer": -488
             },
             "Bookmaker": {
-              "Ravena Oliveira": 359,
-              "Shanelle Dyer": -495
+              "Ravena Oliveira": 400,
+              "Shanelle Dyer": -525
             },
             "ProphetX": {
-              "Ravena Oliveira": 365,
-              "Shanelle Dyer": -485
+              "Ravena Oliveira": 420,
+              "Shanelle Dyer": -540
             },
             "HardRockBet": {
-              "Ravena Oliveira": 350,
-              "Shanelle Dyer": -475
+              "Ravena Oliveira": 375,
+              "Shanelle Dyer": -525
             },
             "BetRivers": {
-              "Ravena Oliveira": 360,
-              "Shanelle Dyer": -476
+              "Ravena Oliveira": 270,
+              "Shanelle Dyer": -455
             },
             "BetMGM": {
-              "Ravena Oliveira": 360,
-              "Shanelle Dyer": -500
+              "Ravena Oliveira": 400,
+              "Shanelle Dyer": -550
             },
             "4casters": {
-              "Ravena Oliveira": 388,
-              "Shanelle Dyer": -490
+              "Ravena Oliveira": 440,
+              "Shanelle Dyer": -494
             },
             "Caesars": {
-              "Ravena Oliveira": 380,
-              "Shanelle Dyer": -500
+              "Ravena Oliveira": 430,
+              "Shanelle Dyer": -600
             },
             "Circa": {
-              "Ravena Oliveira": 400,
+              "Ravena Oliveira": 450,
               "Shanelle Dyer": -435
             },
             "FanDuel": {
-              "Ravena Oliveira": 330,
-              "Shanelle Dyer": -480
-            },
-            "BetUS": {
-              "Ravena Oliveira": 369,
+              "Ravena Oliveira": 385,
               "Shanelle Dyer": -500
             },
             "4Cx": {
-              "Ravena Oliveira": 379,
+              "Ravena Oliveira": 431,
               "Shanelle Dyer": -502
             },
             "DraftKings": {
-              "Ravena Oliveira": 370,
-              "Shanelle Dyer": -485
+              "Ravena Oliveira": 410,
+              "Shanelle Dyer": -550
             },
             "Bet105": {
-              "Ravena Oliveira": 375,
-              "Shanelle Dyer": -481
-            },
-            "BetAnything": {
-              "Ravena Oliveira": 320,
-              "Shanelle Dyer": -510
+              "Ravena Oliveira": 409,
+              "Shanelle Dyer": -498
             },
             "Cloudbet": {
-              "Ravena Oliveira": 375,
-              "Shanelle Dyer": -483
+              "Ravena Oliveira": 431,
+              "Shanelle Dyer": -529
             },
             "Bovada": {
-              "Ravena Oliveira": 370,
-              "Shanelle Dyer": -510
+              "Ravena Oliveira": 425,
+              "Shanelle Dyer": -550
             },
             "Stake": {
               "Ravena Oliveira": 370,
               "Shanelle Dyer": -526
             },
             "MyBookie": {
-              "Ravena Oliveira": 370,
-              "Shanelle Dyer": -526
+              "Ravena Oliveira": 420,
+              "Shanelle Dyer": -599
             },
             "Betway": {
               "Ravena Oliveira": 333,
               "Shanelle Dyer": -450
             },
             "BetOnline": {
-              "Ravena Oliveira": 385,
-              "Shanelle Dyer": -500
+              "Ravena Oliveira": 440,
+              "Shanelle Dyer": -570
             },
             "Polymarket": {
-              "Ravena Oliveira": 376,
-              "Shanelle Dyer": -426
+              "Ravena Oliveira": 456,
+              "Shanelle Dyer": -488
             }
           },
           "bestOdds": {
-            "groundTruthProb": 0.8291,
+            "groundTruthProb": 0.8462,
             "bestOdds": {
-              "platform": "Polymarket",
-              "odds": -426
+              "platform": "Circa",
+              "odds": -435
             },
-            "bestEv": 0.0237
-          }
-        },
-        "Melissa Mullins vs. Luana Carolina": {
-          "prediction": {
-            "winner": "Melissa Mullins",
-            "method": "Decision"
-          },
-          "result": null,
-          "odds": {
-            "SXBet": {
-              "Melissa Mullins": 109,
-              "Luana Carolina": -131
-            },
-            "Bookmaker": {
-              "Melissa Mullins": 106,
-              "Luana Carolina": -130
-            },
-            "ProphetX": {
-              "Melissa Mullins": 105,
-              "Luana Carolina": -121
-            },
-            "HardRockBet": {
-              "Melissa Mullins": 105,
-              "Luana Carolina": -130
-            },
-            "BetRivers": {
-              "Melissa Mullins": 107,
-              "Luana Carolina": -132
-            },
-            "BetMGM": {
-              "Melissa Mullins": 105,
-              "Luana Carolina": -125
-            },
-            "Pinnacle": {
-              "Melissa Mullins": 103,
-              "Luana Carolina": -120
-            },
-            "4casters": {
-              "Melissa Mullins": 114,
-              "Luana Carolina": -132
-            },
-            "Caesars": {
-              "Melissa Mullins": 105,
-              "Luana Carolina": -125
-            },
-            "Circa": {
-              "Melissa Mullins": 110,
-              "Luana Carolina": -130
-            },
-            "4Cx": {
-              "Melissa Mullins": 112,
-              "Luana Carolina": -135
-            },
-            "FanDuel": {
-              "Melissa Mullins": 108,
-              "Luana Carolina": -138
-            },
-            "BetUS": {
-              "Melissa Mullins": 110,
-              "Luana Carolina": -130
-            },
-            "DraftKings": {
-              "Melissa Mullins": 105,
-              "Luana Carolina": -125
-            },
-            "Bet105": {
-              "Melissa Mullins": 103,
-              "Luana Carolina": -120
-            },
-            "BetAnything": {
-              "Melissa Mullins": 100,
-              "Luana Carolina": -130
-            },
-            "Cloudbet": {
-              "Melissa Mullins": 106,
-              "Luana Carolina": -135
-            },
-            "Bovada": {
-              "Melissa Mullins": 107,
-              "Luana Carolina": -128
-            },
-            "Stake": {
-              "Melissa Mullins": 108,
-              "Luana Carolina": -132
-            },
-            "MyBookie": {
-              "Melissa Mullins": 108,
-              "Luana Carolina": -132
-            },
-            "Betway": {
-              "Melissa Mullins": -105,
-              "Luana Carolina": -120
-            },
-            "BetOnline": {
-              "Melissa Mullins": 110,
-              "Luana Carolina": -130
-            },
-            "Polymarket": {
-              "Melissa Mullins": 117,
-              "Luana Carolina": -122
-            }
-          },
-          "bestOdds": {
-            "groundTruthProb": 0.4878,
-            "bestOdds": {
-              "platform": "Polymarket",
-              "odds": 117
-            },
-            "bestEv": 0.0585
+            "bestEv": 0.0407
           }
         }
       }

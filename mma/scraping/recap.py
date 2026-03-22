@@ -167,6 +167,7 @@ def run(args):
         existing = _find_fight(existing_fights, fight['fighter1'], fight['fighter2'])
         prediction = existing['prediction'] if existing else {"winner": "", "method": ""}
         existing_odds = existing.get('odds') if existing else None
+        existing_best_odds = existing.get('bestOdds') if existing else None
         result = {
             "winner": fight['fighter1'],
             "method": fight['method_of_victory'],
@@ -175,6 +176,8 @@ def run(args):
         entry = {"prediction": prediction, "result": result}
         if existing_odds:
             entry['odds'] = existing_odds
+        if existing_best_odds:
+            entry['bestOdds'] = existing_best_odds
         fights[matchup] = entry
 
     _update_json_metadata(event_data, card_id, args.rating, fights)
