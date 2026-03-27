@@ -10,6 +10,7 @@ Public API:
 """
 import json
 import re
+import unicodedata
 import requests
 
 from scraping import constants
@@ -25,8 +26,12 @@ def _implied_probability(odds):
     return abs(odds) / (abs(odds) + 100)
 
 
+def _normalize(s):
+    return unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode('ascii')
+
+
 def _last_name(name):
-    return name.strip().split()[-1].lower()
+    return _normalize(name.strip().split()[-1].lower())
 
 
 def _names_match(tap_name, fo_name):

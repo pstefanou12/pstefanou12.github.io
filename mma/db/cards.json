@@ -1,6 +1,1425 @@
 {
   "cards": [
     {
+      "id": "ufc-fight-night-adesanya-pyfer",
+      "title": "UFC Fight Night",
+      "subtitle": "Adesanya vs. Pyfer",
+      "date": "2026-03-27",
+      "rating": null,
+      "poster": "/mma/db/img/ufc_fight_night_adesanya_pyfer_poster.jpg",
+      "recapUrl": null,
+      "previewUrl": "db/previews/ufc-fight-night-adesanya-pyfer.html",
+      "location": "Octagon",
+      "eventTime": "Saturday 03.28.2026 at 05:00 PM ET",
+      "fights": {
+        "Israel Adesanya vs. Joe Pyfer": {
+          "prediction": {
+            "winner": "Joe Pyfer",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "HardRockBet": {
+              "Israel Adesanya": -160,
+              "Joe Pyfer": 130
+            },
+            "BetRivers": {
+              "Israel Adesanya": -161,
+              "Joe Pyfer": 130
+            },
+            "Polymarket": {
+              "Israel Adesanya": -138,
+              "Joe Pyfer": 133
+            },
+            "Circa": {
+              "Israel Adesanya": -150,
+              "Joe Pyfer": 130
+            },
+            "Bovada": {
+              "Israel Adesanya": -147,
+              "Joe Pyfer": 127
+            },
+            "SXBet": {
+              "Israel Adesanya": -137,
+              "Joe Pyfer": 129
+            },
+            "ProphetX": {
+              "Israel Adesanya": -142,
+              "Joe Pyfer": 132
+            },
+            "Cloudbet": {
+              "Israel Adesanya": -146,
+              "Joe Pyfer": 127
+            },
+            "Bet105": {
+              "Israel Adesanya": -146,
+              "Joe Pyfer": 127
+            },
+            "Pinnacle": {
+              "Israel Adesanya": -148,
+              "Joe Pyfer": 126
+            },
+            "BetMGM": {
+              "Israel Adesanya": -150,
+              "Joe Pyfer": 125
+            },
+            "4casters": {
+              "Israel Adesanya": -139,
+              "Joe Pyfer": 130
+            },
+            "4Cx": {
+              "Israel Adesanya": -142,
+              "Joe Pyfer": 127
+            },
+            "Bookmaker": {
+              "Israel Adesanya": -152,
+              "Joe Pyfer": 132
+            },
+            "BetAnything": {
+              "Israel Adesanya": -150,
+              "Joe Pyfer": 120
+            },
+            "BetUS": {
+              "Israel Adesanya": -155,
+              "Joe Pyfer": 130
+            },
+            "BetOnline": {
+              "Israel Adesanya": -150,
+              "Joe Pyfer": 130
+            },
+            "DraftKings": {
+              "Israel Adesanya": -148,
+              "Joe Pyfer": 124
+            },
+            "Caesars": {
+              "Israel Adesanya": -150,
+              "Joe Pyfer": 125
+            },
+            "Stake": {
+              "Israel Adesanya": -152,
+              "Joe Pyfer": 124
+            },
+            "FanDuel": {
+              "Israel Adesanya": -150,
+              "Joe Pyfer": 122
+            },
+            "Betway": {
+              "Israel Adesanya": -163,
+              "Joe Pyfer": 130
+            },
+            "MyBookie": {
+              "Israel Adesanya": -154,
+              "Joe Pyfer": 125
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.4464,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": 133
+            },
+            "bestEv": 0.0402
+          }
+        },
+        "Alexa Grasso vs. Maycee Barber": {
+          "prediction": {
+            "winner": "Maycee Barber",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Polymarket": {
+              "Alexa Grasso": 163,
+              "Maycee Barber": -178
+            },
+            "Stake": {
+              "Alexa Grasso": 155,
+              "Maycee Barber": -189
+            },
+            "BetMGM": {
+              "Alexa Grasso": 155,
+              "Maycee Barber": -190
+            },
+            "Circa": {
+              "Alexa Grasso": 160,
+              "Maycee Barber": -185
+            },
+            "BetOnline": {
+              "Alexa Grasso": 160,
+              "Maycee Barber": -185
+            },
+            "ProphetX": {
+              "Alexa Grasso": 162,
+              "Maycee Barber": -174
+            },
+            "BetRivers": {
+              "Alexa Grasso": 150,
+              "Maycee Barber": -189
+            },
+            "HardRockBet": {
+              "Alexa Grasso": 150,
+              "Maycee Barber": -190
+            },
+            "Cloudbet": {
+              "Alexa Grasso": 152,
+              "Maycee Barber": -176
+            },
+            "Bet105": {
+              "Alexa Grasso": 152,
+              "Maycee Barber": -176
+            },
+            "SXBet": {
+              "Alexa Grasso": 150,
+              "Maycee Barber": -191
+            },
+            "Pinnacle": {
+              "Alexa Grasso": 151,
+              "Maycee Barber": -178
+            },
+            "Bovada": {
+              "Alexa Grasso": 155,
+              "Maycee Barber": -180
+            },
+            "FanDuel": {
+              "Alexa Grasso": 154,
+              "Maycee Barber": -192
+            },
+            "Betway": {
+              "Alexa Grasso": 150,
+              "Maycee Barber": -188
+            },
+            "MyBookie": {
+              "Alexa Grasso": 150,
+              "Maycee Barber": -186
+            },
+            "DraftKings": {
+              "Alexa Grasso": 154,
+              "Maycee Barber": -185
+            },
+            "4casters": {
+              "Alexa Grasso": 162,
+              "Maycee Barber": -173
+            },
+            "4Cx": {
+              "Alexa Grasso": 158,
+              "Maycee Barber": -177
+            },
+            "Bookmaker": {
+              "Alexa Grasso": 154,
+              "Maycee Barber": -179
+            },
+            "Caesars": {
+              "Alexa Grasso": 160,
+              "Maycee Barber": -190
+            },
+            "BetAnything": {
+              "Alexa Grasso": 155,
+              "Maycee Barber": -185
+            },
+            "BetUS": {
+              "Alexa Grasso": 154,
+              "Maycee Barber": -185
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6491,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": -173
+            },
+            "bestEv": 0.0243
+          }
+        },
+        "Michael Chiesa vs. Niko Price": {
+          "prediction": {
+            "winner": "Michael Chiesa",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Stake": {
+              "Michael Chiesa": -909,
+              "Niko Price": 580
+            },
+            "BetOnline": {
+              "Michael Chiesa": -900,
+              "Niko Price": 600
+            },
+            "Circa": {
+              "Michael Chiesa": -850,
+              "Niko Price": 600
+            },
+            "BetMGM": {
+              "Michael Chiesa": -900,
+              "Niko Price": 600
+            },
+            "Cloudbet": {
+              "Michael Chiesa": -909,
+              "Niko Price": 604
+            },
+            "Polymarket": {
+              "Michael Chiesa": -567,
+              "Niko Price": 525
+            },
+            "Caesars": {
+              "Michael Chiesa": -850,
+              "Niko Price": 575
+            },
+            "BetRivers": {
+              "Michael Chiesa": -769,
+              "Niko Price": 525
+            },
+            "HardRockBet": {
+              "Michael Chiesa": -750,
+              "Niko Price": 525
+            },
+            "Bovada": {
+              "Michael Chiesa": -900,
+              "Niko Price": 575
+            },
+            "MyBookie": {
+              "Michael Chiesa": -952,
+              "Niko Price": 590
+            },
+            "DraftKings": {
+              "Michael Chiesa": -900,
+              "Niko Price": 600
+            },
+            "Betway": {
+              "Michael Chiesa": -901,
+              "Niko Price": 550
+            },
+            "SXBet": {
+              "Michael Chiesa": -779,
+              "Niko Price": 488
+            },
+            "FanDuel": {
+              "Michael Chiesa": -750,
+              "Niko Price": 490
+            },
+            "Bookmaker": {
+              "Michael Chiesa": -900,
+              "Niko Price": 614
+            },
+            "BetAnything": {
+              "Michael Chiesa": -850,
+              "Niko Price": 475
+            },
+            "ProphetX": {
+              "Michael Chiesa": -830,
+              "Niko Price": 580
+            },
+            "BetUS": {
+              "Michael Chiesa": -900,
+              "Niko Price": 575
+            },
+            "4casters": {
+              "Michael Chiesa": -849,
+              "Niko Price": 500
+            },
+            "4Cx": {
+              "Michael Chiesa": -875,
+              "Niko Price": 488
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.9,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -567
+            },
+            "bestEv": 0.0587
+          }
+        },
+        "Julian Erosa vs. Lerryan Douglas": {
+          "prediction": {
+            "winner": "Lerryan Douglas",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "Polymarket": {
+              "Julian Erosa": 285,
+              "Lerryan Douglas": -300
+            },
+            "BetMGM": {
+              "Julian Erosa": 275,
+              "Lerryan Douglas": -350
+            },
+            "Circa": {
+              "Julian Erosa": 265,
+              "Lerryan Douglas": -280
+            },
+            "MyBookie": {
+              "Julian Erosa": 270,
+              "Lerryan Douglas": -360
+            },
+            "Stake": {
+              "Julian Erosa": 270,
+              "Lerryan Douglas": -357
+            },
+            "BetOnline": {
+              "Julian Erosa": 285,
+              "Lerryan Douglas": -350
+            },
+            "SXBet": {
+              "Julian Erosa": 257,
+              "Lerryan Douglas": -352
+            },
+            "BetRivers": {
+              "Julian Erosa": 250,
+              "Lerryan Douglas": -333
+            },
+            "Bet105": {
+              "Julian Erosa": 293,
+              "Lerryan Douglas": -353
+            },
+            "HardRockBet": {
+              "Julian Erosa": 250,
+              "Lerryan Douglas": -325
+            },
+            "Cloudbet": {
+              "Julian Erosa": 293,
+              "Lerryan Douglas": -353
+            },
+            "ProphetX": {
+              "Julian Erosa": 290,
+              "Lerryan Douglas": -330
+            },
+            "Pinnacle": {
+              "Julian Erosa": 268,
+              "Lerryan Douglas": -321
+            },
+            "Bovada": {
+              "Julian Erosa": 275,
+              "Lerryan Douglas": -350
+            },
+            "FanDuel": {
+              "Julian Erosa": 250,
+              "Lerryan Douglas": -325
+            },
+            "Betway": {
+              "Julian Erosa": 250,
+              "Lerryan Douglas": -333
+            },
+            "DraftKings": {
+              "Julian Erosa": 270,
+              "Lerryan Douglas": -340
+            },
+            "4casters": {
+              "Julian Erosa": 278,
+              "Lerryan Douglas": -330
+            },
+            "4Cx": {
+              "Julian Erosa": 272,
+              "Lerryan Douglas": -337
+            },
+            "Bookmaker": {
+              "Julian Erosa": 269,
+              "Lerryan Douglas": -333
+            },
+            "Caesars": {
+              "Julian Erosa": 275,
+              "Lerryan Douglas": -350
+            },
+            "BetAnything": {
+              "Julian Erosa": 270,
+              "Lerryan Douglas": -350
+            },
+            "BetUS": {
+              "Julian Erosa": 279,
+              "Lerryan Douglas": -350
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7727,
+            "bestOdds": {
+              "platform": "Circa",
+              "odds": -280
+            },
+            "bestEv": 0.0487
+          }
+        },
+        "Mansur Abdul-Malik vs. Yousri Belgaroui": {
+          "prediction": {
+            "winner": "Yousri Belgaroui",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Polymarket": {
+              "Mansur Abdul-Malik": -122,
+              "Yousri Belgaroui": 117
+            },
+            "BetMGM": {
+              "Mansur Abdul-Malik": -125,
+              "Yousri Belgaroui": 105
+            },
+            "Stake": {
+              "Mansur Abdul-Malik": -139,
+              "Yousri Belgaroui": 114
+            },
+            "Circa": {
+              "Mansur Abdul-Malik": -125,
+              "Yousri Belgaroui": 115
+            },
+            "MyBookie": {
+              "Mansur Abdul-Malik": -135,
+              "Yousri Belgaroui": 110
+            },
+            "BetOnline": {
+              "Mansur Abdul-Malik": -138,
+              "Yousri Belgaroui": 118
+            },
+            "ProphetX": {
+              "Mansur Abdul-Malik": -125,
+              "Yousri Belgaroui": 113
+            },
+            "BetRivers": {
+              "Mansur Abdul-Malik": -135,
+              "Yousri Belgaroui": 110
+            },
+            "HardRockBet": {
+              "Mansur Abdul-Malik": -135,
+              "Yousri Belgaroui": 110
+            },
+            "Bet105": {
+              "Mansur Abdul-Malik": -126,
+              "Yousri Belgaroui": 110
+            },
+            "Cloudbet": {
+              "Mansur Abdul-Malik": -126,
+              "Yousri Belgaroui": 110
+            },
+            "Pinnacle": {
+              "Mansur Abdul-Malik": -126,
+              "Yousri Belgaroui": 110
+            },
+            "Bovada": {
+              "Mansur Abdul-Malik": -125,
+              "Yousri Belgaroui": 105
+            },
+            "FanDuel": {
+              "Mansur Abdul-Malik": -130,
+              "Yousri Belgaroui": 106
+            },
+            "Betway": {
+              "Mansur Abdul-Malik": -120,
+              "Yousri Belgaroui": -105
+            },
+            "DraftKings": {
+              "Mansur Abdul-Malik": -130,
+              "Yousri Belgaroui": 110
+            },
+            "4casters": {
+              "Mansur Abdul-Malik": -128,
+              "Yousri Belgaroui": 116
+            },
+            "4Cx": {
+              "Mansur Abdul-Malik": -131,
+              "Yousri Belgaroui": 114
+            },
+            "Bookmaker": {
+              "Mansur Abdul-Malik": -128,
+              "Yousri Belgaroui": 108
+            },
+            "Caesars": {
+              "Mansur Abdul-Malik": -130,
+              "Yousri Belgaroui": 110
+            },
+            "SXBet": {
+              "Mansur Abdul-Malik": -136,
+              "Yousri Belgaroui": 116
+            },
+            "BetAnything": {
+              "Mansur Abdul-Malik": -135,
+              "Yousri Belgaroui": 105
+            },
+            "BetUS": {
+              "Mansur Abdul-Malik": -140,
+              "Yousri Belgaroui": 118
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.4762,
+            "bestOdds": {
+              "platform": "BetOnline",
+              "odds": 118
+            },
+            "bestEv": 0.0381
+          }
+        },
+        "Terrance McKinney vs. Kyle Nelson": {
+          "prediction": {
+            "winner": "Terrance McKinney",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "Polymarket": {
+              "Terrance McKinney": -170,
+              "Kyle Nelson": 163
+            },
+            "BetMGM": {
+              "Terrance McKinney": -200,
+              "Kyle Nelson": 165
+            },
+            "Circa": {
+              "Terrance McKinney": -190,
+              "Kyle Nelson": 165
+            },
+            "MyBookie": {
+              "Terrance McKinney": -192,
+              "Kyle Nelson": 155
+            },
+            "Stake": {
+              "Terrance McKinney": -179,
+              "Kyle Nelson": 144
+            },
+            "BetOnline": {
+              "Terrance McKinney": -173,
+              "Kyle Nelson": 148
+            },
+            "BetRivers": {
+              "Terrance McKinney": -189,
+              "Kyle Nelson": 150
+            },
+            "HardRockBet": {
+              "Terrance McKinney": -190,
+              "Kyle Nelson": 150
+            },
+            "Bet105": {
+              "Terrance McKinney": -182,
+              "Kyle Nelson": 157
+            },
+            "SXBet": {
+              "Terrance McKinney": -197,
+              "Kyle Nelson": 138
+            },
+            "Cloudbet": {
+              "Terrance McKinney": -182,
+              "Kyle Nelson": 157
+            },
+            "ProphetX": {
+              "Terrance McKinney": -172,
+              "Kyle Nelson": 162
+            },
+            "Pinnacle": {
+              "Terrance McKinney": -182,
+              "Kyle Nelson": 157
+            },
+            "Bovada": {
+              "Terrance McKinney": -185,
+              "Kyle Nelson": 160
+            },
+            "FanDuel": {
+              "Terrance McKinney": -188,
+              "Kyle Nelson": 152
+            },
+            "Betway": {
+              "Terrance McKinney": -175,
+              "Kyle Nelson": 140
+            },
+            "DraftKings": {
+              "Terrance McKinney": -185,
+              "Kyle Nelson": 154
+            },
+            "4Cx": {
+              "Terrance McKinney": -180,
+              "Kyle Nelson": 163
+            },
+            "4casters": {
+              "Terrance McKinney": -177,
+              "Kyle Nelson": 167
+            },
+            "Bookmaker": {
+              "Terrance McKinney": -177,
+              "Kyle Nelson": 152
+            },
+            "Caesars": {
+              "Terrance McKinney": -190,
+              "Kyle Nelson": 160
+            },
+            "BetAnything": {
+              "Terrance McKinney": -190,
+              "Kyle Nelson": 160
+            },
+            "BetUS": {
+              "Terrance McKinney": -175,
+              "Kyle Nelson": 146
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6491,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -170
+            },
+            "bestEv": 0.031
+          }
+        },
+        "Ignacio Bahamondes vs. Tofiq Musayev": {
+          "prediction": {
+            "winner": "Ignacio Bahamondes",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "Polymarket": {
+              "Ignacio Bahamondes": -270,
+              "Tofiq Musayev": 257
+            },
+            "MyBookie": {
+              "Ignacio Bahamondes": -330,
+              "Tofiq Musayev": 255
+            },
+            "Stake": {
+              "Ignacio Bahamondes": -333,
+              "Tofiq Musayev": 255
+            },
+            "BetOnline": {
+              "Ignacio Bahamondes": -320,
+              "Tofiq Musayev": 270
+            },
+            "SXBet": {
+              "Ignacio Bahamondes": -312,
+              "Tofiq Musayev": 248
+            },
+            "BetMGM": {
+              "Ignacio Bahamondes": -325,
+              "Tofiq Musayev": 260
+            },
+            "BetRivers": {
+              "Ignacio Bahamondes": -333,
+              "Tofiq Musayev": 255
+            },
+            "Bet105": {
+              "Ignacio Bahamondes": -290,
+              "Tofiq Musayev": 244
+            },
+            "HardRockBet": {
+              "Ignacio Bahamondes": -325,
+              "Tofiq Musayev": 260
+            },
+            "Cloudbet": {
+              "Ignacio Bahamondes": -291,
+              "Tofiq Musayev": 244
+            },
+            "ProphetX": {
+              "Ignacio Bahamondes": -270,
+              "Tofiq Musayev": 235
+            },
+            "Pinnacle": {
+              "Ignacio Bahamondes": -290,
+              "Tofiq Musayev": 244
+            },
+            "Bovada": {
+              "Ignacio Bahamondes": -320,
+              "Tofiq Musayev": 260
+            },
+            "FanDuel": {
+              "Ignacio Bahamondes": -320,
+              "Tofiq Musayev": 245
+            },
+            "Betway": {
+              "Ignacio Bahamondes": -333,
+              "Tofiq Musayev": 250
+            },
+            "DraftKings": {
+              "Ignacio Bahamondes": -310,
+              "Tofiq Musayev": 250
+            },
+            "Circa": {
+              "Ignacio Bahamondes": -325,
+              "Tofiq Musayev": 270
+            },
+            "4casters": {
+              "Ignacio Bahamondes": -275,
+              "Tofiq Musayev": 255
+            },
+            "Bookmaker": {
+              "Ignacio Bahamondes": -315,
+              "Tofiq Musayev": 256
+            },
+            "4Cx": {
+              "Ignacio Bahamondes": -282,
+              "Tofiq Musayev": 250
+            },
+            "Caesars": {
+              "Ignacio Bahamondes": -300,
+              "Tofiq Musayev": 240
+            },
+            "BetAnything": {
+              "Ignacio Bahamondes": -325,
+              "Tofiq Musayev": 245
+            },
+            "BetUS": {
+              "Ignacio Bahamondes": -320,
+              "Tofiq Musayev": 261
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7561,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -270
+            },
+            "bestEv": 0.0361
+          }
+        },
+        "Chase Hooper vs. Lance Gibson Jr.": {
+          "prediction": {
+            "winner": "Chase Hooper",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Polymarket": {
+              "Chase Hooper": -285,
+              "Lance Gibson Jr.": 270
+            },
+            "Stake": {
+              "Chase Hooper": -312,
+              "Lance Gibson Jr.": 240
+            },
+            "BetMGM": {
+              "Chase Hooper": -300,
+              "Lance Gibson Jr.": 240
+            },
+            "Circa": {
+              "Chase Hooper": -330,
+              "Lance Gibson Jr.": 275
+            },
+            "SXBet": {
+              "Chase Hooper": -315,
+              "Lance Gibson Jr.": 236
+            },
+            "BetRivers": {
+              "Chase Hooper": -312,
+              "Lance Gibson Jr.": 240
+            },
+            "Bet105": {
+              "Chase Hooper": -286,
+              "Lance Gibson Jr.": 242
+            },
+            "HardRockBet": {
+              "Chase Hooper": -325,
+              "Lance Gibson Jr.": 240
+            },
+            "Cloudbet": {
+              "Chase Hooper": -287,
+              "Lance Gibson Jr.": 242
+            },
+            "ProphetX": {
+              "Chase Hooper": -290,
+              "Lance Gibson Jr.": 285
+            },
+            "Pinnacle": {
+              "Chase Hooper": -286,
+              "Lance Gibson Jr.": 242
+            },
+            "Bovada": {
+              "Chase Hooper": -285,
+              "Lance Gibson Jr.": 235
+            },
+            "FanDuel": {
+              "Chase Hooper": -320,
+              "Lance Gibson Jr.": 245
+            },
+            "Betway": {
+              "Chase Hooper": -275,
+              "Lance Gibson Jr.": 210
+            },
+            "BetOnline": {
+              "Chase Hooper": -350,
+              "Lance Gibson Jr.": 285
+            },
+            "DraftKings": {
+              "Chase Hooper": -305,
+              "Lance Gibson Jr.": 245
+            },
+            "MyBookie": {
+              "Chase Hooper": -360,
+              "Lance Gibson Jr.": 270
+            },
+            "4casters": {
+              "Chase Hooper": -284,
+              "Lance Gibson Jr.": 269
+            },
+            "Bookmaker": {
+              "Chase Hooper": -305,
+              "Lance Gibson Jr.": 249
+            },
+            "4Cx": {
+              "Chase Hooper": -291,
+              "Lance Gibson Jr.": 262
+            },
+            "Caesars": {
+              "Chase Hooper": -350,
+              "Lance Gibson Jr.": 275
+            },
+            "BetAnything": {
+              "Chase Hooper": -330,
+              "Lance Gibson Jr.": 250
+            },
+            "BetUS": {
+              "Chase Hooper": -350,
+              "Lance Gibson Jr.": 279
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7531,
+            "bestOdds": {
+              "platform": "Betway",
+              "odds": -275
+            },
+            "bestEv": 0.0269
+          }
+        },
+        "Marcin Tybura vs. Tyrell Fortune": {
+          "prediction": {
+            "winner": "Marcin Tybura",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetMGM": {
+              "Marcin Tybura": 110,
+              "Tyrell Fortune": -135
+            },
+            "BetOnline": {
+              "Marcin Tybura": 115,
+              "Tyrell Fortune": -135
+            },
+            "Polymarket": {
+              "Marcin Tybura": 117,
+              "Tyrell Fortune": -122
+            },
+            "BetRivers": {
+              "Marcin Tybura": 116,
+              "Tyrell Fortune": -143
+            },
+            "HardRockBet": {
+              "Marcin Tybura": 115,
+              "Tyrell Fortune": -145
+            },
+            "Bet105": {
+              "Marcin Tybura": 119,
+              "Tyrell Fortune": -138
+            },
+            "Cloudbet": {
+              "Marcin Tybura": 118,
+              "Tyrell Fortune": -136
+            },
+            "Pinnacle": {
+              "Marcin Tybura": 118,
+              "Tyrell Fortune": -136
+            },
+            "Bovada": {
+              "Marcin Tybura": 112,
+              "Tyrell Fortune": -133
+            },
+            "ProphetX": {
+              "Marcin Tybura": 121,
+              "Tyrell Fortune": -134
+            },
+            "Betway": {
+              "Marcin Tybura": 110,
+              "Tyrell Fortune": -138
+            },
+            "Circa": {
+              "Marcin Tybura": 115,
+              "Tyrell Fortune": -135
+            },
+            "DraftKings": {
+              "Marcin Tybura": 114,
+              "Tyrell Fortune": -135
+            },
+            "FanDuel": {
+              "Marcin Tybura": 118,
+              "Tyrell Fortune": -144
+            },
+            "MyBookie": {
+              "Marcin Tybura": 110,
+              "Tyrell Fortune": -135
+            },
+            "Stake": {
+              "Marcin Tybura": 113,
+              "Tyrell Fortune": -139
+            },
+            "4casters": {
+              "Marcin Tybura": 115,
+              "Tyrell Fortune": -127
+            },
+            "Bookmaker": {
+              "Marcin Tybura": 118,
+              "Tyrell Fortune": -138
+            },
+            "4Cx": {
+              "Marcin Tybura": 113,
+              "Tyrell Fortune": -130
+            },
+            "Caesars": {
+              "Marcin Tybura": 118,
+              "Tyrell Fortune": -140
+            },
+            "SXBet": {
+              "Marcin Tybura": 112,
+              "Tyrell Fortune": -143
+            },
+            "BetAnything": {
+              "Marcin Tybura": 105,
+              "Tyrell Fortune": -135
+            },
+            "BetUS": {
+              "Marcin Tybura": 114,
+              "Tyrell Fortune": -135
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.4673,
+            "bestOdds": {
+              "platform": "ProphetX",
+              "odds": 121
+            },
+            "bestEv": 0.0327
+          }
+        },
+        "Casey O'Neill vs. Gabriella Fernandes": {
+          "prediction": {
+            "winner": "Gabriella Fernandes",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "Polymarket": {
+              "Casey O'Neill": -108,
+              "Gabriella Fernandes": 104
+            },
+            "BetMGM": {
+              "Casey O'Neill": -115,
+              "Gabriella Fernandes": -105
+            },
+            "Circa": {
+              "Casey O'Neill": -115,
+              "Gabriella Fernandes": -105
+            },
+            "BetOnline": {
+              "Casey O'Neill": -119,
+              "Gabriella Fernandes": -101
+            },
+            "SXBet": {
+              "Casey O'Neill": -112,
+              "Gabriella Fernandes": -104
+            },
+            "BetRivers": {
+              "Casey O'Neill": -106,
+              "Gabriella Fernandes": -116
+            },
+            "HardRockBet": {
+              "Casey O'Neill": -105,
+              "Gabriella Fernandes": -115
+            },
+            "Bet105": {
+              "Casey O'Neill": -113,
+              "Gabriella Fernandes": -102
+            },
+            "Cloudbet": {
+              "Casey O'Neill": -113,
+              "Gabriella Fernandes": -102
+            },
+            "ProphetX": {
+              "Casey O'Neill": -115,
+              "Gabriella Fernandes": 101
+            },
+            "Pinnacle": {
+              "Casey O'Neill": -112,
+              "Gabriella Fernandes": -102
+            },
+            "Bovada": {
+              "Casey O'Neill": -117,
+              "Gabriella Fernandes": -103
+            },
+            "FanDuel": {
+              "Casey O'Neill": -118,
+              "Gabriella Fernandes": -104
+            },
+            "Betway": {
+              "Casey O'Neill": -100,
+              "Gabriella Fernandes": -125
+            },
+            "DraftKings": {
+              "Casey O'Neill": -115,
+              "Gabriella Fernandes": -105
+            },
+            "MyBookie": {
+              "Casey O'Neill": -118,
+              "Gabriella Fernandes": -103
+            },
+            "Stake": {
+              "Casey O'Neill": -118,
+              "Gabriella Fernandes": -103
+            },
+            "4Cx": {
+              "Casey O'Neill": -118,
+              "Gabriella Fernandes": -101
+            },
+            "4casters": {
+              "Casey O'Neill": -116,
+              "Gabriella Fernandes": -100
+            },
+            "Bookmaker": {
+              "Casey O'Neill": -120,
+              "Gabriella Fernandes": 100
+            },
+            "Caesars": {
+              "Casey O'Neill": -115,
+              "Gabriella Fernandes": -105
+            },
+            "BetAnything": {
+              "Casey O'Neill": -120,
+              "Gabriella Fernandes": -110
+            },
+            "BetUS": {
+              "Casey O'Neill": -120,
+              "Gabriella Fernandes": 100
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.5122,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": 104
+            },
+            "bestEv": 0.0449
+          }
+        },
+        "Navajo Stirling vs. Bruno Lopes": {
+          "prediction": {
+            "winner": "Navajo Stirling",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Polymarket": {
+              "Navajo Stirling": -567,
+              "Bruno Lopes": 525
+            },
+            "BetMGM": {
+              "Navajo Stirling": -700,
+              "Bruno Lopes": 500
+            },
+            "Circa": {
+              "Navajo Stirling": -670,
+              "Bruno Lopes": 500
+            },
+            "BetOnline": {
+              "Navajo Stirling": -650,
+              "Bruno Lopes": 475
+            },
+            "SXBet": {
+              "Navajo Stirling": -567,
+              "Bruno Lopes": 426
+            },
+            "ProphetX": {
+              "Navajo Stirling": -610,
+              "Bruno Lopes": 490
+            },
+            "BetRivers": {
+              "Navajo Stirling": -667,
+              "Bruno Lopes": 480
+            },
+            "Bet105": {
+              "Navajo Stirling": -636,
+              "Bruno Lopes": 489
+            },
+            "HardRockBet": {
+              "Navajo Stirling": -525,
+              "Bruno Lopes": 400
+            },
+            "Cloudbet": {
+              "Navajo Stirling": -649,
+              "Bruno Lopes": 497
+            },
+            "Pinnacle": {
+              "Navajo Stirling": -555,
+              "Bruno Lopes": 436
+            },
+            "Bovada": {
+              "Navajo Stirling": -675,
+              "Bruno Lopes": 460
+            },
+            "FanDuel": {
+              "Navajo Stirling": -590,
+              "Bruno Lopes": 410
+            },
+            "Betway": {
+              "Navajo Stirling": -549,
+              "Bruno Lopes": 400
+            },
+            "DraftKings": {
+              "Navajo Stirling": -600,
+              "Bruno Lopes": 440
+            },
+            "MyBookie": {
+              "Navajo Stirling": -676,
+              "Bruno Lopes": 460
+            },
+            "Stake": {
+              "Navajo Stirling": -667,
+              "Bruno Lopes": 460
+            },
+            "4casters": {
+              "Navajo Stirling": -678,
+              "Bruno Lopes": 468
+            },
+            "Bookmaker": {
+              "Navajo Stirling": -700,
+              "Bruno Lopes": 506
+            },
+            "4Cx": {
+              "Navajo Stirling": -690,
+              "Bruno Lopes": 458
+            },
+            "Caesars": {
+              "Navajo Stirling": -650,
+              "Bruno Lopes": 460
+            },
+            "BetAnything": {
+              "Navajo Stirling": -700,
+              "Bruno Lopes": 400
+            },
+            "BetUS": {
+              "Navajo Stirling": -670,
+              "Bruno Lopes": 460
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8571,
+            "bestOdds": {
+              "platform": "HardRockBet",
+              "odds": -525
+            },
+            "bestEv": 0.0204
+          }
+        },
+        "Ricky Simón vs. Adrian Yanez": {
+          "prediction": {
+            "winner": "Ricky Simón",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "Stake": {
+              "Ricky Simón": -172,
+              "Adrian Yanez": 139
+            },
+            "BetOnline": {
+              "Ricky Simón": -170,
+              "Adrian Yanez": 145
+            },
+            "BetMGM": {
+              "Ricky Simón": -150,
+              "Adrian Yanez": 125
+            },
+            "BetRivers": {
+              "Ricky Simón": -159,
+              "Adrian Yanez": 128
+            },
+            "HardRockBet": {
+              "Ricky Simón": -160,
+              "Adrian Yanez": 130
+            },
+            "Polymarket": {
+              "Ricky Simón": -150,
+              "Adrian Yanez": 144
+            },
+            "Bet105": {
+              "Ricky Simón": -170,
+              "Adrian Yanez": 148
+            },
+            "Cloudbet": {
+              "Ricky Simón": -171,
+              "Adrian Yanez": 148
+            },
+            "ProphetX": {
+              "Ricky Simón": -152,
+              "Adrian Yanez": 148
+            },
+            "Pinnacle": {
+              "Ricky Simón": -170,
+              "Adrian Yanez": 148
+            },
+            "Bovada": {
+              "Ricky Simón": -170,
+              "Adrian Yanez": 145
+            },
+            "FanDuel": {
+              "Ricky Simón": -170,
+              "Adrian Yanez": 138
+            },
+            "Bookmaker": {
+              "Ricky Simón": -156,
+              "Adrian Yanez": 136
+            },
+            "Betway": {
+              "Ricky Simón": -150,
+              "Adrian Yanez": 120
+            },
+            "SXBet": {
+              "Ricky Simón": -152,
+              "Adrian Yanez": 129
+            },
+            "DraftKings": {
+              "Ricky Simón": -175,
+              "Adrian Yanez": 145
+            },
+            "Circa": {
+              "Ricky Simón": -170,
+              "Adrian Yanez": 150
+            },
+            "MyBookie": {
+              "Ricky Simón": -166,
+              "Adrian Yanez": 135
+            },
+            "4casters": {
+              "Ricky Simón": -165,
+              "Adrian Yanez": 143
+            },
+            "4Cx": {
+              "Ricky Simón": -169,
+              "Adrian Yanez": 140
+            },
+            "Caesars": {
+              "Ricky Simón": -175,
+              "Adrian Yanez": 145
+            },
+            "BetAnything": {
+              "Ricky Simón": -170,
+              "Adrian Yanez": 140
+            },
+            "BetUS": {
+              "Ricky Simón": -170,
+              "Adrian Yanez": 142
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6364,
+            "bestOdds": {
+              "platform": "BetMGM",
+              "odds": -150
+            },
+            "bestEv": 0.0606
+          }
+        },
+        "Alexia Thainara vs. Bruna Brasil": {
+          "prediction": {
+            "winner": "Alexia Thainara",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Stake": {
+              "Alexia Thainara": -833,
+              "Bruna Brasil": 540
+            },
+            "BetMGM": {
+              "Alexia Thainara": -900,
+              "Bruna Brasil": 600
+            },
+            "MyBookie": {
+              "Alexia Thainara": -901,
+              "Bruna Brasil": 570
+            },
+            "Circa": {
+              "Alexia Thainara": -900,
+              "Bruna Brasil": 625
+            },
+            "Pinnacle": {
+              "Alexia Thainara": -663,
+              "Bruna Brasil": 507
+            },
+            "Polymarket": {
+              "Alexia Thainara": -669,
+              "Bruna Brasil": 614
+            },
+            "BetOnline": {
+              "Alexia Thainara": -800,
+              "Bruna Brasil": 550
+            },
+            "BetRivers": {
+              "Alexia Thainara": -625,
+              "Bruna Brasil": 525
+            },
+            "Bet105": {
+              "Alexia Thainara": -663,
+              "Bruna Brasil": 507
+            },
+            "Cloudbet": {
+              "Alexia Thainara": -667,
+              "Bruna Brasil": 507
+            },
+            "ProphetX": {
+              "Alexia Thainara": -660,
+              "Bruna Brasil": 500
+            },
+            "FanDuel": {
+              "Alexia Thainara": -700,
+              "Bruna Brasil": 470
+            },
+            "SXBet": {
+              "Alexia Thainara": -662,
+              "Bruna Brasil": 525
+            },
+            "Betway": {
+              "Alexia Thainara": -800,
+              "Bruna Brasil": 500
+            },
+            "4casters": {
+              "Alexia Thainara": -683,
+              "Bruna Brasil": 534
+            },
+            "Bookmaker": {
+              "Alexia Thainara": -750,
+              "Bruna Brasil": 534
+            },
+            "4Cx": {
+              "Alexia Thainara": -694,
+              "Bruna Brasil": 522
+            },
+            "Bovada": {
+              "Alexia Thainara": -850,
+              "Bruna Brasil": 550
+            },
+            "Caesars": {
+              "Alexia Thainara": -800,
+              "Bruna Brasil": 550
+            },
+            "DraftKings": {
+              "Alexia Thainara": -700,
+              "Bruna Brasil": 500
+            },
+            "BetAnything": {
+              "Alexia Thainara": -900,
+              "Bruna Brasil": 485
+            },
+            "BetUS": {
+              "Alexia Thainara": -850,
+              "Bruna Brasil": 555
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.875,
+            "bestOdds": {
+              "platform": "BetRivers",
+              "odds": -625
+            },
+            "bestEv": 0.015
+          }
+        }
+      }
+    },
+    {
       "id": "ufc-fight-night-evloev-murphy",
       "title": "UFC Fight Night",
       "subtitle": "Evloev vs. Murphy",
