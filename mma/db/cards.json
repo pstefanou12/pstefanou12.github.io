@@ -4,20 +4,24 @@
       "id": "ufc-fight-night-adesanya-pyfer",
       "title": "UFC Fight Night",
       "subtitle": "Adesanya vs. Pyfer",
-      "date": "2026-03-27",
-      "rating": null,
+      "date": "2026-03-29",
+      "rating": 7.6,
       "poster": "/mma/db/img/ufc_fight_night_adesanya_pyfer_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-adesanya-pyfer.html",
       "previewUrl": "db/previews/ufc-fight-night-adesanya-pyfer.html",
       "location": "Octagon",
       "eventTime": "Saturday 03.28.2026 at 05:00 PM ET",
       "fights": {
-        "Israel Adesanya vs. Joe Pyfer": {
+        "Joe Pyfer vs. Israel Adesanya": {
           "prediction": {
             "winner": "Joe Pyfer",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Joe Pyfer",
+            "method": "KO/TKO, Punches From Back Mount",
+            "time": "4:18 Round 2 of 5, 9:18 Total"
+          },
           "odds": {
             "HardRockBet": {
               "Israel Adesanya": -160,
@@ -126,7 +130,11 @@
             "winner": "Maycee Barber",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Alexa Grasso",
+            "method": "KO/TKO, Left Cross",
+            "time": "2:42 Round 1 of 3"
+          },
           "odds": {
             "Polymarket": {
               "Alexa Grasso": 163,
@@ -235,7 +243,11 @@
             "winner": "Michael Chiesa",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Michael Chiesa",
+            "method": "Submission, Rear Naked Choke",
+            "time": "1:03 Round 1 of 3"
+          },
           "odds": {
             "Stake": {
               "Michael Chiesa": -909,
@@ -331,12 +343,16 @@
             "bestEv": 0.0587
           }
         },
-        "Julian Erosa vs. Lerryan Douglas": {
+        "Lerryan Douglas vs. Julian Erosa": {
           "prediction": {
             "winner": "Lerryan Douglas",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Lerryan Douglas",
+            "method": "KO/TKO, Punches",
+            "time": "3:33 Round 1 of 3"
+          },
           "odds": {
             "Polymarket": {
               "Julian Erosa": 285,
@@ -440,12 +456,16 @@
             "bestEv": 0.0487
           }
         },
-        "Mansur Abdul-Malik vs. Yousri Belgaroui": {
+        "Yousri Belgaroui vs. Mansur Abdul-Malik": {
           "prediction": {
             "winner": "Yousri Belgaroui",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Yousri Belgaroui",
+            "method": "KO/TKO, Clinch Knee",
+            "time": "3:39 Round 3 of 3, 13:39 Total"
+          },
           "odds": {
             "Polymarket": {
               "Mansur Abdul-Malik": -122,
@@ -554,7 +574,11 @@
             "winner": "Terrance McKinney",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Terrance McKinney",
+            "method": "KO/TKO, High Kick and Hammerfists",
+            "time": "0:24 Round 1 of 3"
+          },
           "odds": {
             "Polymarket": {
               "Terrance McKinney": -170,
@@ -658,12 +682,16 @@
             "bestEv": 0.031
           }
         },
-        "Ignacio Bahamondes vs. Tofiq Musayev": {
+        "Tofiq Musayev vs. Ignacio Bahamondes": {
           "prediction": {
             "winner": "Ignacio Bahamondes",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Tofiq Musayev",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Polymarket": {
               "Ignacio Bahamondes": -270,
@@ -767,12 +795,16 @@
             "bestEv": 0.0361
           }
         },
-        "Chase Hooper vs. Lance Gibson Jr.": {
+        "Lance Gibson Jr. vs. Chase Hooper": {
           "prediction": {
             "winner": "Chase Hooper",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Lance Gibson Jr.",
+            "method": "KO/TKO, Knees",
+            "time": "2:56 Round 1 of 3"
+          },
           "odds": {
             "Polymarket": {
               "Chase Hooper": -285,
@@ -876,12 +908,16 @@
             "bestEv": 0.0269
           }
         },
-        "Marcin Tybura vs. Tyrell Fortune": {
+        "Tyrell Fortune vs. Marcin Tybura": {
           "prediction": {
             "winner": "Marcin Tybura",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Tyrell Fortune",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetMGM": {
               "Marcin Tybura": 110,
@@ -990,7 +1026,11 @@
             "winner": "Gabriella Fernandes",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Casey O'Neill",
+            "method": "KO/TKO, Punches",
+            "time": "3:11 Round 1 of 3"
+          },
           "odds": {
             "Polymarket": {
               "Casey O'Neill": -108,
@@ -1099,7 +1139,11 @@
             "winner": "Navajo Stirling",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Navajo Stirling",
+            "method": "KO/TKO, Punches and Elbows From Mount",
+            "time": "4:05 Round 2 of 3, 9:05 Total"
+          },
           "odds": {
             "Polymarket": {
               "Navajo Stirling": -567,
@@ -1208,7 +1252,11 @@
             "winner": "Ricky Simón",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "draw",
+            "method": "Ends in a Draw, Majority",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Stake": {
               "Ricky Simón": -172,
@@ -1317,7 +1365,11 @@
             "winner": "Alexia Thainara",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Alexia Thainara",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Stake": {
               "Alexia Thainara": -833,
@@ -7313,7 +7365,7 @@
     },
     {
       "id": "ufc-fight-night-tsarukyan-hooker",
-      "title": "UFC Qatar",
+      "title": "UFC Fight Night",
       "subtitle": "Tsarukyan vs Hooker",
       "date": "2025-11-22",
       "rating": 7.6,

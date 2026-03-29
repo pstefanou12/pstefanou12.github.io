@@ -168,11 +168,18 @@ def run(args):
         prediction = existing['prediction'] if existing else {"winner": "", "method": ""}
         existing_odds = existing.get('odds') if existing else None
         existing_best_odds = existing.get('bestOdds') if existing else None
+        method = fight.get('method_of_victory')
+        if method and 'draw' in method.lower():
+            winner = 'draw'
+        elif method and 'no contest' in method.lower():
+            winner = 'no contest'
+        else:
+            winner = fight['fighter1']
         result = {
-            "winner": fight['fighter1'],
-            "method": fight['method_of_victory'],
+            "winner": winner,
+            "method": method,
             "time": fight['time_of_victory'],
-        } if fight.get('method_of_victory') else None
+        } if method else None
         entry = {"prediction": prediction, "result": result}
         if existing_odds:
             entry['odds'] = existing_odds
