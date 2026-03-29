@@ -64,10 +64,12 @@ async function loadRecapHeader(): Promise<void> {
           const fighter2 = fighters[1].trim();
 
           let prediction: Prediction | undefined;
+          let resultWinner: string | undefined;
           for (const [matchup, fightEntry] of Object.entries(card.fights)) {
             if (matchup.toLowerCase().includes(fighter1.toLowerCase()) &&
                 matchup.toLowerCase().includes(fighter2.toLowerCase())) {
               prediction = fightEntry.prediction;
+              resultWinner = fightEntry.result?.winner;
               break;
             }
           }
@@ -75,7 +77,9 @@ async function loadRecapHeader(): Promise<void> {
           if (!prediction?.winner) continue;
 
           totalPredictions++;
-          const isCorrect = prediction.winner.toLowerCase().trim() === fighter1.toLowerCase().trim();
+          const isNonFinish = resultWinner === 'draw' || resultWinner === 'no contest';
+          const isCorrect = !isNonFinish && resultWinner !== undefined &&
+            prediction.winner.toLowerCase().trim() === resultWinner.toLowerCase().trim();
           if (isCorrect) correctCount++;
 
           const predEl = fightDiv.querySelector('.fight-prediction');
@@ -143,14 +147,18 @@ function renderBettingResults(card: Card, fightDivs: NodeListOf<HTMLElement>): v
     if (!best || best.odds === null) continue;
 
     const profit = toProfit(best.odds);
-    const isCorrect = pick.toLowerCase().trim() === fighter1.toLowerCase().trim();
+    const actualWinner = fightEntry.result?.winner;
+    const isNonFinish = actualWinner === 'draw' || actualWinner === 'no contest';
+    const isCorrect = !isNonFinish && actualWinner !== undefined &&
+      pick.toLowerCase().trim() === actualWinner.toLowerCase().trim();
     const pnl = isCorrect ? profit : -1;
     totalPnl += pnl;
 
+    const resultLabel = isNonFinish ? (actualWinner === 'draw' ? 'Draw' : 'No Contest') : `${actualWinner} wins`;
     const sign = best.odds > 0 ? '+' : '';
     rows.push({
       matchup, pick,
-      result: `${fighter1} wins`,
+      result: resultLabel,
       platform: best.platform,
       american: `${sign}${best.odds}`,
       isCorrect, pnl,
