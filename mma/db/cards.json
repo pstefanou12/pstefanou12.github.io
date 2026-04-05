@@ -2,12 +2,12 @@
   "cards": [
     {
       "id": "ufc-fight-night-moicano-duncan",
-      "title": "UFC Fight Night: Moicano vs. Duncan",
-      "subtitle": null,
-      "date": "2026-04-03",
-      "rating": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Moicano vs. Duncan",
+      "date": "2026-04-05",
+      "rating": 6.9,
       "poster": "/mma/db/img/ufc_fight_night_moicano_duncan_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-moicano-duncan.html",
       "previewUrl": "db/previews/ufc-fight-night-moicano-duncan.html",
       "location": "Octagon",
       "eventTime": "Saturday 04.04.2026 at 05:00 PM ET",
@@ -17,7 +17,11 @@
             "winner": "Chris Duncan",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Renato Moicano",
+            "method": "Submission, Rear Naked Choke",
+            "time": "3:14 Round 2 of 5, 8:14 Total"
+          },
           "odds": {
             "BetUS": {
               "Renato Moicano": 126,
@@ -126,7 +130,11 @@
             "winner": "Tabatha Ricci",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Virna Jandiroba",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "HardRockBet": {
               "Virna Jandiroba": -130,
@@ -235,7 +243,11 @@
             "winner": "Abdul Rakhman Yakhyaev",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Abdul Rakhman Yakhyaev",
+            "method": "Submission, Rear Naked Choke",
+            "time": "2:52 Round 1 of 3"
+          },
           "odds": {
             "HardRockBet": {
               "Abdul Rakhman Yakhyaev": -1600,
@@ -335,12 +347,16 @@
             "bestEv": 0.028
           }
         },
-        "Rafael Estevam vs. Ethyn Ewing": {
+        "Ethyn Ewing vs. Rafael Estevam": {
           "prediction": {
             "winner": "Rafael Estevam",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Ethyn Ewing",
+            "method": "KO/TKO, Left Hook to the Liver",
+            "time": "1:44 Round 3 of 3, 11:44 Total"
+          },
           "odds": {
             "HardRockBet": {
               "Rafael Estevam": 120,
@@ -449,7 +465,11 @@
             "winner": "Tommy McMillen",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Tommy McMillen",
+            "method": "KO/TKO, Punches and Knees",
+            "time": "3:57 Round 1 of 3"
+          },
           "odds": {
             "HardRockBet": {
               "Tommy McMillen": -1300,
@@ -553,12 +573,16 @@
             "bestEv": 0.0215
           }
         },
-        "Robert Ruchała vs. José Delano": {
+        "José Delano vs. Robert Ruchała": {
           "prediction": {
             "winner": "José Delano",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "José Delano",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "HardRockBet": {
               "José Delano": -325,
@@ -667,7 +691,11 @@
             "winner": "Thomas Petersen",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Thomas Petersen",
+            "method": "Decision, Majority",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "HardRockBet": {
               "Thomas Petersen": -110,
@@ -776,7 +804,11 @@
             "winner": "Alessandro Costa",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Alessandro Costa",
+            "method": "KO/TKO, Left Hook to the Liver",
+            "time": "4:56 Round 2 of 3, 9:56 Total"
+          },
           "odds": {
             "HardRockBet": {
               "Alessandro Costa": -425,
@@ -880,12 +912,16 @@
             "bestEv": 0.0177
           }
         },
-        "Lando Vannata vs. Darrius Flowers": {
+        "Darrius Flowers vs. Lando Vannata": {
           "prediction": {
             "winner": "Darrius Flowers",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Darrius Flowers",
+            "method": "KO/TKO, Hammerfists",
+            "time": "0:52 Round 2 of 3, 5:52 Total"
+          },
           "odds": {
             "HardRockBet": {
               "Lando Vannata": -240,
@@ -989,12 +1025,16 @@
             "bestEv": 0.0491
           }
         },
-        "Hailey Cowan vs. Alice Pereira": {
+        "Alice Pereira vs. Hailey Cowan": {
           "prediction": {
             "winner": "Alice Pereira",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Alice Pereira",
+            "method": "KO/TKO, Knee",
+            "time": "4:24 Round 2 of 3, 9:24 Total"
+          },
           "odds": {
             "HardRockBet": {
               "Hailey Cowan": 110,
@@ -1098,12 +1138,16 @@
             "bestEv": 0.0285
           }
         },
-        "Azamat Bekoev vs. Tresean Gore": {
+        "Tresean Gore vs. Azamat Bekoev": {
           "prediction": {
             "winner": "Azamat Bekoev",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Tresean Gore",
+            "method": "Submission, Technical (Guillotine Choke)",
+            "time": "3:27 Round 3 of 3, 13:27 Total"
+          },
           "odds": {
             "HardRockBet": {
               "Azamat Bekoev": -650,
@@ -1212,7 +1256,11 @@
             "winner": "Dione Barbosa",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Dione Barbosa",
+            "method": "Decision, Majority",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "HardRockBet": {
               "Dione Barbosa": -135,
@@ -1316,12 +1364,16 @@
             "bestEv": 0.0516
           }
         },
-        "Dakota Hope vs. Kai Kamaka III": {
+        "Kai Kamaka III vs. Dakota Hope": {
           "prediction": {
             "winner": "Dakota Hope",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Kai Kamaka III",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "4Cx": {
               "Kai Kamaka III": -154,
