@@ -4,20 +4,24 @@
       "id": "ufc-327",
       "title": "UFC 327",
       "subtitle": "Procházka vs. Ulberg",
-      "date": "2026-04-10",
-      "rating": null,
+      "date": "2026-04-12",
+      "rating": 7.4,
       "poster": "/mma/db/img/ufc_327_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-327.html",
       "previewUrl": "db/previews/ufc-327.html",
       "location": "Octagon",
       "eventTime": "Saturday 04.11.2026 at 05:30 PM ET",
       "fights": {
-        "Jiří Procházka vs. Carlos Ulberg": {
+        "Carlos Ulberg vs. Jiří Procházka": {
           "prediction": {
             "winner": "Carlos Ulberg",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Carlos Ulberg",
+            "method": "KO/TKO, Left Hook to Ground Punches",
+            "time": "3:45 Round 1 of 5"
+          },
           "odds": {
             "Cloudbet": {
               "Jiří Procházka": -111,
@@ -121,12 +125,16 @@
             "bestEv": 0.0244
           }
         },
-        "Azamat Murzakanov vs. Paulo Costa": {
+        "Paulo Costa vs. Azamat Murzakanov": {
           "prediction": {
             "winner": "Paulo Costa",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Paulo Costa",
+            "method": "KO/TKO, Head Kick",
+            "time": "1:23 Round 3 of 3, 11:23 Total"
+          },
           "odds": {
             "BetMGM": {
               "Azamat Murzakanov": -225,
@@ -230,12 +238,16 @@
             "bestEv": 0.0339
           }
         },
-        "Curtis Blaydes vs. Josh Hokit": {
+        "Josh Hokit vs. Curtis Blaydes": {
           "prediction": {
             "winner": "Curtis Blaydes",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Josh Hokit",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Curtis Blaydes": -125,
@@ -344,7 +356,11 @@
             "winner": "Dominick Reyes",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Dominick Reyes",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Pinnacle": {
               "Dominick Reyes": -153,
@@ -453,7 +469,11 @@
             "winner": "Nate Landwehr",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Cub Swanson",
+            "method": "KO/TKO, Overhand Right and Right Hook",
+            "time": "4:06 Round 1 of 3"
+          },
           "odds": {
             "4Cx": {
               "Cub Swanson": -115,
@@ -557,12 +577,16 @@
             "bestEv": 0.08
           }
         },
-        "Patricio Pitbull vs. Aaron Pico": {
+        "Aaron Pico vs. Patricio Pitbull": {
           "prediction": {
             "winner": "Aaron Pico",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Aaron Pico",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Patricio Pitbull": 206,
@@ -667,7 +691,11 @@
             "winner": "Randy Brown",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Kevin Holland",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "FanDuel": {
               "Kevin Holland": -110,
@@ -776,7 +804,11 @@
             "winner": "Mateusz Gamrot",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Mateusz Gamrot",
+            "method": "Submission, Arm Triangle Choke",
+            "time": "4:19 Round 2 of 3, 9:19 Total"
+          },
           "odds": {
             "FanDuel": {
               "Mateusz Gamrot": -188,
@@ -885,7 +917,11 @@
             "winner": "Tatiana Suarez",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Tatiana Suarez",
+            "method": "Submission, Rear Naked Choke",
+            "time": "2:29 Round 2 of 3, 7:29 Total"
+          },
           "odds": {
             "Stake": {
               "Tatiana Suarez": -147,
@@ -994,7 +1030,11 @@
             "winner": "Chris Padilla",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "draw",
+            "method": "Ends in a Draw, Majority",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Pinnacle": {
               "MarQuel Mederos": 138,
@@ -1098,12 +1138,16 @@
             "bestEv": 0.4716
           }
         },
-        "Kelvin Gastelum vs. Vicente Luque": {
+        "Vicente Luque vs. Kelvin Gastelum": {
           "prediction": {
             "winner": "Kelvin Gastelum",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Vicente Luque",
+            "method": "Submission, D'arce Choke",
+            "time": "4:08 Round 1 of 3"
+          },
           "odds": {
             "FanDuel": {
               "Kelvin Gastelum": -265,
@@ -1212,7 +1256,11 @@
             "winner": "Charles Radtke",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Charles Radtke",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "FanDuel": {
               "Charles Radtke": -184,
