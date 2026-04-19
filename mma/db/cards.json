@@ -2,22 +2,26 @@
   "cards": [
     {
       "id": "ufc-fight-night-burns-malott",
-      "title": "UFC Fight Night: Burns vs. Malott",
-      "subtitle": null,
-      "date": "2026-04-17",
-      "rating": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Burns vs. Malott",
+      "date": "2026-04-19",
+      "rating": 6.7,
       "poster": "/mma/db/img/ufc_fight_night_burns_malott_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-burns-malott.html",
       "previewUrl": "db/previews/ufc-fight-night-burns-malott.html",
       "location": "Octagon",
       "eventTime": "Saturday 04.18.2026 at 05:00 PM ET",
       "fights": {
-        "Gilbert Burns vs. Mike Malott": {
+        "Mike Malott vs. Gilbert Burns": {
           "prediction": {
             "winner": "Mike Malott",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Mike Malott",
+            "method": "KO/TKO, Right Hook to Ground Punches",
+            "time": "2:08 Round 3 of 5, 12:08 Total"
+          },
           "odds": {
             "BetUS": {
               "Gilbert Burns": 234,
@@ -121,12 +125,16 @@
             "bestEv": 0.0104
           }
         },
-        "Kyler Phillips vs. Charles Jourdain": {
+        "Charles Jourdain vs. Kyler Phillips": {
           "prediction": {
             "winner": "Charles Jourdain",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Charles Jourdain",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Charles Jourdain": -135,
@@ -230,12 +238,16 @@
             "bestEv": 0.0453
           }
         },
-        "Mandel Nallo vs. Jai Herbert": {
+        "Jai Herbert vs. Mandel Nallo": {
           "prediction": {
             "winner": "Jai Herbert",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Jai Herbert",
+            "method": "KO/TKO, Punches",
+            "time": "2:05 Round 1 of 3"
+          },
           "odds": {
             "Pinnacle": {
               "Mandel Nallo": -172,
@@ -344,7 +356,11 @@
             "winner": "Jasmine Jasudavicius",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Jasmine Jasudavicius",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Jasmine Jasudavicius": -300,
@@ -448,12 +464,16 @@
             "bestEv": 0.0261
           }
         },
-        "Thiago Moisés vs. Gauge Young": {
+        "Gauge Young vs. Thiago Moisés": {
           "prediction": {
             "winner": "Gauge Young",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Gauge Young",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Gauge Young": -165,
@@ -557,12 +577,16 @@
             "bestEv": 0.1154
           }
         },
-        "Dennis Buzukja vs. Márcio Barbosa": {
+        "Márcio Barbosa vs. Dennis Buzukja": {
           "prediction": {
             "winner": "Márcio Barbosa",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Márcio Barbosa",
+            "method": "KO/TKO, Counter Left Hook",
+            "time": "1:20 Round 1 of 3"
+          },
           "odds": {
             "Pinnacle": {
               "Dennis Buzukja": 359,
@@ -663,7 +687,11 @@
             "winner": "Robert Valentin",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Robert Valentin",
+            "method": "Submission, Rear Naked Choke",
+            "time": "2:22 Round 1 of 3"
+          },
           "odds": {
             "Pinnacle": {
               "Julien Leblanc": 136,
@@ -767,12 +795,16 @@
             "bestEv": 0.0696
           }
         },
-        "Tanner Boser vs. Gokhan Saricam": {
+        "Gokhan Saricam vs. Tanner Boser": {
           "prediction": {
             "winner": "Gokhan Saricam",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Gokhan Saricam",
+            "method": "KO/TKO, Straight Right to Ground Punches",
+            "time": "4:43 Round 2 of 3, 9:43 Total"
+          },
           "odds": {
             "BetUS": {
               "Tanner Boser": 122,
@@ -881,7 +913,11 @@
             "winner": "Darya Zheleznyakova",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Melissa Croden",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "Melissa Croden": -140,
@@ -990,7 +1026,11 @@
             "winner": "JJ Aldrich",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "JJ Aldrich",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "JJ Aldrich": 122,
@@ -1099,7 +1139,11 @@
             "winner": "Mark Vologdin",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "draw",
+            "method": "Ends in a Draw, Majority",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetUS": {
               "John Castañeda": -125,
@@ -1203,12 +1247,16 @@
             "bestEv": 0.0878
           }
         },
-        "Jamie Siraj vs. John Yannis": {
+        "John Yannis vs. Jamie Siraj": {
           "prediction": {
             "winner": "Jamie Siraj",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "John Yannis",
+            "method": "KO/TKO, Elbows From Top Position",
+            "time": "2:43 Round 1 of 3"
+          },
           "odds": {
             "MyBookie": {
               "Jamie Siraj": -265,
