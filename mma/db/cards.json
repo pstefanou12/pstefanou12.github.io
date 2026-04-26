@@ -2,22 +2,138 @@
   "cards": [
     {
       "id": "ufc-fight-night-sterling-zalal",
-      "title": "UFC Fight Night: Sterling vs. Zalal",
-      "subtitle": null,
-      "date": "2026-04-23",
-      "rating": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Sterling vs. Zalal",
+      "date": "2026-04-26",
+      "rating": 5.2,
       "poster": "/mma/db/img/ufc_fight_night_sterling_zalal_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-sterling-zalal.html",
       "previewUrl": "db/previews/ufc-fight-night-sterling-zalal.html",
       "location": "Octagon",
       "eventTime": "Saturday 04.25.2026 at 05:00 PM ET",
       "fights": {
-        "Norma Dumont vs. Joselyne Edwards": {
+        "Aljamain Sterling vs. Youssef Zalal": {
+          "prediction": {
+            "winner": "Aljamain Sterling",
+            "method": "Decision"
+          },
+          "result": {
+            "winner": "Aljamain Sterling",
+            "method": "Decision"
+          },
+          "odds": {
+            "Circa": {
+              "Aljamain Sterling": 105,
+              "Youssef Zalaal": -125
+            },
+            "Bookmaker": {
+              "Aljamain Sterling": 114,
+              "Youssef Zalaal": -140
+            },
+            "Polymarket": {
+              "Aljamain Sterling": 108,
+              "Youssef Zalaal": -113
+            },
+            "BetRivers": {
+              "Aljamain Sterling": 104,
+              "Youssef Zalaal": -128
+            },
+            "Bet105": {
+              "Aljamain Sterling": 107,
+              "Youssef Zalaal": -124
+            },
+            "BetOnline": {
+              "Aljamain Sterling": 105,
+              "Youssef Zalaal": -125
+            },
+            "Bovada": {
+              "Aljamain Sterling": 112,
+              "Youssef Zalaal": -133
+            },
+            "MyBookie": {
+              "Aljamain Sterling": 104,
+              "Youssef Zalaal": -127
+            },
+            "Betway": {
+              "Aljamain Sterling": 110,
+              "Youssef Zalaal": -138
+            },
+            "DraftKings": {
+              "Aljamain Sterling": 105,
+              "Youssef Zalaal": -125
+            },
+            "Cloudbet": {
+              "Aljamain Sterling": 114,
+              "Youssef Zalaal": -144
+            },
+            "Pinnacle": {
+              "Aljamain Sterling": 107,
+              "Youssef Zalaal": -124
+            },
+            "Stake": {
+              "Aljamain Sterling": 104,
+              "Youssef Zalaal": -127
+            },
+            "FanDuel": {
+              "Aljamain Sterling": 110,
+              "Youssef Zalaal": -140
+            },
+            "4casters": {
+              "Aljamain Sterling": 118,
+              "Youssef Zalaal": -124
+            },
+            "4Cx": {
+              "Aljamain Sterling": 116,
+              "Youssef Zalaal": -127
+            },
+            "BetMGM": {
+              "Aljamain Sterling": 105,
+              "Youssef Zalaal": -125
+            },
+            "ProphetX": {
+              "Aljamain Sterling": 106,
+              "Youssef Zalaal": -118
+            },
+            "Caesars": {
+              "Aljamain Sterling": 110,
+              "Youssef Zalaal": -130
+            },
+            "HardRockBet": {
+              "Aljamain Sterling": 105,
+              "Youssef Zalaal": -130
+            },
+            "SXBet": {
+              "Aljamain Sterling": 102,
+              "Youssef Zalaal": -132
+            },
+            "BetAnything": {
+              "Aljamain Sterling": 100,
+              "Youssef Zalaal": -130
+            },
+            "BetUS": {
+              "Aljamain Sterling": 110,
+              "Youssef Zalaal": -130
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.4878,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": 118
+            },
+            "bestEv": 0.0634
+          }
+        },
+        "Joselyne Edwards vs. Norma Dumont": {
           "prediction": {
             "winner": "Norma Dumont",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Joselyne Edwards",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Circa": {
               "Norma Dumont": -210,
@@ -126,7 +242,10 @@
             "winner": "Alexander Hernandez",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Rafa García",
+            "method": "Decision"
+          },
           "odds": {
             "Circa": {
               "Rafa García": 105,
@@ -235,7 +354,10 @@
             "winner": "Davey Grant",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Davey Grant",
+            "method": "Decision"
+          },
           "odds": {
             "Circa": {
               "Davey Grant": -130,
@@ -339,12 +461,16 @@
             "bestEv": 0.2811
           }
         },
-        "Montel Jackson vs. Raoni Barcelos": {
+        "Raoni Barcelos vs. Montel Jackson": {
           "prediction": {
             "winner": "Raoni Barcelos",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Raoni Barcelos",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Polymarket": {
               "Raoni Barcelos": 156,
@@ -448,12 +574,16 @@
             "bestEv": 0.0433
           }
         },
-        "Marcus Buchecha vs. Ryan Spann": {
+        "Ryan Spann vs. Marcus Buchecha": {
           "prediction": {
             "winner": "Ryan Spann",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Ryan Spann",
+            "method": "KO/TKO, Right Cross",
+            "time": "2:10 Round 2 of 3, 7:10 Total"
+          },
           "odds": {
             "Circa": {
               "Marcus Buchecha": -130,
@@ -549,12 +679,16 @@
             "bestEv": 0.0888
           }
         },
-        "Rodolfo Vieira vs. Eric McConico": {
+        "Eric McConico vs. Rodolfo Vieira": {
           "prediction": {
             "winner": "Rodolfo Vieira",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Eric McConico",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Polymarket": {
               "Rodolfo Vieira": -257,
@@ -658,12 +792,16 @@
             "bestEv": 0.0329
           }
         },
-        "Sedriques Dumas vs. Jackson McVey": {
+        "Jackson McVey vs. Sedriques Dumas": {
           "prediction": {
             "winner": "Sedriques Dumas",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Jackson McVey",
+            "method": "Submission, D'arce Choke",
+            "time": "2:14 Round 1 of 3"
+          },
           "odds": {
             "Circa": {
               "Sedriques Dumas": 160,
@@ -763,12 +901,16 @@
             "bestEv": 0.0692
           }
         },
-        "Mayra Bueno Silva vs. Michelle Montague": {
+        "Michelle Montague vs. Mayra Bueno Silva": {
           "prediction": {
             "winner": "Michelle Montague",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Michelle Montague",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Circa": {
               "Mayra Bueno Silva": 325,
@@ -872,12 +1014,16 @@
             "bestEv": 0.0362
           }
         },
-        "Jafel Filho vs. Cody Durden": {
+        "Cody Durden vs. Jafel Filho": {
           "prediction": {
             "winner": "Jafel Filho",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Cody Durden",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetRivers": {
               "Jafel Filho": -769,
@@ -974,7 +1120,10 @@
             "winner": "Francis Marshall",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Francis Marshall",
+            "method": "Decision"
+          },
           "odds": {
             "BetRivers": {
               "Francis Marshall": -625,
@@ -1062,12 +1211,16 @@
             "bestEv": 0.0154
           }
         },
-        "Max Griffin vs. Victor Valenzuela": {
+        "Victor Valenzuela vs. Max Griffin": {
           "prediction": {
             "winner": "Victor Valenzuela",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Victor Valenzuela",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Circa": {
               "Victor Valenzuela": -150,
@@ -1168,7 +1321,10 @@
             "winner": "Talita Alencar",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Talita Alencar",
+            "method": "Decision"
+          },
           "odds": {
             "Circa": {
               "Julia Polastri": -240,
@@ -1270,115 +1426,6 @@
               "odds": 223
             },
             "bestEv": 0.0254
-          }
-        },
-        "Aljamain Sterling vs. Youssef Zalal": {
-          "prediction": {
-            "winner": "Aljamain Sterling",
-            "method": "Decision"
-          },
-          "result": null,
-          "odds": {
-            "Circa": {
-              "Aljamain Sterling": 105,
-              "Youssef Zalaal": -125
-            },
-            "Bookmaker": {
-              "Aljamain Sterling": 114,
-              "Youssef Zalaal": -140
-            },
-            "Polymarket": {
-              "Aljamain Sterling": 108,
-              "Youssef Zalaal": -113
-            },
-            "BetRivers": {
-              "Aljamain Sterling": 104,
-              "Youssef Zalaal": -128
-            },
-            "Bet105": {
-              "Aljamain Sterling": 107,
-              "Youssef Zalaal": -124
-            },
-            "BetOnline": {
-              "Aljamain Sterling": 105,
-              "Youssef Zalaal": -125
-            },
-            "Bovada": {
-              "Aljamain Sterling": 112,
-              "Youssef Zalaal": -133
-            },
-            "MyBookie": {
-              "Aljamain Sterling": 104,
-              "Youssef Zalaal": -127
-            },
-            "Betway": {
-              "Aljamain Sterling": 110,
-              "Youssef Zalaal": -138
-            },
-            "DraftKings": {
-              "Aljamain Sterling": 105,
-              "Youssef Zalaal": -125
-            },
-            "Cloudbet": {
-              "Aljamain Sterling": 114,
-              "Youssef Zalaal": -144
-            },
-            "Pinnacle": {
-              "Aljamain Sterling": 107,
-              "Youssef Zalaal": -124
-            },
-            "Stake": {
-              "Aljamain Sterling": 104,
-              "Youssef Zalaal": -127
-            },
-            "FanDuel": {
-              "Aljamain Sterling": 110,
-              "Youssef Zalaal": -140
-            },
-            "4casters": {
-              "Aljamain Sterling": 118,
-              "Youssef Zalaal": -124
-            },
-            "4Cx": {
-              "Aljamain Sterling": 116,
-              "Youssef Zalaal": -127
-            },
-            "BetMGM": {
-              "Aljamain Sterling": 105,
-              "Youssef Zalaal": -125
-            },
-            "ProphetX": {
-              "Aljamain Sterling": 106,
-              "Youssef Zalaal": -118
-            },
-            "Caesars": {
-              "Aljamain Sterling": 110,
-              "Youssef Zalaal": -130
-            },
-            "HardRockBet": {
-              "Aljamain Sterling": 105,
-              "Youssef Zalaal": -130
-            },
-            "SXBet": {
-              "Aljamain Sterling": 102,
-              "Youssef Zalaal": -132
-            },
-            "BetAnything": {
-              "Aljamain Sterling": 100,
-              "Youssef Zalaal": -130
-            },
-            "BetUS": {
-              "Aljamain Sterling": 110,
-              "Youssef Zalaal": -130
-            }
-          },
-          "bestOdds": {
-            "groundTruthProb": 0.4878,
-            "bestOdds": {
-              "platform": "4casters",
-              "odds": 118
-            },
-            "bestEv": 0.0634
           }
         }
       }
