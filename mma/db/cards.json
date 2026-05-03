@@ -2,22 +2,26 @@
   "cards": [
     {
       "id": "ufc-fight-night-maddalena-prates",
-      "title": "UFC Fight Night: Della Maddalena vs. Prates",
-      "subtitle": null,
-      "date": "2026-05-01",
-      "rating": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Della Maddalena vs. Prates",
+      "date": "2026-05-02",
+      "rating": 7.3,
       "poster": "/mma/db/img/ufc_fight_night_maddalena_prates_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-maddalena-prates.html",
       "previewUrl": "db/previews/ufc-fight-night-maddalena-prates.html",
       "location": "Octagon",
       "eventTime": "Saturday 05.02.2026 at 04:00 AM ET",
       "fights": {
-        "Jack Della Maddalena vs. Carlos Prates": {
+        "Carlos Prates vs. Jack Della Maddalena": {
           "prediction": {
             "winner": "Carlos Prates",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Carlos Prates",
+            "method": "KO/TKO, Elbows From Top Position",
+            "time": "3:17 Round 3 of 5, 13:17 Total"
+          },
           "odds": {
             "Caesars": {
               "Jack Della Maddalena": 100,
@@ -121,12 +125,16 @@
             "bestEv": 0.0476
           }
         },
-        "Beneil Dariush vs. Quillan Salkilld": {
+        "Quillan Salkilld vs. Beneil Dariush": {
           "prediction": {
             "winner": "Quillan Salkilld",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Quillan Salkilld",
+            "method": "KO/TKO, Right Hook to Ground Punches",
+            "time": "3:29 Round 1 of 3"
+          },
           "odds": {
             "Polymarket": {
               "Beneil Dariush": 317,
@@ -230,12 +238,16 @@
             "bestEv": 0.0251
           }
         },
-        "Tim Elliott vs. Steve Erceg": {
+        "Steve Erceg vs. Tim Elliott": {
           "prediction": {
             "winner": "Steve Erceg",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Steve Erceg",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Polymarket": {
               "Tim Elliott": 156,
@@ -340,7 +352,11 @@
             "winner": "Marwan Rahiki",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Marwan Rahiki",
+            "method": "KO/TKO, Left Hook to Ground Punches",
+            "time": "2:47 Round 1 of 3"
+          },
           "odds": {
             "BetRivers": {
               "Marwan Rahiki": -769,
@@ -444,12 +460,16 @@
             "bestEv": 0.0175
           }
         },
-        "Shamil Gaziev vs. Brando Peričić": {
+        "Brando Peričić vs. Shamil Gaziev": {
           "prediction": {
             "winner": "Brando Peričić",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Brando Peričić",
+            "method": "KO/TKO, Right Hook",
+            "time": "3:44 Round 2 of 3, 8:44 Total"
+          },
           "odds": {
             "Polymarket": {
               "Shamil Gaziev": 100,
@@ -553,12 +573,16 @@
             "bestEv": 0.0
           }
         },
-        "Tai Tuivasa vs. Louie Sutherland": {
+        "Louie Sutherland vs. Tai Tuivasa": {
           "prediction": {
             "winner": "Louie Sutherland",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Louie Sutherland",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Circa": {
               "Tai Tuivasa": -220,
@@ -663,7 +687,11 @@
             "winner": "Cam Rowston",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Cam Rowston",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Polymarket": {
               "Cam Rowston": -170,
@@ -772,7 +800,11 @@
             "winner": "Junior Tafa",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Junior Tafa",
+            "method": "KO/TKO, Elbows From Top Position",
+            "time": "2:42 Round 1 of 3"
+          },
           "odds": {
             "Polymarket": {
               "Junior Tafa": -203,
@@ -881,7 +913,11 @@
             "winner": "Jacob Malkoun",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Jacob Malkoun",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Polymarket": {
               "Jacob Malkoun": -1150,
@@ -990,7 +1026,11 @@
             "winner": "Colby Thicknesse",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Colby Thicknesse",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Polymarket": {
               "Colby Thicknesse": -127,
@@ -1099,7 +1139,11 @@
             "winner": "Ben Johnston",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Wes Schultz",
+            "method": "Submission, Guillotine Choke",
+            "time": "1:50 Round 3 of 3, 11:50 Total"
+          },
           "odds": {
             "Polymarket": {
               "Wes Schultz": 138,
@@ -1208,7 +1252,11 @@
             "winner": "Jonathan Micallef",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Jonathan Micallef",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Polymarket": {
               "Jonathan Micallef": -212,
@@ -1317,7 +1365,11 @@
             "winner": "Kody Steele",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Kody Steele",
+            "method": "Submission, Heel Hook",
+            "time": "3:56 Round 1 of 3"
+          },
           "odds": {
             "Polymarket": {
               "Kody Steele": -144,
