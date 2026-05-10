@@ -4,20 +4,24 @@
       "id": "ufc-328",
       "title": "UFC 328",
       "subtitle": "Chimaev vs. Strickland",
-      "date": "2026-05-08",
-      "rating": null,
+      "date": "2026-05-10",
+      "rating": 8.1,
       "poster": "/mma/db/img/ufc_328_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-328.html",
       "previewUrl": "db/previews/ufc-328.html",
       "location": "Octagon",
       "eventTime": "Saturday 05.09.2026 at 05:00 PM ET",
       "fights": {
-        "Khamzat Chimaev vs. Sean Strickland": {
+        "Sean Strickland vs. Khamzat Chimaev": {
           "prediction": {
             "winner": "Sean Strickland",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Sean Strickland",
+            "method": "Decision, Split",
+            "time": "5 Rounds, 25:00 Total"
+          },
           "odds": {
             "Caesars": {
               "Sean Strickland": 400,
@@ -126,7 +130,11 @@
             "winner": "Tatsuro Taira",
             "method": "TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Joshua Van",
+            "method": "KO/TKO, Punches (Standing TKO)",
+            "time": "1"
+          },
           "odds": {
             "DraftKings": {
               "Joshua Van": 130,
@@ -235,7 +243,11 @@
             "winner": "Alexander Volkov",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Alexander Volkov",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Alexander Volkov": -144,
@@ -344,7 +356,11 @@
             "winner": "Sean Brady",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Sean Brady",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "BetOnline": {
               "Sean Brady": -160,
@@ -449,7 +465,11 @@
             "winner": "King Green",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "King Green",
+            "method": "Submission, Rear Naked Choke",
+            "time": "4:20 Round 1 of 3"
+          },
           "odds": {
             "BetOnline": {
               "King Green": -445,
@@ -558,7 +578,11 @@
             "winner": "Ateba Gautier",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Ateba Gautier",
+            "method": "KO/TKO, Overhand Right and Hammerfists",
+            "time": "1:10 Round 2 of 3, 6:10 Total"
+          },
           "odds": {
             "ProphetX": {
               "Ateba Gautier": -900,
@@ -662,12 +686,16 @@
             "bestEv": 0.0259
           }
         },
-        "Joel Alvarez vs. Yaroslav Amosov": {
+        "Yaroslav Amosov vs. Joel Alvarez": {
           "prediction": {
             "winner": "Joel Alvarez",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Yaroslav Amosov",
+            "method": "Submission, Arm Triangle Choke",
+            "time": "1:13 Round 2 of 3, 6:13 Total"
+          },
           "odds": {
             "Circa": {
               "Yaroslav Amosov": -185,
@@ -776,7 +804,11 @@
             "winner": "Mateusz Rębecki",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Grant Dawson",
+            "method": "Submission, Rear Naked Choke",
+            "time": "4:42 Round 3 of 3, 14:42 Total"
+          },
           "odds": {
             "Bookmaker": {
               "Grant Dawson": -140,
@@ -885,7 +917,11 @@
             "winner": "Jared Gordon",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Jim Miller",
+            "method": "Submission, Guillotine Choke",
+            "time": "3:29 Round 1 of 3"
+          },
           "odds": {
             "Bookmaker": {
               "Jim Miller": 222,
@@ -989,12 +1025,129 @@
             "bestEv": 0.0429
           }
         },
+        "Roman Kopylov vs. Marco Tulio": {
+          "prediction": {
+            "winner": "Roman Kopylov",
+            "method": "Decision"
+          },
+          "result": {
+            "winner": "Roman Kopylov",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
+          "odds": {
+            "Bookmaker": {
+              "Roman Kopylov": 153,
+              "Marco Tulio": -178
+            },
+            "Circa": {
+              "Roman Kopylov": 155,
+              "Marco Tulio": -180
+            },
+            "Polymarket": {
+              "Roman Kopylov": 163,
+              "Marco Tulio": -178
+            },
+            "BetRivers": {
+              "Roman Kopylov": 150,
+              "Marco Tulio": -185
+            },
+            "BetAnything": {
+              "Roman Kopylov": 150,
+              "Marco Tulio": -180
+            },
+            "BetOnline": {
+              "Roman Kopylov": 155,
+              "Marco Tulio": -180
+            },
+            "FanDuel": {
+              "Roman Kopylov": 158,
+              "Marco Tulio": -196
+            },
+            "Bet105": {
+              "Roman Kopylov": 155,
+              "Marco Tulio": -180
+            },
+            "Pinnacle": {
+              "Roman Kopylov": 156,
+              "Marco Tulio": -181
+            },
+            "Bovada": {
+              "Roman Kopylov": 155,
+              "Marco Tulio": -180
+            },
+            "DraftKings": {
+              "Roman Kopylov": 154,
+              "Marco Tulio": -185
+            },
+            "Caesars": {
+              "Roman Kopylov": 155,
+              "Marco Tulio": -190
+            },
+            "MyBookie": {
+              "Roman Kopylov": 150,
+              "Marco Tulio": -186
+            },
+            "Betway": {
+              "Roman Kopylov": 150,
+              "Marco Tulio": -188
+            },
+            "Stake": {
+              "Roman Kopylov": 155,
+              "Marco Tulio": -189
+            },
+            "BetMGM": {
+              "Roman Kopylov": 150,
+              "Marco Tulio": -185
+            },
+            "Cloudbet": {
+              "Roman Kopylov": 151,
+              "Marco Tulio": -189
+            },
+            "SXBet": {
+              "Roman Kopylov": 158,
+              "Marco Tulio": -187
+            },
+            "ProphetX": {
+              "Roman Kopylov": 156,
+              "Marco Tulio": -172
+            },
+            "HardRockBet": {
+              "Roman Kopylov": 150,
+              "Marco Tulio": -185
+            },
+            "4casters": {
+              "Roman Kopylov": 169,
+              "Marco Tulio": -183
+            },
+            "4Cx": {
+              "Roman Kopylov": 165,
+              "Marco Tulio": -187
+            },
+            "BetUS": {
+              "Roman Kopylov": 150,
+              "Marco Tulio": -180
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.3937,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": 169
+            },
+            "bestEv": 0.0591
+          }
+        },
         "Pat Sabatini vs. William Gomis": {
           "prediction": {
             "winner": "Pat Sabatini",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Pat Sabatini",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "ProphetX": {
               "Pat Sabatini": -158,
@@ -1103,7 +1256,11 @@
             "winner": "Baisangur Susurkaev",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Baisangur Susurkaev",
+            "method": "Submission, Technical (Rear Naked Choke)",
+            "time": "4:12 Round 3 of 3, 14:12 Total"
+          },
           "odds": {
             "Circa": {
               "Baisangur Susurkaev": -670,
@@ -1203,12 +1360,16 @@
             "bestEv": 0.0369
           }
         },
-        "Clayton Carpenter vs. Jose Ochoa": {
+        "Jose Ochoa vs. Clayton Carpenter": {
           "prediction": {
             "winner": "Jose Ochoa",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Jose Ochoa",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "ProphetX": {
               "Clayton Carpenter": 148,
@@ -1306,115 +1467,6 @@
               "odds": -168
             },
             "bestEv": 0.0255
-          }
-        },
-        "Roman Kopylov vs. Marco Tulio": {
-          "prediction": {
-            "winner": "Roman Kopylov",
-            "method": "Decision"
-          },
-          "result": null,
-          "odds": {
-            "Bookmaker": {
-              "Roman Kopylov": 153,
-              "Marco Tulio": -178
-            },
-            "Circa": {
-              "Roman Kopylov": 155,
-              "Marco Tulio": -180
-            },
-            "Polymarket": {
-              "Roman Kopylov": 163,
-              "Marco Tulio": -178
-            },
-            "BetRivers": {
-              "Roman Kopylov": 150,
-              "Marco Tulio": -185
-            },
-            "BetAnything": {
-              "Roman Kopylov": 150,
-              "Marco Tulio": -180
-            },
-            "BetOnline": {
-              "Roman Kopylov": 155,
-              "Marco Tulio": -180
-            },
-            "FanDuel": {
-              "Roman Kopylov": 158,
-              "Marco Tulio": -196
-            },
-            "Bet105": {
-              "Roman Kopylov": 155,
-              "Marco Tulio": -180
-            },
-            "Pinnacle": {
-              "Roman Kopylov": 156,
-              "Marco Tulio": -181
-            },
-            "Bovada": {
-              "Roman Kopylov": 155,
-              "Marco Tulio": -180
-            },
-            "DraftKings": {
-              "Roman Kopylov": 154,
-              "Marco Tulio": -185
-            },
-            "Caesars": {
-              "Roman Kopylov": 155,
-              "Marco Tulio": -190
-            },
-            "MyBookie": {
-              "Roman Kopylov": 150,
-              "Marco Tulio": -186
-            },
-            "Betway": {
-              "Roman Kopylov": 150,
-              "Marco Tulio": -188
-            },
-            "Stake": {
-              "Roman Kopylov": 155,
-              "Marco Tulio": -189
-            },
-            "BetMGM": {
-              "Roman Kopylov": 150,
-              "Marco Tulio": -185
-            },
-            "Cloudbet": {
-              "Roman Kopylov": 151,
-              "Marco Tulio": -189
-            },
-            "SXBet": {
-              "Roman Kopylov": 158,
-              "Marco Tulio": -187
-            },
-            "ProphetX": {
-              "Roman Kopylov": 156,
-              "Marco Tulio": -172
-            },
-            "HardRockBet": {
-              "Roman Kopylov": 150,
-              "Marco Tulio": -185
-            },
-            "4casters": {
-              "Roman Kopylov": 169,
-              "Marco Tulio": -183
-            },
-            "4Cx": {
-              "Roman Kopylov": 165,
-              "Marco Tulio": -187
-            },
-            "BetUS": {
-              "Roman Kopylov": 150,
-              "Marco Tulio": -180
-            }
-          },
-          "bestOdds": {
-            "groundTruthProb": 0.3937,
-            "bestOdds": {
-              "platform": "4casters",
-              "odds": 169
-            },
-            "bestEv": 0.0591
           }
         }
       }

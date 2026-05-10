@@ -69,6 +69,7 @@ Write in past tense, as if telling a story to someone who didn't watch:
 - Bold every fighter name with `<strong>Name</strong>` on **first mention** in each section
 - Do not modify any HTML outside the designated placeholder sections
 - Do **not** touch JS-managed elements: `<h1>Loading...</h1>`, `<p class="event-date">`, `<p class="fight-prediction">`, rating bars, or `<img>` tags — these are auto-populated at runtime
+- **Do not use em dashes (—)**. Use colons, commas, or rewrite sentences instead.
 
 ## Validation Checklist:
 - [ ] No code written — only HTML prose content added to placeholders
@@ -79,4 +80,5 @@ Write in past tense, as if telling a story to someone who didn't watch:
 - [ ] Every specific observation and opinion from the notes is represented in the output
 - [ ] No takes from the notes have been softened, hedged, or omitted
 - [ ] No JS-managed elements were modified
+- [ ] No em dashes (—) used anywhere in the output
 - [ ] No grammatical errors; prose reads naturally and engagingly

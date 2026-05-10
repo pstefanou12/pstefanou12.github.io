@@ -88,6 +88,7 @@ Replace `<card_id>` with the card ID from step 2. This writes sportsbook odds an
 - Bold every fighter name with `<strong>Name</strong>` on **first mention** in each section
 - Do **not** modify `<h1>Loading...</h1>`, `<p class="event-date">`, `<img>` tags, or any JS-managed elements — these are auto-populated at runtime
 - Do not modify any HTML outside the designated placeholder sections
+- **Do not use em dashes (—)**. Use colons, commas, or rewrite sentences instead.
 
 ## Validation Checklist:
 - [ ] No code written — only placeholder text replaced with prose
@@ -99,4 +100,5 @@ Replace `<card_id>` with the card ID from step 2. This writes sportsbook odds an
 - [ ] Every specific point and opinion from the notes is represented in the output
 - [ ] No takes from the notes have been softened, hedged, or omitted
 - [ ] No JS-managed elements were modified
+- [ ] No em dashes (—) used anywhere in the output
 - [ ] No grammatical errors; writing is analytical and reads with authority
