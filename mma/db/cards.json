@@ -1,6 +1,1429 @@
 {
   "cards": [
     {
+      "id": "ufc-fight-night-allen-costa",
+      "title": "UFC Fight Night: Allen vs. Costa",
+      "subtitle": null,
+      "date": "2026-05-16",
+      "rating": null,
+      "poster": "/mma/db/img/ufc_fight_night_allen_costa_poster.jpg",
+      "recapUrl": null,
+      "previewUrl": "db/previews/ufc-fight-night-allen-costa.html",
+      "location": "Octagon",
+      "eventTime": "Saturday 05.16.2026 at 05:00 PM ET",
+      "fights": {
+        "Arnold Allen vs. Melquizael Costa": {
+          "prediction": {
+            "winner": "Arnold Allen",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Arnold Allen": -120,
+              "Melquizael Costa": 100
+            },
+            "Circa": {
+              "Arnold Allen": -120,
+              "Melquizael Costa": 100
+            },
+            "Polymarket": {
+              "Arnold Allen": -117,
+              "Melquizael Costa": 113
+            },
+            "BetOnline": {
+              "Arnold Allen": -118,
+              "Melquizael Costa": -102
+            },
+            "Stake": {
+              "Arnold Allen": -115,
+              "Melquizael Costa": -102
+            },
+            "DraftKings": {
+              "Arnold Allen": -125,
+              "Melquizael Costa": 105
+            },
+            "Betway": {
+              "Arnold Allen": -125,
+              "Melquizael Costa": -100
+            },
+            "Caesars": {
+              "Arnold Allen": -130,
+              "Melquizael Costa": 110
+            },
+            "BetRivers": {
+              "Arnold Allen": -120,
+              "Melquizael Costa": -102
+            },
+            "MyBookie": {
+              "Arnold Allen": -117,
+              "Melquizael Costa": -104
+            },
+            "Bet105": {
+              "Arnold Allen": -121,
+              "Melquizael Costa": 108
+            },
+            "SXBet": {
+              "Arnold Allen": -116,
+              "Melquizael Costa": 109
+            },
+            "FanDuel": {
+              "Arnold Allen": -126,
+              "Melquizael Costa": 108
+            },
+            "ProphetX": {
+              "Arnold Allen": -122,
+              "Melquizael Costa": 114
+            },
+            "4casters": {
+              "Arnold Allen": -119,
+              "Melquizael Costa": 111
+            },
+            "4Cx": {
+              "Arnold Allen": -121,
+              "Melquizael Costa": 109
+            },
+            "Pinnacle": {
+              "Arnold Allen": -121,
+              "Melquizael Costa": 107
+            },
+            "Cloudbet": {
+              "Arnold Allen": -164,
+              "Melquizael Costa": 128
+            },
+            "Bovada": {
+              "Arnold Allen": -122,
+              "Melquizael Costa": 102
+            },
+            "HardRockBet": {
+              "Arnold Allen": -120,
+              "Melquizael Costa": 100
+            },
+            "BetAnything": {
+              "Arnold Allen": -125,
+              "Melquizael Costa": -105
+            },
+            "BetUS": {
+              "Arnold Allen": -120,
+              "Melquizael Costa": 100
+            },
+            "BetMGM": {
+              "Arnold Allen": -125,
+              "Melquizael Costa": 105
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.5556,
+            "bestOdds": {
+              "platform": "Stake",
+              "odds": -115
+            },
+            "bestEv": 0.0386
+          }
+        },
+        "Doo Ho Choi vs. Daniel Santos": {
+          "prediction": {
+            "winner": "Daniel Santos",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Doo Ho Choi": 138,
+              "Daniel Santos": -158
+            },
+            "Bet105": {
+              "Doo Ho Choi": 141,
+              "Daniel Santos": -159
+            },
+            "ProphetX": {
+              "Doo Ho Choi": 142,
+              "Daniel Santos": -158
+            },
+            "Caesars": {
+              "Doo Ho Choi": 143,
+              "Daniel Santos": -170
+            },
+            "Circa": {
+              "Doo Ho Choi": 140,
+              "Daniel Santos": -160
+            },
+            "BetRivers": {
+              "Doo Ho Choi": 128,
+              "Daniel Santos": -159
+            },
+            "Polymarket": {
+              "Doo Ho Choi": 144,
+              "Daniel Santos": -150
+            },
+            "BetOnline": {
+              "Doo Ho Choi": 136,
+              "Daniel Santos": -156
+            },
+            "DraftKings": {
+              "Doo Ho Choi": 140,
+              "Daniel Santos": -166
+            },
+            "Stake": {
+              "Doo Ho Choi": 134,
+              "Daniel Santos": -159
+            },
+            "Betway": {
+              "Doo Ho Choi": 130,
+              "Daniel Santos": -163
+            },
+            "MyBookie": {
+              "Doo Ho Choi": 131,
+              "Daniel Santos": -161
+            },
+            "HardRockBet": {
+              "Doo Ho Choi": 130,
+              "Daniel Santos": -160
+            },
+            "FanDuel": {
+              "Doo Ho Choi": 148,
+              "Daniel Santos": -176
+            },
+            "SXBet": {
+              "Doo Ho Choi": 138,
+              "Daniel Santos": -164
+            },
+            "Pinnacle": {
+              "Doo Ho Choi": 143,
+              "Daniel Santos": -161
+            },
+            "4casters": {
+              "Doo Ho Choi": 141,
+              "Daniel Santos": -157
+            },
+            "4Cx": {
+              "Doo Ho Choi": 138,
+              "Daniel Santos": -161
+            },
+            "Cloudbet": {
+              "Doo Ho Choi": 131,
+              "Daniel Santos": -179
+            },
+            "Bovada": {
+              "Doo Ho Choi": 140,
+              "Daniel Santos": -165
+            },
+            "BetAnything": {
+              "Doo Ho Choi": 134,
+              "Daniel Santos": -164
+            },
+            "BetUS": {
+              "Doo Ho Choi": 130,
+              "Daniel Santos": -155
+            },
+            "BetMGM": {
+              "Doo Ho Choi": 140,
+              "Daniel Santos": -170
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6241,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -150
+            },
+            "bestEv": 0.0401
+          }
+        },
+        "Malcolm Wellmaker vs. Juan Díaz": {
+          "prediction": {
+            "winner": "Malcolm Wellmaker",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Malcolm Wellmaker": -265,
+              "Juan Díaz": 218
+            },
+            "Circa": {
+              "Malcolm Wellmaker": -260,
+              "Juan Díaz": 220
+            },
+            "BetOnline": {
+              "Malcolm Wellmaker": -250,
+              "Juan Díaz": 210
+            },
+            "Betway": {
+              "Malcolm Wellmaker": -275,
+              "Juan Díaz": 210
+            },
+            "Polymarket": {
+              "Malcolm Wellmaker": -223,
+              "Juan Díaz": 213
+            },
+            "Stake": {
+              "Malcolm Wellmaker": -256,
+              "Juan Díaz": 210
+            },
+            "BetRivers": {
+              "Malcolm Wellmaker": -263,
+              "Juan Díaz": 205
+            },
+            "MyBookie": {
+              "Malcolm Wellmaker": -260,
+              "Juan Díaz": 206
+            },
+            "Caesars": {
+              "Malcolm Wellmaker": -260,
+              "Juan Díaz": 210
+            },
+            "HardRockBet": {
+              "Malcolm Wellmaker": -260,
+              "Juan Díaz": 210
+            },
+            "FanDuel": {
+              "Malcolm Wellmaker": -270,
+              "Juan Díaz": 220
+            },
+            "Bet105": {
+              "Malcolm Wellmaker": -248,
+              "Juan Díaz": 215
+            },
+            "ProphetX": {
+              "Malcolm Wellmaker": -250,
+              "Juan Díaz": 210
+            },
+            "Pinnacle": {
+              "Malcolm Wellmaker": -247,
+              "Juan Díaz": 215
+            },
+            "4casters": {
+              "Malcolm Wellmaker": -233,
+              "Juan Díaz": 211
+            },
+            "4Cx": {
+              "Malcolm Wellmaker": -238,
+              "Juan Díaz": 206
+            },
+            "DraftKings": {
+              "Malcolm Wellmaker": -258,
+              "Juan Díaz": 210
+            },
+            "Cloudbet": {
+              "Malcolm Wellmaker": -297,
+              "Juan Díaz": 222
+            },
+            "Bovada": {
+              "Malcolm Wellmaker": -260,
+              "Juan Díaz": 215
+            },
+            "BetAnything": {
+              "Malcolm Wellmaker": -260,
+              "Juan Díaz": 200
+            },
+            "SXBet": {
+              "Malcolm Wellmaker": -243,
+              "Juan Díaz": 215
+            },
+            "BetUS": {
+              "Malcolm Wellmaker": -260,
+              "Juan Díaz": 214
+            },
+            "BetMGM": {
+              "Malcolm Wellmaker": -275,
+              "Juan Díaz": 220
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7207,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -223
+            },
+            "bestEv": 0.0438
+          }
+        },
+        "Modestas Bukauskas vs. Christian Edwards": {
+          "prediction": {
+            "winner": "Modestas Bukauskas",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "ProphetX": {
+              "Modestas Bukauskas": -290,
+              "Christian Edwards": 275
+            },
+            "BetOnline": {
+              "Modestas Bukauskas": -305,
+              "Christian Edwards": 255
+            },
+            "Cloudbet": {
+              "Modestas Bukauskas": -323,
+              "Christian Edwards": 239
+            },
+            "Stake": {
+              "Modestas Bukauskas": -312,
+              "Christian Edwards": 250
+            },
+            "BetRivers": {
+              "Modestas Bukauskas": -312,
+              "Christian Edwards": 245
+            },
+            "Polymarket": {
+              "Modestas Bukauskas": -285,
+              "Christian Edwards": 270
+            },
+            "FanDuel": {
+              "Modestas Bukauskas": -320,
+              "Christian Edwards": 260
+            },
+            "DraftKings": {
+              "Modestas Bukauskas": -310,
+              "Christian Edwards": 250
+            },
+            "Caesars": {
+              "Modestas Bukauskas": -340,
+              "Christian Edwards": 265
+            },
+            "HardRockBet": {
+              "Modestas Bukauskas": -325,
+              "Christian Edwards": 250
+            },
+            "Betway": {
+              "Modestas Bukauskas": -333,
+              "Christian Edwards": 250
+            },
+            "4casters": {
+              "Modestas Bukauskas": -284,
+              "Christian Edwards": 259
+            },
+            "4Cx": {
+              "Modestas Bukauskas": -291,
+              "Christian Edwards": 252
+            },
+            "Pinnacle": {
+              "Modestas Bukauskas": -309,
+              "Christian Edwards": 266
+            },
+            "BetAnything": {
+              "Modestas Bukauskas": -315,
+              "Christian Edwards": 235
+            },
+            "SXBet": {
+              "Modestas Bukauskas": -304,
+              "Christian Edwards": null
+            },
+            "Circa": {
+              "Modestas Bukauskas": -310,
+              "Christian Edwards": 260
+            },
+            "BetUS": {
+              "Modestas Bukauskas": -305,
+              "Christian Edwards": 250
+            },
+            "Bookmaker": {
+              "Modestas Bukauskas": -305,
+              "Christian Edwards": 249
+            },
+            "MyBookie": {
+              "Modestas Bukauskas": -319,
+              "Christian Edwards": 246
+            },
+            "Bet105": {
+              "Modestas Bukauskas": -307,
+              "Christian Edwards": 265
+            },
+            "BetMGM": {
+              "Modestas Bukauskas": -350,
+              "Christian Edwards": 260
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7561,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": -284
+            },
+            "bestEv": 0.0223
+          }
+        },
+        "Timmy Cuamba vs. Benardo Sopaj": {
+          "prediction": {
+            "winner": "Benardo Sopaj",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Benardo Sopaj": -128,
+              "Timmy Cuamba": 108
+            },
+            "ProphetX": {
+              "Benardo Sopaj": -122,
+              "Timmy Cuamba": 114
+            },
+            "Bet105": {
+              "Benardo Sopaj": -121,
+              "Timmy Cuamba": 108
+            },
+            "Circa": {
+              "Benardo Sopaj": -165,
+              "Timmy Cuamba": 145
+            },
+            "Polymarket": {
+              "Benardo Sopaj": -122,
+              "Timmy Cuamba": 113
+            },
+            "BetOnline": {
+              "Benardo Sopaj": -125,
+              "Timmy Cuamba": 105
+            },
+            "DraftKings": {
+              "Benardo Sopaj": -125,
+              "Timmy Cuamba": 105
+            },
+            "Caesars": {
+              "Benardo Sopaj": -125,
+              "Timmy Cuamba": 105
+            },
+            "Betway": {
+              "Benardo Sopaj": -138,
+              "Timmy Cuamba": 110
+            },
+            "Stake": {
+              "Benardo Sopaj": -125,
+              "Timmy Cuamba": 107
+            },
+            "BetRivers": {
+              "Benardo Sopaj": -127,
+              "Timmy Cuamba": 102
+            },
+            "MyBookie": {
+              "Benardo Sopaj": -128,
+              "Timmy Cuamba": 105
+            },
+            "HardRockBet": {
+              "Benardo Sopaj": -125,
+              "Timmy Cuamba": 100
+            },
+            "FanDuel": {
+              "Benardo Sopaj": -136,
+              "Timmy Cuamba": 116
+            },
+            "SXBet": {
+              "Benardo Sopaj": null,
+              "Timmy Cuamba": 104
+            },
+            "Pinnacle": {
+              "Benardo Sopaj": -122,
+              "Timmy Cuamba": 109
+            },
+            "4casters": {
+              "Benardo Sopaj": -117,
+              "Timmy Cuamba": 110
+            },
+            "4Cx": {
+              "Benardo Sopaj": -119,
+              "Timmy Cuamba": 108
+            },
+            "Cloudbet": {
+              "Benardo Sopaj": -169,
+              "Timmy Cuamba": 125
+            },
+            "Bovada": {
+              "Benardo Sopaj": -128,
+              "Timmy Cuamba": 107
+            },
+            "BetAnything": {
+              "Benardo Sopaj": -125,
+              "Timmy Cuamba": -105
+            },
+            "BetUS": {
+              "Benardo Sopaj": -125,
+              "Timmy Cuamba": 105
+            },
+            "BetMGM": {
+              "Benardo Sopaj": -135,
+              "Timmy Cuamba": 110
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.5556,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": -117
+            },
+            "bestEv": 0.0304
+          }
+        },
+        "Nikolay Veretennikov vs. Khaos Williams": {
+          "prediction": {
+            "winner": "Khaos Williams",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Nikolay Veretennikov": -104,
+              "Khaos Williams": -116
+            },
+            "Bet105": {
+              "Nikolay Veretennikov": 108,
+              "Khaos Williams": -121
+            },
+            "Caesars": {
+              "Nikolay Veretennikov": 100,
+              "Khaos Williams": -120
+            },
+            "BetOnline": {
+              "Nikolay Veretennikov": 107,
+              "Khaos Williams": -127
+            },
+            "FanDuel": {
+              "Nikolay Veretennikov": 100,
+              "Khaos Williams": -118
+            },
+            "Pinnacle": {
+              "Nikolay Veretennikov": 100,
+              "Khaos Williams": -113
+            },
+            "SXBet": {
+              "Nikolay Veretennikov": 109,
+              "Khaos Williams": -114
+            },
+            "BetRivers": {
+              "Nikolay Veretennikov": 102,
+              "Khaos Williams": -127
+            },
+            "4casters": {
+              "Nikolay Veretennikov": 107,
+              "Khaos Williams": -114
+            },
+            "4Cx": {
+              "Nikolay Veretennikov": 105,
+              "Khaos Williams": -116
+            },
+            "Circa": {
+              "Nikolay Veretennikov": 100,
+              "Khaos Williams": -120
+            },
+            "HardRockBet": {
+              "Nikolay Veretennikov": -110,
+              "Khaos Williams": -110
+            },
+            "Betway": {
+              "Nikolay Veretennikov": -105,
+              "Khaos Williams": -120
+            },
+            "MyBookie": {
+              "Nikolay Veretennikov": 113,
+              "Khaos Williams": -138
+            },
+            "Stake": {
+              "Nikolay Veretennikov": 106,
+              "Khaos Williams": -125
+            },
+            "ProphetX": {
+              "Nikolay Veretennikov": 109,
+              "Khaos Williams": -114
+            },
+            "Polymarket": {
+              "Nikolay Veretennikov": 113,
+              "Khaos Williams": -117
+            },
+            "Cloudbet": {
+              "Nikolay Veretennikov": 101,
+              "Khaos Williams": -128
+            },
+            "Bovada": {
+              "Nikolay Veretennikov": 102,
+              "Khaos Williams": -122
+            },
+            "DraftKings": {
+              "Nikolay Veretennikov": 105,
+              "Khaos Williams": -125
+            },
+            "BetAnything": {
+              "Nikolay Veretennikov": -108,
+              "Khaos Williams": -122
+            },
+            "BetUS": {
+              "Nikolay Veretennikov": 100,
+              "Khaos Williams": -120
+            },
+            "BetMGM": {
+              "Nikolay Veretennikov": 100,
+              "Khaos Williams": -120
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.5556,
+            "bestOdds": {
+              "platform": "HardRockBet",
+              "odds": -110
+            },
+            "bestEv": 0.0606
+          }
+        },
+        "Tuco Tokkos vs. Ivan Erslan": {
+          "prediction": {
+            "winner": "Tuco Tokkos",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Tuco Tokkos": 135,
+              "Ivan Erslan": -155
+            },
+            "Bet105": {
+              "Tuco Tokkos": 145,
+              "Ivan Erslan": -164
+            },
+            "ProphetX": {
+              "Tuco Tokkos": 144,
+              "Ivan Erslan": -156
+            },
+            "Caesars": {
+              "Tuco Tokkos": 130,
+              "Ivan Erslan": -155
+            },
+            "Circa": {
+              "Tuco Tokkos": 140,
+              "Ivan Erslan": -160
+            },
+            "BetRivers": {
+              "Tuco Tokkos": 135,
+              "Ivan Erslan": -167
+            },
+            "Polymarket": {
+              "Tuco Tokkos": 144,
+              "Ivan Erslan": -156
+            },
+            "BetOnline": {
+              "Tuco Tokkos": 135,
+              "Ivan Erslan": -155
+            },
+            "DraftKings": {
+              "Tuco Tokkos": 140,
+              "Ivan Erslan": -166
+            },
+            "Betway": {
+              "Tuco Tokkos": 140,
+              "Ivan Erslan": -175
+            },
+            "MyBookie": {
+              "Tuco Tokkos": 123,
+              "Ivan Erslan": -150
+            },
+            "HardRockBet": {
+              "Tuco Tokkos": 135,
+              "Ivan Erslan": -165
+            },
+            "FanDuel": {
+              "Tuco Tokkos": 142,
+              "Ivan Erslan": -168
+            },
+            "SXBet": {
+              "Tuco Tokkos": 142,
+              "Ivan Erslan": null
+            },
+            "Pinnacle": {
+              "Tuco Tokkos": 144,
+              "Ivan Erslan": -163
+            },
+            "4casters": {
+              "Tuco Tokkos": 148,
+              "Ivan Erslan": -158
+            },
+            "4Cx": {
+              "Tuco Tokkos": 144,
+              "Ivan Erslan": -162
+            },
+            "Stake": {
+              "Tuco Tokkos": 135,
+              "Ivan Erslan": -159
+            },
+            "Cloudbet": {
+              "Tuco Tokkos": 138,
+              "Ivan Erslan": -189
+            },
+            "Bovada": {
+              "Tuco Tokkos": 137,
+              "Ivan Erslan": -163
+            },
+            "BetAnything": {
+              "Tuco Tokkos": 134,
+              "Ivan Erslan": -164
+            },
+            "BetUS": {
+              "Tuco Tokkos": 138,
+              "Ivan Erslan": -165
+            },
+            "BetMGM": {
+              "Tuco Tokkos": 135,
+              "Ivan Erslan": -165
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.4167,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": 148
+            },
+            "bestEv": 0.0333
+          }
+        },
+        "Tommy Gantt vs. Artur Minev": {
+          "prediction": {
+            "winner": "Tommy Gantt",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "ProphetX": {
+              "Tommy Gantt": -180,
+              "Artur Minev": 154
+            },
+            "BetAnything": {
+              "Tommy Gantt": -183,
+              "Artur Minev": 153
+            },
+            "BetOnline": {
+              "Tommy Gantt": -190,
+              "Artur Minev": 165
+            },
+            "Betway": {
+              "Tommy Gantt": -188,
+              "Artur Minev": 150
+            },
+            "FanDuel": {
+              "Tommy Gantt": -198,
+              "Artur Minev": 166
+            },
+            "BetRivers": {
+              "Tommy Gantt": -192,
+              "Artur Minev": 155
+            },
+            "DraftKings": {
+              "Tommy Gantt": -180,
+              "Artur Minev": 150
+            },
+            "HardRockBet": {
+              "Tommy Gantt": -180,
+              "Artur Minev": 145
+            },
+            "Stake": {
+              "Tommy Gantt": -182,
+              "Artur Minev": 155
+            },
+            "Bovada": {
+              "Tommy Gantt": -183,
+              "Artur Minev": 158
+            },
+            "Bookmaker": {
+              "Tommy Gantt": -181,
+              "Artur Minev": 156
+            },
+            "Caesars": {
+              "Tommy Gantt": -190,
+              "Artur Minev": 160
+            },
+            "Bet105": {
+              "Tommy Gantt": -179,
+              "Artur Minev": 158
+            },
+            "4Cx": {
+              "Tommy Gantt": -183,
+              "Artur Minev": 160
+            },
+            "4casters": {
+              "Tommy Gantt": -179,
+              "Artur Minev": 164
+            },
+            "SXBet": {
+              "Tommy Gantt": -188,
+              "Artur Minev": 162
+            },
+            "Pinnacle": {
+              "Tommy Gantt": -178,
+              "Artur Minev": 157
+            },
+            "Polymarket": {
+              "Tommy Gantt": -170,
+              "Artur Minev": 163
+            },
+            "Circa": {
+              "Tommy Gantt": -190,
+              "Artur Minev": 165
+            },
+            "BetUS": {
+              "Tommy Gantt": -190,
+              "Artur Minev": 158
+            },
+            "MyBookie": {
+              "Tommy Gantt": -187,
+              "Artur Minev": 151
+            },
+            "BetMGM": {
+              "Tommy Gantt": -200,
+              "Artur Minev": 165
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6429,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -170
+            },
+            "bestEv": 0.021
+          }
+        },
+        "Ketlen Vieira vs. Jacqueline Cavalcanti": {
+          "prediction": {
+            "winner": "Ketlen Vieira",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Ketlen Vieira": 120,
+              "Jacqueline Cavalcanti": -140
+            },
+            "Bet105": {
+              "Ketlen Vieira": 127,
+              "Jacqueline Cavalcanti": -143
+            },
+            "ProphetX": {
+              "Ketlen Vieira": 134,
+              "Jacqueline Cavalcanti": -136
+            },
+            "Caesars": {
+              "Ketlen Vieira": 125,
+              "Jacqueline Cavalcanti": -150
+            },
+            "Circa": {
+              "Ketlen Vieira": 125,
+              "Jacqueline Cavalcanti": -145
+            },
+            "BetRivers": {
+              "Ketlen Vieira": 120,
+              "Jacqueline Cavalcanti": -149
+            },
+            "Polymarket": {
+              "Ketlen Vieira": 127,
+              "Jacqueline Cavalcanti": -133
+            },
+            "BetOnline": {
+              "Ketlen Vieira": 124,
+              "Jacqueline Cavalcanti": -144
+            },
+            "DraftKings": {
+              "Ketlen Vieira": 124,
+              "Jacqueline Cavalcanti": -148
+            },
+            "Betway": {
+              "Ketlen Vieira": 120,
+              "Jacqueline Cavalcanti": -150
+            },
+            "Stake": {
+              "Ketlen Vieira": 125,
+              "Jacqueline Cavalcanti": -147
+            },
+            "MyBookie": {
+              "Ketlen Vieira": 122,
+              "Jacqueline Cavalcanti": -150
+            },
+            "HardRockBet": {
+              "Ketlen Vieira": 120,
+              "Jacqueline Cavalcanti": -150
+            },
+            "SXBet": {
+              "Ketlen Vieira": 112,
+              "Jacqueline Cavalcanti": -137
+            },
+            "4casters": {
+              "Ketlen Vieira": 129,
+              "Jacqueline Cavalcanti": -140
+            },
+            "4Cx": {
+              "Ketlen Vieira": 126,
+              "Jacqueline Cavalcanti": -141
+            },
+            "Pinnacle": {
+              "Ketlen Vieira": 127,
+              "Jacqueline Cavalcanti": -143
+            },
+            "FanDuel": {
+              "Ketlen Vieira": 130,
+              "Jacqueline Cavalcanti": -154
+            },
+            "Cloudbet": {
+              "Ketlen Vieira": 133,
+              "Jacqueline Cavalcanti": -182
+            },
+            "Bovada": {
+              "Ketlen Vieira": 127,
+              "Jacqueline Cavalcanti": -147
+            },
+            "BetAnything": {
+              "Ketlen Vieira": 117,
+              "Jacqueline Cavalcanti": -147
+            },
+            "BetUS": {
+              "Ketlen Vieira": 122,
+              "Jacqueline Cavalcanti": -145
+            },
+            "BetMGM": {
+              "Ketlen Vieira": 125,
+              "Jacqueline Cavalcanti": -150
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.4464,
+            "bestOdds": {
+              "platform": "ProphetX",
+              "odds": 134
+            },
+            "bestEv": 0.0446
+          }
+        },
+        "Andre Petroski vs. Cody Brundage": {
+          "prediction": {
+            "winner": "Andre Petroski",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Andre Petroski": -140,
+              "Cody Brundage": 120
+            },
+            "Bet105": {
+              "Andre Petroski": -147,
+              "Cody Brundage": 130
+            },
+            "Circa": {
+              "Andre Petroski": 125,
+              "Cody Brundage": -145
+            },
+            "BetRivers": {
+              "Andre Petroski": -149,
+              "Cody Brundage": 120
+            },
+            "Polymarket": {
+              "Andre Petroski": -138,
+              "Cody Brundage": 133
+            },
+            "BetOnline": {
+              "Andre Petroski": -140,
+              "Cody Brundage": 120
+            },
+            "DraftKings": {
+              "Andre Petroski": -155,
+              "Cody Brundage": 130
+            },
+            "Stake": {
+              "Andre Petroski": -143,
+              "Cody Brundage": 122
+            },
+            "Caesars": {
+              "Andre Petroski": -140,
+              "Cody Brundage": 120
+            },
+            "Betway": {
+              "Andre Petroski": -200,
+              "Cody Brundage": 150
+            },
+            "MyBookie": {
+              "Andre Petroski": -142,
+              "Cody Brundage": 116
+            },
+            "HardRockBet": {
+              "Andre Petroski": -150,
+              "Cody Brundage": 120
+            },
+            "ProphetX": {
+              "Andre Petroski": -150,
+              "Cody Brundage": 132
+            },
+            "FanDuel": {
+              "Andre Petroski": -164,
+              "Cody Brundage": 138
+            },
+            "Pinnacle": {
+              "Andre Petroski": -149,
+              "Cody Brundage": 132
+            },
+            "SXBet": {
+              "Andre Petroski": -158,
+              "Cody Brundage": 134
+            },
+            "4casters": {
+              "Andre Petroski": -141,
+              "Cody Brundage": 130
+            },
+            "Cloudbet": {
+              "Andre Petroski": -223,
+              "Cody Brundage": 172
+            },
+            "Bovada": {
+              "Andre Petroski": -150,
+              "Cody Brundage": 130
+            },
+            "4Cx": {
+              "Andre Petroski": -144,
+              "Cody Brundage": 129
+            },
+            "BetAnything": {
+              "Andre Petroski": -145,
+              "Cody Brundage": 115
+            },
+            "BetMGM": {
+              "Andre Petroski": -165,
+              "Cody Brundage": 135
+            },
+            "BetUS": {
+              "Andre Petroski": -145,
+              "Cody Brundage": 122
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6078,
+            "bestOdds": {
+              "platform": "Circa",
+              "odds": 125
+            },
+            "bestEv": 0.3676
+          }
+        },
+        "Alice Ardelean vs. Polyana Viana": {
+          "prediction": {
+            "winner": "Alice Ardelean",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Polyana Viana": 155,
+              "Alice Ardelean": -180
+            },
+            "Bet105": {
+              "Polyana Viana": 160,
+              "Alice Ardelean": -180
+            },
+            "ProphetX": {
+              "Polyana Viana": 160,
+              "Alice Ardelean": -182
+            },
+            "Circa": {
+              "Polyana Viana": 160,
+              "Alice Ardelean": -185
+            },
+            "BetRivers": {
+              "Polyana Viana": 150,
+              "Alice Ardelean": -189
+            },
+            "Polymarket": {
+              "Polyana Viana": 156,
+              "Alice Ardelean": -178
+            },
+            "BetOnline": {
+              "Polyana Viana": 160,
+              "Alice Ardelean": -185
+            },
+            "DraftKings": {
+              "Polyana Viana": 154,
+              "Alice Ardelean": -185
+            },
+            "Caesars": {
+              "Polyana Viana": 165,
+              "Alice Ardelean": -195
+            },
+            "Betway": {
+              "Polyana Viana": 163,
+              "Alice Ardelean": -200
+            },
+            "MyBookie": {
+              "Polyana Viana": 155,
+              "Alice Ardelean": -192
+            },
+            "HardRockBet": {
+              "Polyana Viana": 150,
+              "Alice Ardelean": -190
+            },
+            "Pinnacle": {
+              "Polyana Viana": 161,
+              "Alice Ardelean": -182
+            },
+            "4casters": {
+              "Polyana Viana": 161,
+              "Alice Ardelean": -180
+            },
+            "4Cx": {
+              "Polyana Viana": 157,
+              "Alice Ardelean": -184
+            },
+            "SXBet": {
+              "Polyana Viana": 165,
+              "Alice Ardelean": -189
+            },
+            "Stake": {
+              "Polyana Viana": 160,
+              "Alice Ardelean": -189
+            },
+            "FanDuel": {
+              "Polyana Viana": 168,
+              "Alice Ardelean": -200
+            },
+            "Cloudbet": {
+              "Polyana Viana": 155,
+              "Alice Ardelean": -213
+            },
+            "Bovada": {
+              "Polyana Viana": 163,
+              "Alice Ardelean": -190
+            },
+            "BetAnything": {
+              "Polyana Viana": 160,
+              "Alice Ardelean": -190
+            },
+            "BetUS": {
+              "Polyana Viana": 158,
+              "Alice Ardelean": -190
+            },
+            "BetMGM": {
+              "Polyana Viana": 165,
+              "Alice Ardelean": -200
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6491,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -178
+            },
+            "bestEv": 0.0138
+          }
+        },
+        "Daniel Barez vs. Luis Gurule": {
+          "prediction": {
+            "winner": "Luis Gurule",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Daniel Barez": 148,
+              "Luis Gurule": -170
+            },
+            "Circa": {
+              "Daniel Barez": 145,
+              "Luis Gurule": -165
+            },
+            "BetRivers": {
+              "Daniel Barez": 125,
+              "Luis Gurule": -156
+            },
+            "Polymarket": {
+              "Daniel Barez": 144,
+              "Luis Gurule": -150
+            },
+            "BetOnline": {
+              "Daniel Barez": 139,
+              "Luis Gurule": -159
+            },
+            "DraftKings": {
+              "Daniel Barez": 142,
+              "Luis Gurule": -170
+            },
+            "Betway": {
+              "Daniel Barez": 110,
+              "Luis Gurule": -138
+            },
+            "Caesars": {
+              "Daniel Barez": 135,
+              "Luis Gurule": -160
+            },
+            "Stake": {
+              "Daniel Barez": 138,
+              "Luis Gurule": -164
+            },
+            "MyBookie": {
+              "Daniel Barez": 139,
+              "Luis Gurule": -171
+            },
+            "HardRockBet": {
+              "Daniel Barez": 125,
+              "Luis Gurule": -155
+            },
+            "SXBet": {
+              "Daniel Barez": 150,
+              "Luis Gurule": -164
+            },
+            "FanDuel": {
+              "Daniel Barez": 130,
+              "Luis Gurule": -154
+            },
+            "Bet105": {
+              "Daniel Barez": 149,
+              "Luis Gurule": -168
+            },
+            "ProphetX": {
+              "Daniel Barez": 148,
+              "Luis Gurule": -164
+            },
+            "Cloudbet": {
+              "Daniel Barez": -112,
+              "Luis Gurule": -119
+            },
+            "Pinnacle": {
+              "Daniel Barez": 149,
+              "Luis Gurule": -169
+            },
+            "4casters": {
+              "Daniel Barez": 147,
+              "Luis Gurule": -164
+            },
+            "4Cx": {
+              "Daniel Barez": 144,
+              "Luis Gurule": -168
+            },
+            "Bovada": {
+              "Daniel Barez": 137,
+              "Luis Gurule": -163
+            },
+            "BetUS": {
+              "Daniel Barez": 142,
+              "Luis Gurule": -170
+            },
+            "BetAnything": {
+              "Daniel Barez": 133,
+              "Luis Gurule": -163
+            },
+            "BetMGM": {
+              "Daniel Barez": 135,
+              "Luis Gurule": -160
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6296,
+            "bestOdds": {
+              "platform": "Cloudbet",
+              "odds": -119
+            },
+            "bestEv": 0.1587
+          }
+        },
+        "Shauna Bannon vs. Nicolle Caliari": {
+          "prediction": {
+            "winner": "Shauna Bannon",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Caesars": {
+              "Shauna Bannon": 240,
+              "Nicolle Caliari": -300
+            },
+            "Circa": {
+              "Shauna Bannon": 245,
+              "Nicolle Caliari": -290
+            },
+            "BetRivers": {
+              "Shauna Bannon": 225,
+              "Nicolle Caliari": -294
+            },
+            "Polymarket": {
+              "Shauna Bannon": 233,
+              "Nicolle Caliari": -245
+            },
+            "BetOnline": {
+              "Shauna Bannon": 239,
+              "Nicolle Caliari": -279
+            },
+            "DraftKings": {
+              "Shauna Bannon": 235,
+              "Nicolle Caliari": -290
+            },
+            "Betway": {
+              "Shauna Bannon": 200,
+              "Nicolle Caliari": -250
+            },
+            "Stake": {
+              "Shauna Bannon": 235,
+              "Nicolle Caliari": -286
+            },
+            "MyBookie": {
+              "Shauna Bannon": 228,
+              "Nicolle Caliari": -295
+            },
+            "HardRockBet": {
+              "Shauna Bannon": 225,
+              "Nicolle Caliari": -300
+            },
+            "ProphetX": {
+              "Shauna Bannon": 235,
+              "Nicolle Caliari": -250
+            },
+            "FanDuel": {
+              "Shauna Bannon": 240,
+              "Nicolle Caliari": -295
+            },
+            "SXBet": {
+              "Shauna Bannon": 233,
+              "Nicolle Caliari": -245
+            },
+            "Bet105": {
+              "Shauna Bannon": 240,
+              "Nicolle Caliari": -277
+            },
+            "Cloudbet": {
+              "Shauna Bannon": 175,
+              "Nicolle Caliari": -244
+            },
+            "Pinnacle": {
+              "Shauna Bannon": 237,
+              "Nicolle Caliari": -274
+            },
+            "4casters": {
+              "Shauna Bannon": 229,
+              "Nicolle Caliari": -249
+            },
+            "4Cx": {
+              "Shauna Bannon": 223,
+              "Nicolle Caliari": -253
+            },
+            "Bovada": {
+              "Shauna Bannon": 235,
+              "Nicolle Caliari": -285
+            },
+            "BetAnything": {
+              "Shauna Bannon": 219,
+              "Nicolle Caliari": -289
+            },
+            "BetUS": {
+              "Shauna Bannon": 230,
+              "Nicolle Caliari": -280
+            },
+            "Bookmaker": {
+              "Shauna Bannon": 231,
+              "Nicolle Caliari": -281
+            },
+            "BetMGM": {
+              "Shauna Bannon": 240,
+              "Nicolle Caliari": -300
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.2985,
+            "bestOdds": {
+              "platform": "Circa",
+              "odds": 245
+            },
+            "bestEv": 0.0299
+          }
+        }
+      }
+    },
+    {
       "id": "ufc-328",
       "title": "UFC 328",
       "subtitle": "Chimaev vs. Strickland",
