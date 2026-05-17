@@ -19,7 +19,7 @@ The output of this skill becomes the **Event Notes** fed into the `/preview` wor
 Run the following command from the project root to scrape all card matchups, fighter profile URLs, records, streaks, and recent fight history directly from Tapology:
 
 ```
-cd /home/patroklos/pstefanou12.github.io/mma && python3 -m scraping.bin.scraping_main --research $ARGUMENTS[0]
+cd ~/pstefanou12.github.io && PYTHONPATH=~/pstefanou12.github.io/mma python3 mma/scraping/bin/scraping_main.py --research $ARGUMENTS[0]
 ```
 
 The script saves JSON to `./notes/<card-id>.json` and prints the path. Read the saved file with the Read tool. The JSON structure is:
