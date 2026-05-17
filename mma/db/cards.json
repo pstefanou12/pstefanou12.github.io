@@ -2,12 +2,12 @@
   "cards": [
     {
       "id": "ufc-fight-night-allen-costa",
-      "title": "UFC Fight Night: Allen vs. Costa",
-      "subtitle": null,
-      "date": "2026-05-16",
-      "rating": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Allen vs. Costa",
+      "date": "2026-05-17",
+      "rating": 6.2,
       "poster": "/mma/db/img/ufc_fight_night_allen_costa_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-allen-costa.html",
       "previewUrl": "db/previews/ufc-fight-night-allen-costa.html",
       "location": "Octagon",
       "eventTime": "Saturday 05.16.2026 at 05:00 PM ET",
@@ -17,7 +17,11 @@
             "winner": "Arnold Allen",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Arnold Allen",
+            "method": "Decision, Unanimous",
+            "time": "5 Rounds, 25:00 Total"
+          },
           "odds": {
             "Bookmaker": {
               "Arnold Allen": -120,
@@ -126,7 +130,11 @@
             "winner": "Daniel Santos",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Doo Ho Choi",
+            "method": "KO/TKO, Body Shot to Ground Strikes",
+            "time": "4:29 Round 2 of 3, 9:29 Total"
+          },
           "odds": {
             "Bookmaker": {
               "Doo Ho Choi": 138,
@@ -230,12 +238,16 @@
             "bestEv": 0.0401
           }
         },
-        "Malcolm Wellmaker vs. Juan Díaz": {
+        "Juan Díaz vs. Malcolm Wellmaker": {
           "prediction": {
             "winner": "Malcolm Wellmaker",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Juan Díaz",
+            "method": "Submission, Rear Naked Choke",
+            "time": "4:08 Round 2 of 3, 9:08 Total"
+          },
           "odds": {
             "Bookmaker": {
               "Malcolm Wellmaker": -265,
@@ -344,7 +356,11 @@
             "winner": "Modestas Bukauskas",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Modestas Bukauskas",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "ProphetX": {
               "Modestas Bukauskas": -290,
@@ -444,12 +460,16 @@
             "bestEv": 0.0223
           }
         },
-        "Timmy Cuamba vs. Benardo Sopaj": {
+        "Benardo Sopaj vs. Timmy Cuamba": {
           "prediction": {
             "winner": "Benardo Sopaj",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Benardo Sopaj",
+            "method": "Submission, Rear Naked Choke",
+            "time": "2:25 Round 2 of 3, 7:25 Total"
+          },
           "odds": {
             "Bookmaker": {
               "Benardo Sopaj": -128,
@@ -553,12 +573,16 @@
             "bestEv": 0.0304
           }
         },
-        "Nikolay Veretennikov vs. Khaos Williams": {
+        "Khaos Williams vs. Nikolay Veretennikov": {
           "prediction": {
             "winner": "Khaos Williams",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Khaos Williams",
+            "method": "KO/TKO, Right Hook",
+            "time": "3:31 Round 1 of 3"
+          },
           "odds": {
             "Bookmaker": {
               "Nikolay Veretennikov": -104,
@@ -662,12 +686,16 @@
             "bestEv": 0.0606
           }
         },
-        "Tuco Tokkos vs. Ivan Erslan": {
+        "Ivan Erslan vs. Tuco Tokkos": {
           "prediction": {
             "winner": "Tuco Tokkos",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Ivan Erslan",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Bookmaker": {
               "Tuco Tokkos": 135,
@@ -776,7 +804,11 @@
             "winner": "Tommy Gantt",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Tommy Gantt",
+            "method": "KO/TKO, Punches From Back Mount",
+            "time": "2:51 Round 2 of 3, 7:51 Total"
+          },
           "odds": {
             "ProphetX": {
               "Tommy Gantt": -180,
@@ -881,7 +913,11 @@
             "winner": "Ketlen Vieira",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Ketlen Vieira",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Bookmaker": {
               "Ketlen Vieira": 120,
@@ -985,12 +1021,16 @@
             "bestEv": 0.0446
           }
         },
-        "Andre Petroski vs. Cody Brundage": {
+        "Cody Brundage vs. Andre Petroski": {
           "prediction": {
             "winner": "Andre Petroski",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Cody Brundage",
+            "method": "KO/TKO, Left Hook to Ground Strikes",
+            "time": "0:44 Round 2 of 3, 5:44 Total"
+          },
           "odds": {
             "Bookmaker": {
               "Andre Petroski": -140,
@@ -1099,7 +1139,11 @@
             "winner": "Alice Ardelean",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Alice Ardelean",
+            "method": "Submission, Calf Slicer",
+            "time": "4:36 Round 2 of 3, 9:36 Total"
+          },
           "odds": {
             "Bookmaker": {
               "Polyana Viana": 155,
@@ -1203,12 +1247,16 @@
             "bestEv": 0.0138
           }
         },
-        "Daniel Barez vs. Luis Gurule": {
+        "Luis Gurule vs. Daniel Barez": {
           "prediction": {
             "winner": "Luis Gurule",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Luis Gurule",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Bookmaker": {
               "Daniel Barez": 148,
@@ -1312,12 +1360,16 @@
             "bestEv": 0.1587
           }
         },
-        "Shauna Bannon vs. Nicolle Caliari": {
+        "Nicolle Caliari vs. Shauna Bannon": {
           "prediction": {
             "winner": "Shauna Bannon",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Nicolle Caliari",
+            "method": "Submission, Arm Triangle Choke",
+            "time": "3:08 Round 3 of 3, 13:08 Total"
+          },
           "odds": {
             "Caesars": {
               "Shauna Bannon": 240,

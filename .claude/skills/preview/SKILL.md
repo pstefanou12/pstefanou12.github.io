@@ -31,7 +31,7 @@ Read the notes file at `$ARGUMENTS[0]` to understand the per-fight research befo
 ### 2. Run the HTML Template Script
 Scrape the Tapology event page and generate the HTML preview template:
 ```bash
-PYTHONPATH=/home/patroklos/pstefanou12.github.io/mma python3 mma/scraping/bin/scraping_main.py --preview $ARGUMENTS[1]
+cd ~/pstefanou12.github.io && PYTHONPATH=~/pstefanou12.github.io/mma python3 mma/scraping/bin/scraping_main.py --preview $ARGUMENTS[1]
 ```
 The script prints the generated file path (e.g. `✓ Preview template generated: ./mma/db/previews/ufc-322.html`) and the card ID (e.g. `Generated card ID: ufc-322`). Note both — the file path is what you populate, and the card ID is used later.
 
@@ -79,7 +79,7 @@ Use the same winner name and method string you placed in the HTML `<h4>Pick: </h
 ### 8. Scrape Odds (if `$ARGUMENTS[2]` provided)
 Now that predictions are written, run the odds scraper so that `compute_best_odds` has the correct winners to evaluate:
 ```bash
-PYTHONPATH=/home/patroklos/pstefanou12.github.io/mma python3 mma/scraping/bin/scraping_main.py --fightodds $ARGUMENTS[2] --card-id <card_id>
+cd ~/pstefanou12.github.io && PYTHONPATH=~/pstefanou12.github.io/mma python3 mma/scraping/bin/scraping_main.py --fightodds $ARGUMENTS[2] --card-id <card_id>
 ```
 Replace `<card_id>` with the card ID from step 2. This writes sportsbook odds and computes `bestOdds` for each picked fighter, which powers the projected betting returns table.
 
