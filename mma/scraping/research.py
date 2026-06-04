@@ -1,17 +1,17 @@
 """
-Research — scrapes fighter profiles from Tapology and saves structured notes.
+Research — scrapes fighter profiles from Tapology and prints structured data.
 
 For each fighter on the card, fetches record, current streak, and last 5 fights
-from their Tapology profile page. Saves output as JSON to mma/notes/<card-id>.json
-for use as input to the preview workflow.
+from their Tapology profile page. Prints the result as JSON to stdout.
 
 Public API:
     run(args)  — args.url
 """
 import json
-import os
+from types import SimpleNamespace
 
 from scraping import tapology
+from scraping.scraper import Scraper
 
 
 def _bout_key(f1, f2):
@@ -19,9 +19,9 @@ def _bout_key(f1, f2):
     return f'{camel(f1)}Vs{camel(f2)}'
 
 
-def run(args):
+def run(args: SimpleNamespace, scraper: Scraper):
     """Scrape fighter profiles and generate structured research notes for a UFC event."""
-    event_name, bouts = tapology.scrape_event_research(args.url)
+    event_name, bouts = tapology.scrape_event_research(scraper, args.url)
     if not bouts:
         raise RuntimeError('No bouts found on event page.')
 
@@ -35,7 +35,7 @@ def run(args):
                 seen.add(name)
 
     print(f'\nScraping {len(fighters_to_fetch)} fighter profiles...')
-    profiles = {name: tapology.scrape_fighter(name, url) for name, url in fighters_to_fetch}
+    profiles = {name: tapology.scrape_fighter(scraper, name, url) for name, url in fighters_to_fetch}
 
     card_id = tapology.generate_card_id(event_name)
 
@@ -53,11 +53,4 @@ def run(args):
         },
     }
 
-    json_str = json.dumps(output, indent=2, ensure_ascii=False)
-
-    notes_dir = './notes'
-    os.makedirs(notes_dir, exist_ok=True)
-    out_path = os.path.join(notes_dir, f'{card_id}.json')
-    with open(out_path, 'w', encoding='utf-8') as f:
-        f.write(json_str)
-    print(f'\n✓ Saved: {out_path}')
+    print(json.dumps(output, indent=2, ensure_ascii=False))
