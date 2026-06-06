@@ -2,33 +2,25 @@
 Tapology scraping — fetches event and fighter data from Tapology.
 
 Public API:
-    scrape_tapology_event(url, mode)  — event page scrape for preview/recap
-    scrape_event_research(url)        — event page scrape with fighter profile URLs
-    scrape_fighter(name, url)         — individual fighter profile scrape
-    generate_card_id(event_name)      — derive a card ID slug from the event name
-    parse_event_date(date_string)     — parse Tapology event date to YYYY-MM-DD
-    extract_title(event_name)         — split event name into (title, subtitle)
-    extract_subtitle(event_name)      — extract subtitle portion of event name
+    scrape_tapology_event(scraper, url, mode)  — event page scrape for preview/recap
+    scrape_event_research(scraper, url)        — event page scrape with fighter profile URLs
+    scrape_fighter(scraper, name, url)         — individual fighter profile scrape
+    generate_card_id(event_name)               — derive a card ID slug from the event name
+    parse_event_date(date_string)              — parse Tapology event date to YYYY-MM-DD
+    extract_title(event_name)                  — split event name into (title, subtitle)
+    extract_subtitle(event_name)               — extract subtitle portion of event name
 """
 import bs4
-import cloudscraper
 import datetime
 import re
 import sys
 import time
 
 from scraping import constants
-
-_scraper = cloudscraper.create_scraper()
-
-
-def _fetch(url):
-    resp = _scraper.get(url, headers=constants.HEADERS, timeout=15)
-    resp.raise_for_status()
-    return bs4.BeautifulSoup(resp.content, 'html.parser')
+from scraping.scraper import Scraper
 
 
-def parse_event_date(date_string):
+def parse_event_date(date_string: str) -> str:
     """Parse Tapology event date string to YYYY-MM-DD. E.g. 'Sat. 10.04.2025' -> '2025-10-04'."""
     try:
         date_part = date_string.split()[-1]
@@ -38,7 +30,7 @@ def parse_event_date(date_string):
         return datetime.datetime.now().strftime("%Y-%m-%d")
 
 
-def _parse_fight_date(date_div):
+def _parse_fight_date(date_div: bs4.Tag) -> str:
     """Parse date from a fighter profile fight history row. E.g. '2025 Jul 19' -> 'July 19, 2025'."""
     raw = date_div.get_text(separator=' ', strip=True)
     m = re.match(r'(\d{4})\s+(\w{3})\s+(\d{1,2})', raw)
@@ -51,7 +43,7 @@ def _parse_fight_date(date_div):
     return raw
 
 
-def generate_card_id(event_name):
+def generate_card_id(event_name: str) -> str:
     """
     Generate card ID from event name:
     - UFC 320 -> ufc-320
@@ -86,7 +78,7 @@ def generate_card_id(event_name):
     return re.sub(r'[^a-z0-9]+', '-', event_name_lower).strip('-')
 
 
-def extract_subtitle(event_name):
+def extract_subtitle(event_name: str) -> str | None:
     ufc_number_match = re.search(r'ufc (\d+)\s+(.*)', event_name, re.IGNORECASE)
     if ufc_number_match:
         subtitle = ufc_number_match.group(2).strip()
@@ -96,7 +88,7 @@ def extract_subtitle(event_name):
     return None
 
 
-def extract_title(event_name):
+def extract_title(event_name: str) -> tuple[str, str | None]:
     title, subtitle = event_name, None
     if 'fight night' not in event_name.lower():
         title_match = re.match(r'(UFC \d+|UFC [^:]+)', event_name, re.IGNORECASE)
@@ -108,10 +100,9 @@ def extract_title(event_name):
     return title, subtitle
 
 
-def scrape_tapology_event(url, mode='both'):
+def scrape_tapology_event(scraper: Scraper, url: str, mode: str = 'both') -> dict:
     """Scrape fight data from a Tapology event page."""
-    response = _scraper.get(url, headers=constants.HEADERS)
-    soup = bs4.BeautifulSoup(response.content, 'html.parser')
+    soup = scraper.fetch(url)
 
     title_tag = soup.find('title')
     event_name = title_tag.text.split('|')[0].strip() if title_tag else 'UFC Event'
@@ -159,7 +150,7 @@ def scrape_tapology_event(url, mode='both'):
     return {'event_name': event_name, 'date': date, 'location': location, 'fights': fights}
 
 
-def _parse_weight_class(bout_soup):
+def _parse_weight_class(bout_soup: bs4.BeautifulSoup) -> str:
     wc_span = bout_soup.find(
         'span',
         class_=lambda c: c and 'bg-tap_darkgold' in c and 'text-neutral-50' in c,
@@ -176,7 +167,7 @@ def _parse_weight_class(bout_soup):
     return 'Unknown'
 
 
-def _parse_standard_detail(soup, label_text):
+def _parse_standard_detail(soup: bs4.BeautifulSoup, label_text: str) -> str | None:
     std = soup.find(id='standardDetails')
     if std:
         label = std.find('strong', string=re.compile(label_text, re.I))
@@ -187,16 +178,16 @@ def _parse_standard_detail(soup, label_text):
     return None
 
 
-def _parse_record(soup):
+def _parse_record(soup: bs4.BeautifulSoup) -> str | None:
     raw = _parse_standard_detail(soup, r'Pro MMA Record')
     return raw.split()[0].rstrip(',') if raw else None
 
 
-def _parse_streak(soup):
+def _parse_streak(soup: bs4.BeautifulSoup) -> str | None:
     return _parse_standard_detail(soup, r'Current MMA Streak')
 
 
-def _parse_fight_history(soup, limit=5):
+def _parse_fight_history(soup: bs4.BeautifulSoup, limit: int = 5) -> list[dict]:
     pro = soup.find(id='proResults')
     if not pro:
         return []
@@ -228,10 +219,10 @@ def _parse_fight_history(soup, limit=5):
     return fights
 
 
-def scrape_event_research(url):
+def scrape_event_research(scraper: Scraper, url: str) -> tuple[str, list[dict]]:
     """Scrape a Tapology event page for research, returning fighter profile URLs alongside bout data."""
     print(f'Fetching event page: {url}', file=sys.stderr)
-    soup = _fetch(url)
+    soup = scraper.fetch(url)
 
     title_tag = soup.find('title')
     event_name = title_tag.text.split('|')[0].strip() if title_tag else 'UFC Event'
@@ -276,11 +267,11 @@ def scrape_event_research(url):
     return event_name, bouts
 
 
-def scrape_fighter(name, url):
+def scrape_fighter(scraper: Scraper, name: str, url: str) -> dict:
     """Scrape a fighter's Tapology profile page and return a profile dict."""
     print(f'  {name} ...', file=sys.stderr, end=' ', flush=True)
     try:
-        soup = _fetch(url)
+        soup = scraper.fetch(url)
         record = _parse_record(soup)
         streak = _parse_streak(soup)
         recent_fights = _parse_fight_history(soup)

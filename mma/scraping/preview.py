@@ -1,8 +1,10 @@
 import json
 import os
+from types import SimpleNamespace
 
 from scraping import constants
 from scraping import tapology
+from scraping.scraper import Scraper
 
 
 def _build_odds_scaffold(fighter1, fighter2):
@@ -74,10 +76,10 @@ def _generate_preview_template(event_data):
     return html
 
 
-def run(args):
+def run(args: SimpleNamespace, scraper: Scraper):
     """Scrape Tapology event and generate a preview HTML template."""
     print("Scraping event data...")
-    event_data = tapology.scrape_tapology_event(args.url, mode='preview')
+    event_data = tapology.scrape_tapology_event(scraper, args.url, mode='preview')
 
     print(f"\nEvent: {event_data['event_name']}")
     print(f"Date: {event_data['date']}")

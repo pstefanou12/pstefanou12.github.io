@@ -8,11 +8,14 @@ Usage:
     python3 -m scraping.bin.scraping_main --research <tapology_url>
     python3 -m scraping.bin.scraping_main --fightodds <event_pk_or_url> --card-id <card_id>
 
+    Add --driver to any command to use Selenium (Firefox) instead of cloudscraper.
+
 Examples:
     python3 -m scraping.bin.scraping_main --preview https://www.tapology.com/fightcenter/events/136871-ufc-326
     python3 -m scraping.bin.scraping_main --recap https://www.tapology.com/fightcenter/events/136871-ufc-326 --rating 7.5
     python3 -m scraping.bin.scraping_main --research https://www.tapology.com/fightcenter/events/136871-ufc-326
     python3 -m scraping.bin.scraping_main --fightodds https://fightodds.io/mma-events/8823/ufc-326/odds --card-id ufc-326
+    python3 -m scraping.bin.scraping_main --research https://www.tapology.com/... --driver
 """
 
 import argparse
@@ -22,6 +25,7 @@ from scraping import fightodds
 from scraping import preview
 from scraping import recap
 from scraping import research
+from scraping.scraper import Scraper
 
 
 def main():
@@ -38,24 +42,31 @@ def main():
 
     parser.add_argument('--rating', type=float, help='Event rating 0.0–10.0 (required for --recap)')
     parser.add_argument('--card-id', dest='card_id', help='Card ID in cards.json (required for --fightodds)')
+    parser.add_argument('--driver', action='store_true', help='Use Selenium (Firefox) instead of cloudscraper')
 
     args = parser.parse_args()
 
-    if args.preview:
-        preview.run(SimpleNamespace(url=args.preview))
+    scraper = Scraper(use_driver=args.driver)
 
-    elif args.recap:
-        if args.rating is None:
-            parser.error('--rating is required when using --recap')
-        recap.run(SimpleNamespace(url=args.recap, rating=args.rating))
+    try:
+        if args.preview:
+            preview.run(SimpleNamespace(url=args.preview), scraper)
 
-    elif args.research:
-        research.run(SimpleNamespace(url=args.research))
+        elif args.recap:
+            if args.rating is None:
+                parser.error('--rating is required when using --recap')
+            recap.run(SimpleNamespace(url=args.recap, rating=args.rating), scraper)
 
-    elif args.fightodds:
-        if not args.card_id:
-            parser.error('--card-id is required when using --fightodds')
-        fightodds.run(SimpleNamespace(event=args.fightodds, card_id=args.card_id))
+        elif args.research:
+            research.run(SimpleNamespace(url=args.research), scraper)
+
+        elif args.fightodds:
+            if not args.card_id:
+                parser.error('--card-id is required when using --fightodds')
+            fightodds.run(SimpleNamespace(event=args.fightodds, card_id=args.card_id))
+
+    finally:
+        scraper.close()
 
 
 if __name__ == '__main__':

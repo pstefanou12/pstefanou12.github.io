@@ -10,9 +10,11 @@ Public API:
 import json
 import os
 import re
+from types import SimpleNamespace
 
 from scraping import constants
 from scraping import tapology
+from scraping.scraper import Scraper
 
 
 def _find_fight(fights, fighter1, fighter2):
@@ -139,10 +141,10 @@ def _generate_recap_template(event_data):
     return html
 
 
-def run(args):
+def run(args: SimpleNamespace, scraper: Scraper):
     """Scrape Tapology event results and generate a recap HTML template."""
     print("Scraping event data...")
-    event_data = tapology.scrape_tapology_event(args.url, mode='recap')
+    event_data = tapology.scrape_tapology_event(scraper, args.url, mode='recap')
 
     print(f"\nEvent: {event_data['event_name']}")
     print(f"Date: {event_data['date']}")
