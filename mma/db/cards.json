@@ -2,22 +2,26 @@
   "cards": [
     {
       "id": "ufc-fight-night-muhammad-bonfim",
-      "title": "UFC Fight Night: Muhammad vs. Bonfim",
-      "subtitle": null,
-      "date": "2026-06-06",
-      "rating": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Muhammad vs. Bonfim",
+      "date": "2026-06-07",
+      "rating": 7.1,
       "poster": "/mma/db/img/ufc_fight_night_muhammad_bonfim_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-muhammad-bonfim.html",
       "previewUrl": "db/previews/ufc-fight-night-muhammad-bonfim.html",
       "location": "Octagon",
       "eventTime": "Saturday 06.06.2026 at 05:00 PM ET",
       "fights": {
-        "Belal Muhammad vs. Gabriel Bonfim": {
+        "Gabriel Bonfim vs. Belal Muhammad": {
           "prediction": {
             "winner": "Belal Muhammad",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Gabriel Bonfim",
+            "method": "Decision, Unanimous",
+            "time": "5 Rounds, 25:00 Total"
+          },
           "odds": {
             "Betway": {
               "Belal Muhammad": -110,
@@ -130,7 +134,11 @@
             "winner": "Brendan Allen",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Brendan Allen",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Betway": {
               "Brendan Allen": -188,
@@ -238,12 +246,16 @@
             "bestEv": 0.0372
           }
         },
-        "Fares Ziam vs. Tom Nolan": {
+        "Tom Nolan vs. Fares Ziam": {
           "prediction": {
             "winner": "Fares Ziam",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Tom Nolan",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "Betway": {
               "Fares Ziam": -333,
@@ -356,7 +368,11 @@
             "winner": "Bryce Mitchell",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Bryce Mitchell",
+            "method": "Submission, Arm Triangle Choke",
+            "time": "4:52 Round 3 of 3, 14:52 Total"
+          },
           "odds": {
             "Cloudbet": {
               "Santiago Luna": -100,
@@ -469,7 +485,11 @@
             "winner": "Iwo Baraniewski",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Iwo Baraniewski",
+            "method": "KO/TKO, Leg Kick and Ground Strikes",
+            "time": "1:25 Round 1 of 3"
+          },
           "odds": {
             "Caesars": {
               "Iwo Baraniewski": -420,
@@ -577,12 +597,16 @@
             "bestEv": 2.659
           }
         },
-        "Matt Schnell vs. Alessandro Costa": {
+        "Alessandro Costa vs. Matt Schnell": {
           "prediction": {
             "winner": "Alessandro Costa",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Alessandro Costa",
+            "method": "KO/TKO, Punches",
+            "time": "2:32 Round 1 of 3"
+          },
           "odds": {
             "Cloudbet": {
               "Alessandro Costa": -435,
@@ -695,7 +719,11 @@
             "winner": "Marcus McGhee",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Marcus McGhee",
+            "method": "Decision, Unanimous",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "ProphetX": {
               "Marcus McGhee": -360,
@@ -799,12 +827,16 @@
             "bestEv": 2.3595
           }
         },
-        "Bruno Silva vs. Edgar Cháirez": {
+        "Edgar Cháirez vs. Bruno Silva": {
           "prediction": {
             "winner": "Bruno Silva",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Edgar Cháirez",
+            "method": "Submission, Rear Naked Choke",
+            "time": "4:13 Round 1 of 3"
+          },
           "odds": {
             "Cloudbet": {
               "Bruno Silva": -120,
@@ -917,7 +949,11 @@
             "winner": "Chelsea Chandler",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Chelsea Chandler",
+            "method": "Submission, Armbar",
+            "time": "3:42 Round 1 of 3"
+          },
           "odds": {
             "ProphetX": {
               "Priscila Cachoeira": 113,
@@ -1025,12 +1061,16 @@
             "bestEv": 0.0402
           }
         },
-        "Jordan Leavitt vs. Joanderson Brito": {
+        "Joanderson Brito vs. Jordan Leavitt": {
           "prediction": {
             "winner": "Jordan Leavitt",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Joanderson Brito",
+            "method": "Submission, Front Choke",
+            "time": "4:19 Round 1 of 3"
+          },
           "odds": {
             "ProphetX": {
               "Jordan Leavitt": 148,
@@ -1143,7 +1183,11 @@
             "winner": "Yuneisy Duben",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Jeisla Chaves",
+            "method": "Decision, Split",
+            "time": "3 Rounds, 15:00 Total"
+          },
           "odds": {
             "YouWager": {
               "Jeisla Chaves": -270,
@@ -1256,7 +1300,11 @@
             "winner": "Ketlen Souza",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Ketlen Souza",
+            "method": "KO/TKO, Head Kick",
+            "time": "1:34 Round 1 of 3"
+          },
           "odds": {
             "ProphetX": {
               "Ketlen Souza": -310,
