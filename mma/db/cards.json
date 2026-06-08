@@ -1,6 +1,735 @@
 {
   "cards": [
     {
+      "id": "ufc-freedom-250-topuria-gaethje",
+      "title": "UFC Freedom 250",
+      "subtitle": "Topuria vs. Gaethje",
+      "date": "2026-06-07",
+      "rating": null,
+      "poster": "/mma/db/img/ufc_freedom_250_topuria_gaethje_poster.jpg",
+      "recapUrl": null,
+      "previewUrl": "db/previews/ufc-freedom-250-topuria-gaethje.html",
+      "location": "South Lawn of the White House",
+      "eventTime": "Sunday 06.14.2026 at 08:00 PM ET",
+      "fights": {
+        "Ilia Topuria vs. Justin Gaethje": {
+          "prediction": {
+            "winner": "Ilia Topuria",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "Caesars": {
+              "Ilia Topuria": -600,
+              "Justin Gaethje": 430
+            },
+            "YouWager": {
+              "Ilia Topuria": -550,
+              "Justin Gaethje": 420
+            },
+            "Polymarket": {
+              "Ilia Topuria": -456,
+              "Justin Gaethje": 426
+            },
+            "Bovada": {
+              "Ilia Topuria": -600,
+              "Justin Gaethje": 425
+            },
+            "Cloudbet": {
+              "Ilia Topuria": -617,
+              "Justin Gaethje": 404
+            },
+            "BetMGM": {
+              "Ilia Topuria": -625,
+              "Justin Gaethje": 450
+            },
+            "Circa": {
+              "Ilia Topuria": -550,
+              "Justin Gaethje": 425
+            },
+            "BetUS": {
+              "Ilia Topuria": -580,
+              "Justin Gaethje": 415
+            },
+            "BetAnything": {
+              "Ilia Topuria": -580,
+              "Justin Gaethje": 360
+            },
+            "Betway": {
+              "Ilia Topuria": -649,
+              "Justin Gaethje": 450
+            },
+            "Stake": {
+              "Ilia Topuria": -588,
+              "Justin Gaethje": 400
+            },
+            "Pinnacle": {
+              "Ilia Topuria": -540,
+              "Justin Gaethje": 414
+            },
+            "HardRockBet": {
+              "Ilia Topuria": -650,
+              "Justin Gaethje": 425
+            },
+            "BetRivers": {
+              "Ilia Topuria": -625,
+              "Justin Gaethje": 460
+            },
+            "Bet105": {
+              "Ilia Topuria": -523,
+              "Justin Gaethje": 403
+            },
+            "4casters": {
+              "Ilia Topuria": -494,
+              "Justin Gaethje": 418
+            },
+            "4Cx": {
+              "Ilia Topuria": -506,
+              "Justin Gaethje": 409
+            },
+            "Bookmaker": {
+              "Ilia Topuria": -575,
+              "Justin Gaethje": 431
+            },
+            "MyBookie": {
+              "Ilia Topuria": -649,
+              "Justin Gaethje": 360
+            },
+            "DraftKings": {
+              "Ilia Topuria": -535,
+              "Justin Gaethje": 400
+            },
+            "BetOnline": {
+              "Ilia Topuria": -550,
+              "Justin Gaethje": 420
+            },
+            "FanDuel": {
+              "Ilia Topuria": -670,
+              "Justin Gaethje": 430
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8425,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -456
+            },
+            "bestEv": 0.0273
+          }
+        },
+        "Alex Pereira vs. Ciryl Gane": {
+          "prediction": {
+            "winner": "Alex Pereira",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "Caesars": {
+              "Alex Pereira": -110,
+              "Ciryl Gane": -110
+            },
+            "YouWager": {
+              "Alex Pereira": -110,
+              "Ciryl Gane": -110
+            },
+            "Bovada": {
+              "Alex Pereira": -108,
+              "Ciryl Gane": -112
+            },
+            "Polymarket": {
+              "Alex Pereira": 100,
+              "Ciryl Gane": -104
+            },
+            "Cloudbet": {
+              "Alex Pereira": -109,
+              "Ciryl Gane": -117
+            },
+            "BetMGM": {
+              "Alex Pereira": -105,
+              "Ciryl Gane": -115
+            },
+            "Circa": {
+              "Alex Pereira": -110,
+              "Ciryl Gane": -110
+            },
+            "BetUS": {
+              "Alex Pereira": -110,
+              "Ciryl Gane": -110
+            },
+            "BetAnything": {
+              "Alex Pereira": -110,
+              "Ciryl Gane": -120
+            },
+            "MyBookie": {
+              "Alex Pereira": -117,
+              "Ciryl Gane": -118
+            },
+            "Betway": {
+              "Alex Pereira": -110,
+              "Ciryl Gane": -110
+            },
+            "Stake": {
+              "Alex Pereira": -110,
+              "Ciryl Gane": -111
+            },
+            "HardRockBet": {
+              "Alex Pereira": -110,
+              "Ciryl Gane": -110
+            },
+            "4casters": {
+              "Alex Pereira": -102,
+              "Ciryl Gane": -110
+            },
+            "BetOnline": {
+              "Alex Pereira": -110,
+              "Ciryl Gane": -110
+            },
+            "4Cx": {
+              "Alex Pereira": -104,
+              "Ciryl Gane": -112
+            },
+            "Bookmaker": {
+              "Alex Pereira": -110,
+              "Ciryl Gane": -110
+            },
+            "FanDuel": {
+              "Alex Pereira": -113,
+              "Ciryl Gane": -113
+            },
+            "Bet105": {
+              "Alex Pereira": -107,
+              "Ciryl Gane": -110
+            },
+            "Pinnacle": {
+              "Alex Pereira": -105,
+              "Ciryl Gane": -112
+            },
+            "BetRivers": {
+              "Alex Pereira": -112,
+              "Ciryl Gane": -110
+            },
+            "DraftKings": {
+              "Alex Pereira": -105,
+              "Ciryl Gane": -115
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.5122,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": 100
+            },
+            "bestEv": 0.0244
+          }
+        },
+        "Sean O'Malley vs. Aiemann Zahabi": {
+          "prediction": {
+            "winner": "Sean O'Malley",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetMGM": {
+              "Sean O'Malley": -450,
+              "Aiemann Zahabi": 340
+            },
+            "Caesars": {
+              "Sean O'Malley": -440,
+              "Aiemann Zahabi": 340
+            },
+            "YouWager": {
+              "Sean O'Malley": -450,
+              "Aiemann Zahabi": 350
+            },
+            "Polymarket": {
+              "Sean O'Malley": -335,
+              "Aiemann Zahabi": 317
+            },
+            "Bovada": {
+              "Sean O'Malley": -430,
+              "Aiemann Zahabi": 320
+            },
+            "Circa": {
+              "Sean O'Malley": -435,
+              "Aiemann Zahabi": 350
+            },
+            "BetUS": {
+              "Sean O'Malley": -400,
+              "Aiemann Zahabi": 309
+            },
+            "Stake": {
+              "Sean O'Malley": -455,
+              "Aiemann Zahabi": 340
+            },
+            "BetAnything": {
+              "Sean O'Malley": -430,
+              "Aiemann Zahabi": 280
+            },
+            "Betway": {
+              "Sean O'Malley": -400,
+              "Aiemann Zahabi": 300
+            },
+            "Pinnacle": {
+              "Sean O'Malley": -421,
+              "Aiemann Zahabi": 334
+            },
+            "HardRockBet": {
+              "Sean O'Malley": -425,
+              "Aiemann Zahabi": 325
+            },
+            "4casters": {
+              "Sean O'Malley": -417,
+              "Aiemann Zahabi": 302
+            },
+            "4Cx": {
+              "Sean O'Malley": -426,
+              "Aiemann Zahabi": 295
+            },
+            "Bookmaker": {
+              "Sean O'Malley": -400,
+              "Aiemann Zahabi": 317
+            },
+            "MyBookie": {
+              "Sean O'Malley": -500,
+              "Aiemann Zahabi": 310
+            },
+            "Bet105": {
+              "Sean O'Malley": -417,
+              "Aiemann Zahabi": 331
+            },
+            "FanDuel": {
+              "Sean O'Malley": -430,
+              "Aiemann Zahabi": 300
+            },
+            "BetRivers": {
+              "Sean O'Malley": -435,
+              "Aiemann Zahabi": 330
+            },
+            "DraftKings": {
+              "Sean O'Malley": -440,
+              "Aiemann Zahabi": 340
+            },
+            "BetOnline": {
+              "Sean O'Malley": -450,
+              "Aiemann Zahabi": 350
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8148,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -335
+            },
+            "bestEv": 0.058
+          }
+        },
+        "Derrick Lewis vs. Josh Hokit": {
+          "prediction": {
+            "winner": "Josh Hokit",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetMGM": {
+              "Josh Hokit": -450,
+              "Derrick Lewis": 325
+            },
+            "Caesars": {
+              "Josh Hokit": -400,
+              "Derrick Lewis": 310
+            },
+            "DraftKings": {
+              "Josh Hokit": -410,
+              "Derrick Lewis": 320
+            },
+            "YouWager": {
+              "Josh Hokit": -400,
+              "Derrick Lewis": 330
+            },
+            "Bovada": {
+              "Josh Hokit": -410,
+              "Derrick Lewis": 305
+            },
+            "Polymarket": {
+              "Josh Hokit": -335,
+              "Derrick Lewis": 317
+            },
+            "Cloudbet": {
+              "Josh Hokit": -476,
+              "Derrick Lewis": 320
+            },
+            "Pinnacle": {
+              "Josh Hokit": -416,
+              "Derrick Lewis": 331
+            },
+            "Bet105": {
+              "Josh Hokit": -428,
+              "Derrick Lewis": 339
+            },
+            "Circa": {
+              "Josh Hokit": 325,
+              "Derrick Lewis": 290
+            },
+            "BetUS": {
+              "Josh Hokit": -400,
+              "Derrick Lewis": 309
+            },
+            "BetAnything": {
+              "Josh Hokit": -400,
+              "Derrick Lewis": 265
+            },
+            "Stake": {
+              "Josh Hokit": -417,
+              "Derrick Lewis": 310
+            },
+            "Bookmaker": {
+              "Josh Hokit": -400,
+              "Derrick Lewis": 317
+            },
+            "FanDuel": {
+              "Josh Hokit": -370,
+              "Derrick Lewis": 265
+            },
+            "Betway": {
+              "Josh Hokit": -333,
+              "Derrick Lewis": 250
+            },
+            "HardRockBet": {
+              "Josh Hokit": -375,
+              "Derrick Lewis": 275
+            },
+            "MyBookie": {
+              "Josh Hokit": -461,
+              "Derrick Lewis": 285
+            },
+            "BetRivers": {
+              "Josh Hokit": -370,
+              "Derrick Lewis": 285
+            },
+            "BetOnline": {
+              "Josh Hokit": -400,
+              "Derrick Lewis": 330
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8039,
+            "bestOdds": {
+              "platform": "Circa",
+              "odds": 325
+            },
+            "bestEv": 2.4167
+          }
+        },
+        "Mauricio Ruffy vs. Michael Chandler": {
+          "prediction": {
+            "winner": "Mauricio Ruffy",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetMGM": {
+              "Mauricio Ruffy": -700,
+              "Michael Chandler": 500
+            },
+            "Caesars": {
+              "Mauricio Ruffy": -700,
+              "Michael Chandler": 475
+            },
+            "YouWager": {
+              "Mauricio Ruffy": -800,
+              "Michael Chandler": 575
+            },
+            "Polymarket": {
+              "Mauricio Ruffy": -525,
+              "Michael Chandler": 456
+            },
+            "Bovada": {
+              "Mauricio Ruffy": -800,
+              "Michael Chandler": 525
+            },
+            "Circa": {
+              "Mauricio Ruffy": -710,
+              "Michael Chandler": 525
+            },
+            "BetUS": {
+              "Mauricio Ruffy": -765,
+              "Michael Chandler": 510
+            },
+            "Stake": {
+              "Mauricio Ruffy": -833,
+              "Michael Chandler": 540
+            },
+            "BetAnything": {
+              "Mauricio Ruffy": -765,
+              "Michael Chandler": 440
+            },
+            "Betway": {
+              "Mauricio Ruffy": -649,
+              "Michael Chandler": 450
+            },
+            "HardRockBet": {
+              "Mauricio Ruffy": -650,
+              "Michael Chandler": 450
+            },
+            "4casters": {
+              "Mauricio Ruffy": -774,
+              "Michael Chandler": 435
+            },
+            "4Cx": {
+              "Mauricio Ruffy": -792,
+              "Michael Chandler": 426
+            },
+            "Bookmaker": {
+              "Mauricio Ruffy": -733,
+              "Michael Chandler": 525
+            },
+            "MyBookie": {
+              "Mauricio Ruffy": -952,
+              "Michael Chandler": 480
+            },
+            "BetOnline": {
+              "Mauricio Ruffy": -800,
+              "Michael Chandler": 575
+            },
+            "DraftKings": {
+              "Mauricio Ruffy": -750,
+              "Michael Chandler": 525
+            },
+            "BetRivers": {
+              "Mauricio Ruffy": -625,
+              "Michael Chandler": 450
+            },
+            "Pinnacle": {
+              "Mauricio Ruffy": -691,
+              "Michael Chandler": 507
+            },
+            "FanDuel": {
+              "Mauricio Ruffy": -650,
+              "Michael Chandler": 420
+            },
+            "Bet105": {
+              "Mauricio Ruffy": -673,
+              "Michael Chandler": 496
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8824,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -525
+            },
+            "bestEv": 0.0504
+          }
+        },
+        "Bo Nickal vs. Kyle Daukaus": {
+          "prediction": {
+            "winner": "Bo Nickal",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "BetMGM": {
+              "Bo Nickal": -375,
+              "Kyle Daukaus": 290
+            },
+            "Caesars": {
+              "Bo Nickal": -380,
+              "Kyle Daukaus": 300
+            },
+            "YouWager": {
+              "Bo Nickal": -360,
+              "Kyle Daukaus": 295
+            },
+            "Polymarket": {
+              "Bo Nickal": -300,
+              "Kyle Daukaus": 285
+            },
+            "Bovada": {
+              "Bo Nickal": -350,
+              "Kyle Daukaus": 275
+            },
+            "Cloudbet": {
+              "Bo Nickal": -385,
+              "Kyle Daukaus": 270
+            },
+            "Circa": {
+              "Bo Nickal": -365,
+              "Kyle Daukaus": 300
+            },
+            "BetUS": {
+              "Bo Nickal": -355,
+              "Kyle Daukaus": 282
+            },
+            "BetAnything": {
+              "Bo Nickal": -355,
+              "Kyle Daukaus": 235
+            },
+            "Betway": {
+              "Bo Nickal": -333,
+              "Kyle Daukaus": 250
+            },
+            "HardRockBet": {
+              "Bo Nickal": -325,
+              "Kyle Daukaus": 250
+            },
+            "4Cx": {
+              "Bo Nickal": -372,
+              "Kyle Daukaus": 263
+            },
+            "4casters": {
+              "Bo Nickal": -363,
+              "Kyle Daukaus": 270
+            },
+            "Stake": {
+              "Bo Nickal": -357,
+              "Kyle Daukaus": 290
+            },
+            "Bookmaker": {
+              "Bo Nickal": -350,
+              "Kyle Daukaus": 281
+            },
+            "Bet105": {
+              "Bo Nickal": -350,
+              "Kyle Daukaus": 284
+            },
+            "FanDuel": {
+              "Bo Nickal": -330,
+              "Kyle Daukaus": 240
+            },
+            "Pinnacle": {
+              "Bo Nickal": -345,
+              "Kyle Daukaus": 280
+            },
+            "BetRivers": {
+              "Bo Nickal": -333,
+              "Kyle Daukaus": 250
+            },
+            "DraftKings": {
+              "Bo Nickal": -355,
+              "Kyle Daukaus": 280
+            },
+            "BetOnline": {
+              "Bo Nickal": -360,
+              "Kyle Daukaus": 295
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7802,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -300
+            },
+            "bestEv": 0.0403
+          }
+        },
+        "Diego Lopes vs. Steve Garcia": {
+          "prediction": {
+            "winner": "Diego Lopes",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "Caesars": {
+              "Diego Lopes": -160,
+              "Steve Garcia": 135
+            },
+            "YouWager": {
+              "Diego Lopes": -155,
+              "Steve Garcia": 135
+            },
+            "BetMGM": {
+              "Diego Lopes": -160,
+              "Steve Garcia": 135
+            },
+            "Polymarket": {
+              "Diego Lopes": -150,
+              "Steve Garcia": 144
+            },
+            "Bovada": {
+              "Diego Lopes": -160,
+              "Steve Garcia": 135
+            },
+            "Cloudbet": {
+              "Diego Lopes": -172,
+              "Steve Garcia": 130
+            },
+            "Circa": {
+              "Diego Lopes": -165,
+              "Steve Garcia": 145
+            },
+            "BetUS": {
+              "Diego Lopes": -155,
+              "Steve Garcia": 130
+            },
+            "BetAnything": {
+              "Diego Lopes": -160,
+              "Steve Garcia": 130
+            },
+            "BetOnline": {
+              "Diego Lopes": -155,
+              "Steve Garcia": 135
+            },
+            "Betway": {
+              "Diego Lopes": -175,
+              "Steve Garcia": 140
+            },
+            "FanDuel": {
+              "Diego Lopes": -186,
+              "Steve Garcia": 144
+            },
+            "Pinnacle": {
+              "Diego Lopes": -161,
+              "Steve Garcia": 137
+            },
+            "HardRockBet": {
+              "Diego Lopes": -165,
+              "Steve Garcia": 130
+            },
+            "4casters": {
+              "Diego Lopes": -160,
+              "Steve Garcia": 130
+            },
+            "Stake": {
+              "Diego Lopes": -159,
+              "Steve Garcia": 135
+            },
+            "4Cx": {
+              "Diego Lopes": -164,
+              "Steve Garcia": 127
+            },
+            "Bookmaker": {
+              "Diego Lopes": -155,
+              "Steve Garcia": 135
+            },
+            "MyBookie": {
+              "Diego Lopes": -166,
+              "Steve Garcia": 129
+            },
+            "Bet105": {
+              "Diego Lopes": -162,
+              "Steve Garcia": 138
+            },
+            "BetRivers": {
+              "Diego Lopes": -164,
+              "Steve Garcia": 132
+            },
+            "DraftKings": {
+              "Diego Lopes": -162,
+              "Steve Garcia": 136
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6183,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -150
+            },
+            "bestEv": 0.0305
+          }
+        }
+      }
+    },
+    {
       "id": "ufc-fight-night-muhammad-bonfim",
       "title": "UFC Fight Night",
       "subtitle": "Muhammad vs. Bonfim",
