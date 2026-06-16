@@ -5,19 +5,23 @@
       "title": "UFC Freedom 250",
       "subtitle": "Topuria vs. Gaethje",
       "date": "2026-06-07",
-      "rating": null,
+      "rating": 8.7,
       "poster": "/mma/db/img/ufc_freedom_250_topuria_gaethje_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-freedom-250-topuria-gaethje.html",
       "previewUrl": "db/previews/ufc-freedom-250-topuria-gaethje.html",
       "location": "South Lawn of the White House",
       "eventTime": "Sunday 06.14.2026 at 08:00 PM ET",
       "fights": {
-        "Ilia Topuria vs. Justin Gaethje": {
+        "Justin Gaethje vs. Ilia Topuria": {
           "prediction": {
             "winner": "Ilia Topuria",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Justin Gaethje",
+            "method": "KO/TKO, Corner Stoppage",
+            "time": "5:00 Round 4 of 5"
+          },
           "odds": {
             "Caesars": {
               "Ilia Topuria": -600,
@@ -117,12 +121,16 @@
             "bestEv": 0.0273
           }
         },
-        "Alex Pereira vs. Ciryl Gane": {
+        "Ciryl Gane vs. Alex Pereira": {
           "prediction": {
             "winner": "Alex Pereira",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Ciryl Gane",
+            "method": "KO/TKO",
+            "time": "Round 2"
+          },
           "odds": {
             "Caesars": {
               "Alex Pereira": -110,
@@ -227,7 +235,11 @@
             "winner": "Sean O'Malley",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Sean O'Malley",
+            "method": "KO/TKO",
+            "time": "Round 2"
+          },
           "odds": {
             "BetMGM": {
               "Sean O'Malley": -450,
@@ -323,12 +335,16 @@
             "bestEv": 0.058
           }
         },
-        "Derrick Lewis vs. Josh Hokit": {
+        "Josh Hokit vs. Derrick Lewis": {
           "prediction": {
             "winner": "Josh Hokit",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Josh Hokit",
+            "method": "KO/TKO",
+            "time": "Round 2"
+          },
           "odds": {
             "BetMGM": {
               "Josh Hokit": -450,
@@ -425,7 +441,11 @@
             "winner": "Mauricio Ruffy",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Mauricio Ruffy",
+            "method": "KO/TKO",
+            "time": "Round 1"
+          },
           "odds": {
             "BetMGM": {
               "Mauricio Ruffy": -700,
@@ -526,7 +546,11 @@
             "winner": "Bo Nickal",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Bo Nickal",
+            "method": "KO/TKO",
+            "time": "Round 1"
+          },
           "odds": {
             "BetMGM": {
               "Bo Nickal": -375,
@@ -627,7 +651,11 @@
             "winner": "Diego Lopes",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Diego Lopes",
+            "method": "KO/TKO",
+            "time": "Round 2"
+          },
           "odds": {
             "Caesars": {
               "Diego Lopes": -160,
