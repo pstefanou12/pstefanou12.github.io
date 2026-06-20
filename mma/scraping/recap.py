@@ -1,11 +1,11 @@
 """
 Recap — generates an HTML recap template and updates cards.json after an event.
 
-Scrapes result data from Tapology, merges it with any existing predictions and
-odds in cards.json, and writes a populated HTML template to mma/db/recaps/.
+Scrapes result data, merges it with any existing predictions and odds in
+cards.json, and writes a populated HTML template to mma/db/recaps/.
 
 Public API:
-    run(args)  — args.url, args.rating
+    run(args, event_scraper)  — args.url, args.rating
 """
 import json
 import os
@@ -13,8 +13,8 @@ import re
 from types import SimpleNamespace
 
 from scraping import constants
-from scraping import tapology
-from scraping.scraper import Scraper
+from scraping import utils
+from scraping.event_scraper import EventScraper
 
 
 def _find_fight(fights, fighter1, fighter2):
@@ -31,17 +31,16 @@ def _find_fight(fights, fighter1, fighter2):
 
 
 def _update_json_metadata(event_data, card_id, rating, fights=None, json_path=constants.JSON_PATH):
-    iso_date = tapology.parse_event_date(event_data['date'])
     event_name = event_data['event_name']
 
     if 'fight night' in event_name.lower():
         title = "UFC Fight Night"
-        subtitle = event_name.split(':', 1)[1].strip() if ':' in event_name else None
+        subtitle = utils.extract_subtitle(event_name)
     else:
-        title_match = re.match(r'(UFC \d+|UFC [^:]+)', event_name, re.IGNORECASE)
+        title_match = re.match(r'(UFC \d+|UFC [^:\-]+)', event_name, re.IGNORECASE)
         if title_match:
             title = title_match.group(1).strip()
-            subtitle = tapology.extract_subtitle(event_name)
+            subtitle = utils.extract_subtitle(event_name)
         else:
             title = event_name
             subtitle = None
@@ -50,7 +49,7 @@ def _update_json_metadata(event_data, card_id, rating, fights=None, json_path=co
         "id": card_id,
         "title": title,
         "subtitle": subtitle,
-        "date": iso_date,
+        "date": event_data['date'],
         "rating": float(rating),
         "poster": f"/mma/db/img/{card_id.replace('-', '_')}_poster.jpg",
         "recapUrl": f"db/recaps/{card_id}.html",
@@ -141,17 +140,17 @@ def _generate_recap_template(event_data):
     return html
 
 
-def run(args: SimpleNamespace, scraper: Scraper):
-    """Scrape Tapology event results and generate a recap HTML template."""
+def run(args: SimpleNamespace, event_scraper: EventScraper):
+    """Scrape event results and generate a recap HTML template."""
     print("Scraping event data...")
-    event_data = tapology.scrape_tapology_event(scraper, args.url, mode='recap')
+    event_data = event_scraper.scrape_event(args.url, mode='recap')
 
     print(f"\nEvent: {event_data['event_name']}")
     print(f"Date: {event_data['date']}")
     print(f"Location: {event_data['location']}")
     print(f"Fights found: {len(event_data['fights'])}\n")
 
-    card_id = tapology.generate_card_id(event_data['event_name'])
+    card_id = utils.generate_card_id(event_data['event_name'])
     print(f"Generated card ID: {card_id}\n")
 
     existing_fights = {}

@@ -8,7 +8,7 @@ You are an expert MMA sports journalist writing recaps for UFC events. Your writ
 
 ## Arguments:
 - `$ARGUMENTS[0]` — path to the event notes file (fight-by-fight observations written during or after the event)
-- `$ARGUMENTS[1]` — Tapology event URL (used to scrape fight data and generate the HTML template)
+- `$ARGUMENTS[1]` — Sherdog event URL (used to scrape fight data and generate the HTML template)
 - `$ARGUMENTS[2]` — event rating (e.g. `6.5`)
 
 ## Voice and Fidelity to the Notes:
@@ -29,7 +29,7 @@ Generate the HTML recap file using a Python script, then populate its placeholde
 Read the notes file at `$ARGUMENTS[0]` to understand the fight-by-fight observations before writing anything.
 
 ### 2. Run the HTML Template Script
-Scrape the Tapology event page and generate the HTML recap template:
+Scrape the Sherdog event page and generate the HTML recap template:
 ```bash
 cd ~/pstefanou12.github.io && PYTHONPATH=~/pstefanou12.github.io/mma python3 mma/scraping/bin/scraping_main.py --recap $ARGUMENTS[1] --rating $ARGUMENTS[2]
 ```

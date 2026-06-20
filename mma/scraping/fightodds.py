@@ -8,6 +8,7 @@ best EV book for each predicted winner.
 Public API:
     run(args)  — args.event (event PK or URL), args.card_id
 """
+import difflib
 import json
 import re
 import unicodedata
@@ -36,7 +37,10 @@ def _last_name(name):
 
 def _names_match(tap_name, fo_name):
     t, f = _last_name(tap_name), _last_name(fo_name)
-    return t in f or f in t
+    if t in f or f in t:
+        return True
+    # Fuzzy match for transliteration differences (e.g. Baghdasaryan/Bagdasaryan)
+    return difflib.SequenceMatcher(None, t, f).ratio() > 0.85
 
 
 def compute_best_odds(fights, ground_truth_book=constants.GROUND_TRUTH_BOOK):
