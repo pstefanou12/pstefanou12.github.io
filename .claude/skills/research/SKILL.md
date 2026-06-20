@@ -1,6 +1,6 @@
 ---
 name: research
-description: Research every fighter on a UFC card from Tapology and generate structured factual event notes. Notes are saved to a file for use as input to the preview skill.
+description: Research every fighter on a UFC card from Sherdog and generate structured factual event notes. Notes are saved to a file for use as input to the preview skill.
 ---
 
 ### Role:
@@ -9,36 +9,36 @@ You are an MMA research assistant. Your task is to gather factual, verified info
 The output of this skill becomes the **Event Notes** fed into the `/preview` workflow.
 
 ## Arguments:
-- `$ARGUMENTS[0]` — Tapology event URL
+- `$ARGUMENTS[0]` — Sherdog event URL (e.g. `https://www.sherdog.com/events/UFC-Fight-Night-279-Kape-vs-Horiguchi-2-112139`)
 
 ---
 
 ## Steps:
 
 ### 1. Run the research script
-Run the following command from the project root to scrape all card matchups, fighter profile URLs, records, streaks, and recent fight history directly from Tapology:
+Run the following command from the project root to scrape all card matchups, fighter profile URLs, records, streaks, and recent fight history directly from Sherdog:
 
 ```
 cd ~/pstefanou12.github.io && PYTHONPATH=~/pstefanou12.github.io/mma python3 mma/scraping/bin/scraping_main.py --research $ARGUMENTS[0]
 ```
 
-The script saves JSON to `./notes/<card-id>.json` and prints the path. Read the saved file with the Read tool. The JSON structure is:
+The script saves JSON to `./mma/notes/<card-id>.json` and prints the path. Read the saved file with the Read tool. Below is an example of the JSON structure — the actual output will reflect the real event and fighters:
 
 ```json
 {
-  "event_name": "...",
-  "card_id": "ufc-326",
+  "event_name": "UFC Fight Night 279 - Kape vs. Horiguchi 2",
+  "card_id": "ufc-fight-night-kape-horiguchi",
   "bouts": {
-    "MaxHollowayVsCharlesOliveira": {
+    "ManelKapeVsKyojiHoriguchi": {
       "card_placement": "Main Card",
-      "weight_class": "Lightweight (155 lbs)",
+      "weight_class": "Flyweight",
       "fighter1": {
-        "name": "Max Holloway",
-        "tapology_url": "https://www.tapology.com/fightcenter/fighters/...",
-        "record": "27-8-0",
-        "streak": "1 Win",
+        "name": "Manel Kape",
+        "profile_url": "https://www.sherdog.com/fighter/Manel-Kape-101189",
+        "record": "22-7-0",
+        "streak": "3 Win",
         "recent_fights": [
-          { "result": "Win", "opponent": "Dustin Poirier", "method": "Decision · Unanimous", "date": "July 19, 2025" }
+          { "result": "Win", "opponent": "Brandon Royval", "method": "KO (Punches)", "date": "December 13, 2025" }
         ]
       },
       "fighter2": { ... }
@@ -67,7 +67,7 @@ Use the following format for each bout:
 #### [Fighter 1]
 - **Record**: W-L-D
 - **Streak**: N Win / N Loss
-- **Tapology**: [URL]
+- **Sherdog**: [URL]
 - **Recent Form** (last 5 fights):
   - [Result] vs. [Opponent] — [Method] ([Date])
   - ...

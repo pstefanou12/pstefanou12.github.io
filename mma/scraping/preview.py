@@ -3,8 +3,8 @@ import os
 from types import SimpleNamespace
 
 from scraping import constants
-from scraping import tapology
-from scraping.scraper import Scraper
+from scraping import utils
+from scraping.event_scraper import EventScraper
 
 
 def _build_odds_scaffold(fighter1, fighter2):
@@ -76,17 +76,17 @@ def _generate_preview_template(event_data):
     return html
 
 
-def run(args: SimpleNamespace, scraper: Scraper):
-    """Scrape Tapology event and generate a preview HTML template."""
+def run(args: SimpleNamespace, event_scraper: EventScraper):
+    """Scrape event and generate a preview HTML template."""
     print("Scraping event data...")
-    event_data = tapology.scrape_tapology_event(scraper, args.url, mode='preview')
+    event_data = event_scraper.scrape_event(args.url, mode='preview')
 
     print(f"\nEvent: {event_data['event_name']}")
     print(f"Date: {event_data['date']}")
     print(f"Location: {event_data['location']}")
     print(f"Fights found: {len(event_data['fights'])}\n")
 
-    card_id = tapology.generate_card_id(event_data['event_name'])
+    card_id = utils.generate_card_id(event_data['event_name'])
     print(f"Generated card ID: {card_id}\n")
 
     fights = {}
@@ -98,11 +98,12 @@ def run(args: SimpleNamespace, scraper: Scraper):
             "odds": _build_odds_scaffold(fight['fighter1'], fight['fighter2']),
         }
 
+    title, subtitle = utils.extract_title(event_data['event_name'])
     preview_card = {
         "id": card_id,
-        "title": tapology.extract_title(event_data['event_name'])[0],
-        "subtitle": tapology.extract_title(event_data['event_name'])[1],
-        "date": tapology.parse_event_date(event_data['date']),
+        "title": title,
+        "subtitle": subtitle,
+        "date": event_data['date'],
         "rating": None,
         "poster": f"/mma/db/img/{card_id.replace('-', '_')}_poster.jpg",
         "recapUrl": None,
