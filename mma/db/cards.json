@@ -2,12 +2,12 @@
   "cards": [
     {
       "id": "ufc-fight-night-kape-horiguchi",
-      "title": "UFC Fight Night 279 - Kape vs. Horiguchi 2",
-      "subtitle": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Kape vs. Horiguchi 2",
       "date": "2026-06-20",
-      "rating": null,
+      "rating": 6.8,
       "poster": "/mma/db/img/ufc_fight_night_kape_horiguchi_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-kape-horiguchi.html",
       "previewUrl": "db/previews/ufc-fight-night-kape-horiguchi.html",
       "location": "UFC Apex, Las Vegas, Nevada, United States",
       "eventTime": "2026-06-20",
@@ -17,7 +17,11 @@
             "winner": "Manel Kape",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Manel Kape",
+            "method": "TKO (Punches)",
+            "time": "R3 2:42"
+          },
           "odds": {
             "Bet105": {
               "Manel Kape": -153,
@@ -125,12 +129,16 @@
             "bestEv": 0.027
           }
         },
-        "Ion Cutelaba vs. Navajo Stirling": {
+        "Navajo Stirling vs. Ion Cutelaba": {
           "prediction": {
             "winner": "Ion Cutelaba",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Navajo Stirling",
+            "method": "TKO (Punches)",
+            "time": "R2 3:23"
+          },
           "odds": {
             "Bet105": {
               "Ion Cutelaba": 284,
@@ -238,12 +246,16 @@
             "bestEv": 0.127
           }
         },
-        "Hyder Amil vs. Christian Rodriguez": {
+        "Christian Rodriguez vs. Hyder Amil": {
           "prediction": {
             "winner": "Hyder Amil",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Christian Rodriguez",
+            "method": "Technical Submission (Guillotine Choke)",
+            "time": "R1 3:43"
+          },
           "odds": {
             "Bet105": {
               "Christian Rodriguez": -212,
@@ -351,12 +363,16 @@
             "bestEv": 0.0536
           }
         },
-        "Melsik Baghdasaryan vs. Murtazali Magomedov": {
+        "Murtazali Magomedov vs. Melsik Baghdasaryan": {
           "prediction": {
             "winner": "Murtazali Magomedov",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Murtazali Magomedov",
+            "method": "Submission (Twister)",
+            "time": "R1 1:17"
+          },
           "odds": {
             "Bet105": {
               "Murtazali Magomedov": -375,
@@ -464,12 +480,16 @@
             "bestEv": 0.0376
           }
         },
-        "Andre Fili vs. Vinicius Oliveira": {
+        "Vinicius Oliveira vs. Andre Fili": {
           "prediction": {
             "winner": "Vinicius Oliveira",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Vinicius Oliveira",
+            "method": "TKO (Punches and Elbows)",
+            "time": "R2 4:56"
+          },
           "odds": {
             "Bet105": {
               "Andre Fili": 250,
@@ -577,12 +597,16 @@
             "bestEv": 0.0401
           }
         },
-        "Andre Lima vs. Kevin Borjas": {
+        "Kevin Borjas vs. Andre Lima": {
           "prediction": {
             "winner": "Andre Lima",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Kevin Borjas",
+            "method": "Decision (Unanimous)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Bet105": {
               "Andre Lima": -630,
@@ -695,7 +719,11 @@
             "winner": "Bia Mesquita",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Beatriz Mesquita",
+            "method": "Submission (Armbar)",
+            "time": "R1 3:16"
+          },
           "odds": {
             "Bet105": {
               "Beatriz Mesquita": -600,
@@ -793,15 +821,18 @@
               "Beatriz Mesquita": -600,
               "Melissa Mullins": 425
             }
-          },
-          "bestOdds": null
+          }
         },
-        "Allan Nascimento vs. Mitch Raposo": {
+        "Mitch Raposo vs. Allan Nascimento": {
           "prediction": {
             "winner": "Allan Nascimento",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Mitch Raposo",
+            "method": "Decision (Split)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Bet105": {
               "Mitch Raposo": 142,
@@ -914,7 +945,11 @@
             "winner": "Michael Aswell",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Gaston Bolanos",
+            "method": "Decision (Unanimous)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Bet105": {
               "Michael Aswell": -390,
@@ -1022,12 +1057,16 @@
             "bestEv": 0.0272
           }
         },
-        "Leon Shahbazyan vs. Levan Chokheli": {
+        "Levan Chokheli vs. Leon Shahbazyan": {
           "prediction": {
             "winner": "Leon Shahbazyan",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Levan Chokheli",
+            "method": "TKO (Leg Kicks and Punches)",
+            "time": "R1 0:23"
+          },
           "odds": {
             "Circa": {
               "Levan Chokheli": -380,
@@ -1135,12 +1174,16 @@
             "bestEv": 0.1299
           }
         },
-        "Karol Rosa vs. Luana Santos": {
+        "Luana Santos vs. Karol Rosa": {
           "prediction": {
             "winner": "Luana Santos",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Luana Santos",
+            "method": "Decision (Unanimous)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Bet105": {
               "Karol Rosa": -109,
@@ -1253,7 +1296,11 @@
             "winner": "Shane Collins",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Shane Collins",
+            "method": "Decision (Unanimous)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Circa": {
               "Otari Tanzilovi": 180,
