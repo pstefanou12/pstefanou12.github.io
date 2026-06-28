@@ -2,12 +2,12 @@
   "cards": [
     {
       "id": "ufc-fight-night-fiziev-torres",
-      "title": "UFC Fight Night 280 - Fiziev vs. Torres",
-      "subtitle": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Fiziev vs. Torres",
       "date": "2026-06-27",
-      "rating": null,
+      "rating": 7.1,
       "poster": "/mma/db/img/ufc_fight_night_fiziev_torres_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-fiziev-torres.html",
       "previewUrl": "db/previews/ufc-fight-night-fiziev-torres.html",
       "location": "National Gymnastics Arena, Baku, Azerbaijan",
       "eventTime": "2026-06-27",
@@ -17,7 +17,12 @@
             "winner": "Manuel Torres",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Rafael Fiziev",
+            "method": "KO (Spinning Wheel Kick and Punches)",
+            "round": 2,
+            "time": "0:15"
+          },
           "odds": {
             "Bet105": {
               "Rafael Fiziev": -106,
@@ -130,7 +135,12 @@
             "winner": "Sharabutdin Magomedov",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Sharabutdin Magomedov",
+            "method": "Decision (Unanimous)",
+            "round": 3,
+            "time": "5:00"
+          },
           "odds": {
             "Bet105": {
               "Sharabutdin Magomedov": -385,
@@ -238,12 +248,17 @@
             "bestEv": 0.0398
           }
         },
-        "Nazim Sadykhov vs. Matheus Camilo": {
+        "Matheus Camilo vs. Nazim Sadykhov": {
           "prediction": {
             "winner": "Nazim Sadykhov",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Matheus Camilo",
+            "method": "TKO (Punches)",
+            "round": 1,
+            "time": "1:31"
+          },
           "odds": {
             "Bet105": {
               "Nazim Sadykhov": -202,
@@ -356,7 +371,12 @@
             "winner": "Asu Almabayev",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Asu Almabayev",
+            "method": "Submission (Kneebar)",
+            "round": 3,
+            "time": "3:33"
+          },
           "odds": {
             "Bet105": {
               "Asu Almabayev": -263,
@@ -469,7 +489,12 @@
             "winner": "Brunno Ferreira",
             "method": "TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Ikram Aliskerov",
+            "method": "Decision (Unanimous)",
+            "round": 3,
+            "time": "5:00"
+          },
           "odds": {
             "Bet105": {
               "Brunno Ferreira": 256,
@@ -582,7 +607,12 @@
             "winner": "Abus Magomedov",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Abus Magomedov",
+            "method": "Submission (Guillotine Choke)",
+            "round": 1,
+            "time": "3:25"
+          },
           "odds": {
             "Bet105": {
               "Abus Magomedov": 100,
@@ -695,7 +725,12 @@
             "winner": "Farman Hasanov",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Farman Hasanov",
+            "method": "Decision (Unanimous)",
+            "round": 3,
+            "time": "5:00"
+          },
           "odds": {
             "Bet105": {
               "Eric Nolan": 144,
@@ -808,7 +843,12 @@
             "winner": "AbdulRakhman Yakhyaev",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "AbdulRakhman Yakhyaev",
+            "method": "KO (Punches)",
+            "round": 1,
+            "time": "0:08"
+          },
           "odds": {
             "ProphetX": {
               "AbdulRakhman Yakhyaev": -560,
@@ -921,7 +961,12 @@
             "winner": "Nursulton Ruziboev",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Nursulton Ruziboev",
+            "method": "Technical Submission (Neck Crank)",
+            "round": 1,
+            "time": "3:58"
+          },
           "odds": {
             "Bet105": {
               "Nursulton Ruziboev": -214,
@@ -1034,7 +1079,12 @@
             "winner": "Javier Reyes",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Kaan Ofli",
+            "method": "Submission (Arm-Triangle Choke)",
+            "round": 1,
+            "time": "4:16"
+          },
           "odds": {
             "Bet105": {
               "Javier Reyes": -222,
@@ -1147,7 +1197,12 @@
             "winner": "Daniil Donchenko",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Daniil Donchenko",
+            "method": "TKO (Head Kick and Punches)",
+            "round": 2,
+            "time": "1:35"
+          },
           "odds": {
             "Polymarket": {
               "Daniil Donchenko": -122,
@@ -1157,15 +1212,19 @@
               "Daniil Donchenko": -500,
               "Theodor Berggren": 360
             }
-          },
-          "bestOdds": null
+          }
         },
-        "Bekzat Almakhan vs. Jean Matsumoto": {
+        "Jean Matsumoto vs. Bekzat Almakhan": {
           "prediction": {
             "winner": "Bekzat Almakhan",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Jean Matsumoto",
+            "method": "Decision (Unanimous)",
+            "round": 3,
+            "time": "5:00"
+          },
           "odds": {
             "Bet105": {
               "Bekzat Almakhan": 151,
@@ -1278,7 +1337,12 @@
             "winner": "Jefferson Nascimento",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Tahir Abdullayev",
+            "method": "TKO (Punches)",
+            "round": 3,
+            "time": "4:28"
+          },
           "odds": {
             "Circa": {
               "Tahir Abdullayev": 120,
