@@ -31,16 +31,26 @@ def _normalize(s):
     return unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode('ascii')
 
 
-def _last_name(name):
-    return _normalize(name.strip().split()[-1].lower())
+def _surnames(name):
+    """
+    Return the set of candidate surnames for a fighter name.
+    Includes both the first and last word to handle name-order conventions
+    where the family name comes first (e.g. Chinese names: 'Wang Cong' / 'Cong Wang').
+    """
+    parts = _normalize(name.strip()).lower().split()
+    return {parts[0], parts[-1]}
 
 
-def _names_match(tap_name, fo_name):
-    t, f = _last_name(tap_name), _last_name(fo_name)
-    if t in f or f in t:
-        return True
-    # Fuzzy match for transliteration differences (e.g. Baghdasaryan/Bagdasaryan)
-    return difflib.SequenceMatcher(None, t, f).ratio() > 0.85
+def _names_match(card_name, odds_name):
+    # Check all pairs of candidate surnames between the two name strings.
+    for cs in _surnames(card_name):
+        for os_ in _surnames(odds_name):
+            if cs in os_ or os_ in cs:
+                return True
+            # Fuzzy match for transliteration differences (e.g. Baghdasaryan/Bagdasaryan)
+            if difflib.SequenceMatcher(None, cs, os_).ratio() > 0.85:
+                return True
+    return False
 
 
 def compute_best_odds(fights, ground_truth_book=constants.GROUND_TRUTH_BOOK):
@@ -169,9 +179,9 @@ def update_odds_in_json(card_id, fightodds_fights, json_path=constants.JSON_PATH
 
         matched_key = None
         for matchup in fights:
-            tap_f1, tap_f2 = matchup.split(" vs. ", 1)
-            if (_names_match(tap_f1, fo_f1) and _names_match(tap_f2, fo_f2)) or \
-               (_names_match(tap_f1, fo_f2) and _names_match(tap_f2, fo_f1)):
+            card_f1, card_f2 = matchup.split(" vs. ", 1)
+            if (_names_match(card_f1, fo_f1) and _names_match(card_f2, fo_f2)) or \
+               (_names_match(card_f1, fo_f2) and _names_match(card_f2, fo_f1)):
                 matched_key = matchup
                 break
 
@@ -179,15 +189,15 @@ def update_odds_in_json(card_id, fightodds_fights, json_path=constants.JSON_PATH
             print(f"  Warning: No match for '{fo_f1} vs {fo_f2}'")
             continue
 
-        tap_f1, tap_f2 = matched_key.split(" vs. ", 1)
-        fo_to_tap = {fo_f1: tap_f1, fo_f2: tap_f2} if _names_match(tap_f1, fo_f1) \
-                    else {fo_f1: tap_f2, fo_f2: tap_f1}
+        card_f1, card_f2 = matched_key.split(" vs. ", 1)
+        fo_to_card = {fo_f1: card_f1, fo_f2: card_f2} if _names_match(card_f1, fo_f1) \
+                     else {fo_f1: card_f2, fo_f2: card_f1}
 
         odds = {}
         for book_name, book_odds in fo_fight["books"].items():
             odds[book_name] = {
-                fo_to_tap[fo_f1]: book_odds.get(fo_f1),
-                fo_to_tap[fo_f2]: book_odds.get(fo_f2),
+                fo_to_card[fo_f1]: book_odds.get(fo_f1),
+                fo_to_card[fo_f2]: book_odds.get(fo_f2),
             }
         fights[matched_key]["odds"] = odds
         matched += 1

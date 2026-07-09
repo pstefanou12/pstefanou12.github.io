@@ -3,17 +3,17 @@
 Entry point for MMA data scraping.
 
 Usage:
-    python3 -m scraping.bin.scraping_main --preview <sherdog_url>
-    python3 -m scraping.bin.scraping_main --recap <sherdog_url> --rating <rating>
-    python3 -m scraping.bin.scraping_main --research <sherdog_url>
+    python3 -m scraping.bin.scraping_main --preview <wikipedia_url>
+    python3 -m scraping.bin.scraping_main --recap <wikipedia_url> --rating <rating>
+    python3 -m scraping.bin.scraping_main --research <wikipedia_url>
     python3 -m scraping.bin.scraping_main --fightodds <event_pk_or_url> --card-id <card_id>
 
     Add --driver to any command to use Selenium (Firefox) instead of requests.
 
 Examples:
-    python3 -m scraping.bin.scraping_main --preview https://www.sherdog.com/events/UFC-Fight-Night-279-Kape-vs-Horiguchi-2-112139
-    python3 -m scraping.bin.scraping_main --recap https://www.sherdog.com/events/UFC-326-Holloway-vs-Oliveira-2-110782 --rating 7.5
-    python3 -m scraping.bin.scraping_main --research https://www.sherdog.com/events/UFC-Fight-Night-279-Kape-vs-Horiguchi-2-112139
+    python3 -m scraping.bin.scraping_main --preview https://en.wikipedia.org/wiki/UFC_329
+    python3 -m scraping.bin.scraping_main --recap https://en.wikipedia.org/wiki/UFC_Fight_Night_280 --rating 7.5
+    python3 -m scraping.bin.scraping_main --research https://en.wikipedia.org/wiki/UFC_329
     python3 -m scraping.bin.scraping_main --fightodds https://fightodds.io/mma-events/8823/ufc-326/odds --card-id ufc-326
 """
 
@@ -25,7 +25,7 @@ from scraping import preview
 from scraping import recap
 from scraping import research
 from scraping.scraper import Scraper
-from scraping.sherdog import SherdogEventScraper
+from scraping.wikipedia import WikipediaEventScraper
 
 
 def main():
@@ -35,8 +35,8 @@ def main():
     )
 
     mode = parser.add_mutually_exclusive_group(required=True)
-    mode.add_argument('--preview', metavar='URL', help='Generate preview template from Sherdog event URL')
-    mode.add_argument('--recap', metavar='URL', help='Generate recap template from Sherdog event URL')
+    mode.add_argument('--preview', metavar='URL', help='Generate preview template from Wikipedia event URL')
+    mode.add_argument('--recap', metavar='URL', help='Generate recap template from Wikipedia event URL')
     mode.add_argument('--research', metavar='URL', help='Scrape fighter profiles and save research notes to ./mma/notes/')
     mode.add_argument('--fightodds', metavar='EVENT', help='Scrape odds from fightodds.io (event PK or URL)')
 
@@ -47,7 +47,7 @@ def main():
     args = parser.parse_args()
 
     http_client = Scraper(use_driver=args.driver)
-    event_scraper = SherdogEventScraper(http_client)
+    event_scraper = WikipediaEventScraper(http_client)
 
     try:
         if args.preview:
