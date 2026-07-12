@@ -5,19 +5,23 @@
       "title": "UFC 329",
       "subtitle": "McGregor vs. Holloway 2",
       "date": "2026-07-11",
-      "rating": null,
+      "rating": 3.95,
       "poster": "/mma/db/img/ufc_329_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-329.html",
       "previewUrl": "db/previews/ufc-329.html",
       "location": "T-Mobile Arena, Paradise, Nevada, United States",
       "eventTime": "2026-07-11",
       "fights": {
-        "Conor McGregor vs. Max Holloway": {
+        "Max Holloway vs. Conor McGregor": {
           "prediction": {
             "winner": "Max Holloway",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Max Holloway",
+            "method": "TKO (knee injury)",
+            "time": "R1 1:09"
+          },
           "odds": {
             "Bet105": {
               "Conor McGregor": 189,
@@ -121,12 +125,16 @@
             "bestEv": 0.0333
           }
         },
-        "Benoît Saint Denis vs. Paddy Pimblett": {
+        "Paddy Pimblett vs. Benoît Saint Denis": {
           "prediction": {
             "winner": "Paddy Pimblett",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Paddy Pimblett",
+            "method": "Technical Submission (Peruvian necktie)",
+            "time": "R1 0:52"
+          },
           "odds": {
             "BetRivers": {
               "Benoît Saint Denis": -143,
@@ -234,12 +242,16 @@
             "bestEv": 0.0348
           }
         },
-        "Cory Sandhagen vs. Mario Bautista": {
+        "Mario Bautista vs. Cory Sandhagen": {
           "prediction": {
             "winner": "Cory Sandhagen",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Mario Bautista",
+            "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "BetRivers": {
               "Cory Sandhagen": -141,
@@ -352,7 +364,11 @@
             "winner": "Lone'er Kavanagh",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Brandon Royval",
+            "method": "Submission (rear-naked choke)",
+            "time": "R3 3:40"
+          },
           "odds": {
             "BetRivers": {
               "Brandon Royval": 190,
@@ -465,7 +481,11 @@
             "winner": "Terrance McKinney",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "King Green",
+            "method": "TKO (punches)",
+            "time": "R1 4:59"
+          },
           "odds": {
             "Bet105": {
               "King Green": 114,
@@ -578,7 +598,11 @@
             "winner": "Robert Whittaker",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Robert Whittaker",
+            "method": "TKO (jaw injury)",
+            "time": "R3 1:01"
+          },
           "odds": {
             "ProphetX": {
               "Robert Whittaker": -123,
@@ -691,7 +715,11 @@
             "winner": "Gable Steveson",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Gable Steveson",
+            "method": "KO (knees and punches)",
+            "time": "R1 2:31"
+          },
           "odds": {
             "BetRivers": {
               "Gable Steveson": -2500,
@@ -799,12 +827,16 @@
             "bestEv": 0.0379
           }
         },
-        "Cody Garbrandt vs. Adrian Yañez": {
+        "Adrian Yañez vs. Cody Garbrandt": {
           "prediction": {
             "winner": "Adrian Yanez",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Adrian Yañez",
+            "method": "TKO (punches)",
+            "time": "R1 2:47"
+          },
           "odds": {
             "Circa": {
               "Cody Garbrandt": 335,
@@ -902,15 +934,18 @@
               "Cody Garbrandt": 330,
               "Adrian Yañez": -435
             }
-          },
-          "bestOdds": null
+          }
         },
         "Luke Riley vs. Kai Kamaka III": {
           "prediction": {
             "winner": "Kai Kamaka III",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Luke Riley",
+            "method": "TKO (knees and punches)",
+            "time": "R1 3:03"
+          },
           "odds": {
             "ProphetX": {
               "Kai Kamaka III": 210,
@@ -1018,12 +1053,16 @@
             "bestEv": 0.0952
           }
         },
-        "Tracy Cortez vs. Wang Cong": {
+        "Wang Cong vs. Tracy Cortez": {
           "prediction": {
             "winner": "Wang Cong",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Wang Cong",
+            "method": "Decision (unanimous) (29–27, 29–27, 29–27)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Circa": {
               "Tracy Cortez": -110,
@@ -1136,7 +1175,11 @@
             "winner": "César Almeida",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Damian Pinas",
+            "method": "KO (punch)",
+            "time": "R1 4:44"
+          },
           "odds": {
             "Bookmaker": {
               "Damian Pinas": -270,
@@ -1249,7 +1292,11 @@
             "winner": "Farid Basharat",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Farid Basharat",
+            "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "4casters": {
               "Farid Basharat": -700,
@@ -1362,7 +1409,11 @@
             "winner": "Ryan Gandra",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Ryan Gandra",
+            "method": "TKO (punches)",
+            "time": "R1 1:15"
+          },
           "odds": {
             "Bookmaker": {
               "Ryan Gandra": -134,
@@ -1475,7 +1526,11 @@
             "winner": "Cody Durden",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Alessandro Costa",
+            "method": "Submission (rear-naked choke)",
+            "time": "R2 2:19"
+          },
           "odds": {
             "4casters": {
               "Cody Durden": 204,
