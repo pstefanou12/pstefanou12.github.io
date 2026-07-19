@@ -8,7 +8,7 @@ You are an expert MMA sports journalist writing recaps for UFC events. Your writ
 
 ## Arguments:
 - `$ARGUMENTS[0]` — path to the event notes file (fight-by-fight observations written during or after the event)
-- `$ARGUMENTS[1]` — Sherdog event URL (used to scrape fight data and generate the HTML template)
+- `$ARGUMENTS[1]` — Wikipedia event URL (used to scrape fight data and generate the HTML template)
 - `$ARGUMENTS[2]` — event rating (e.g. `6.5`)
 
 ## Voice and Fidelity to the Notes:

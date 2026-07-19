@@ -2,12 +2,12 @@
   "cards": [
     {
       "id": "ufc-fight-night-plessis-usman",
-      "title": "UFC Fight Night: du Plessis vs. Usman",
-      "subtitle": null,
+      "title": "UFC Fight Night",
+      "subtitle": "du Plessis vs. Usman",
       "date": "2026-07-18",
-      "rating": null,
+      "rating": 7.2,
       "poster": "/mma/db/img/ufc_fight_night_plessis_usman_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-plessis-usman.html",
       "previewUrl": "db/previews/ufc-fight-night-plessis-usman.html",
       "location": "Paycom Center, Oklahoma City, Oklahoma, United States",
       "eventTime": "2026-07-18",
@@ -17,7 +17,11 @@
             "winner": "Dricus du Plessis",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Dricus du Plessis",
+            "method": "Decision (unanimous) (50–45, 49–46, 49–46)",
+            "time": "R5 5:00"
+          },
           "odds": {
             "Kalshi": {
               "Kamaru Usman": 194,
@@ -129,12 +133,16 @@
             "bestEv": 0.0186
           }
         },
-        "Jared Cannonier vs. Christian Leroy Duncan": {
+        "Christian Leroy Duncan vs. Jared Cannonier": {
           "prediction": {
             "winner": "Christian Leroy Duncan",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Christian Leroy Duncan",
+            "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Stake": {
               "Jared Cannonier": 310,
@@ -251,7 +259,11 @@
             "winner": "Chase Hooper",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Chase Hooper",
+            "method": "Submission (rear-naked choke)",
+            "time": "R1 2:15"
+          },
           "odds": {
             "Stake": {
               "Chase Hooper": -370,
@@ -363,12 +375,16 @@
             "bestEv": 0.0385
           }
         },
-        "Tabatha Ricci vs. Fatima Kline": {
+        "Fatima Kline vs. Tabatha Ricci": {
           "prediction": {
             "winner": "Tabatha Ricci",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Fatima Kline",
+            "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Stake": {
               "Tabatha Ricci": 380,
@@ -485,7 +501,11 @@
             "winner": "Tommy McMillen",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Tommy McMillen",
+            "method": "TKO (punches)",
+            "time": "R3 3:29"
+          },
           "odds": {
             "Circa": {
               "Tommy McMillen": -170,
@@ -597,12 +617,16 @@
             "bestEv": 0.0443
           }
         },
-        "Austin Bashi vs. Jose Miguel Delgado": {
+        "Jose Miguel Delgado vs. Austin Bashi": {
           "prediction": {
             "winner": "Austin Bashi",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Jose Miguel Delgado",
+            "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Circa": {
               "Jose Miguel Delgado": 100,
@@ -719,7 +743,11 @@
             "winner": "Ko Seok-hyeon",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Jean-Paul Lebosnoyani",
+            "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Circa": {
               "Jean-Paul Lebosnoyani": 160,
@@ -831,12 +859,16 @@
             "bestEv": 0.0474
           }
         },
-        "Levi Rodrigues Jr. vs. Felipe Franco": {
+        "Felipe Franco vs. Levi Rodrigues Jr.": {
           "prediction": {
             "winner": "Levi Rodrigues Jr.",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Felipe Franco",
+            "method": "TKO (punches)",
+            "time": "R2 1:40"
+          },
           "odds": {
             "Circa": {
               "Felipe Franco": 130,
@@ -953,7 +985,11 @@
             "winner": "Ezra Elliott",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Ezra Elliott",
+            "method": "Decision (unanimous) (30–27, 29–28, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "BetOnline": {
               "Damien Anderson": -124,
@@ -1070,7 +1106,11 @@
             "winner": "Alden Coria",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Alden Coria",
+            "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Caesars": {
               "Alden Coria": -1100,
@@ -1187,7 +1227,11 @@
             "winner": "RJ Harris",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "RJ Harris",
+            "method": "TKO (punches)",
+            "time": "R1 1:40"
+          },
           "odds": {
             "Polymarket": {
               "RJ Harris": 104,
@@ -1299,12 +1343,16 @@
             "bestEv": 0.04
           }
         },
-        "Anna Melisano vs. Dione Barbosa": {
+        "Dione Barbosa vs. Anna Melisano": {
           "prediction": {
             "winner": "Anna Melisano",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Dione Barbosa",
+            "method": "Submission (rear-naked choke)",
+            "time": "R1 4:04"
+          },
           "odds": {
             "Polymarket": {
               "Anna Melisano": 488,
