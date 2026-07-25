@@ -70,16 +70,22 @@ def _normalize_href(href: str) -> str | None:
     """
     Convert Wikipedia href variants to a full https URL, or return None.
 
-      '//en.wikipedia.org/wiki/…' → 'https://en.wikipedia.org/wiki/…'
-      '/wiki/…'                   → 'https://en.wikipedia.org/wiki/…'
-      '#…' / external links       → None
+      '//en.wikipedia.org/wiki/…'   → 'https://en.wikipedia.org/wiki/…'
+      '/wiki/…'                     → 'https://en.wikipedia.org/wiki/…'
+      'https://en.wikipedia.org/wiki/…' → unchanged (Parsoid renders absolute hrefs)
+      'http://en.wikipedia.org/wiki/…'  → normalized to https
+      '#…' / external links / other-domain links → None
     """
     if not href or href.startswith('#'):
         return None
     if href.startswith('//'):
-        return 'https:' + href
-    if href.startswith('/wiki/'):
-        return WIKI_BASE + href
+        href = 'https:' + href
+    elif href.startswith('/wiki/'):
+        href = WIKI_BASE + href
+    if href.startswith('http://en.wikipedia.org/wiki/'):
+        href = 'https://' + href[len('http://'):]
+    if href.startswith('https://en.wikipedia.org/wiki/'):
+        return href
     return None
 
 
