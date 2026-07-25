@@ -11,10 +11,15 @@ Public API:
 import difflib
 import json
 import re
+import sys
+import time
 import unicodedata
 import requests
 
 from scraping import constants
+
+_MAX_ATTEMPTS = 3
+_RETRY_DELAY = 2  # seconds
 
 
 def _american_to_profit(odds):
@@ -122,20 +127,33 @@ def scrape_fightodds(event_pk):
         "query": query,
         "variables": {"eventPk": int(event_pk)},
     }
-    resp = requests.post(
-        constants.FIGHTODDS_GQL,
-        json=payload,
-        headers={"Content-Type": "application/json"},
-        timeout=60,
-    )
-    resp.raise_for_status()
-    edges = (
-        resp.json()
-        .get("data", {})
-        .get("eventOfferTable", {})
-        .get("fightOffers", {})
-        .get("edges", [])
-    )
+    edges = None
+    for attempt in range(1, _MAX_ATTEMPTS + 1):
+        resp = requests.post(
+            constants.FIGHTODDS_GQL,
+            json=payload,
+            headers={"Content-Type": "application/json"},
+            timeout=60,
+        )
+        resp.raise_for_status()
+        body = resp.json()
+        event_offer_table = (body.get("data") or {}).get("eventOfferTable")
+        if event_offer_table is not None:
+            edges = (event_offer_table.get("fightOffers") or {}).get("edges", [])
+            break
+        if attempt < _MAX_ATTEMPTS:
+            print(
+                f"  fightodds.io returned no data for event {event_pk} "
+                f"(attempt {attempt}/{_MAX_ATTEMPTS}), retrying...",
+                file=sys.stderr,
+            )
+            time.sleep(_RETRY_DELAY)
+
+    if edges is None:
+        raise RuntimeError(
+            f"fightodds.io returned no eventOfferTable for event PK {event_pk} "
+            f"after {_MAX_ATTEMPTS} attempts (possible transient API issue or invalid PK)."
+        )
 
     result = []
     for edge in edges:
