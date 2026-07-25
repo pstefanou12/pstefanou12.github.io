@@ -1,6 +1,1232 @@
 {
   "cards": [
     {
+      "id": "ufc-fight-night-ankalaev-guskov",
+      "title": "UFC Fight Night: Ankalaev vs. Guskov",
+      "subtitle": null,
+      "date": "2026-07-25",
+      "rating": null,
+      "poster": "/mma/db/img/ufc_fight_night_ankalaev_guskov_poster.jpg",
+      "recapUrl": null,
+      "previewUrl": "db/previews/ufc-fight-night-ankalaev-guskov.html",
+      "location": "Etihad Arena, Abu Dhabi, United Arab Emirates",
+      "eventTime": "2026-07-25",
+      "fights": {
+        "Magomed Ankalaev vs. Bogdan Guskov": {
+          "prediction": {
+            "winner": "Ankalaev",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "Bovada": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "MyBookie": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "BetUS": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "Bet105": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "BookMaker": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "DraftKings": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "FanDuel": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "4Cx": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "BetAnything": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "Circa": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "BetRivers": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "HardRocketBet": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "BetMGM": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "Caesars": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "Jazz": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "Polymarket": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "Pinnacle": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "Betway": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "Stake": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "Cloudbet": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "4casters": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            },
+            "SXBet": {
+              "Magomed Ankalaev": null,
+              "Bogdan Guskov": null
+            }
+          }
+        },
+        "Steve Erceg vs. Ramazan Temirov": {
+          "prediction": {
+            "winner": "Steve Erceg",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "Bovada": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "MyBookie": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "BetUS": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "Bet105": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "BookMaker": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "DraftKings": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "FanDuel": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "4Cx": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "BetAnything": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "Circa": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "BetRivers": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "HardRocketBet": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "BetMGM": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "Caesars": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "Jazz": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "Polymarket": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "Pinnacle": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "Betway": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "Stake": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "Cloudbet": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "4casters": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            },
+            "SXBet": {
+              "Steve Erceg": null,
+              "Ramazan Temirov": null
+            }
+          }
+        },
+        "Magomed Zaynukov vs. Damian Rzepecki": {
+          "prediction": {
+            "winner": "Magomed Zaynukov",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "Bovada": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "MyBookie": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "BetUS": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "Bet105": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "BookMaker": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "DraftKings": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "FanDuel": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "4Cx": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "BetAnything": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "Circa": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "BetRivers": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "HardRocketBet": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "BetMGM": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "Caesars": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "Jazz": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "Polymarket": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "Pinnacle": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "Betway": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "Stake": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "Cloudbet": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "4casters": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            },
+            "SXBet": {
+              "Magomed Zaynukov": null,
+              "Damian Rzepecki": null
+            }
+          }
+        },
+        "Rizvan Kuniev vs. Tyrell Fortune": {
+          "prediction": {
+            "winner": "Rizvan Kuniev",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "Bovada": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "MyBookie": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "BetUS": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "Bet105": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "BookMaker": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "DraftKings": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "FanDuel": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "4Cx": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "BetAnything": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "Circa": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "BetRivers": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "HardRocketBet": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "BetMGM": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "Caesars": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "Jazz": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "Polymarket": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "Pinnacle": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "Betway": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "Stake": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "Cloudbet": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "4casters": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            },
+            "SXBet": {
+              "Rizvan Kuniev": null,
+              "Tyrell Fortune": null
+            }
+          }
+        },
+        "Abubakar Vagaev vs. Saygid Izagakhmaev": {
+          "prediction": {
+            "winner": "Saygid Izagakhmaev",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "Bovada": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "MyBookie": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "BetUS": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "Bet105": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "BookMaker": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "DraftKings": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "FanDuel": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "4Cx": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "BetAnything": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "Circa": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "BetRivers": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "HardRocketBet": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "BetMGM": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "Caesars": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "Jazz": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "Polymarket": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "Pinnacle": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "Betway": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "Stake": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "Cloudbet": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "4casters": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            },
+            "SXBet": {
+              "Abubakar Vagaev": null,
+              "Saygid Izagakhmaev": null
+            }
+          }
+        },
+        "Valter Walker vs. Thomas Petersen": {
+          "prediction": {
+            "winner": "Valter Walker",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "Bovada": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "MyBookie": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "BetUS": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "Bet105": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "BookMaker": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "DraftKings": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "FanDuel": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "4Cx": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "BetAnything": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "Circa": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "BetRivers": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "HardRocketBet": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "BetMGM": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "Caesars": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "Jazz": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "Polymarket": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "Pinnacle": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "Betway": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "Stake": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "Cloudbet": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "4casters": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            },
+            "SXBet": {
+              "Valter Walker": null,
+              "Thomas Petersen": null
+            }
+          }
+        },
+        "Dustin Jacoby vs. Muhammad Saidov": {
+          "prediction": {
+            "winner": "Dustin Jacoby",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "Bovada": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "MyBookie": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "BetUS": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "Bet105": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "BookMaker": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "DraftKings": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "FanDuel": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "4Cx": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "BetAnything": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "Circa": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "BetRivers": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "HardRocketBet": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "BetMGM": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "Caesars": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "Jazz": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "Polymarket": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "Pinnacle": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "Betway": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "Stake": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "Cloudbet": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "4casters": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            },
+            "SXBet": {
+              "Dustin Jacoby": null,
+              "Muhammad Saidov": null
+            }
+          }
+        },
+        "Santiago Ponzinibbio vs. Sam Patterson": {
+          "prediction": {
+            "winner": "Sam Patterson",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "Bovada": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "MyBookie": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "BetUS": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "Bet105": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "BookMaker": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "DraftKings": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "FanDuel": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "4Cx": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "BetAnything": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "Circa": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "BetRivers": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "HardRocketBet": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "BetMGM": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "Caesars": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "Jazz": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "Polymarket": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "Pinnacle": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "Betway": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "Stake": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "Cloudbet": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "4casters": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            },
+            "SXBet": {
+              "Santiago Ponzinibbio": null,
+              "Sam Patterson": null
+            }
+          }
+        },
+        "Ismael Bonfim vs. Axel Sola": {
+          "prediction": {
+            "winner": "Axel Sola",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "Bovada": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "MyBookie": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "BetUS": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "Bet105": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "BookMaker": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "DraftKings": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "FanDuel": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "4Cx": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "BetAnything": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "Circa": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "BetRivers": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "HardRocketBet": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "BetMGM": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "Caesars": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "Jazz": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "Polymarket": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "Pinnacle": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "Betway": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "Stake": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "Cloudbet": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "4casters": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            },
+            "SXBet": {
+              "Ismael Bonfim": null,
+              "Axel Sola": null
+            }
+          }
+        },
+        "Magomed Tuchalov vs. Brendson Ribeiro": {
+          "prediction": {
+            "winner": "Magomed Tuchalov",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "Bovada": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "MyBookie": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "BetUS": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "Bet105": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "BookMaker": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "DraftKings": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "FanDuel": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "4Cx": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "BetAnything": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "Circa": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "BetRivers": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "HardRocketBet": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "BetMGM": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "Caesars": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "Jazz": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "Polymarket": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "Pinnacle": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "Betway": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "Stake": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "Cloudbet": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "4casters": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            },
+            "SXBet": {
+              "Magomed Tuchalov": null,
+              "Brendson Ribeiro": null
+            }
+          }
+        },
+        "Nurullo Aliev vs. Mike Davis": {
+          "prediction": {
+            "winner": "Mike Davis",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "Bovada": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "MyBookie": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "BetUS": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "Bet105": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "BookMaker": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "DraftKings": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "FanDuel": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "4Cx": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "BetAnything": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "Circa": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "BetRivers": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "HardRocketBet": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "BetMGM": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "Caesars": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "Jazz": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "Polymarket": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "Pinnacle": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "Betway": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "Stake": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "Cloudbet": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "4casters": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            },
+            "SXBet": {
+              "Nurullo Aliev": null,
+              "Mike Davis": null
+            }
+          }
+        },
+        "Cody Gibson vs. Abdul Hussein": {
+          "prediction": {
+            "winner": "Abdul Hussein",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "Bovada": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "MyBookie": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "BetUS": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "Bet105": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "BookMaker": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "DraftKings": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "FanDuel": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "4Cx": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "BetAnything": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "Circa": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "BetRivers": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "HardRocketBet": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "BetMGM": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "Caesars": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "Jazz": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "Polymarket": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "Pinnacle": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "Betway": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "Stake": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "Cloudbet": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "4casters": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            },
+            "SXBet": {
+              "Cody Gibson": null,
+              "Abdul Hussein": null
+            }
+          }
+        }
+      }
+    },
+    {
       "id": "ufc-fight-night-plessis-usman",
       "title": "UFC Fight Night",
       "subtitle": "du Plessis vs. Usman",
