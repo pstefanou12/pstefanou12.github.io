@@ -2,12 +2,12 @@
   "cards": [
     {
       "id": "ufc-fight-night-ankalaev-guskov",
-      "title": "UFC Fight Night: Ankalaev vs. Guskov",
-      "subtitle": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Ankalaev vs. Guskov",
       "date": "2026-07-25",
-      "rating": null,
+      "rating": 6.3,
       "poster": "/mma/db/img/ufc_fight_night_ankalaev_guskov_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-ankalaev-guskov.html",
       "previewUrl": "db/previews/ufc-fight-night-ankalaev-guskov.html",
       "location": "Etihad Arena, Abu Dhabi, United Arab Emirates",
       "eventTime": "2026-07-25",
@@ -17,7 +17,11 @@
             "winner": "Magomed Ankalaev",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Magomed Ankalaev",
+            "method": "TKO (punches)",
+            "time": "R5 2:41"
+          },
           "odds": {
             "Polymarket": {
               "Magomed Ankalaev": -488,
@@ -129,12 +133,16 @@
             "bestEv": 0.0273
           }
         },
-        "Steve Erceg vs. Ramazan Temirov": {
+        "Ramazan Temirov vs. Steve Erceg": {
           "prediction": {
             "winner": "Steve Erceg",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Ramazan Temirov",
+            "method": "KO (punch)",
+            "time": "R1 4:21"
+          },
           "odds": {
             "Polymarket": {
               "Steve Erceg": 100,
@@ -251,7 +259,11 @@
             "winner": "Magomed Zaynukov",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Magomed Zaynukov",
+            "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Polymarket": {
               "Damian Rzepecki": 233,
@@ -368,7 +380,11 @@
             "winner": "Rizvan Kuniev",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Rizvan Kuniev",
+            "method": "TKO (knees)",
+            "time": "R3 1:12"
+          },
           "odds": {
             "Polymarket": {
               "Rizvan Kuniev": -355,
@@ -485,7 +501,11 @@
             "winner": "Saygid Izagakhmaev",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Abubakar Vagaev",
+            "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Polymarket": {
               "Saygid Izagakhmaev": 223,
@@ -602,7 +622,11 @@
             "winner": "Valter Walker",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Valter Walker",
+            "method": "Submission (calf slicer)",
+            "time": "R1 1:32"
+          },
           "odds": {
             "Polymarket": {
               "Valter Walker": -163,
@@ -714,12 +738,16 @@
             "bestEv": 0.0069
           }
         },
-        "Dustin Jacoby vs. Muhammad Saidov": {
+        "Muhammad Saidov vs. Dustin Jacoby": {
           "prediction": {
             "winner": "Dustin Jacoby",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Muhammad Saidov",
+            "method": "TKO (head kick and punches)",
+            "time": "R2 4:49"
+          },
           "odds": {
             "BetOnline": {
               "Dustin Jacoby": -175,
@@ -831,12 +859,16 @@
             "bestEv": 0.021
           }
         },
-        "Santiago Ponzinibbio vs. Sam Patterson": {
+        "Sam Patterson vs. Santiago Ponzinibbio": {
           "prediction": {
             "winner": "Sam Patterson",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Sam Patterson",
+            "method": "TKO (punches)",
+            "time": "R2 3:06"
+          },
           "odds": {
             "Polymarket": {
               "Santiago Ponzinibbio": 400,
@@ -948,12 +980,16 @@
             "bestEv": 0.0237
           }
         },
-        "Ismael Bonfim vs. Axel Sola": {
+        "Axel Sola vs. Ismael Bonfim": {
           "prediction": {
             "winner": "Axel Sola",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Axel Sola",
+            "method": "Submission (brabo choke)",
+            "time": "R1 4:44"
+          },
           "odds": {
             "Polymarket": {
               "Ismael Bonfim": 170,
@@ -1070,7 +1106,11 @@
             "winner": "Magomed Tuchalov",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Magomed Tuchalov",
+            "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Polymarket": {
               "Brendson Ribeiro": 669,
@@ -1187,7 +1227,11 @@
             "winner": "Mike Davis",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Nurullo Aliev",
+            "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "Polymarket": {
               "Nurullo Aliev": -223,
@@ -1299,12 +1343,16 @@
             "bestEv": 0.0947
           }
         },
-        "Cody Gibson vs. Abdul Hussein": {
+        "Abdul Hussein vs. Cody Gibson": {
           "prediction": {
             "winner": "Abdul Hussein",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Abdul Hussein",
+            "method": "Submission (arm-triangle choke)",
+            "time": "R3 3:07"
+          },
           "odds": {
             "BetOnline": {
               "Cody Gibson": 475,
