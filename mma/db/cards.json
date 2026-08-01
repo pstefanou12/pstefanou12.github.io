@@ -1,14 +1,14 @@
 {
   "cards": [
     {
-      "id": "ufc-fight-night-medić-rodriguez",
+      "id": "ufc-fight-night-medic-rodriguez",
       "title": "UFC Fight Night: Medić vs. Rodriguez",
       "subtitle": null,
       "date": "2026-08-01",
       "rating": null,
-      "poster": "/mma/db/img/ufc_fight_night_medić_rodriguez_poster.jpg",
+      "poster": "/mma/db/img/ufc_fight_night_medic_rodriguez_poster.jpg",
       "recapUrl": null,
-      "previewUrl": "db/previews/ufc-fight-night-medić-rodriguez.html",
+      "previewUrl": "db/previews/ufc-fight-night-medic-rodriguez.html",
       "location": "Belgrade Arena, Belgrade, Serbia",
       "eventTime": "2026-08-01",
       "fights": {

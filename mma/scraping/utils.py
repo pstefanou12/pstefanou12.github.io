@@ -2,6 +2,13 @@
 Utils — shared UFC event-name utilities used across scrapers and templates.
 """
 import re
+import unicodedata
+
+
+def _strip_diacritics(text: str) -> str:
+    """Fold accented Latin characters (Medić -> Medic, Todorović -> Todorovic) to plain ASCII."""
+    normalized = unicodedata.normalize('NFKD', text)
+    return ''.join(c for c in normalized if not unicodedata.combining(c))
 
 
 def generate_card_id(event_name: str) -> str:
@@ -15,7 +22,11 @@ def generate_card_id(event_name: str) -> str:
         UFC Fight Night 279 - Kape vs. Horiguchi 2  -> ufc-fight-night-kape-horiguchi
         UFC 326 - Holloway vs. Oliveira 2            -> ufc-326
         UFC 326: Holloway vs. Oliveira               -> ufc-326
+
+    Card IDs must stay pure ASCII since they're used directly as filenames and
+    as URL paths that get compared against browser-percent-encoded pathnames.
     """
+    event_name = _strip_diacritics(event_name)
     event_name_lower = event_name.lower()
 
     if 'fight night' in event_name_lower:
