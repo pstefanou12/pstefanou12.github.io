@@ -1,6 +1,1658 @@
 {
   "cards": [
     {
+      "id": "ufc-fight-night-medić-rodriguez",
+      "title": "UFC Fight Night: Medić vs. Rodriguez",
+      "subtitle": null,
+      "date": "2026-08-01",
+      "rating": null,
+      "poster": "/mma/db/img/ufc_fight_night_medić_rodriguez_poster.jpg",
+      "recapUrl": null,
+      "previewUrl": "db/previews/ufc-fight-night-medić-rodriguez.html",
+      "location": "Belgrade Arena, Belgrade, Serbia",
+      "eventTime": "2026-08-01",
+      "fights": {
+        "Uroš Medić vs. Daniel Rodriguez": {
+          "prediction": {
+            "winner": "Uroš Medić",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetUS": {
+              "Uroš Medić": -375,
+              "Daniel Rodriguez": 294
+            },
+            "BetAnything": {
+              "Uroš Medić": -380,
+              "Daniel Rodriguez": 250
+            },
+            "4Cx": {
+              "Uroš Medić": -362,
+              "Daniel Rodriguez": 312
+            },
+            "Caesars": {
+              "Uroš Medić": -400,
+              "Daniel Rodriguez": 310
+            },
+            "4casters": {
+              "Uroš Medić": -357,
+              "Daniel Rodriguez": 319
+            },
+            "Bookmaker": {
+              "Uroš Medić": -400,
+              "Daniel Rodriguez": 317
+            },
+            "ProphetX": {
+              "Uroš Medić": -350,
+              "Daniel Rodriguez": 300
+            },
+            "SXBet": {
+              "Uroš Medić": -349,
+              "Daniel Rodriguez": 332
+            },
+            "Pinnacle": {
+              "Uroš Medić": -385,
+              "Daniel Rodriguez": 325
+            },
+            "Bet105": {
+              "Uroš Medić": -386,
+              "Daniel Rodriguez": 326
+            },
+            "Cloudbet": {
+              "Uroš Medić": -435,
+              "Daniel Rodriguez": 315
+            },
+            "HardRockBet": {
+              "Uroš Medić": -400,
+              "Daniel Rodriguez": 300
+            },
+            "Bovada": {
+              "Uroš Medić": -400,
+              "Daniel Rodriguez": 315
+            },
+            "FanDuel": {
+              "Uroš Medić": -420,
+              "Daniel Rodriguez": 330
+            },
+            "MyBookie": {
+              "Uroš Medić": -403,
+              "Daniel Rodriguez": 302
+            },
+            "Kalshi": {
+              "Uroš Medić": -335,
+              "Daniel Rodriguez": 317
+            },
+            "YouWager": {
+              "Uroš Medić": -375,
+              "Daniel Rodriguez": 295
+            },
+            "BetRivers": {
+              "Uroš Medić": -400,
+              "Daniel Rodriguez": 300
+            },
+            "BetMGM": {
+              "Uroš Medić": -425,
+              "Daniel Rodriguez": 310
+            },
+            "Stake": {
+              "Uroš Medić": -370,
+              "Daniel Rodriguez": 300
+            },
+            "DraftKings": {
+              "Uroš Medić": -380,
+              "Daniel Rodriguez": 300
+            },
+            "Circa": {
+              "Uroš Medić": -365,
+              "Daniel Rodriguez": 300
+            },
+            "Betway": {
+              "Uroš Medić": -400,
+              "Daniel Rodriguez": 300
+            },
+            "BetOnline": {
+              "Uroš Medić": -375,
+              "Daniel Rodriguez": 299
+            },
+            "Polymarket": {
+              "Uroš Medić": -355,
+              "Daniel Rodriguez": 335
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7917,
+            "bestOdds": {
+              "platform": "Kalshi",
+              "odds": -335
+            },
+            "bestEv": 0.028
+          }
+        },
+        "Jan Błachowicz vs. Navajo Stirling": {
+          "prediction": {
+            "winner": "Jan Błachowicz",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "FanDuel": {
+              "Jan Błachowicz": 260,
+              "Navajo Stirling": -320
+            },
+            "ProphetX": {
+              "Jan Błachowicz": 285,
+              "Navajo Stirling": -335
+            },
+            "BetRivers": {
+              "Jan Błachowicz": 235,
+              "Navajo Stirling": -303
+            },
+            "HardRockBet": {
+              "Jan Błachowicz": 240,
+              "Navajo Stirling": -300
+            },
+            "SXBet": {
+              "Jan Błachowicz": 272,
+              "Navajo Stirling": null
+            },
+            "BetUS": {
+              "Jan Błachowicz": 270,
+              "Navajo Stirling": -335
+            },
+            "BetAnything": {
+              "Jan Błachowicz": 255,
+              "Navajo Stirling": -335
+            },
+            "Polymarket": {
+              "Jan Błachowicz": 270,
+              "Navajo Stirling": -285
+            },
+            "4Cx": {
+              "Jan Błachowicz": 266,
+              "Navajo Stirling": -319
+            },
+            "Caesars": {
+              "Jan Błachowicz": 275,
+              "Navajo Stirling": -350
+            },
+            "Bookmaker": {
+              "Jan Błachowicz": 271,
+              "Navajo Stirling": -335
+            },
+            "4casters": {
+              "Jan Błachowicz": 272,
+              "Navajo Stirling": -312
+            },
+            "Pinnacle": {
+              "Jan Błachowicz": 277,
+              "Navajo Stirling": -323
+            },
+            "Bet105": {
+              "Jan Błachowicz": 277,
+              "Navajo Stirling": -323
+            },
+            "Cloudbet": {
+              "Jan Błachowicz": 270,
+              "Navajo Stirling": -345
+            },
+            "Bovada": {
+              "Jan Błachowicz": 270,
+              "Navajo Stirling": -330
+            },
+            "MyBookie": {
+              "Jan Błachowicz": 260,
+              "Navajo Stirling": -340
+            },
+            "Kalshi": {
+              "Jan Błachowicz": 300,
+              "Navajo Stirling": -317
+            },
+            "YouWager": {
+              "Jan Błachowicz": 257,
+              "Navajo Stirling": -335
+            },
+            "BetMGM": {
+              "Jan Błachowicz": 260,
+              "Navajo Stirling": -325
+            },
+            "Stake": {
+              "Jan Błachowicz": 270,
+              "Navajo Stirling": -333
+            },
+            "DraftKings": {
+              "Jan Błachowicz": 260,
+              "Navajo Stirling": -325
+            },
+            "Circa": {
+              "Jan Błachowicz": 275,
+              "Navajo Stirling": -330
+            },
+            "Betway": {
+              "Jan Błachowicz": 250,
+              "Navajo Stirling": -333
+            },
+            "BetOnline": {
+              "Jan Błachowicz": 270,
+              "Navajo Stirling": -335
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.2778,
+            "bestOdds": {
+              "platform": "Kalshi",
+              "odds": 300
+            },
+            "bestEv": 0.1111
+          }
+        },
+        "Aleksandar Rakić vs. Marcin Tybura": {
+          "prediction": {
+            "winner": "Marcin Tybura",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "FanDuel": {
+              "Marcin Tybura": 310,
+              "Aleksandar Rakić": -390
+            },
+            "BetAnything": {
+              "Marcin Tybura": 255,
+              "Aleksandar Rakić": -390
+            },
+            "SXBet": {
+              "Marcin Tybura": 332,
+              "Aleksandar Rakić": -347
+            },
+            "4Cx": {
+              "Marcin Tybura": 293,
+              "Aleksandar Rakić": -353
+            },
+            "BetUS": {
+              "Marcin Tybura": 315,
+              "Aleksandar Rakić": -410
+            },
+            "YouWager": {
+              "Marcin Tybura": 315,
+              "Aleksandar Rakić": -410
+            },
+            "Caesars": {
+              "Marcin Tybura": 310,
+              "Aleksandar Rakić": -400
+            },
+            "Bookmaker": {
+              "Marcin Tybura": 292,
+              "Aleksandar Rakić": -365
+            },
+            "4casters": {
+              "Marcin Tybura": 300,
+              "Aleksandar Rakić": -343
+            },
+            "Pinnacle": {
+              "Marcin Tybura": 321,
+              "Aleksandar Rakić": -380
+            },
+            "Bet105": {
+              "Marcin Tybura": 311,
+              "Aleksandar Rakić": -367
+            },
+            "Cloudbet": {
+              "Marcin Tybura": 305,
+              "Aleksandar Rakić": -400
+            },
+            "MyBookie": {
+              "Marcin Tybura": 326,
+              "Aleksandar Rakić": -443
+            },
+            "ProphetX": {
+              "Marcin Tybura": 320,
+              "Aleksandar Rakić": -365
+            },
+            "Bovada": {
+              "Marcin Tybura": 315,
+              "Aleksandar Rakić": -400
+            },
+            "HardRockBet": {
+              "Marcin Tybura": 275,
+              "Aleksandar Rakić": -350
+            },
+            "Kalshi": {
+              "Marcin Tybura": 335,
+              "Aleksandar Rakić": -355
+            },
+            "BetRivers": {
+              "Marcin Tybura": 270,
+              "Aleksandar Rakić": -357
+            },
+            "BetMGM": {
+              "Marcin Tybura": 310,
+              "Aleksandar Rakić": -400
+            },
+            "Stake": {
+              "Marcin Tybura": 320,
+              "Aleksandar Rakić": -417
+            },
+            "DraftKings": {
+              "Marcin Tybura": 310,
+              "Aleksandar Rakić": -395
+            },
+            "Circa": {
+              "Marcin Tybura": 295,
+              "Aleksandar Rakić": -360
+            },
+            "Betway": {
+              "Marcin Tybura": 260,
+              "Aleksandar Rakić": -350
+            },
+            "BetOnline": {
+              "Marcin Tybura": 324,
+              "Aleksandar Rakić": -410
+            },
+            "Polymarket": {
+              "Marcin Tybura": 317,
+              "Aleksandar Rakić": -335
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.2439,
+            "bestOdds": {
+              "platform": "Kalshi",
+              "odds": 335
+            },
+            "bestEv": 0.061
+          }
+        },
+        "Duško Todorović vs. Robert Valentin": {
+          "prediction": {
+            "winner": "Robert Valentin",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bovada": {
+              "Duško Todorović": 135,
+              "Robert Valentin": -160
+            },
+            "BetRivers": {
+              "Duško Todorović": 140,
+              "Robert Valentin": -172
+            },
+            "SXBet": {
+              "Duško Todorović": 142,
+              "Robert Valentin": null
+            },
+            "YouWager": {
+              "Duško Todorović": 140,
+              "Robert Valentin": -160
+            },
+            "BetUS": {
+              "Duško Todorović": 134,
+              "Robert Valentin": -160
+            },
+            "BetAnything": {
+              "Duško Todorović": 140,
+              "Robert Valentin": -170
+            },
+            "Caesars": {
+              "Duško Todorović": 143,
+              "Robert Valentin": -170
+            },
+            "Bookmaker": {
+              "Duško Todorović": 136,
+              "Robert Valentin": -156
+            },
+            "Pinnacle": {
+              "Duško Todorović": 139,
+              "Robert Valentin": -157
+            },
+            "Bet105": {
+              "Duško Todorović": 139,
+              "Robert Valentin": -157
+            },
+            "Cloudbet": {
+              "Duško Todorović": 135,
+              "Robert Valentin": -161
+            },
+            "4Cx": {
+              "Duško Todorović": 137,
+              "Robert Valentin": -154
+            },
+            "4casters": {
+              "Duško Todorović": 140,
+              "Robert Valentin": -151
+            },
+            "ProphetX": {
+              "Duško Todorović": 140,
+              "Robert Valentin": -154
+            },
+            "HardRockBet": {
+              "Duško Todorović": 140,
+              "Robert Valentin": -170
+            },
+            "BetMGM": {
+              "Duško Todorović": 135,
+              "Robert Valentin": -165
+            },
+            "FanDuel": {
+              "Duško Todorović": 140,
+              "Robert Valentin": -166
+            },
+            "MyBookie": {
+              "Duško Todorović": 134,
+              "Robert Valentin": -165
+            },
+            "Kalshi": {
+              "Duško Todorović": 144,
+              "Robert Valentin": -156
+            },
+            "Stake": {
+              "Duško Todorović": 137,
+              "Robert Valentin": -161
+            },
+            "DraftKings": {
+              "Duško Todorović": 140,
+              "Robert Valentin": -166
+            },
+            "Circa": {
+              "Duško Todorović": 150,
+              "Robert Valentin": -170
+            },
+            "Betway": {
+              "Duško Todorović": 140,
+              "Robert Valentin": -175
+            },
+            "BetOnline": {
+              "Duško Todorović": 140,
+              "Robert Valentin": -160
+            },
+            "Polymarket": {
+              "Duško Todorović": 150,
+              "Robert Valentin": -156
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.6241,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": -151
+            },
+            "bestEv": 0.0373
+          }
+        },
+        "Vlasto Čepo vs. Gilbert Urbina": {
+          "prediction": {
+            "winner": "Vlasto Čepo",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "MyBookie": {
+              "Vlasto Čepo": -319,
+              "Gilbert Urbina": 244
+            },
+            "BetUS": {
+              "Vlasto Čepo": -350,
+              "Gilbert Urbina": 279
+            },
+            "BetAnything": {
+              "Vlasto Čepo": -360,
+              "Gilbert Urbina": 240
+            },
+            "SXBet": {
+              "Vlasto Čepo": -304,
+              "Gilbert Urbina": 277
+            },
+            "4Cx": {
+              "Vlasto Čepo": -309,
+              "Gilbert Urbina": 269
+            },
+            "Caesars": {
+              "Vlasto Čepo": -370,
+              "Gilbert Urbina": 290
+            },
+            "Bookmaker": {
+              "Vlasto Čepo": -335,
+              "Gilbert Urbina": 271
+            },
+            "4casters": {
+              "Vlasto Čepo": -302,
+              "Gilbert Urbina": 275
+            },
+            "YouWager": {
+              "Vlasto Čepo": -360,
+              "Gilbert Urbina": 289
+            },
+            "Pinnacle": {
+              "Vlasto Čepo": -330,
+              "Gilbert Urbina": 282
+            },
+            "Bet105": {
+              "Vlasto Čepo": -330,
+              "Gilbert Urbina": 282
+            },
+            "Cloudbet": {
+              "Vlasto Čepo": -345,
+              "Gilbert Urbina": 275
+            },
+            "ProphetX": {
+              "Vlasto Čepo": -320,
+              "Gilbert Urbina": 275
+            },
+            "HardRockBet": {
+              "Vlasto Čepo": -350,
+              "Gilbert Urbina": 260
+            },
+            "Bovada": {
+              "Vlasto Čepo": -340,
+              "Gilbert Urbina": 275
+            },
+            "FanDuel": {
+              "Vlasto Čepo": -335,
+              "Gilbert Urbina": 270
+            },
+            "Kalshi": {
+              "Vlasto Čepo": -317,
+              "Gilbert Urbina": 300
+            },
+            "BetRivers": {
+              "Vlasto Čepo": -357,
+              "Gilbert Urbina": 265
+            },
+            "BetMGM": {
+              "Vlasto Čepo": -350,
+              "Gilbert Urbina": 275
+            },
+            "Stake": {
+              "Vlasto Čepo": -312,
+              "Gilbert Urbina": 250
+            },
+            "DraftKings": {
+              "Vlasto Čepo": -355,
+              "Gilbert Urbina": 280
+            },
+            "Circa": {
+              "Vlasto Čepo": -345,
+              "Gilbert Urbina": 285
+            },
+            "Betway": {
+              "Vlasto Čepo": -350,
+              "Gilbert Urbina": 275
+            },
+            "BetOnline": {
+              "Vlasto Čepo": -360,
+              "Gilbert Urbina": 289
+            },
+            "Polymarket": {
+              "Vlasto Čepo": -300,
+              "Gilbert Urbina": 285
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7802,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -300
+            },
+            "bestEv": 0.0403
+          }
+        },
+        "Miloš Janičić vs. Noah Gugnon": {
+          "prediction": {
+            "winner": "Miloš Janičić",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "FanDuel": {
+              "Miloš Janičić": -104,
+              "Noah Gugnon": -112
+            },
+            "Bet105": {
+              "Miloš Janičić": -101,
+              "Noah Gugnon": -111
+            },
+            "BetUS": {
+              "Miloš Janičić": -120,
+              "Noah Gugnon": 100
+            },
+            "Polymarket": {
+              "Miloš Janičić": 100,
+              "Noah Gugnon": -104
+            },
+            "SXBet": {
+              "Miloš Janičić": 101,
+              "Noah Gugnon": -108
+            },
+            "ProphetX": {
+              "Miloš Janičić": -101,
+              "Noah Gugnon": -123
+            },
+            "4Cx": {
+              "Miloš Janičić": -106,
+              "Noah Gugnon": -111
+            },
+            "BetAnything": {
+              "Miloš Janičić": -115,
+              "Noah Gugnon": -115
+            },
+            "Caesars": {
+              "Miloš Janičić": -115,
+              "Noah Gugnon": -105
+            },
+            "Bookmaker": {
+              "Miloš Janičić": -115,
+              "Noah Gugnon": -105
+            },
+            "Kalshi": {
+              "Miloš Janičić": 100,
+              "Noah Gugnon": -108
+            },
+            "Stake": {
+              "Miloš Janičić": -111,
+              "Noah Gugnon": -105
+            },
+            "MyBookie": {
+              "Miloš Janičić": -110,
+              "Noah Gugnon": -112
+            },
+            "BetMGM": {
+              "Miloš Janičić": -115,
+              "Noah Gugnon": -105
+            },
+            "4casters": {
+              "Miloš Janičić": -104,
+              "Noah Gugnon": -109
+            },
+            "YouWager": {
+              "Miloš Janičić": -119,
+              "Noah Gugnon": -101
+            },
+            "Pinnacle": {
+              "Miloš Janičić": -101,
+              "Noah Gugnon": -111
+            },
+            "Cloudbet": {
+              "Miloš Janičić": -103,
+              "Noah Gugnon": -114
+            },
+            "Circa": {
+              "Miloš Janičić": -115,
+              "Noah Gugnon": -105
+            },
+            "Bovada": {
+              "Miloš Janičić": -103,
+              "Noah Gugnon": -117
+            },
+            "HardRockBet": {
+              "Miloš Janičić": 100,
+              "Noah Gugnon": -120
+            },
+            "Betway": {
+              "Miloš Janičić": -105,
+              "Noah Gugnon": -120
+            },
+            "BetRivers": {
+              "Miloš Janičić": -102,
+              "Noah Gugnon": -120
+            },
+            "DraftKings": {
+              "Miloš Janičić": -112,
+              "Noah Gugnon": -108
+            },
+            "BetOnline": {
+              "Miloš Janičić": -119,
+              "Noah Gugnon": -101
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.5283,
+            "bestOdds": {
+              "platform": "SXBet",
+              "odds": 101
+            },
+            "bestEv": 0.0619
+          }
+        },
+        "Ľudovít Klein vs. Tofiq Musayev": {
+          "prediction": {
+            "winner": "Ľudovít Klein",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bovada": {
+              "Ľudovít Klein": -245,
+              "Tofiq Musayev": 205
+            },
+            "FanDuel": {
+              "Ľudovít Klein": -255,
+              "Tofiq Musayev": 210
+            },
+            "HardRockBet": {
+              "Ľudovít Klein": -260,
+              "Tofiq Musayev": 210
+            },
+            "ProphetX": {
+              "Ľudovít Klein": -245,
+              "Tofiq Musayev": 220
+            },
+            "Kalshi": {
+              "Ľudovít Klein": -233,
+              "Tofiq Musayev": 223
+            },
+            "BetUS": {
+              "Ľudovít Klein": -260,
+              "Tofiq Musayev": 214
+            },
+            "BetAnything": {
+              "Ľudovít Klein": -245,
+              "Tofiq Musayev": 195
+            },
+            "4Cx": {
+              "Ľudovít Klein": -240,
+              "Tofiq Musayev": 214
+            },
+            "Caesars": {
+              "Ľudovít Klein": -275,
+              "Tofiq Musayev": 225
+            },
+            "Cloudbet": {
+              "Ľudovít Klein": -270,
+              "Tofiq Musayev": 215
+            },
+            "Bookmaker": {
+              "Ľudovít Klein": -270,
+              "Tofiq Musayev": 222
+            },
+            "4casters": {
+              "Ľudovít Klein": -235,
+              "Tofiq Musayev": 219
+            },
+            "BetMGM": {
+              "Ľudovít Klein": -275,
+              "Tofiq Musayev": 220
+            },
+            "Pinnacle": {
+              "Ľudovít Klein": -255,
+              "Tofiq Musayev": 222
+            },
+            "Bet105": {
+              "Ľudovít Klein": -255,
+              "Tofiq Musayev": 222
+            },
+            "BetRivers": {
+              "Ľudovít Klein": -263,
+              "Tofiq Musayev": 205
+            },
+            "MyBookie": {
+              "Ľudovít Klein": -280,
+              "Tofiq Musayev": 220
+            },
+            "Stake": {
+              "Ľudovít Klein": -278,
+              "Tofiq Musayev": 225
+            },
+            "SXBet": {
+              "Ľudovít Klein": -228,
+              "Tofiq Musayev": 220
+            },
+            "YouWager": {
+              "Ľudovít Klein": -273,
+              "Tofiq Musayev": 225
+            },
+            "Circa": {
+              "Ľudovít Klein": -250,
+              "Tofiq Musayev": 215
+            },
+            "DraftKings": {
+              "Ľudovít Klein": -270,
+              "Tofiq Musayev": 220
+            },
+            "Betway": {
+              "Ľudovít Klein": -250,
+              "Tofiq Musayev": 200
+            },
+            "BetOnline": {
+              "Ľudovít Klein": -273,
+              "Tofiq Musayev": 225
+            },
+            "Polymarket": {
+              "Ľudovít Klein": -233,
+              "Tofiq Musayev": 223
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7297,
+            "bestOdds": {
+              "platform": "SXBet",
+              "odds": -228
+            },
+            "bestEv": 0.0498
+          }
+        },
+        "Oban Elliott vs. Michael Oliveira": {
+          "prediction": {
+            "winner": "Oban Elliott",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "SXBet": {
+              "Oban Elliott": 317,
+              "Michael Oliveira": null
+            },
+            "BetUS": {
+              "Oban Elliott": 291,
+              "Michael Oliveira": -370
+            },
+            "BetAnything": {
+              "Oban Elliott": 250,
+              "Michael Oliveira": -370
+            },
+            "4Cx": {
+              "Oban Elliott": 291,
+              "Michael Oliveira": -363
+            },
+            "Caesars": {
+              "Oban Elliott": 290,
+              "Michael Oliveira": -370
+            },
+            "FanDuel": {
+              "Oban Elliott": 310,
+              "Michael Oliveira": -390
+            },
+            "Cloudbet": {
+              "Oban Elliott": 305,
+              "Michael Oliveira": -400
+            },
+            "Bookmaker": {
+              "Oban Elliott": 292,
+              "Michael Oliveira": -365
+            },
+            "4casters": {
+              "Oban Elliott": 298,
+              "Michael Oliveira": -354
+            },
+            "Circa": {
+              "Oban Elliott": 300,
+              "Michael Oliveira": -365
+            },
+            "Pinnacle": {
+              "Oban Elliott": 313,
+              "Michael Oliveira": -370
+            },
+            "Bet105": {
+              "Oban Elliott": 316,
+              "Michael Oliveira": -374
+            },
+            "ProphetX": {
+              "Oban Elliott": 290,
+              "Michael Oliveira": -360
+            },
+            "Bovada": {
+              "Oban Elliott": 300,
+              "Michael Oliveira": -380
+            },
+            "HardRockBet": {
+              "Oban Elliott": 275,
+              "Michael Oliveira": -375
+            },
+            "MyBookie": {
+              "Oban Elliott": 307,
+              "Michael Oliveira": -419
+            },
+            "Kalshi": {
+              "Oban Elliott": 335,
+              "Michael Oliveira": -355
+            },
+            "YouWager": {
+              "Oban Elliott": 296,
+              "Michael Oliveira": -370
+            },
+            "BetRivers": {
+              "Oban Elliott": 280,
+              "Michael Oliveira": -370
+            },
+            "BetMGM": {
+              "Oban Elliott": 300,
+              "Michael Oliveira": -375
+            },
+            "Stake": {
+              "Oban Elliott": 295,
+              "Michael Oliveira": -370
+            },
+            "DraftKings": {
+              "Oban Elliott": 295,
+              "Michael Oliveira": -375
+            },
+            "Betway": {
+              "Oban Elliott": 275,
+              "Michael Oliveira": -350
+            },
+            "BetOnline": {
+              "Oban Elliott": 296,
+              "Michael Oliveira": -370
+            },
+            "Polymarket": {
+              "Oban Elliott": 317,
+              "Michael Oliveira": -335
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.2532,
+            "bestOdds": {
+              "platform": "Kalshi",
+              "odds": 335
+            },
+            "bestEv": 0.1013
+          }
+        },
+        "Borislav Nikolić vs. Mark Vologdin": {
+          "prediction": {
+            "winner": "Mark Vologdin",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "4Cx": {
+              "Mark Vologdin": 175,
+              "Borislav Nikolić": -206
+            },
+            "4casters": {
+              "Mark Vologdin": 178,
+              "Borislav Nikolić": -202
+            },
+            "BetUS": {
+              "Mark Vologdin": 170,
+              "Borislav Nikolić": -205
+            },
+            "BetAnything": {
+              "Mark Vologdin": 175,
+              "Borislav Nikolić": -210
+            },
+            "Polymarket": {
+              "Mark Vologdin": 186,
+              "Borislav Nikolić": -194
+            },
+            "SXBet": {
+              "Mark Vologdin": 183,
+              "Borislav Nikolić": -190
+            },
+            "ProphetX": {
+              "Mark Vologdin": 182,
+              "Borislav Nikolić": -200
+            },
+            "DraftKings": {
+              "Mark Vologdin": 170,
+              "Borislav Nikolić": -205
+            },
+            "BetMGM": {
+              "Mark Vologdin": 165,
+              "Borislav Nikolić": -200
+            },
+            "Caesars": {
+              "Mark Vologdin": 170,
+              "Borislav Nikolić": -205
+            },
+            "MyBookie": {
+              "Mark Vologdin": 175,
+              "Borislav Nikolić": -219
+            },
+            "Bet105": {
+              "Mark Vologdin": 177,
+              "Borislav Nikolić": -201
+            },
+            "Kalshi": {
+              "Mark Vologdin": 186,
+              "Borislav Nikolić": -203
+            },
+            "FanDuel": {
+              "Mark Vologdin": 168,
+              "Borislav Nikolić": -200
+            },
+            "Stake": {
+              "Mark Vologdin": 175,
+              "Borislav Nikolić": -208
+            },
+            "Bovada": {
+              "Mark Vologdin": 177,
+              "Borislav Nikolić": -210
+            },
+            "HardRockBet": {
+              "Mark Vologdin": 165,
+              "Borislav Nikolić": -210
+            },
+            "Betway": {
+              "Mark Vologdin": 163,
+              "Borislav Nikolić": -200
+            },
+            "YouWager": {
+              "Mark Vologdin": 177,
+              "Borislav Nikolić": -205
+            },
+            "Circa": {
+              "Mark Vologdin": 175,
+              "Borislav Nikolić": -200
+            },
+            "BetRivers": {
+              "Mark Vologdin": 165,
+              "Borislav Nikolić": -208
+            },
+            "Pinnacle": {
+              "Mark Vologdin": 179,
+              "Borislav Nikolić": -204
+            },
+            "Cloudbet": {
+              "Mark Vologdin": 170,
+              "Borislav Nikolić": -208
+            },
+            "Bookmaker": {
+              "Mark Vologdin": 175,
+              "Borislav Nikolić": -209
+            },
+            "BetOnline": {
+              "Mark Vologdin": 177,
+              "Borislav Nikolić": -205
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.3704,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": 186
+            },
+            "bestEv": 0.0593
+          }
+        },
+        "Dennis Buzukja vs. Bogdan Grad": {
+          "prediction": {
+            "winner": "Dennis Buzukja",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "HardRockBet": {
+              "Bogdan Grad": -200,
+              "Dennis Buzukja": 165
+            },
+            "BetRivers": {
+              "Bogdan Grad": -204,
+              "Dennis Buzukja": 163
+            },
+            "4casters": {
+              "Bogdan Grad": -187,
+              "Dennis Buzukja": 168
+            },
+            "ProphetX": {
+              "Bogdan Grad": -196,
+              "Dennis Buzukja": 184
+            },
+            "Kalshi": {
+              "Bogdan Grad": -194,
+              "Dennis Buzukja": 186
+            },
+            "BetUS": {
+              "Bogdan Grad": -190,
+              "Dennis Buzukja": 158
+            },
+            "BetAnything": {
+              "Bogdan Grad": -190,
+              "Dennis Buzukja": 160
+            },
+            "4Cx": {
+              "Bogdan Grad": -191,
+              "Dennis Buzukja": 163
+            },
+            "Caesars": {
+              "Bogdan Grad": -205,
+              "Dennis Buzukja": 170
+            },
+            "Bookmaker": {
+              "Bogdan Grad": -203,
+              "Dennis Buzukja": 171
+            },
+            "Pinnacle": {
+              "Bogdan Grad": -189,
+              "Dennis Buzukja": 167
+            },
+            "Bet105": {
+              "Bogdan Grad": -190,
+              "Dennis Buzukja": 168
+            },
+            "Cloudbet": {
+              "Bogdan Grad": -196,
+              "Dennis Buzukja": 160
+            },
+            "Circa": {
+              "Bogdan Grad": -185,
+              "Dennis Buzukja": 160
+            },
+            "Bovada": {
+              "Bogdan Grad": -198,
+              "Dennis Buzukja": 168
+            },
+            "FanDuel": {
+              "Bogdan Grad": -200,
+              "Dennis Buzukja": 168
+            },
+            "MyBookie": {
+              "Bogdan Grad": -197,
+              "Dennis Buzukja": 159
+            },
+            "SXBet": {
+              "Bogdan Grad": null,
+              "Dennis Buzukja": 178
+            },
+            "YouWager": {
+              "Bogdan Grad": -190,
+              "Dennis Buzukja": 165
+            },
+            "BetMGM": {
+              "Bogdan Grad": -220,
+              "Dennis Buzukja": 180
+            },
+            "Stake": {
+              "Bogdan Grad": -192,
+              "Dennis Buzukja": 160
+            },
+            "DraftKings": {
+              "Bogdan Grad": -198,
+              "Dennis Buzukja": 164
+            },
+            "Betway": {
+              "Bogdan Grad": -200,
+              "Dennis Buzukja": 163
+            },
+            "BetOnline": {
+              "Bogdan Grad": -190,
+              "Dennis Buzukja": 165
+            },
+            "Polymarket": {
+              "Bogdan Grad": -178,
+              "Dennis Buzukja": 170
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.3788,
+            "bestOdds": {
+              "platform": "Kalshi",
+              "odds": 186
+            },
+            "bestEv": 0.0833
+          }
+        },
+        "Mateusz Rębecki vs. Kyle Prepolec": {
+          "prediction": {
+            "winner": "Mateusz Rębecki",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bovada": {
+              "Mateusz Rębecki": -750,
+              "Kyle Prepolec": 525
+            },
+            "BetMGM": {
+              "Mateusz Rębecki": -750,
+              "Kyle Prepolec": 525
+            },
+            "Bet105": {
+              "Mateusz Rębecki": -715,
+              "Kyle Prepolec": 559
+            },
+            "BetUS": {
+              "Mateusz Rębecki": -700,
+              "Kyle Prepolec": 475
+            },
+            "BetAnything": {
+              "Mateusz Rębecki": -750,
+              "Kyle Prepolec": 425
+            },
+            "SXBet": {
+              "Mateusz Rębecki": -684,
+              "Kyle Prepolec": 572
+            },
+            "4Cx": {
+              "Mateusz Rębecki": -660,
+              "Kyle Prepolec": 546
+            },
+            "Caesars": {
+              "Mateusz Rębecki": -800,
+              "Kyle Prepolec": 550
+            },
+            "4casters": {
+              "Mateusz Rębecki": -647,
+              "Kyle Prepolec": 521
+            },
+            "Bookmaker": {
+              "Mateusz Rębecki": -700,
+              "Kyle Prepolec": 506
+            },
+            "MyBookie": {
+              "Mateusz Rębecki": -776,
+              "Kyle Prepolec": 511
+            },
+            "Pinnacle": {
+              "Mateusz Rębecki": -715,
+              "Kyle Prepolec": 559
+            },
+            "Cloudbet": {
+              "Mateusz Rębecki": -833,
+              "Kyle Prepolec": 550
+            },
+            "ProphetX": {
+              "Mateusz Rębecki": -680,
+              "Kyle Prepolec": 550
+            },
+            "BetRivers": {
+              "Mateusz Rębecki": -714,
+              "Kyle Prepolec": 480
+            },
+            "HardRockBet": {
+              "Mateusz Rębecki": -700,
+              "Kyle Prepolec": 475
+            },
+            "FanDuel": {
+              "Mateusz Rębecki": -720,
+              "Kyle Prepolec": 520
+            },
+            "Kalshi": {
+              "Mateusz Rębecki": -614,
+              "Kyle Prepolec": 567
+            },
+            "YouWager": {
+              "Mateusz Rębecki": -700,
+              "Kyle Prepolec": 505
+            },
+            "Stake": {
+              "Mateusz Rębecki": -714,
+              "Kyle Prepolec": 500
+            },
+            "DraftKings": {
+              "Mateusz Rębecki": -700,
+              "Kyle Prepolec": 500
+            },
+            "Circa": {
+              "Mateusz Rębecki": -800,
+              "Kyle Prepolec": 575
+            },
+            "Betway": {
+              "Mateusz Rębecki": -649,
+              "Kyle Prepolec": 450
+            },
+            "BetOnline": {
+              "Mateusz Rębecki": -700,
+              "Kyle Prepolec": 505
+            },
+            "Polymarket": {
+              "Mateusz Rębecki": -669,
+              "Kyle Prepolec": 614
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.875,
+            "bestOdds": {
+              "platform": "Kalshi",
+              "odds": -614
+            },
+            "bestEv": 0.0175
+          }
+        },
+        "Nina Nikolija Milošević vs. Hailey Cowan": {
+          "prediction": {
+            "winner": "Nina Nikolija Milošević",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetMGM": {
+              "Nina Nikolija Milošević": -550,
+              "Hailey Cowan": 400
+            },
+            "Bet105": {
+              "Nina Nikolija Milošević": -493,
+              "Hailey Cowan": 406
+            },
+            "BetAnything": {
+              "Nina Nikolija Milošević": -550,
+              "Hailey Cowan": 340
+            },
+            "SXBet": {
+              "Nina Nikolija Milošević": -488,
+              "Hailey Cowan": 400
+            },
+            "4Cx": {
+              "Nina Nikolija Milošević": -496,
+              "Hailey Cowan": 386
+            },
+            "Caesars": {
+              "Nina Nikolija Milošević": -550,
+              "Hailey Cowan": 400
+            },
+            "4casters": {
+              "Nina Nikolija Milošević": -484,
+              "Hailey Cowan": 395
+            },
+            "BetUS": {
+              "Nina Nikolija Milošević": -525,
+              "Hailey Cowan": 386
+            },
+            "Bookmaker": {
+              "Nina Nikolija Milošević": -500,
+              "Hailey Cowan": 384
+            },
+            "MyBookie": {
+              "Nina Nikolija Milošević": -594,
+              "Hailey Cowan": 422
+            },
+            "Pinnacle": {
+              "Nina Nikolija Milošević": -510,
+              "Hailey Cowan": 418
+            },
+            "Cloudbet": {
+              "Nina Nikolija Milošević": -526,
+              "Hailey Cowan": 400
+            },
+            "ProphetX": {
+              "Nina Nikolija Milošević": -510,
+              "Hailey Cowan": 375
+            },
+            "Bovada": {
+              "Nina Nikolija Milošević": -525,
+              "Hailey Cowan": 395
+            },
+            "HardRockBet": {
+              "Nina Nikolija Milošević": -525,
+              "Hailey Cowan": 375
+            },
+            "FanDuel": {
+              "Nina Nikolija Milošević": -550,
+              "Hailey Cowan": 410
+            },
+            "Kalshi": {
+              "Nina Nikolija Milošević": -456,
+              "Hailey Cowan": 426
+            },
+            "YouWager": {
+              "Nina Nikolija Milošević": -550,
+              "Hailey Cowan": 400
+            },
+            "BetRivers": {
+              "Nina Nikolija Milošević": -526,
+              "Hailey Cowan": 370
+            },
+            "Stake": {
+              "Nina Nikolija Milošević": -526,
+              "Hailey Cowan": 400
+            },
+            "DraftKings": {
+              "Nina Nikolija Milošević": -535,
+              "Hailey Cowan": 400
+            },
+            "Circa": {
+              "Nina Nikolija Milošević": -485,
+              "Hailey Cowan": 385
+            },
+            "Betway": {
+              "Nina Nikolija Milošević": -500,
+              "Hailey Cowan": 350
+            },
+            "BetOnline": {
+              "Nina Nikolija Milošević": -550,
+              "Hailey Cowan": 400
+            },
+            "Polymarket": {
+              "Nina Nikolija Milošević": -456,
+              "Hailey Cowan": 426
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.8425,
+            "bestOdds": {
+              "platform": "Kalshi",
+              "odds": -456
+            },
+            "bestEv": 0.0273
+          }
+        },
+        "Jovan Leka vs. Alexander Poppeck": {
+          "prediction": {
+            "winner": "Jovan Leka",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "HardRockBet": {
+              "Jovan Leka": -275,
+              "Alexander Poppeck": 220
+            },
+            "DraftKings": {
+              "Jovan Leka": -298,
+              "Alexander Poppeck": 240
+            },
+            "BetUS": {
+              "Jovan Leka": -295,
+              "Alexander Poppeck": 242
+            },
+            "BetAnything": {
+              "Jovan Leka": -300,
+              "Alexander Poppeck": 230
+            },
+            "Polymarket": {
+              "Jovan Leka": -270,
+              "Alexander Poppeck": 257
+            },
+            "Bet105": {
+              "Jovan Leka": 251,
+              "Alexander Poppeck": -291
+            },
+            "ProphetX": {
+              "Jovan Leka": -270,
+              "Alexander Poppeck": 240
+            },
+            "SXBet": {
+              "Jovan Leka": -283,
+              "Alexander Poppeck": 249
+            },
+            "4Cx": {
+              "Jovan Leka": -285,
+              "Alexander Poppeck": 233
+            },
+            "Caesars": {
+              "Jovan Leka": -300,
+              "Alexander Poppeck": 240
+            },
+            "MyBookie": {
+              "Jovan Leka": -310,
+              "Alexander Poppeck": 238
+            },
+            "Kalshi": {
+              "Jovan Leka": -285,
+              "Alexander Poppeck": 270
+            },
+            "Stake": {
+              "Jovan Leka": -303,
+              "Alexander Poppeck": 245
+            },
+            "Bookmaker": {
+              "Jovan Leka": -272,
+              "Alexander Poppeck": 223
+            },
+            "4casters": {
+              "Jovan Leka": -278,
+              "Alexander Poppeck": 238
+            },
+            "Cloudbet": {
+              "Jovan Leka": -303,
+              "Alexander Poppeck": 245
+            },
+            "Pinnacle": {
+              "Jovan Leka": -305,
+              "Alexander Poppeck": 262
+            },
+            "BetMGM": {
+              "Jovan Leka": -300,
+              "Alexander Poppeck": 240
+            },
+            "Bovada": {
+              "Jovan Leka": -290,
+              "Alexander Poppeck": 240
+            },
+            "FanDuel": {
+              "Jovan Leka": -290,
+              "Alexander Poppeck": 235
+            },
+            "YouWager": {
+              "Jovan Leka": -300,
+              "Alexander Poppeck": 245
+            },
+            "BetRivers": {
+              "Jovan Leka": -286,
+              "Alexander Poppeck": 220
+            },
+            "Betway": {
+              "Jovan Leka": -300,
+              "Alexander Poppeck": 225
+            },
+            "Circa": {
+              "Jovan Leka": 240,
+              "Alexander Poppeck": -285
+            },
+            "BetOnline": {
+              "Jovan Leka": -300,
+              "Alexander Poppeck": 245
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7487,
+            "bestOdds": {
+              "platform": "Bet105",
+              "odds": 251
+            },
+            "bestEv": 1.6281
+          }
+        },
+        "Marina Spasić vs. Stephanie Luciano": {
+          "prediction": {
+            "winner": "Stephanie Luciano",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "SXBet": {
+              "Marina Spasić": 283,
+              "Stephanie Luciano": -344
+            },
+            "Bet105": {
+              "Marina Spasić": 283,
+              "Stephanie Luciano": -331
+            },
+            "BetUS": {
+              "Marina Spasić": 267,
+              "Stephanie Luciano": -330
+            },
+            "BetAnything": {
+              "Marina Spasić": 260,
+              "Stephanie Luciano": -340
+            },
+            "Polymarket": {
+              "Marina Spasić": 300,
+              "Stephanie Luciano": -317
+            },
+            "ProphetX": {
+              "Marina Spasić": 285,
+              "Stephanie Luciano": -340
+            },
+            "HardRockBet": {
+              "Marina Spasić": 260,
+              "Stephanie Luciano": -325
+            },
+            "4Cx": {
+              "Marina Spasić": 285,
+              "Stephanie Luciano": -347
+            },
+            "Caesars": {
+              "Marina Spasić": 265,
+              "Stephanie Luciano": -340
+            },
+            "MyBookie": {
+              "Marina Spasić": 256,
+              "Stephanie Luciano": -339
+            },
+            "Kalshi": {
+              "Marina Spasić": 300,
+              "Stephanie Luciano": -317
+            },
+            "Stake": {
+              "Marina Spasić": 245,
+              "Stephanie Luciano": -303
+            },
+            "BetMGM": {
+              "Marina Spasić": 260,
+              "Stephanie Luciano": -325
+            },
+            "Cloudbet": {
+              "Marina Spasić": 275,
+              "Stephanie Luciano": -357
+            },
+            "4casters": {
+              "Marina Spasić": 292,
+              "Stephanie Luciano": -338
+            },
+            "Bookmaker": {
+              "Marina Spasić": 268,
+              "Stephanie Luciano": -332
+            },
+            "Pinnacle": {
+              "Marina Spasić": 283,
+              "Stephanie Luciano": -331
+            },
+            "Bovada": {
+              "Marina Spasić": 275,
+              "Stephanie Luciano": -340
+            },
+            "FanDuel": {
+              "Marina Spasić": 270,
+              "Stephanie Luciano": -335
+            },
+            "Betway": {
+              "Marina Spasić": 250,
+              "Stephanie Luciano": -333
+            },
+            "YouWager": {
+              "Marina Spasić": 255,
+              "Stephanie Luciano": -330
+            },
+            "BetRivers": {
+              "Marina Spasić": 255,
+              "Stephanie Luciano": -333
+            },
+            "DraftKings": {
+              "Marina Spasić": 260,
+              "Stephanie Luciano": -325
+            },
+            "Circa": {
+              "Marina Spasić": 305,
+              "Stephanie Luciano": -370
+            },
+            "BetOnline": {
+              "Marina Spasić": 267,
+              "Stephanie Luciano": -330
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7647,
+            "bestOdds": {
+              "platform": "Stake",
+              "odds": -303
+            },
+            "bestEv": 0.0171
+          }
+        }
+      }
+    },
+    {
       "id": "ufc-fight-night-ankalaev-guskov",
       "title": "UFC Fight Night",
       "subtitle": "Ankalaev vs. Guskov",
