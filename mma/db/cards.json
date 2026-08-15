@@ -1,6 +1,1409 @@
 {
   "cards": [
     {
+      "id": "ufc-330",
+      "title": "UFC 330",
+      "subtitle": "Makhachev vs. Machado Garry",
+      "date": "2026-08-15",
+      "rating": null,
+      "poster": "/mma/db/img/ufc_330_poster.jpg",
+      "recapUrl": null,
+      "previewUrl": "db/previews/ufc-330.html",
+      "location": "Xfinity Mobile Arena, Philadelphia, Pennsylvania, United States",
+      "eventTime": "2026-08-15",
+      "fights": {
+        "Islam Makhachev(c) vs. Ian Machado Garry": {
+          "prediction": {
+            "winner": "Islam Makhachev",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Islam Makhachev(c)": -345,
+              "Ian Machado Garry": 278
+            },
+            "Cloudbet": {
+              "Islam Makhachev(c)": -370,
+              "Ian Machado Garry": 275
+            },
+            "Polymarket": {
+              "Islam Makhachev(c)": -300,
+              "Ian Machado Garry": 285
+            },
+            "Bet105": {
+              "Islam Makhachev(c)": -332,
+              "Ian Machado Garry": 284
+            },
+            "Bovada": {
+              "Islam Makhachev(c)": -350,
+              "Ian Machado Garry": 280
+            },
+            "ProphetX": {
+              "Islam Makhachev(c)": -315,
+              "Ian Machado Garry": 280
+            },
+            "Circa": {
+              "Islam Makhachev(c)": -350,
+              "Ian Machado Garry": 290
+            },
+            "Kalshi": {
+              "Islam Makhachev(c)": -285,
+              "Ian Machado Garry": 285
+            },
+            "4casters": {
+              "Islam Makhachev(c)": -308,
+              "Ian Machado Garry": 290
+            },
+            "4Cx": {
+              "Islam Makhachev(c)": -315,
+              "Ian Machado Garry": 283
+            },
+            "SXBet": {
+              "Islam Makhachev(c)": -315,
+              "Ian Machado Garry": 298
+            },
+            "DraftKings": {
+              "Islam Makhachev(c)": -360,
+              "Ian Machado Garry": 285
+            },
+            "BetOnline": {
+              "Islam Makhachev(c)": -350,
+              "Ian Machado Garry": 280
+            },
+            "FanDuel": {
+              "Islam Makhachev(c)": -360,
+              "Ian Machado Garry": 290
+            },
+            "Stake": {
+              "Islam Makhachev(c)": -370,
+              "Ian Machado Garry": 265
+            },
+            "HardRockBet": {
+              "Islam Makhachev(c)": -375,
+              "Ian Machado Garry": 275
+            },
+            "Betway": {
+              "Islam Makhachev(c)": -333,
+              "Ian Machado Garry": 250
+            },
+            "Caesars": {
+              "Islam Makhachev(c)": -370,
+              "Ian Machado Garry": 290
+            },
+            "MyBookie": {
+              "Islam Makhachev(c)": -360,
+              "Ian Machado Garry": 270
+            },
+            "BetRivers": {
+              "Islam Makhachev(c)": -357,
+              "Ian Machado Garry": 270
+            },
+            "BetAnything": {
+              "Islam Makhachev(c)": -350,
+              "Ian Machado Garry": 270
+            },
+            "BetMGM": {
+              "Islam Makhachev(c)": -350,
+              "Ian Machado Garry": 275
+            },
+            "YouWager": {
+              "Islam Makhachev(c)": -350,
+              "Ian Machado Garry": 270
+            },
+            "BetUS": {
+              "Islam Makhachev(c)": -345,
+              "Ian Machado Garry": 276
+            },
+            "Pinnacle": {
+              "Islam Makhachev(c)": -345,
+              "Ian Machado Garry": 294
+            }
+          },
+          "bestOdds": null
+        },
+        "Mackenzie Dern(c) vs. Gillian Robertson": {
+          "prediction": {
+            "winner": "Gillian Robertson",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "Bookmaker": {
+              "Mackenzie Dern(c)": -190,
+              "Gillian Robertson": 163
+            },
+            "Cloudbet": {
+              "Mackenzie Dern(c)": -208,
+              "Gillian Robertson": 160
+            },
+            "Bet105": {
+              "Mackenzie Dern(c)": -194,
+              "Gillian Robertson": 171
+            },
+            "Bovada": {
+              "Mackenzie Dern(c)": -198,
+              "Gillian Robertson": 168
+            },
+            "Polymarket": {
+              "Mackenzie Dern(c)": -186,
+              "Gillian Robertson": 178
+            },
+            "ProphetX": {
+              "Mackenzie Dern(c)": -190,
+              "Gillian Robertson": 186
+            },
+            "Circa": {
+              "Mackenzie Dern(c)": -195,
+              "Gillian Robertson": 170
+            },
+            "BetMGM": {
+              "Mackenzie Dern(c)": -200,
+              "Gillian Robertson": 165
+            },
+            "Kalshi": {
+              "Mackenzie Dern(c)": -186,
+              "Gillian Robertson": 178
+            },
+            "4casters": {
+              "Mackenzie Dern(c)": -187,
+              "Gillian Robertson": 178
+            },
+            "4Cx": {
+              "Mackenzie Dern(c)": -191,
+              "Gillian Robertson": 174
+            },
+            "SXBet": {
+              "Mackenzie Dern(c)": -189,
+              "Gillian Robertson": 181
+            },
+            "DraftKings": {
+              "Mackenzie Dern(c)": -198,
+              "Gillian Robertson": 164
+            },
+            "BetOnline": {
+              "Mackenzie Dern(c)": -192,
+              "Gillian Robertson": 167
+            },
+            "BetRivers": {
+              "Mackenzie Dern(c)": -192,
+              "Gillian Robertson": 155
+            },
+            "FanDuel": {
+              "Mackenzie Dern(c)": -200,
+              "Gillian Robertson": 168
+            },
+            "Stake": {
+              "Mackenzie Dern(c)": -204,
+              "Gillian Robertson": 155
+            },
+            "HardRockBet": {
+              "Mackenzie Dern(c)": -190,
+              "Gillian Robertson": 155
+            },
+            "Betway": {
+              "Mackenzie Dern(c)": -188,
+              "Gillian Robertson": 150
+            },
+            "Caesars": {
+              "Mackenzie Dern(c)": -220,
+              "Gillian Robertson": 180
+            },
+            "MyBookie": {
+              "Mackenzie Dern(c)": -198,
+              "Gillian Robertson": 160
+            },
+            "BetAnything": {
+              "Mackenzie Dern(c)": -195,
+              "Gillian Robertson": 165
+            },
+            "YouWager": {
+              "Mackenzie Dern(c)": -195,
+              "Gillian Robertson": 167
+            },
+            "BetUS": {
+              "Mackenzie Dern(c)": -195,
+              "Gillian Robertson": 162
+            },
+            "Pinnacle": {
+              "Mackenzie Dern(c)": -193,
+              "Gillian Robertson": 170
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.3788,
+            "bestOdds": {
+              "platform": "ProphetX",
+              "odds": 186
+            },
+            "bestEv": 0.0833
+          }
+        },
+        "Jalin Turner vs. Kauê Fernandes": {
+          "prediction": {
+            "winner": "Jalin Turner",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetRivers": {
+              "Jalin Turner": -111,
+              "Kauê Fernandes": -111
+            },
+            "Cloudbet": {
+              "Jalin Turner": -112,
+              "Kauê Fernandes": -110
+            },
+            "Pinnacle": {
+              "Jalin Turner": -107,
+              "Kauê Fernandes": -105
+            },
+            "MyBookie": {
+              "Jalin Turner": -115,
+              "Kauê Fernandes": -106
+            },
+            "Bookmaker": {
+              "Jalin Turner": -110,
+              "Kauê Fernandes": -110
+            },
+            "Stake": {
+              "Jalin Turner": -118,
+              "Kauê Fernandes": -109
+            },
+            "BetOnline": {
+              "Jalin Turner": -116,
+              "Kauê Fernandes": -104
+            },
+            "DraftKings": {
+              "Jalin Turner": -110,
+              "Kauê Fernandes": -110
+            },
+            "Caesars": {
+              "Jalin Turner": -110,
+              "Kauê Fernandes": -110
+            },
+            "Polymarket": {
+              "Jalin Turner": -104,
+              "Kauê Fernandes": 100
+            },
+            "HardRockBet": {
+              "Jalin Turner": -110,
+              "Kauê Fernandes": -110
+            },
+            "Betway": {
+              "Jalin Turner": -120,
+              "Kauê Fernandes": -105
+            },
+            "Circa": {
+              "Jalin Turner": -110,
+              "Kauê Fernandes": -110
+            },
+            "Kalshi": {
+              "Jalin Turner": -108,
+              "Kauê Fernandes": 100
+            },
+            "ProphetX": {
+              "Jalin Turner": -111,
+              "Kauê Fernandes": -101
+            },
+            "YouWager": {
+              "Jalin Turner": -110,
+              "Kauê Fernandes": -110
+            },
+            "FanDuel": {
+              "Jalin Turner": -116,
+              "Kauê Fernandes": -104
+            },
+            "BetMGM": {
+              "Jalin Turner": -110,
+              "Kauê Fernandes": -110
+            },
+            "4casters": {
+              "Jalin Turner": -108,
+              "Kauê Fernandes": -102
+            },
+            "SXBet": {
+              "Jalin Turner": -109,
+              "Kauê Fernandes": null
+            },
+            "Bet105": {
+              "Jalin Turner": -105,
+              "Kauê Fernandes": -107
+            },
+            "4Cx": {
+              "Jalin Turner": -110,
+              "Kauê Fernandes": -104
+            },
+            "Bovada": {
+              "Jalin Turner": -115,
+              "Kauê Fernandes": -105
+            },
+            "BetAnything": {
+              "Jalin Turner": -120,
+              "Kauê Fernandes": -110
+            },
+            "BetUS": {
+              "Jalin Turner": -110,
+              "Kauê Fernandes": -110
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.5238,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -104
+            },
+            "bestEv": 0.0275
+          }
+        },
+        "Mansur Abdul-Malik vs. Dustin Stoltzfus": {
+          "prediction": {
+            "winner": "Mansur Abdul-Malik",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetRivers": {
+              "Mansur Abdul-Malik": -714,
+              "Dustin Stoltzfus": 480
+            },
+            "BetOnline": {
+              "Mansur Abdul-Malik": -650,
+              "Dustin Stoltzfus": 475
+            },
+            "Cloudbet": {
+              "Mansur Abdul-Malik": -833,
+              "Dustin Stoltzfus": 550
+            },
+            "Bet105": {
+              "Mansur Abdul-Malik": -715,
+              "Dustin Stoltzfus": 559
+            },
+            "Pinnacle": {
+              "Mansur Abdul-Malik": -715,
+              "Dustin Stoltzfus": 559
+            },
+            "MyBookie": {
+              "Mansur Abdul-Malik": -676,
+              "Dustin Stoltzfus": 460
+            },
+            "Stake": {
+              "Mansur Abdul-Malik": -714,
+              "Dustin Stoltzfus": 440
+            },
+            "HardRockBet": {
+              "Mansur Abdul-Malik": -700,
+              "Dustin Stoltzfus": 475
+            },
+            "Bookmaker": {
+              "Mansur Abdul-Malik": -655,
+              "Dustin Stoltzfus": 480
+            },
+            "Bovada": {
+              "Mansur Abdul-Malik": -750,
+              "Dustin Stoltzfus": 525
+            },
+            "DraftKings": {
+              "Mansur Abdul-Malik": -700,
+              "Dustin Stoltzfus": 500
+            },
+            "Caesars": {
+              "Mansur Abdul-Malik": -700,
+              "Dustin Stoltzfus": 500
+            },
+            "Polymarket": {
+              "Mansur Abdul-Malik": -567,
+              "Dustin Stoltzfus": 525
+            },
+            "Betway": {
+              "Mansur Abdul-Malik": -649,
+              "Dustin Stoltzfus": 450
+            },
+            "Circa": {
+              "Mansur Abdul-Malik": -670,
+              "Dustin Stoltzfus": 550
+            },
+            "Kalshi": {
+              "Mansur Abdul-Malik": -614,
+              "Dustin Stoltzfus": 567
+            },
+            "ProphetX": {
+              "Mansur Abdul-Malik": -640,
+              "Dustin Stoltzfus": 495
+            },
+            "YouWager": {
+              "Mansur Abdul-Malik": -700,
+              "Dustin Stoltzfus": 525
+            },
+            "FanDuel": {
+              "Mansur Abdul-Malik": -720,
+              "Dustin Stoltzfus": 520
+            },
+            "BetMGM": {
+              "Mansur Abdul-Malik": -750,
+              "Dustin Stoltzfus": 525
+            },
+            "4casters": {
+              "Mansur Abdul-Malik": -575,
+              "Dustin Stoltzfus": 512
+            },
+            "4Cx": {
+              "Mansur Abdul-Malik": -587,
+              "Dustin Stoltzfus": 500
+            },
+            "BetAnything": {
+              "Mansur Abdul-Malik": -705,
+              "Dustin Stoltzfus": 405
+            },
+            "BetUS": {
+              "Mansur Abdul-Malik": -650,
+              "Dustin Stoltzfus": 450
+            },
+            "SXBet": {
+              "Mansur Abdul-Malik": -614,
+              "Dustin Stoltzfus": 535
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.875,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -567
+            },
+            "bestEv": 0.0293
+          }
+        },
+        "Edson Barboza vs. Esteban Ribovics": {
+          "prediction": {
+            "winner": "Esteban Ribovics",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetRivers": {
+              "Esteban Ribovics": -769,
+              "Edson Barboza": 500
+            },
+            "BetOnline": {
+              "Esteban Ribovics": -700,
+              "Edson Barboza": 505
+            },
+            "Bet105": {
+              "Esteban Ribovics": -700,
+              "Edson Barboza": 549
+            },
+            "Cloudbet": {
+              "Esteban Ribovics": -769,
+              "Edson Barboza": 540
+            },
+            "MyBookie": {
+              "Esteban Ribovics": -725,
+              "Edson Barboza": 490
+            },
+            "Bookmaker": {
+              "Esteban Ribovics": -655,
+              "Edson Barboza": 480
+            },
+            "HardRockBet": {
+              "Esteban Ribovics": -750,
+              "Edson Barboza": 500
+            },
+            "Bovada": {
+              "Esteban Ribovics": -800,
+              "Edson Barboza": 550
+            },
+            "DraftKings": {
+              "Esteban Ribovics": -700,
+              "Edson Barboza": 500
+            },
+            "Pinnacle": {
+              "Esteban Ribovics": -700,
+              "Edson Barboza": 549
+            },
+            "Polymarket": {
+              "Esteban Ribovics": -614,
+              "Edson Barboza": 567
+            },
+            "Betway": {
+              "Esteban Ribovics": -649,
+              "Edson Barboza": 450
+            },
+            "Circa": {
+              "Esteban Ribovics": -630,
+              "Edson Barboza": 575
+            },
+            "Kalshi": {
+              "Esteban Ribovics": -614,
+              "Edson Barboza": 567
+            },
+            "ProphetX": {
+              "Esteban Ribovics": -630,
+              "Edson Barboza": 540
+            },
+            "YouWager": {
+              "Esteban Ribovics": -700,
+              "Edson Barboza": 525
+            },
+            "FanDuel": {
+              "Esteban Ribovics": -750,
+              "Edson Barboza": 530
+            },
+            "BetMGM": {
+              "Esteban Ribovics": -750,
+              "Edson Barboza": 525
+            },
+            "SXBet": {
+              "Esteban Ribovics": -608,
+              "Edson Barboza": 561
+            },
+            "4casters": {
+              "Esteban Ribovics": -604,
+              "Edson Barboza": 516
+            },
+            "4Cx": {
+              "Esteban Ribovics": -615,
+              "Edson Barboza": 504
+            },
+            "Caesars": {
+              "Esteban Ribovics": -750,
+              "Edson Barboza": 525
+            },
+            "Stake": {
+              "Esteban Ribovics": -769,
+              "Edson Barboza": 460
+            },
+            "BetAnything": {
+              "Esteban Ribovics": -800,
+              "Edson Barboza": 450
+            },
+            "BetUS": {
+              "Esteban Ribovics": -700,
+              "Edson Barboza": 475
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.875,
+            "bestOdds": {
+              "platform": "4casters",
+              "odds": -604
+            },
+            "bestEv": 0.0199
+          }
+        },
+        "Chidi Njokuani vs. Joel Álvarez": {
+          "prediction": {
+            "winner": "Joel Álvarez",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "MyBookie": {
+              "Joel Álvarez": -330,
+              "Chidi Njokuani": 255
+            },
+            "BetRivers": {
+              "Joel Álvarez": -333,
+              "Chidi Njokuani": 250
+            },
+            "Stake": {
+              "Joel Álvarez": -345,
+              "Chidi Njokuani": 250
+            },
+            "HardRockBet": {
+              "Joel Álvarez": -325,
+              "Chidi Njokuani": 250
+            },
+            "BetOnline": {
+              "Joel Álvarez": -320,
+              "Chidi Njokuani": 260
+            },
+            "Caesars": {
+              "Joel Álvarez": -330,
+              "Chidi Njokuani": 260
+            },
+            "Betway": {
+              "Joel Álvarez": -333,
+              "Chidi Njokuani": 250
+            },
+            "DraftKings": {
+              "Joel Álvarez": -305,
+              "Chidi Njokuani": 245
+            },
+            "Bookmaker": {
+              "Joel Álvarez": -322,
+              "Chidi Njokuani": 261
+            },
+            "Kalshi": {
+              "Joel Álvarez": -285,
+              "Chidi Njokuani": 270
+            },
+            "ProphetX": {
+              "Joel Álvarez": -285,
+              "Chidi Njokuani": 245
+            },
+            "YouWager": {
+              "Joel Álvarez": -330,
+              "Chidi Njokuani": 255
+            },
+            "Polymarket": {
+              "Joel Álvarez": -300,
+              "Chidi Njokuani": 285
+            },
+            "FanDuel": {
+              "Joel Álvarez": -295,
+              "Chidi Njokuani": 240
+            },
+            "Bovada": {
+              "Joel Álvarez": -310,
+              "Chidi Njokuani": 255
+            },
+            "BetMGM": {
+              "Joel Álvarez": -325,
+              "Chidi Njokuani": 260
+            },
+            "SXBet": {
+              "Joel Álvarez": -277,
+              "Chidi Njokuani": 270
+            },
+            "Circa": {
+              "Joel Álvarez": -320,
+              "Chidi Njokuani": 265
+            },
+            "4casters": {
+              "Joel Álvarez": -282,
+              "Chidi Njokuani": 266
+            },
+            "4Cx": {
+              "Joel Álvarez": -286,
+              "Chidi Njokuani": 259
+            },
+            "Bet105": {
+              "Joel Álvarez": -320,
+              "Chidi Njokuani": 274
+            },
+            "Pinnacle": {
+              "Joel Álvarez": -320,
+              "Chidi Njokuani": 274
+            },
+            "BetAnything": {
+              "Joel Álvarez": -320,
+              "Chidi Njokuani": 240
+            },
+            "BetUS": {
+              "Joel Álvarez": -320,
+              "Chidi Njokuani": 261
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7531,
+            "bestOdds": {
+              "platform": "SXBet",
+              "odds": -277
+            },
+            "bestEv": 0.025
+          }
+        },
+        "Charles Johnson vs. Eduardo Henrique": {
+          "prediction": {
+            "winner": "Charles Johnson",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "Bet105": {
+              "Charles Johnson": -115,
+              "Eduardo Henrique": 102
+            },
+            "4casters": {
+              "Charles Johnson": -114,
+              "Eduardo Henrique": 104
+            },
+            "4Cx": {
+              "Charles Johnson": -116,
+              "Eduardo Henrique": 102
+            },
+            "Kalshi": {
+              "Charles Johnson": -108,
+              "Eduardo Henrique": 104
+            },
+            "BetOnline": {
+              "Charles Johnson": -116,
+              "Eduardo Henrique": -104
+            },
+            "DraftKings": {
+              "Charles Johnson": -118,
+              "Eduardo Henrique": -102
+            },
+            "MyBookie": {
+              "Charles Johnson": -112,
+              "Eduardo Henrique": -109
+            },
+            "Stake": {
+              "Charles Johnson": -122,
+              "Eduardo Henrique": -104
+            },
+            "Bovada": {
+              "Charles Johnson": -120,
+              "Eduardo Henrique": 100
+            },
+            "Betway": {
+              "Charles Johnson": -125,
+              "Eduardo Henrique": -100
+            },
+            "FanDuel": {
+              "Charles Johnson": -120,
+              "Eduardo Henrique": 102
+            },
+            "BetRivers": {
+              "Charles Johnson": -118,
+              "Eduardo Henrique": -104
+            },
+            "HardRockBet": {
+              "Charles Johnson": -120,
+              "Eduardo Henrique": -105
+            },
+            "Bookmaker": {
+              "Charles Johnson": -115,
+              "Eduardo Henrique": -105
+            },
+            "Polymarket": {
+              "Charles Johnson": 100,
+              "Eduardo Henrique": -104
+            },
+            "BetUS": {
+              "Charles Johnson": -120,
+              "Eduardo Henrique": 100
+            },
+            "Caesars": {
+              "Charles Johnson": -120,
+              "Eduardo Henrique": 100
+            },
+            "Circa": {
+              "Charles Johnson": -120,
+              "Eduardo Henrique": 100
+            },
+            "BetMGM": {
+              "Charles Johnson": -120,
+              "Eduardo Henrique": 100
+            },
+            "ProphetX": {
+              "Charles Johnson": -114,
+              "Eduardo Henrique": -101
+            },
+            "YouWager": {
+              "Charles Johnson": -120,
+              "Eduardo Henrique": 100
+            },
+            "SXBet": {
+              "Charles Johnson": -112,
+              "Eduardo Henrique": -100
+            },
+            "Pinnacle": {
+              "Charles Johnson": -114,
+              "Eduardo Henrique": 101
+            },
+            "BetAnything": {
+              "Charles Johnson": -125,
+              "Eduardo Henrique": -105
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.5413,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": 100
+            },
+            "bestEv": 0.0826
+          }
+        },
+        "Donte Johnson vs. Eric McConico": {
+          "prediction": {
+            "winner": "Donte Johnson",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetRivers": {
+              "Donte Johnson": -312,
+              "Eric McConico": 235
+            },
+            "BetOnline": {
+              "Donte Johnson": -305,
+              "Eric McConico": 249
+            },
+            "Bet105": {
+              "Donte Johnson": -324,
+              "Eric McConico": 277
+            },
+            "Pinnacle": {
+              "Donte Johnson": -325,
+              "Eric McConico": 278
+            },
+            "MyBookie": {
+              "Donte Johnson": -310,
+              "Eric McConico": 242
+            },
+            "Stake": {
+              "Donte Johnson": -323,
+              "Eric McConico": 235
+            },
+            "HardRockBet": {
+              "Donte Johnson": -325,
+              "Eric McConico": 240
+            },
+            "Bookmaker": {
+              "Donte Johnson": -320,
+              "Eric McConico": 260
+            },
+            "Bovada": {
+              "Donte Johnson": -320,
+              "Eric McConico": 260
+            },
+            "DraftKings": {
+              "Donte Johnson": -310,
+              "Eric McConico": 250
+            },
+            "Caesars": {
+              "Donte Johnson": -320,
+              "Eric McConico": 250
+            },
+            "Polymarket": {
+              "Donte Johnson": -300,
+              "Eric McConico": 285
+            },
+            "Cloudbet": {
+              "Donte Johnson": -345,
+              "Eric McConico": 270
+            },
+            "Betway": {
+              "Donte Johnson": -300,
+              "Eric McConico": 225
+            },
+            "Circa": {
+              "Donte Johnson": -340,
+              "Eric McConico": 280
+            },
+            "Kalshi": {
+              "Donte Johnson": -317,
+              "Eric McConico": 300
+            },
+            "ProphetX": {
+              "Donte Johnson": -295,
+              "Eric McConico": 270
+            },
+            "YouWager": {
+              "Donte Johnson": -320,
+              "Eric McConico": 250
+            },
+            "FanDuel": {
+              "Donte Johnson": -320,
+              "Eric McConico": 250
+            },
+            "BetMGM": {
+              "Donte Johnson": -325,
+              "Eric McConico": 260
+            },
+            "4casters": {
+              "Donte Johnson": -305,
+              "Eric McConico": 280
+            },
+            "4Cx": {
+              "Donte Johnson": -312,
+              "Eric McConico": 273
+            },
+            "SXBet": {
+              "Donte Johnson": -298,
+              "Eric McConico": 276
+            },
+            "BetAnything": {
+              "Donte Johnson": -315,
+              "Eric McConico": 235
+            },
+            "BetUS": {
+              "Donte Johnson": -305,
+              "Eric McConico": 250
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7561,
+            "bestOdds": {
+              "platform": "ProphetX",
+              "odds": -295
+            },
+            "bestEv": 0.0124
+          }
+        },
+        "Vicente Luque vs. Tresean Gore": {
+          "prediction": {
+            "winner": "Tresean Gore",
+            "method": "Decision"
+          },
+          "result": null,
+          "odds": {
+            "BetRivers": {
+              "Vicente Luque": -111,
+              "Tresean Gore": -111
+            },
+            "Cloudbet": {
+              "Vicente Luque": -104,
+              "Tresean Gore": -112
+            },
+            "Bet105": {
+              "Vicente Luque": -102,
+              "Tresean Gore": -110
+            },
+            "Pinnacle": {
+              "Vicente Luque": -102,
+              "Tresean Gore": -110
+            },
+            "MyBookie": {
+              "Vicente Luque": -106,
+              "Tresean Gore": -116
+            },
+            "BetOnline": {
+              "Vicente Luque": -105,
+              "Tresean Gore": -115
+            },
+            "HardRockBet": {
+              "Vicente Luque": -110,
+              "Tresean Gore": -110
+            },
+            "Stake": {
+              "Vicente Luque": -108,
+              "Tresean Gore": -118
+            },
+            "Bookmaker": {
+              "Vicente Luque": -115,
+              "Tresean Gore": -105
+            },
+            "Bovada": {
+              "Vicente Luque": -108,
+              "Tresean Gore": -112
+            },
+            "DraftKings": {
+              "Vicente Luque": -102,
+              "Tresean Gore": -118
+            },
+            "Caesars": {
+              "Vicente Luque": -105,
+              "Tresean Gore": -115
+            },
+            "Polymarket": {
+              "Vicente Luque": -104,
+              "Tresean Gore": 100
+            },
+            "Betway": {
+              "Vicente Luque": -105,
+              "Tresean Gore": -120
+            },
+            "Circa": {
+              "Vicente Luque": -110,
+              "Tresean Gore": -110
+            },
+            "Kalshi": {
+              "Vicente Luque": -104,
+              "Tresean Gore": 100
+            },
+            "ProphetX": {
+              "Vicente Luque": -103,
+              "Tresean Gore": -105
+            },
+            "YouWager": {
+              "Vicente Luque": -105,
+              "Tresean Gore": -115
+            },
+            "SXBet": {
+              "Vicente Luque": -101,
+              "Tresean Gore": -104
+            },
+            "BetMGM": {
+              "Vicente Luque": -110,
+              "Tresean Gore": -110
+            },
+            "4casters": {
+              "Vicente Luque": -101,
+              "Tresean Gore": -106
+            },
+            "4Cx": {
+              "Vicente Luque": -103,
+              "Tresean Gore": -108
+            },
+            "BetAnything": {
+              "Vicente Luque": -115,
+              "Tresean Gore": -115
+            },
+            "BetUS": {
+              "Vicente Luque": -105,
+              "Tresean Gore": -115
+            },
+            "FanDuel": {
+              "Vicente Luque": 100,
+              "Tresean Gore": -118
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.5413,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": 100
+            },
+            "bestEv": 0.0826
+          }
+        },
+        "Rafael Tobias vs. Lucas Fernando": {
+          "prediction": {
+            "winner": "Lucas Fernando",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetOnline": {
+              "Lucas Fernando": -262,
+              "Rafael Tobias": 216
+            },
+            "BetRivers": {
+              "Lucas Fernando": -286,
+              "Rafael Tobias": 220
+            },
+            "Pinnacle": {
+              "Lucas Fernando": -285,
+              "Rafael Tobias": 246
+            },
+            "HardRockBet": {
+              "Lucas Fernando": -275,
+              "Rafael Tobias": 220
+            },
+            "Bookmaker": {
+              "Lucas Fernando": -285,
+              "Rafael Tobias": 234
+            },
+            "Bovada": {
+              "Lucas Fernando": -280,
+              "Rafael Tobias": 230
+            },
+            "DraftKings": {
+              "Lucas Fernando": -278,
+              "Rafael Tobias": 225
+            },
+            "Caesars": {
+              "Lucas Fernando": -300,
+              "Rafael Tobias": 240
+            },
+            "Cloudbet": {
+              "Lucas Fernando": -303,
+              "Rafael Tobias": 240
+            },
+            "Circa": {
+              "Lucas Fernando": -300,
+              "Rafael Tobias": 235
+            },
+            "Bet105": {
+              "Lucas Fernando": -285,
+              "Rafael Tobias": 246
+            },
+            "Kalshi": {
+              "Lucas Fernando": -257,
+              "Rafael Tobias": 257
+            },
+            "ProphetX": {
+              "Lucas Fernando": -285,
+              "Rafael Tobias": 250
+            },
+            "Polymarket": {
+              "Lucas Fernando": -245,
+              "Rafael Tobias": 233
+            },
+            "YouWager": {
+              "Lucas Fernando": -280,
+              "Rafael Tobias": 230
+            },
+            "MyBookie": {
+              "Lucas Fernando": -275,
+              "Rafael Tobias": 214
+            },
+            "Stake": {
+              "Lucas Fernando": -278,
+              "Rafael Tobias": 210
+            },
+            "Betway": {
+              "Lucas Fernando": -275,
+              "Rafael Tobias": 210
+            },
+            "FanDuel": {
+              "Lucas Fernando": -295,
+              "Rafael Tobias": 240
+            },
+            "4casters": {
+              "Lucas Fernando": -270,
+              "Rafael Tobias": 242
+            },
+            "SXBet": {
+              "Lucas Fernando": null,
+              "Rafael Tobias": 259
+            },
+            "BetMGM": {
+              "Lucas Fernando": -300,
+              "Rafael Tobias": 240
+            },
+            "4Cx": {
+              "Lucas Fernando": -277,
+              "Rafael Tobias": 237
+            },
+            "BetAnything": {
+              "Lucas Fernando": -275,
+              "Rafael Tobias": 210
+            },
+            "BetUS": {
+              "Lucas Fernando": -275,
+              "Rafael Tobias": 226
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7354,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -245
+            },
+            "bestEv": 0.0356
+          }
+        },
+        "Neil Magny vs. Ramiz Brahimaj": {
+          "prediction": {
+            "winner": "Neil Magny",
+            "method": "KO/TKO"
+          },
+          "result": null,
+          "odds": {
+            "BetRivers": {
+              "Neil Magny": 118,
+              "Ramiz Brahimaj": -147
+            },
+            "BetOnline": {
+              "Neil Magny": 129,
+              "Ramiz Brahimaj": -149
+            },
+            "Cloudbet": {
+              "Neil Magny": 125,
+              "Ramiz Brahimaj": -149
+            },
+            "Bet105": {
+              "Neil Magny": -144,
+              "Ramiz Brahimaj": 128
+            },
+            "Pinnacle": {
+              "Neil Magny": 128,
+              "Ramiz Brahimaj": -144
+            },
+            "MyBookie": {
+              "Neil Magny": 123,
+              "Ramiz Brahimaj": -151
+            },
+            "Stake": {
+              "Neil Magny": 120,
+              "Ramiz Brahimaj": -154
+            },
+            "HardRockBet": {
+              "Neil Magny": 120,
+              "Ramiz Brahimaj": -145
+            },
+            "Bookmaker": {
+              "Neil Magny": 125,
+              "Ramiz Brahimaj": -145
+            },
+            "DraftKings": {
+              "Neil Magny": 120,
+              "Ramiz Brahimaj": -142
+            },
+            "Caesars": {
+              "Neil Magny": 122,
+              "Ramiz Brahimaj": -145
+            },
+            "Polymarket": {
+              "Neil Magny": 133,
+              "Ramiz Brahimaj": -138
+            },
+            "Betway": {
+              "Neil Magny": 120,
+              "Ramiz Brahimaj": -150
+            },
+            "Circa": {
+              "Neil Magny": 125,
+              "Ramiz Brahimaj": -145
+            },
+            "Kalshi": {
+              "Neil Magny": 133,
+              "Ramiz Brahimaj": -138
+            },
+            "ProphetX": {
+              "Neil Magny": 136,
+              "Ramiz Brahimaj": -140
+            },
+            "YouWager": {
+              "Neil Magny": 125,
+              "Ramiz Brahimaj": -145
+            },
+            "SXBet": {
+              "Neil Magny": 133,
+              "Ramiz Brahimaj": -138
+            },
+            "BetMGM": {
+              "Neil Magny": 125,
+              "Ramiz Brahimaj": -150
+            },
+            "4casters": {
+              "Neil Magny": 130,
+              "Ramiz Brahimaj": -141
+            },
+            "4Cx": {
+              "Neil Magny": 127,
+              "Ramiz Brahimaj": -144
+            },
+            "Bovada": {
+              "Neil Magny": 127,
+              "Ramiz Brahimaj": -147
+            },
+            "BetAnything": {
+              "Neil Magny": 119,
+              "Ramiz Brahimaj": -149
+            },
+            "BetUS": {
+              "Neil Magny": 122,
+              "Ramiz Brahimaj": -145
+            },
+            "FanDuel": {
+              "Neil Magny": 130,
+              "Ramiz Brahimaj": -154
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.4545,
+            "bestOdds": {
+              "platform": "ProphetX",
+              "odds": 136
+            },
+            "bestEv": 0.0727
+          }
+        },
+        "Jeremiah Wells vs. Myktybek Orolbai": {
+          "prediction": {
+            "winner": "Myktybek Orolbai",
+            "method": "Submission"
+          },
+          "result": null,
+          "odds": {
+            "BetRivers": {
+              "Jeremiah Wells": 650,
+              "Myktybek Orolbai": -1111
+            },
+            "BetOnline": {
+              "Jeremiah Wells": 709,
+              "Myktybek Orolbai": -1100
+            },
+            "Cloudbet": {
+              "Jeremiah Wells": 855,
+              "Myktybek Orolbai": -1667
+            },
+            "Bet105": {
+              "Jeremiah Wells": 869,
+              "Myktybek Orolbai": -1250
+            },
+            "Pinnacle": {
+              "Jeremiah Wells": 869,
+              "Myktybek Orolbai": -1250
+            },
+            "MyBookie": {
+              "Jeremiah Wells": 670,
+              "Myktybek Orolbai": -1205
+            },
+            "HardRockBet": {
+              "Jeremiah Wells": 650,
+              "Myktybek Orolbai": -1300
+            },
+            "Bookmaker": {
+              "Jeremiah Wells": 797,
+              "Myktybek Orolbai": -1300
+            },
+            "DraftKings": {
+              "Jeremiah Wells": 675,
+              "Myktybek Orolbai": -1050
+            },
+            "Caesars": {
+              "Jeremiah Wells": 750,
+              "Myktybek Orolbai": -1200
+            },
+            "Polymarket": {
+              "Jeremiah Wells": 809,
+              "Myktybek Orolbai": -900
+            },
+            "Betway": {
+              "Jeremiah Wells": 600,
+              "Myktybek Orolbai": -1000
+            },
+            "Circa": {
+              "Jeremiah Wells": 825,
+              "Myktybek Orolbai": -1300
+            },
+            "ProphetX": {
+              "Jeremiah Wells": 760,
+              "Myktybek Orolbai": -900
+            },
+            "YouWager": {
+              "Jeremiah Wells": 725,
+              "Myktybek Orolbai": -1100
+            },
+            "Kalshi": {
+              "Jeremiah Wells": 809,
+              "Myktybek Orolbai": -900
+            },
+            "FanDuel": {
+              "Jeremiah Wells": 750,
+              "Myktybek Orolbai": -1200
+            },
+            "BetMGM": {
+              "Jeremiah Wells": 725,
+              "Myktybek Orolbai": -1200
+            },
+            "4casters": {
+              "Jeremiah Wells": 785,
+              "Myktybek Orolbai": -976
+            },
+            "SXBet": {
+              "Jeremiah Wells": 809,
+              "Myktybek Orolbai": null
+            },
+            "4Cx": {
+              "Jeremiah Wells": 761,
+              "Myktybek Orolbai": -1001
+            },
+            "Stake": {
+              "Jeremiah Wells": 640,
+              "Myktybek Orolbai": -1250
+            },
+            "Bovada": {
+              "Jeremiah Wells": 800,
+              "Myktybek Orolbai": -1300
+            },
+            "BetAnything": {
+              "Jeremiah Wells": 585,
+              "Myktybek Orolbai": -1300
+            },
+            "BetUS": {
+              "Jeremiah Wells": 665,
+              "Myktybek Orolbai": -1100
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.913,
+            "bestOdds": {
+              "platform": "Polymarket",
+              "odds": -900
+            },
+            "bestEv": 0.0145
+          }
+        }
+      }
+    },
+    {
       "id": "ufc-fight-night-medic-rodriguez",
       "title": "UFC Fight Night: Medić vs. Rodriguez",
       "subtitle": null,
