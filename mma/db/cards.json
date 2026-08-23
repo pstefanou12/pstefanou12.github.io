@@ -2364,13 +2364,123 @@
         },
         "Donte Johnson vs. Eric McConico Jr.": {
           "prediction": {
-            "winner": "",
-            "method": ""
+            "winner": "Donte Johnson",
+            "method": "KO/TKO"
           },
           "result": {
             "winner": "Donte Johnson",
             "method": "KO (punches)",
             "time": "R1 1:38"
+          },
+          "odds": {
+            "BetRivers": {
+              "Donte Johnson": -312,
+              "Eric McConico Jr.": 235
+            },
+            "BetOnline": {
+              "Donte Johnson": -305,
+              "Eric McConico Jr.": 249
+            },
+            "Bet105": {
+              "Donte Johnson": -324,
+              "Eric McConico Jr.": 277
+            },
+            "Pinnacle": {
+              "Donte Johnson": -325,
+              "Eric McConico Jr.": 278
+            },
+            "MyBookie": {
+              "Donte Johnson": -310,
+              "Eric McConico Jr.": 242
+            },
+            "Stake": {
+              "Donte Johnson": -323,
+              "Eric McConico Jr.": 235
+            },
+            "HardRockBet": {
+              "Donte Johnson": -325,
+              "Eric McConico Jr.": 240
+            },
+            "Bookmaker": {
+              "Donte Johnson": -320,
+              "Eric McConico Jr.": 260
+            },
+            "Bovada": {
+              "Donte Johnson": -320,
+              "Eric McConico Jr.": 260
+            },
+            "DraftKings": {
+              "Donte Johnson": -310,
+              "Eric McConico Jr.": 250
+            },
+            "Caesars": {
+              "Donte Johnson": -320,
+              "Eric McConico Jr.": 250
+            },
+            "Polymarket": {
+              "Donte Johnson": -300,
+              "Eric McConico Jr.": 285
+            },
+            "Cloudbet": {
+              "Donte Johnson": -345,
+              "Eric McConico Jr.": 270
+            },
+            "Betway": {
+              "Donte Johnson": -300,
+              "Eric McConico Jr.": 225
+            },
+            "Circa": {
+              "Donte Johnson": -340,
+              "Eric McConico Jr.": 280
+            },
+            "Kalshi": {
+              "Donte Johnson": -317,
+              "Eric McConico Jr.": 300
+            },
+            "ProphetX": {
+              "Donte Johnson": -295,
+              "Eric McConico Jr.": 270
+            },
+            "YouWager": {
+              "Donte Johnson": -320,
+              "Eric McConico Jr.": 250
+            },
+            "FanDuel": {
+              "Donte Johnson": -320,
+              "Eric McConico Jr.": 250
+            },
+            "BetMGM": {
+              "Donte Johnson": -325,
+              "Eric McConico Jr.": 260
+            },
+            "4casters": {
+              "Donte Johnson": -305,
+              "Eric McConico Jr.": 280
+            },
+            "4Cx": {
+              "Donte Johnson": -312,
+              "Eric McConico Jr.": 273
+            },
+            "SXBet": {
+              "Donte Johnson": -298,
+              "Eric McConico Jr.": 276
+            },
+            "BetAnything": {
+              "Donte Johnson": -315,
+              "Eric McConico Jr.": 235
+            },
+            "BetUS": {
+              "Donte Johnson": -305,
+              "Eric McConico Jr.": 250
+            }
+          },
+          "bestOdds": {
+            "groundTruthProb": 0.7561,
+            "bestOdds": {
+              "platform": "ProphetX",
+              "odds": -295
+            },
+            "bestEv": 0.0124
           }
         },
         "Tresean Gore vs. Vicente Luque": {
