@@ -2924,12 +2924,12 @@
     },
     {
       "id": "ufc-fight-night-medic-rodriguez",
-      "title": "UFC Fight Night: Medić vs. Rodriguez",
-      "subtitle": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Medić vs. Rodriguez",
       "date": "2026-08-01",
-      "rating": null,
+      "rating": 7.1,
       "poster": "/mma/db/img/ufc_fight_night_medic_rodriguez_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-medic-rodriguez.html",
       "previewUrl": "db/previews/ufc-fight-night-medic-rodriguez.html",
       "location": "Belgrade Arena, Belgrade, Serbia",
       "eventTime": "2026-08-01",
@@ -2939,7 +2939,11 @@
             "winner": "Uroš Medić",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Uroš Medić",
+            "method": "TKO (punches)",
+            "time": "R1 0:30"
+          },
           "odds": {
             "BetUS": {
               "Uroš Medić": -375,
@@ -3051,12 +3055,16 @@
             "bestEv": 0.028
           }
         },
-        "Jan Błachowicz vs. Navajo Stirling": {
+        "Navajo Stirling vs. Jan Błachowicz": {
           "prediction": {
             "winner": "Jan Błachowicz",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Navajo Stirling",
+            "method": "TKO (elbows and punches)",
+            "time": "R1 2:56"
+          },
           "odds": {
             "FanDuel": {
               "Jan Błachowicz": 260,
@@ -3173,7 +3181,11 @@
             "winner": "Marcin Tybura",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Aleksandar Rakić",
+            "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "FanDuel": {
               "Marcin Tybura": 310,
@@ -3285,12 +3297,16 @@
             "bestEv": 0.061
           }
         },
-        "Duško Todorović vs. Robert Valentin": {
+        "Robert Valentin vs. Duško Todorović": {
           "prediction": {
             "winner": "Robert Valentin",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Robert Valentin",
+            "method": "Submission (guillotine choke)",
+            "time": "R1 4:14"
+          },
           "odds": {
             "Bovada": {
               "Duško Todorović": 135,
@@ -3402,12 +3418,16 @@
             "bestEv": 0.0373
           }
         },
-        "Vlasto Čepo vs. Gilbert Urbina": {
+        "Gilbert Urbina vs. Vlasto Čepo": {
           "prediction": {
             "winner": "Vlasto Čepo",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Gilbert Urbina",
+            "method": "TKO (elbows and punches)",
+            "time": "R1 1:01"
+          },
           "odds": {
             "MyBookie": {
               "Vlasto Čepo": -319,
@@ -3519,12 +3539,16 @@
             "bestEv": 0.0403
           }
         },
-        "Miloš Janičić vs. Noah Gugnon": {
+        "Noah Gugnon vs. Miloš Janičić": {
           "prediction": {
             "winner": "Miloš Janičić",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Noah Gugnon",
+            "method": "Submission (rear-naked choke)",
+            "time": "R1 1:21"
+          },
           "odds": {
             "FanDuel": {
               "Miloš Janičić": -104,
@@ -3636,12 +3660,16 @@
             "bestEv": 0.0619
           }
         },
-        "Ľudovít Klein vs. Tofiq Musayev": {
+        "Tofiq Musayev vs. Ľudovít Klein": {
           "prediction": {
             "winner": "Ľudovít Klein",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Tofiq Musayev",
+            "method": "TKO (punches)",
+            "time": "R2 4:07"
+          },
           "odds": {
             "Bovada": {
               "Ľudovít Klein": -245,
@@ -3753,12 +3781,16 @@
             "bestEv": 0.0498
           }
         },
-        "Oban Elliott vs. Michael Oliveira": {
+        "Michael Oliveira vs. Oban Elliott": {
           "prediction": {
             "winner": "Oban Elliott",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Michael Oliveira",
+            "method": "TKO (punches)",
+            "time": "R1 1:49"
+          },
           "odds": {
             "SXBet": {
               "Oban Elliott": 317,
@@ -3875,7 +3907,11 @@
             "winner": "Mark Vologdin",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Borislav Nikolić",
+            "method": "Decision (unanimous) (29–27, 29–27, 29–27)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "4Cx": {
               "Mark Vologdin": 175,
@@ -3987,12 +4023,16 @@
             "bestEv": 0.0593
           }
         },
-        "Dennis Buzukja vs. Bogdan Grad": {
+        "Bogdan Grad vs. Dennis Buzukja": {
           "prediction": {
             "winner": "Dennis Buzukja",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Bogdan Grad",
+            "method": "Submission (arm-triangle choke)",
+            "time": "R2 4:33"
+          },
           "odds": {
             "HardRockBet": {
               "Bogdan Grad": -200,
@@ -4109,7 +4149,11 @@
             "winner": "Mateusz Rębecki",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Mateusz Rębecki",
+            "method": "TKO (punches)",
+            "time": "R1 4:41"
+          },
           "odds": {
             "Bovada": {
               "Mateusz Rębecki": -750,
@@ -4226,7 +4270,11 @@
             "winner": "Nina Nikolija Milošević",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Nina Nikolija Milošević",
+            "method": "TKO (punch to the body)",
+            "time": "R1 3:41"
+          },
           "odds": {
             "BetMGM": {
               "Nina Nikolija Milošević": -550,
@@ -4343,7 +4391,11 @@
             "winner": "Jovan Leka",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Jovan Leka",
+            "method": "TKO (body kick and punches)",
+            "time": "R1 2:22"
+          },
           "odds": {
             "HardRockBet": {
               "Jovan Leka": -275,
@@ -4455,12 +4507,16 @@
             "bestEv": 1.6281
           }
         },
-        "Marina Spasić vs. Stephanie Luciano": {
+        "Stephanie Luciano vs. Marina Spasić": {
           "prediction": {
             "winner": "Stephanie Luciano",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Stephanie Luciano",
+            "method": "Submission (rear-naked choke)",
+            "time": "R1 3:20"
+          },
           "odds": {
             "SXBet": {
               "Marina Spasić": 283,
