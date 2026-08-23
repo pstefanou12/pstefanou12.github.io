@@ -1524,9 +1524,9 @@
       "title": "UFC 330",
       "subtitle": "Makhachev vs. Machado Garry",
       "date": "2026-08-15",
-      "rating": null,
+      "rating": 5.9,
       "poster": "/mma/db/img/ufc_330_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-330.html",
       "previewUrl": "db/previews/ufc-330.html",
       "location": "Xfinity Mobile Arena, Philadelphia, Pennsylvania, United States",
       "eventTime": "2026-08-15",
@@ -1536,7 +1536,11 @@
             "winner": "Islam Makhachev",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Islam Makhachev(c)",
+            "method": "Decision (unanimous) (49–46, 49–46, 48–47)",
+            "time": "R5 5:00"
+          },
           "odds": {
             "Bookmaker": {
               "Islam Makhachev(c)": -345,
@@ -1638,15 +1642,18 @@
               "Islam Makhachev(c)": -345,
               "Ian Machado Garry": 294
             }
-          },
-          "bestOdds": null
+          }
         },
         "Mackenzie Dern(c) vs. Gillian Robertson": {
           "prediction": {
             "winner": "Gillian Robertson",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Mackenzie Dern(c)",
+            "method": "Decision (unanimous) (49–46, 49–46, 48–47)",
+            "time": "R5 5:00"
+          },
           "odds": {
             "Bookmaker": {
               "Mackenzie Dern(c)": -190,
@@ -1763,7 +1770,11 @@
             "winner": "Jalin Turner",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Jalin Turner",
+            "method": "KO (punches)",
+            "time": "R1 0:39"
+          },
           "odds": {
             "BetRivers": {
               "Jalin Turner": -111,
@@ -1875,12 +1886,16 @@
             "bestEv": 0.0275
           }
         },
-        "Mansur Abdul-Malik vs. Dustin Stoltzfus": {
+        "Dustin Stoltzfus vs. Mansur Abdul-Malik": {
           "prediction": {
             "winner": "Mansur Abdul-Malik",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Dustin Stoltzfus",
+            "method": "Submission (rear-naked choke)",
+            "time": "R2 4:25"
+          },
           "odds": {
             "BetRivers": {
               "Mansur Abdul-Malik": -714,
@@ -1992,12 +2007,16 @@
             "bestEv": 0.0293
           }
         },
-        "Edson Barboza vs. Esteban Ribovics": {
+        "Esteban Ribovics vs. Edson Barboza": {
           "prediction": {
             "winner": "Esteban Ribovics",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Esteban Ribovics",
+            "method": "TKO (punches)",
+            "time": "R2 1:32"
+          },
           "odds": {
             "BetRivers": {
               "Esteban Ribovics": -769,
@@ -2114,7 +2133,11 @@
             "winner": "Joel Álvarez",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Chidi Njokuani",
+            "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "MyBookie": {
               "Joel Álvarez": -330,
@@ -2227,7 +2250,11 @@
             "winner": "Charles Johnson",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Charles Johnson",
+            "method": "Submission (twister)",
+            "time": "R3 1:36"
+          },
           "odds": {
             "Bet105": {
               "Charles Johnson": -115,
@@ -2335,112 +2362,116 @@
             "bestEv": 0.0826
           }
         },
-        "Donte Johnson vs. Eric McConico": {
+        "Donte Johnson vs. Eric McConico Jr.": {
           "prediction": {
             "winner": "Donte Johnson",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Donte Johnson",
+            "method": "KO (punches)",
+            "time": "R1 1:38"
+          },
           "odds": {
             "BetRivers": {
               "Donte Johnson": -312,
-              "Eric McConico": 235
+              "Eric McConico Jr.": 235
             },
             "BetOnline": {
               "Donte Johnson": -305,
-              "Eric McConico": 249
+              "Eric McConico Jr.": 249
             },
             "Bet105": {
               "Donte Johnson": -324,
-              "Eric McConico": 277
+              "Eric McConico Jr.": 277
             },
             "Pinnacle": {
               "Donte Johnson": -325,
-              "Eric McConico": 278
+              "Eric McConico Jr.": 278
             },
             "MyBookie": {
               "Donte Johnson": -310,
-              "Eric McConico": 242
+              "Eric McConico Jr.": 242
             },
             "Stake": {
               "Donte Johnson": -323,
-              "Eric McConico": 235
+              "Eric McConico Jr.": 235
             },
             "HardRockBet": {
               "Donte Johnson": -325,
-              "Eric McConico": 240
+              "Eric McConico Jr.": 240
             },
             "Bookmaker": {
               "Donte Johnson": -320,
-              "Eric McConico": 260
+              "Eric McConico Jr.": 260
             },
             "Bovada": {
               "Donte Johnson": -320,
-              "Eric McConico": 260
+              "Eric McConico Jr.": 260
             },
             "DraftKings": {
               "Donte Johnson": -310,
-              "Eric McConico": 250
+              "Eric McConico Jr.": 250
             },
             "Caesars": {
               "Donte Johnson": -320,
-              "Eric McConico": 250
+              "Eric McConico Jr.": 250
             },
             "Polymarket": {
               "Donte Johnson": -300,
-              "Eric McConico": 285
+              "Eric McConico Jr.": 285
             },
             "Cloudbet": {
               "Donte Johnson": -345,
-              "Eric McConico": 270
+              "Eric McConico Jr.": 270
             },
             "Betway": {
               "Donte Johnson": -300,
-              "Eric McConico": 225
+              "Eric McConico Jr.": 225
             },
             "Circa": {
               "Donte Johnson": -340,
-              "Eric McConico": 280
+              "Eric McConico Jr.": 280
             },
             "Kalshi": {
               "Donte Johnson": -317,
-              "Eric McConico": 300
+              "Eric McConico Jr.": 300
             },
             "ProphetX": {
               "Donte Johnson": -295,
-              "Eric McConico": 270
+              "Eric McConico Jr.": 270
             },
             "YouWager": {
               "Donte Johnson": -320,
-              "Eric McConico": 250
+              "Eric McConico Jr.": 250
             },
             "FanDuel": {
               "Donte Johnson": -320,
-              "Eric McConico": 250
+              "Eric McConico Jr.": 250
             },
             "BetMGM": {
               "Donte Johnson": -325,
-              "Eric McConico": 260
+              "Eric McConico Jr.": 260
             },
             "4casters": {
               "Donte Johnson": -305,
-              "Eric McConico": 280
+              "Eric McConico Jr.": 280
             },
             "4Cx": {
               "Donte Johnson": -312,
-              "Eric McConico": 273
+              "Eric McConico Jr.": 273
             },
             "SXBet": {
               "Donte Johnson": -298,
-              "Eric McConico": 276
+              "Eric McConico Jr.": 276
             },
             "BetAnything": {
               "Donte Johnson": -315,
-              "Eric McConico": 235
+              "Eric McConico Jr.": 235
             },
             "BetUS": {
               "Donte Johnson": -305,
-              "Eric McConico": 250
+              "Eric McConico Jr.": 250
             }
           },
           "bestOdds": {
@@ -2452,12 +2483,16 @@
             "bestEv": 0.0124
           }
         },
-        "Vicente Luque vs. Tresean Gore": {
+        "Tresean Gore vs. Vicente Luque": {
           "prediction": {
             "winner": "Tresean Gore",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Tresean Gore",
+            "method": "Decision (unanimous) (30–27, 30–27, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "BetRivers": {
               "Vicente Luque": -111,
@@ -2569,12 +2604,16 @@
             "bestEv": 0.0826
           }
         },
-        "Rafael Tobias vs. Lucas Fernando": {
+        "Lucas Fernando vs. Rafael Tobias": {
           "prediction": {
             "winner": "Lucas Fernando",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Lucas Fernando",
+            "method": "TKO (knee to the body and elbows)",
+            "time": "R3 1:10"
+          },
           "odds": {
             "BetOnline": {
               "Lucas Fernando": -262,
@@ -2691,7 +2730,11 @@
             "winner": "Neil Magny",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Neil Magny",
+            "method": "TKO (punches)",
+            "time": "R2 3:20"
+          },
           "odds": {
             "BetRivers": {
               "Neil Magny": 118,
@@ -2808,7 +2851,11 @@
             "winner": "Myktybek Orolbai",
             "method": "Submission"
           },
-          "result": null,
+          "result": {
+            "winner": "Jeremiah Wells",
+            "method": "Technical Submission (ninja choke)",
+            "time": "R3 1:24"
+          },
           "odds": {
             "BetRivers": {
               "Jeremiah Wells": 650,
