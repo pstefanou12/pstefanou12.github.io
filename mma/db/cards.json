@@ -2,22 +2,26 @@
   "cards": [
     {
       "id": "ufc-fight-night-hernandez-rodrigues",
-      "title": "UFC Fight Night: Hernandez vs. Rodrigues",
-      "subtitle": null,
+      "title": "UFC Fight Night",
+      "subtitle": "Hernandez vs. Rodrigues",
       "date": "2026-08-22",
-      "rating": null,
+      "rating": 7.4,
       "poster": "/mma/db/img/ufc_fight_night_hernandez_rodrigues_poster.jpg",
-      "recapUrl": null,
+      "recapUrl": "db/recaps/ufc-fight-night-hernandez-rodrigues.html",
       "previewUrl": "db/previews/ufc-fight-night-hernandez-rodrigues.html",
       "location": "Golden 1 Center, Sacramento, California, United States",
       "eventTime": "2026-08-22",
       "fights": {
-        "Anthony Hernandez vs. Gregory Rodrigues": {
+        "Gregory Rodrigues vs. Anthony Hernandez": {
           "prediction": {
             "winner": "Gregory Rodrigues",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Gregory Rodrigues",
+            "method": "Decision (unanimous) (48–47, 49–46, 48–47)",
+            "time": "R5 5:00"
+          },
           "odds": {
             "FanDuel": {
               "Anthony Hernandez": -215,
@@ -129,12 +133,16 @@
             "bestEv": 0.0281
           }
         },
-        "Serghei Spivac vs. Vitor Petrino": {
+        "Vitor Petrino vs. Serghei Spivac": {
           "prediction": {
             "winner": "Serghei Spivac",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Vitor Petrino",
+            "method": "Decision (unanimous) (30–27, 30–27, 30–27)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "FanDuel": {
               "Serghei Spivac": 132,
@@ -251,7 +259,11 @@
             "winner": "Reinier de Ridder",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Reinier de Ridder",
+            "method": "TKO (punches)",
+            "time": "R1 4:01"
+          },
           "odds": {
             "FanDuel": {
               "Reinier de Ridder": -390,
@@ -368,7 +380,11 @@
             "winner": "Mason Jones",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "MarQuel Mederos",
+            "method": "TKO (elbows and punches)",
+            "time": "R2 2:07"
+          },
           "odds": {
             "FanDuel": {
               "MarQuel Mederos": 275,
@@ -485,7 +501,11 @@
             "winner": "Carli Judice",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Carli Judice",
+            "method": "TKO (front kick to the body and punches)",
+            "time": "R1 1:39"
+          },
           "odds": {
             "FanDuel": {
               "Carli Judice": -590,
@@ -602,7 +622,11 @@
             "winner": "Anthony Wint",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Anthony Wint",
+            "method": "Technical Submission (arm-triangle choke)",
+            "time": "R1 4:29"
+          },
           "odds": {
             "BetOnline": {
               "Anthony Wint": -1000,
@@ -715,7 +739,11 @@
             "winner": "Lerryan Douglas",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Jamall Emmers",
+            "method": "TKO (punches)",
+            "time": "R1 3:38"
+          },
           "odds": {
             "Betway": {
               "Jamall Emmers": 300,
@@ -827,12 +855,16 @@
             "bestEv": 0.033
           }
         },
-        "Kennedy Nzechukwu vs. Shamil Gaziev": {
+        "Shamil Gaziev vs. Kennedy Nzechukwu": {
           "prediction": {
             "winner": "Shamil Gaziev",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Shamil Gaziev",
+            "method": "KO (punch)",
+            "time": "R1 1:20"
+          },
           "odds": {
             "FanDuel": {
               "Shamil Gaziev": -124,
@@ -949,7 +981,11 @@
             "winner": "Chris Padilla",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Chris Padilla",
+            "method": "Technical Submission (arm-triangle choke)",
+            "time": "R3 4:59"
+          },
           "odds": {
             "Betway": {
               "Nasrat Haqparast": -110,
@@ -1066,7 +1102,11 @@
             "winner": "Márcio Barbosa",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Márcio Barbosa",
+            "method": "TKO (punch)",
+            "time": "R1 2:47"
+          },
           "odds": {
             "BetOnline": {
               "Márcio Barbosa": -800,
@@ -1174,12 +1214,16 @@
             "bestEv": 0.0208
           }
         },
-        "Gauge Young vs. Stanley Dorsainvil": {
+        "Stanley Dorsainvil vs. Gauge Young": {
           "prediction": {
             "winner": "Gauge Young",
             "method": "Decision"
           },
-          "result": null,
+          "result": {
+            "winner": "Stanley Dorsainvil",
+            "method": "Decision (unanimous) (29–28, 29–28, 29–28)",
+            "time": "R3 5:00"
+          },
           "odds": {
             "BetOnline": {
               "Gauge Young": -186,
@@ -1287,12 +1331,16 @@
             "bestEv": 0.0443
           }
         },
-        "Wesley Schultz vs. Jackson McVey": {
+        "Jackson McVey vs. Wesley Schultz": {
           "prediction": {
             "winner": "Jackson McVey",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Jackson McVey",
+            "method": "TKO (knee to the body and punches)",
+            "time": "R1 4:13"
+          },
           "odds": {
             "FanDuel": {
               "Wesley Schultz": 144,
@@ -1405,7 +1453,11 @@
             "winner": "Shanelle Dyer",
             "method": "KO/TKO"
           },
-          "result": null,
+          "result": {
+            "winner": "Shanelle Dyer",
+            "method": "TKO (punches)",
+            "time": "R3 1:42"
+          },
           "odds": {
             "BetOnline": {
               "Shanelle Dyer": -850,
