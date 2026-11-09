@@ -1,0 +1,59 @@
+A correlated Gaussian, observed only where $x_0 + x_1 > 1$. Every model in
+delphi follows the same three steps: describe the truncation set as a plain
+callable `phi`, construct the model, and `fit` it to the sample you observed.
+
+```python
+import torch as ch
+import torch.distributions
+
+from delphi.truncated.distributions import truncated_multivariate_normal
+
+ch.manual_seed(0)
+
+# Ground truth: a correlated 2-D Gaussian.
+loc = ch.tensor([0.0, 0.0])
+covariance_matrix = ch.tensor([[1.0, 0.5], [0.5, 1.0]])
+population = torch.distributions.MultivariateNormal(loc, covariance_matrix).sample(
+    [100000]
+)
+
+
+# The truncation set: only points with x0 + x1 > 1 are ever observed.
+def phi(x):
+    return x.sum(dim=-1) > 1.0
+
+
+S = population[phi(population)][:10000]
+alpha = phi(population).float().mean().item()
+
+# Fit on standardized data, moving phi through the same transform.
+mean, std = S.mean(0), S.std(0)
+# The default hyperparameters: 2500 steps, lr 1e-2, the Fisher schedule.
+model = truncated_multivariate_normal.TruncatedMultivariateNormal(
+    2, phi=lambda z: phi(z * std + mean), alpha=alpha
+)
+model.fit((S - mean) / std)
+
+# Undo the transform on the way out.
+recovered_loc = model.avg_loc_ * std + mean
+recovered_cov = ch.diag(std) @ model.avg_covariance_matrix_ @ ch.diag(std)
+```
+
+<ResultTable
+  columns={["mean", "covariance"]}
+  rows={[
+    ["truth", "(0, 0)", "[[1, 0.5], [0.5, 1]]"],
+    ["sample mean and covariance", "(1.042, 1.041)", "[[0.447, −0.053], [−0.053, 0.436]]"],
+    ["recovered", "(0.015, 0.047)", "[[1.016, 0.491], [0.491, 0.963]]"],
+  ]}
+/>
+
+28% of the population survives. The sample's own statistics are off in every
+entry, and even get the sign of the correlation wrong.
+
+## Where next
+
+- [Usage notes](/usage-notes): what `phi`, `alpha` and the hyperparameters do, and which estimate to read.
+- [Multivariate normal](/truncated-multivariate-normal): the model above in full.
+- [Multivariate normal, unknown set](/unknown-truncation-multivariate-normal): the same fit when `phi` cannot be queried.
+- [Linear regression](/truncated-linear-regression): truncation on the response of a linear model.

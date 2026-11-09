@@ -1,0 +1,47 @@
+A model subclasses `DelphiModel` and supplies:
+
+| piece | role |
+|---|---|
+| `defaults` | its pydantic config class |
+| `criterion`, `criterion_params` | the loss the phases train |
+| `hessian()` | the criterion's curvature, needed by the Fisher schedule |
+| `warm_start_criterion`, `warm_start_hessian` | the warm start's loss, its parameters bound, and its curvature |
+| `pre_phase_hook`, `post_phase_hook` | prepare each phase; decide after it whether another runs |
+| `post_warm_start_hook`, `post_training_hook` | adopt the warm start's result; finish after the whole procedure |
+| `step_post_hook`, `run_metrics` | act after each step (e.g. project); report facts about a run |
+
+## Truncated distributions
+
+The truncated distributions add two layers on top of this:
+
+- **`delphi/exponential_family/<family>.py`** wraps the torch distribution in
+  natural parameters: its sufficient statistic $T(x)$, `to_natural`,
+  `to_canonical` and `log_prob`.
+- **`delphi/truncated/distributions/truncated_<family>.py`** is the model. It
+  subclasses `TruncatedExponentialFamilyDistribution`, which supplies the
+  truncated NLL, its Hessian, the sublevel-set projection and the phases
+  that widen its budget. The family adds its starting point
+  (`_calc_emp_model`), the domain of its parameters (`_constraints`) and its
+  estimates, named as torch names them (`avg_rate_`, `avg_loc_`, ...).
+
+## Truncated linear models
+
+The truncated linear models follow the same pattern.
+`delphi/statistical_model.py`'s `StatisticalModel` sits under them: once
+the trainer has fit a model, `refine()` takes `refine_steps` Newton steps
+with its `hessian()`. `delphi/stats/linear_model.py`'s `LinearModel` owns
+the prediction $h_W(x) = xW$, the design matrix and the `avg_`, `ema_`,
+`final_` and `best_` estimates of `coef_` and `intercept_`.
+`delphi/stats/truncated/truncated_linear_model.py`'s `TruncatedLinearModel`
+adds the oracle, the radius phases, the projection in `step_post_hook` and
+`summary()`. A model supplies its criterion from
+`delphi/stats/truncated/losses.py` (`TruncatedGaussianNLL` for known-variance
+regression), its Hessian as `_hessian` and its projection set from
+`delphi/projection_sets.py`.
+
+## Truncation sets
+
+Truncation sets are plain callables. `delphi/oracle.py` holds the stateful
+ones: `Identity`, which admits every sample, and `RecoveredSet`, the set an
+unknown-truncation fit implies. The Hermite polynomials that fit uses live
+in `delphi/torchnomials/`; see [Polynomials](/polynomials).

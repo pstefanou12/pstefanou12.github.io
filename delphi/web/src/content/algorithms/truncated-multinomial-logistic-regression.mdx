@@ -1,0 +1,45 @@
+## Model
+
+Multinomial logistic regression labels a sample with the largest of $K$
+latents $z_k = w_k^\top x + b_k + g_k$, $g_k \sim \mathrm{Gumbel}(0, 1)$, and
+keeps it only where `phi` admits the latent vector. Class 0 is the reference:
+its weights are zero, so `coef_` holds classes 1 to $K - 1$.
+
+## Example
+
+```python
+import torch as ch
+import torch.nn.functional
+
+from delphi.stats.truncated import truncated_multinomial_logistic_regression
+
+X = ch.randn(20000, 10)
+coef = ch.randn(2, 10) / 3.0
+logits = torch.nn.functional.pad(X @ coef.T + 0.5, (1, 0))
+z = logits + ch.distributions.Gumbel(0.0, 1.0).sample(logits.shape)
+
+
+def phi(z):
+    """Keep the hard samples: those whose top two latents are close."""
+    top = z.topk(2, dim=-1).values
+    return top[..., 0] - top[..., 1] < 0.8
+
+
+kept = phi(z)
+y = z.argmax(1, keepdim=True)
+model = truncated_multinomial_logistic_regression.TruncatedMultinomialLogisticRegression(phi)
+model.fit(X[kept], y[kept])
+model.coef_, model.intercept_
+model.predict_proba(X[:5])
+```
+
+## Arguments in practice
+
+- **`phi` sees the latent vector**, shaped `(n, m, K)`, and returns a mask
+  or a survival probability shaped `(n, m)`.
+- **`alpha`** bounds every sample's mass on each label, at most $1/K$. It
+  sets no projection set: the descent is unconstrained, since no analysis
+  yet shows that the multinomial needs one.
+- **`sampler`** draws each label's latents given that label wins.
+- **`batch_size`** is 100 by default. The first step's gradient noise grows
+  with the $(K - 1)(d + 1)$ parameters, so raise it with them: 1000 for 202.

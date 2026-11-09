@@ -1,0 +1,8 @@
+## Model
+
+Labels $y = \mathbf{1}\{w^\top x + b + \varepsilon \ge 0\}$ with
+$\varepsilon \sim \mathrm{Logistic}(0, 1)$, kept only where `phi` admits the
+latent $w^\top x + b + \varepsilon$. It shares its arguments, sampler and
+projection set with [probit regression](/truncated-probit-regression), which
+has a worked example and a discussion of what truncation does to a naive
+classifier.

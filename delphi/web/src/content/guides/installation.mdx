@@ -1,0 +1,33 @@
+delphi needs Python 3.10 to 3.14, [Poetry](https://python-poetry.org) and
+[`just`](https://github.com/casey/just). Neither needs a version manager such
+as asdf.
+
+```bash
+# Poetry
+curl -sSL https://install.python-poetry.org | python3 -
+
+# just, into ~/.local/bin (or: brew install just, cargo install just)
+curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/bin
+```
+
+Then clone and install delphi:
+
+```bash
+git clone https://github.com/pstefanou12/delphi.ai.git
+cd delphi.ai
+just install    # poetry install --with dev
+just hooks      # pre-push hooks running just check
+```
+
+## Development
+
+```bash
+just check                 # ruff format, ruff check, pylint --errors-only, mypy
+just test                  # tests affected by your changes; CI runs all but slow
+just test --testmon-noselect   # the full suite
+just test -m "not slow"    # skip fits over a minute
+just test <path> -n 0 --log-cli-level=INFO   # show training logs, serially
+just cov                   # branch coverage of delphi/
+```
+
+Next: the [Quickstart](/quickstart).

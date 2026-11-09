@@ -1,0 +1,78 @@
+## Which estimator runs
+
+`TruncatedMultivariateNormal` covers every case of the normal and picks the
+estimator from what you know:
+
+| you pass | estimator | learns |
+|---|---|---|
+| `phi` | `KnownTruncationMultivariateNormal`: projected SGD on the truncated NLL | mean and covariance |
+| `phi` and `covariance_matrix` | `KnownTruncationMultivariateNormalKnownCovariance` | mean |
+| `covariance_matrix` only | `UnknownTruncationMultivariateNormalKnownCovariance` | mean and the set |
+| neither | `UnknownTruncationMultivariateNormal`: see [unknown set](/unknown-truncation-multivariate-normal) | mean, covariance and the set |
+| `method="l1"`, no `phi` | learns the set by L1 polynomial regression, then fits as if it were known | mean and covariance |
+
+The fitted estimator is `model.estimator_`, which holds every diagnostic.
+
+## Method
+
+Observed only on $S$, the sample's density is
+$\mathcal{N}(x; \mu, \Sigma)\,\mathbf{1}\{x \in S\} / \mathcal{N}(S; \mu, \Sigma)$.
+In the natural parameters $T = \Sigma^{-1}$, $v = \Sigma^{-1}\mu$ its negative
+log-likelihood is convex, and Daskalakis et al. (2018) show that projected SGD
+on it, started from the sample's own mean and covariance and kept in a region
+sized by the survival mass $\alpha$, recovers $(\mu, \Sigma)$ efficiently in
+high dimensions. Its gradient needs
+the moments of the current model on $S$, which delphi estimates by rejection
+sampling from the current model through `phi`.
+
+## Example
+
+A correlated Gaussian, observed only where $x_0 + x_1 > 1$:
+
+```python
+import torch as ch
+import torch.distributions
+
+from delphi.truncated.distributions import truncated_multivariate_normal
+
+ch.manual_seed(0)
+
+loc = ch.tensor([0.0, 0.0])
+covariance_matrix = ch.tensor([[1.0, 0.5], [0.5, 1.0]])
+population = torch.distributions.MultivariateNormal(loc, covariance_matrix).sample(
+    [100000]
+)
+
+
+def phi(x):
+    return x.sum(dim=-1) > 1.0
+
+
+S = population[phi(population)][:10000]
+alpha = phi(population).float().mean().item()
+
+# Fit on standardized data, moving phi through the same transform.
+mean, std = S.mean(0), S.std(0)
+model = truncated_multivariate_normal.TruncatedMultivariateNormal(
+    2, phi=lambda z: phi(z * std + mean), alpha=alpha
+)
+model.fit((S - mean) / std)
+
+recovered_loc = model.avg_loc_ * std + mean
+recovered_cov = ch.diag(std) @ model.avg_covariance_matrix_ @ ch.diag(std)
+```
+
+<ResultTable
+  columns={["mean", "covariance"]}
+  rows={[
+    ["truth", "(0, 0)", "[[1, 0.5], [0.5, 1]]"],
+    ["sample mean and covariance", "(1.042, 1.041)", "[[0.447, −0.053], [−0.053, 0.436]]"],
+    ["recovered", "(0.015, 0.047)", "[[1.016, 0.491], [0.491, 0.963]]"],
+  ]}
+  caption="28% of the population survives. The sample's statistics even get the sign of the correlation wrong."
+/>
+
+<Callout kind="tip" title="Standardize first">
+  Fit on `(S - mean) / std` with `phi` composed with the inverse transform, and
+  map the estimates back: the raw data's scale slows the descent.
+</Callout>

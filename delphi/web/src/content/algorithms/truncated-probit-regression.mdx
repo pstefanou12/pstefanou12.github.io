@@ -1,0 +1,57 @@
+## Model
+
+The binary classifiers label a sample $y = \mathbf{1}\{w^\top x + b + \varepsilon \ge 0\}$,
+with $\varepsilon \sim \mathcal{N}(0, 1)$ for probit and
+$\varepsilon \sim \mathrm{Logistic}(0, 1)$ for [logistic regression](/truncated-logistic-regression),
+and keep it only where `phi` admits the latent $w^\top x + b + \varepsilon$.
+
+## Example
+
+```python
+import torch as ch
+
+from delphi.stats.truncated import truncated_probit_regression
+
+X = ch.randn(20000, 10)
+z = X @ ch.ones(10, 1) / 3.0 + 0.5 + ch.randn(20000, 1)
+
+
+def phi(z):
+    return z > -1.0
+
+
+kept = phi(z).flatten()
+y = (z >= 0).float()
+model = truncated_probit_regression.TruncatedProbitRegression(phi)
+model.fit(X[kept], y[kept])
+model.coef_, model.intercept_
+model.predict_proba(X[:5])
+```
+
+## Arguments in practice
+
+- **`phi` sees the latent**, shaped `(n, m, 1)`, and returns a mask or a
+  survival probability. It must leave both labels some mass.
+- **`alpha`** bounds every sample's mass on each label, at most 1/2. It sets
+  the projection set, the weights whose latent means keep mass $\alpha^2$ on
+  each label, unless the `radius` hyperparameter gives $\log(1 / \alpha')$.
+  Pass `None` when it is unknown.
+- **`sampler`** estimates each label's mass and noise score for the loss;
+  stratified inverse-CDF sampling by default.
+
+## What truncation costs a classifier
+
+What truncation costs a classifier fit as if the data were untruncated
+depends on the set. A set that keeps the hard samples, those near the decision
+boundary, shrinks every class's weights; one that keeps the easy samples
+inflates them. Either leaves the most likely label nearly where it was but
+skews the probabilities: the naive fit is under-confident after the first and
+over-confident after the second.
+
+A set that shifts the label mix or biases one class against the rest, such as
+undersampling it, keeping it only when clear-cut, or rarely seeing its strong
+cases, moves the predictions themselves: the naive fit misses that class.
+Recalibrating on held-out data cannot undo this, since that data is truncated
+too. The truncated fit recovers the untruncated `predict_proba` from the
+truncated sample alone, which is what thresholds, abstention and
+expected-cost decisions rely on.
