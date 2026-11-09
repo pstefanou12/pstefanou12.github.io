@@ -1,4 +1,4 @@
-import{g as r,j as e}from"./vendor-DgO6RGWS.js";function t(s){const n={code:"code",em:"em",h2:"h2",li:"li",ol:"ol",p:"p",strong:"strong",...r(),...s.components};return e.jsxs(e.Fragment,{children:[e.jsxs(n.p,{children:["delphi separates ",e.jsx(n.em,{children:"how a model is fit"}),", which the trainer owns, from ",e.jsx(n.em,{children:`what is
+import{h as r,j as e}from"./vendor-DWhQwq9v.js";function t(s){const n={code:"code",em:"em",h2:"h2",li:"li",ol:"ol",p:"p",strong:"strong",...r(),...s.components};return e.jsxs(e.Fragment,{children:[e.jsxs(n.p,{children:["delphi.ai separates ",e.jsx(n.em,{children:"how a model is fit"}),", which the trainer owns, from ",e.jsx(n.em,{children:`what is
 fit`}),", which each model describes."]}),`
 `,e.jsxs(n.p,{children:[e.jsx(n.code,{children:"delphi/trainer.py"})," fits any model built on the ",e.jsx(n.code,{children:"DelphiModel"}),` base class
 (`,e.jsx(n.code,{children:"delphi/delphi.py"}),"). Its one entry point, ",e.jsx(n.code,{children:"Trainer.train_model"}),`, runs a

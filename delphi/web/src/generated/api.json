@@ -8,20 +8,12 @@
    "summary": "Estimates a multivariate normal from samples truncated to a set.",
    "docstring": "Estimates a multivariate normal from samples truncated to a set.\n\nEvery mode reports the same estimates: ``loc_`` and\n``covariance_matrix_`` at the averaged iterate, and the ``avg_``,\n``ema_``, ``final_`` and ``best_`` variants of each. With a known\ncovariance, every ``covariance_matrix_`` is the one given.",
    "attributes": {
-    "dims": "Number of dimensions.",
     "phi": "The truncation set's membership oracle, or None when unknown.",
     "covariance_matrix": "The known covariance, or None when learned.",
     "method": "How an unknown set is handled: ``\"hermite\"`` or ``\"l1\"``.",
     "estimator_": "The estimator the arguments select, which fits the sample and holds every diagnostic."
    },
    "params": [
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
     {
      "name": "phi",
      "type": "Callable | None",
@@ -59,7 +51,7 @@
     }
    ],
    "raises": {
-    "ValueError": "If covariance_matrix is not shaped (dims, dims), or method is not one of the two."
+    "ValueError": "If covariance_matrix is not square, or method is not one of the two."
    },
    "estimateSuffixes": [],
    "methods": [
@@ -226,13 +218,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -293,13 +278,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "alpha",
@@ -364,13 +342,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "concentration",
@@ -442,13 +413,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -511,13 +475,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "concentration",
@@ -591,13 +548,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "scale",
      "type": "Tensor",
      "default": null,
@@ -667,13 +617,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -735,13 +678,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "alpha",
@@ -807,13 +743,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "total_count",
@@ -885,13 +814,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -954,13 +876,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "total_count",
@@ -1034,13 +949,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "loc",
      "type": "Tensor",
      "default": null,
@@ -1110,13 +1018,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -1179,13 +1080,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -1246,13 +1140,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "alpha",
@@ -1318,13 +1205,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of categories."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -1385,13 +1265,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "alpha",
@@ -1456,13 +1329,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "concentration",
@@ -1536,13 +1402,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of categories."
-    },
-    {
      "name": "total_count",
      "type": "int",
      "default": null,
@@ -1612,13 +1471,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -1679,13 +1531,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "alpha",
@@ -1751,13 +1596,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -1810,10 +1648,8 @@
    "module": "delphi.truncated.distributions.truncated_wishart",
    "className": "TruncatedWishart",
    "summary": "Model for truncated Wishart distributions with unknown df and scale.",
-   "docstring": "Model for truncated Wishart distributions with unknown df and scale.\n\nSamples are rows of ``vech(X)``, the lower triangle of each matrix, so\n``dims`` here is the matrix side while the base class's ``dims`` is the\nrow width ``size * (size + 1) / 2``.",
-   "attributes": {
-    "size": "Side of the sampled matrices."
-   },
+   "docstring": "Model for truncated Wishart distributions with unknown df and scale.\n\nSamples are rows of ``vech(X)``, the lower triangle of each matrix, so\n``dims`` is the row width ``size * (size + 1) / 2`` for matrices of side\n``size``.",
+   "attributes": {},
    "params": [
     {
      "name": "phi",
@@ -1821,13 +1657,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle, over vech rows; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Side of the sampled matrices."
     },
     {
      "name": "alpha",
@@ -1893,13 +1722,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -1962,13 +1784,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "scale",
@@ -2042,13 +1857,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "loc",
      "type": "Tensor",
      "default": null,
@@ -2118,13 +1926,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -2185,13 +1986,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
     },
     {
      "name": "alpha",
@@ -2257,13 +2051,6 @@
      "description": "Truncation set oracle; None learns it from the sample."
     },
     {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
-    {
      "name": "alpha",
      "type": "float | None",
      "default": "None",
@@ -2316,10 +2103,8 @@
    "module": "delphi.truncated.distributions.truncated_inverse_wishart",
    "className": "TruncatedInverseWishart",
    "summary": "Model for truncated inverse Wishart distributions, df and scale unknown.",
-   "docstring": "Model for truncated inverse Wishart distributions, df and scale unknown.\n\nSamples are rows of ``vech(X)``, so ``dims`` here is the matrix side while\nthe base class's ``dims`` is the row width ``size * (size + 1) / 2``.",
-   "attributes": {
-    "size": "Side of the sampled matrices."
-   },
+   "docstring": "Model for truncated inverse Wishart distributions, df and scale unknown.\n\nSamples are rows of ``vech(X)``, so ``dims`` is the row width\n``size * (size + 1) / 2`` for matrices of side ``size``.",
+   "attributes": {},
    "params": [
     {
      "name": "phi",
@@ -2327,13 +2112,6 @@
      "default": null,
      "kind": "positional_or_keyword",
      "description": "Truncation set oracle, over vech rows; None learns it from the sample."
-    },
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Side of the sampled matrices."
     },
     {
      "name": "alpha",
@@ -2390,20 +2168,12 @@
    "summary": "Estimates a multivariate normal from samples truncated to a set.",
    "docstring": "Estimates a multivariate normal from samples truncated to a set.\n\nEvery mode reports the same estimates: ``loc_`` and\n``covariance_matrix_`` at the averaged iterate, and the ``avg_``,\n``ema_``, ``final_`` and ``best_`` variants of each. With a known\ncovariance, every ``covariance_matrix_`` is the one given.",
    "attributes": {
-    "dims": "Number of dimensions.",
     "phi": "The truncation set's membership oracle, or None when unknown.",
     "covariance_matrix": "The known covariance, or None when learned.",
     "method": "How an unknown set is handled: ``\"hermite\"`` or ``\"l1\"``.",
     "estimator_": "The estimator the arguments select, which fits the sample and holds every diagnostic."
    },
    "params": [
-    {
-     "name": "dims",
-     "type": "int",
-     "default": null,
-     "kind": "positional_or_keyword",
-     "description": "Number of dimensions."
-    },
     {
      "name": "phi",
      "type": "Callable | None",
@@ -2441,7 +2211,7 @@
     }
    ],
    "raises": {
-    "ValueError": "If covariance_matrix is not shaped (dims, dims), or method is not one of the two."
+    "ValueError": "If covariance_matrix is not square, or method is not one of the two."
    },
    "estimateSuffixes": [],
    "methods": [
@@ -2548,8 +2318,8 @@
     {
      "name": "fit",
      "signature": "(S: Tensor)",
-     "summary": "Fit the estimator to samples from the truncated distribution.",
-     "definedIn": "UnknownTruncationMultivariateNormalBase"
+     "summary": "Fit as the base class does, to samples as wide as the covariance.",
+     "definedIn": "UnknownTruncationMultivariateNormalKnownCovariance"
     },
     {
      "name": "hessian",

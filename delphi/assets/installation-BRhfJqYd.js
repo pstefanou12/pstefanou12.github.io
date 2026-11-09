@@ -1,4 +1,4 @@
-import{g as o,j as e}from"./vendor-DgO6RGWS.js";function n(s){const t={a:"a",code:"code",h2:"h2",p:"p",pre:"pre",...o(),...s.components};return e.jsxs(e.Fragment,{children:[e.jsxs(t.p,{children:["delphi needs Python 3.10 to 3.14, ",e.jsx(t.a,{href:"https://python-poetry.org",children:"Poetry"}),` and
+import{h as o,j as e}from"./vendor-DWhQwq9v.js";function n(s){const t={a:"a",code:"code",h2:"h2",p:"p",pre:"pre",...o(),...s.components};return e.jsxs(e.Fragment,{children:[e.jsxs(t.p,{children:["delphi.ai needs Python 3.10 to 3.14, ",e.jsx(t.a,{href:"https://python-poetry.org",children:"Poetry"}),` and
 `,e.jsx(t.a,{href:"https://github.com/casey/just",children:e.jsx(t.code,{children:"just"})}),`. Neither needs a version manager such
 as asdf.`]}),`
 `,e.jsx(t.pre,{children:e.jsx(t.code,{className:"language-bash",children:`# Poetry
@@ -7,7 +7,7 @@ curl -sSL https://install.python-poetry.org | python3 -
 # just, into ~/.local/bin (or: brew install just, cargo install just)
 curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/bin
 `})}),`
-`,e.jsx(t.p,{children:"Then clone and install delphi:"}),`
+`,e.jsx(t.p,{children:"Then clone and install delphi.ai:"}),`
 `,e.jsx(t.pre,{children:e.jsx(t.code,{className:"language-bash",children:`git clone https://github.com/pstefanou12/delphi.ai.git
 cd delphi.ai
 just install    # poetry install --with dev

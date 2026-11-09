@@ -1,7 +1,13 @@
-import{g as t,j as e}from"./vendor-DgO6RGWS.js";function n(a){const s={a:"a",annotation:"annotation",code:"code",em:"em",h2:"h2",math:"math",mi:"mi",mn:"mn",mo:"mo",mrow:"mrow",p:"p",pre:"pre",semantics:"semantics",span:"span",strong:"strong",...t(),...a.components};return e.jsxs(e.Fragment,{children:[e.jsx(s.h2,{id:"the-truncation-set",children:"The truncation set"}),`
+import{h as t,j as e}from"./vendor-DWhQwq9v.js";function a(n){const s={a:"a",annotation:"annotation",code:"code",em:"em",h2:"h2",math:"math",mi:"mi",mn:"mn",mo:"mo",mrow:"mrow",p:"p",pre:"pre",semantics:"semantics",span:"span",strong:"strong",...t(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(s.h2,{id:"the-truncation-set",children:"The truncation set"}),`
 `,e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"The truncation set is a plain callable."})," ",e.jsx(s.code,{children:"phi"}),` maps a batch of shape
 `,e.jsx(s.code,{children:"(n, dims)"}),` to a mask over it. Anything that answers "is this point observed?"
 works; there is nothing to subclass.`]}),`
+`,e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"The dimension comes from the sample."})," No model takes ",e.jsx(s.code,{children:"dims"}),": ",e.jsx(s.code,{children:"fit(S)"}),`
+reads it from `,e.jsx(s.code,{children:"S.shape[1]"}),`, so known parameters such as a covariance must
+match the sample's width.`]}),`
+`,e.jsxs(s.p,{children:[e.jsxs(s.strong,{children:[e.jsx(s.code,{children:"phi=None"})," learns the set."]}),` Every distribution accepts it and learns the
+set from the sample before fitting; see
+`,e.jsx(s.a,{href:"/truncated-statistics",children:"Learning the truncation set"}),"."]}),`
 `,e.jsxs(s.p,{children:[e.jsxs(s.strong,{children:[e.jsx(s.code,{children:"alpha"})," is optional."]}),` It is the survival mass, the fraction of the
 population inside the set, and it sizes the region the optimizer is kept in.
 Omit it if you cannot measure it: the budget then starts at `,e.jsx(s.code,{children:"min_radius"}),` and
@@ -43,10 +49,10 @@ analysis this follows gives an asymptotic distribution for the estimate.
 Estimates are reported in the coordinates the model was fit in, so after
 standardizing, map them back as in the Quickstart.`]}),`
 `,e.jsx(s.h2,{id:"logging",children:"Logging"}),`
-`,e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"Logging is off until you turn it on."}),` delphi logs through the standard
+`,e.jsxs(s.p,{children:[e.jsx(s.strong,{children:"Logging is off until you turn it on."}),` delphi.ai logs through the standard
 library under the `,e.jsx(s.code,{children:"delphi"})," logger and installs no handler:"]}),`
 `,e.jsx(s.pre,{children:e.jsx(s.code,{className:"language-python",children:`import logging
 
 logging.basicConfig(level=logging.INFO)
 logging.getLogger("delphi.trainer").setLevel(logging.WARNING)  # per module
-`})})]})}function r(a={}){const{wrapper:s}={...t(),...a.components};return s?e.jsx(s,{...a,children:e.jsx(n,{...a})}):n(a)}export{r as default};
+`})})]})}function r(n={}){const{wrapper:s}={...t(),...n.components};return s?e.jsx(s,{...n,children:e.jsx(a,{...n})}):a(n)}export{r as default};

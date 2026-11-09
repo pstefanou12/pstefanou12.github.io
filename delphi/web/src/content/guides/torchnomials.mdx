@@ -1,7 +1,12 @@
-`delphi/torchnomials/` holds polynomial families in torch, built on an
-abstract `Polynomial` over total-degree multi-indices, and `ProductPolynomial`
-for families built from univariate polynomials.
+`torchnomials` holds polynomial families in torch, built on an abstract
+`Polynomial` over total-degree multi-indices, and `ProductPolynomial` for
+families built from univariate polynomials. delphi.ai's unknown-truncation fits
+use its Hermite polynomials.
 
+<Callout title="Moving to its own package">
+  torchnomials lives in `delphi/torchnomials/` for now and is planned to
+  become a separate package. Its import path will change when it does.
+</Callout>
 ## Hermite
 
 `Hermite` gives the physicist (default) or probabilist (`prob=True`) Hermite

@@ -1,6 +1,7 @@
 import type {ComponentProps} from 'react';
 import {Link} from 'react-router-dom';
 
+import {PaperList} from '../paper_list';
 import {Callout} from './callout';
 import {CodeBlock} from './code_block';
 import {ResultTable} from './result_table';
@@ -26,5 +27,6 @@ export const components = {
   a: Anchor,
   table: Table,
   Callout,
+  PaperList,
   ResultTable,
 };

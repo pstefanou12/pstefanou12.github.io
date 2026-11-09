@@ -9,7 +9,7 @@
     "dev:delphi": "vite delphi/web",
     "build:delphi": "rm -rf delphi/assets && vite build delphi/web",
     "typecheck:delphi": "tsc -p delphi/web",
-    "docs:api": "poetry -C ${DELPHI_AI:-$HOME/delphi.ai} run python \"$PWD/delphi/scripts/extract_api.py\" --out \"$PWD/delphi/web/src/generated/api.json\"",
+    "docs:api": "poetry -C ${DELPHI_AI:-$HOME/delphi.ai} run python \"$PWD/delphi/scripts/extract_api.py\" --out \"$PWD/delphi/web/src/generated/api.json\" ${DELPHI_REF:+--ref \"$DELPHI_REF\"}",
     "lint:delphi": "eslint delphi/web eslint.config.js .prettierrc.js",
     "fix:delphi": "eslint --fix delphi/web eslint.config.js .prettierrc.js"
   },

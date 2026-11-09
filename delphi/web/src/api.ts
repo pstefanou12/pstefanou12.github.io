@@ -62,7 +62,7 @@ interface Api {
 // typecheck:delphi` cannot check JSON against an interface.
 const api = raw as Api;
 
-/** The delphi release the API was extracted from. */
+/** The delphi.ai release the API was extracted from. */
 export const version = api.version;
 
 /** Returns a model's API record by its registry key. */

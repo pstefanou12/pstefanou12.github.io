@@ -1,0 +1,113 @@
+A new model joins delphi.ai as a module, a config, tests and a page on this site,
+reviewed through a pull request against `master`. This page covers what each
+needs. The full style rules are in delphi.ai's
+[CLAUDE.md](https://github.com/pstefanou12/delphi.ai/blob/master/CLAUDE.md).
+
+## What a model needs
+
+**A module.** Models live by area: truncated distributions in
+`delphi/truncated/distributions/`, truncated regression and classification in
+`delphi/stats/truncated/`. One model per module, named after it
+(`truncated_poisson.py` holds `TruncatedPoisson`).
+
+**A `DelphiModel` subclass.** The [trainer](/trainer) fits every model, so a
+model describes *what* is fit and leaves *how* to the trainer. It supplies its
+config class as `defaults`, its loss as `criterion`, the loss's curvature as
+`hessian()` for the Fisher schedule, and whichever hooks it needs; see
+[Models](/models) for the full list and the base classes to build on.
+
+**A config.** Hyperparameters are a pydantic config under `delphi/configs/`,
+subclassing the nearest existing one. Document every field in the class
+docstring's `Attributes:` section: this site's hyperparameter tables are
+generated from it.
+
+**Its estimates.** Name them as `torch.distributions` names the parameters
+(`rate_`, `loc_`, `covariance_matrix_`) and expose all four variants:
+`avg_`, `ema_`, `final_` and `best_`. Declare the suffixes in
+`estimate_suffixes`.
+
+**A starting point.** If the untruncated MLE has a closed form, the model
+starts from it. If not, it starts from a rough estimate and enables the warm
+start (`WarmStartedExponentialFamilyDistributionConfig` for a distribution),
+which refines that start to the untruncated MLE.
+
+### A new distribution
+
+1. **Write the family class** in `delphi/exponential_family/`: its sufficient
+   statistic, `to_natural`, `to_canonical` and `log_prob`. Check that
+   $\langle T(x), \theta \rangle + \log h(x) - \log p_\theta(x)$ is constant
+   across samples.
+2. **Write the truncated model** in `delphi/truncated/distributions/`,
+   subclassing `TruncatedExponentialFamilyDistribution`, which supplies the
+   truncated NLL, its Hessian, the projection and the phases. The family adds
+   `_calc_emp_model` (the start), `_constraints` (the parameter domain) and
+   its estimates.
+3. **Test it** with `helpers.assert_family_recovers` and
+   `helpers.assert_family_distinguishes`, as the existing
+   `truncated_*_test.py` modules do.
+
+## Tests
+
+Tests live in a `tests/` package beside the code they cover, one
+`<module>_test.py` per module. A model's tests should show that it recovers
+known parameters from a truncated sample, and that its estimates beat the
+naive fit to the same sample. Mark a fit that takes over a minute
+`@pytest.mark.slow`: CI skips it, so run it locally before asking for review.
+
+```bash
+just test <changed test files> -m "not slow"   # what changed, fast
+just test <changed test files>                 # including the slow fits
+```
+
+## Code style
+
+delphi.ai follows the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html),
+with these house rules:
+
+- **Imports**: absolute only. Import modules, not names from them
+  (`from delphi.stats.truncated import truncated_linear_regression`), except
+  a class used directly as a base class. Package `__init__.py` files import
+  nothing.
+- **Every file** starts with an author comment, `# Author: githubhandle@`,
+  before the module docstring.
+- **Docstrings** on every public module, class and function, Google style
+  (`Args:`, `Returns:`, `Raises:`, `Attributes:`), with a one-line summary
+  under 80 characters.
+- **Types**: annotate every public signature; write `Optional[X]`, not
+  `X | None`.
+- **Tensors**: build them with `ch.tensor(...)`, never the legacy
+  `ch.Tensor(...)` constructor; the lint check rejects it.
+- **Comments** say why, not what, in a line or two.
+
+## Checks
+
+Install the pre-push hooks once with `just hooks`. On every push they run the
+static checks on the pushed files. Locally, check only what changed:
+
+```bash
+just fmt && just lint
+poetry run pylint --errors-only <changed files>
+poetry run mypy <changed files>
+just test <changed test files> -m "not slow"
+```
+
+Run the full suite with `just test` when the change reaches code many models
+depend on: `delphi/delphi.py`, `delphi/trainer.py`, `delphi/configs/base.py`, a
+base model or distribution class, or a shared test helper.
+
+## Review
+
+1. **Branch and open a pull request** against `master`, describing the model,
+   the paper it implements, and what the tests show.
+2. **CI must pass.** It runs `just check` (ruff format, ruff, pylint and mypy
+   over the whole package) and the test suite, minus the slow fits, in four
+   parallel groups.
+3. **A maintainer reviews** the model against this page: its place in the
+   package, its config and estimates, its tests, and the style above.
+4. **Document it here.** Add the class to `MODELS` in this site's
+   `delphi/scripts/extract_api.py`, regenerate the reference with
+   `npm run docs:api`, and add an entry to its section in
+   `delphi/web/src/content/registry.ts`. The page then exists, built from
+   your docstrings; prose and math go in
+   `delphi/web/src/content/algorithms/<slug>.mdx`. Cite the paper it
+   implements in the entry's `papers`.

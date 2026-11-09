@@ -4,7 +4,12 @@ Run inside delphi.ai's environment:
 
     cd ~/delphi.ai && poetry run python \
         ~/pstefanou12.github.io/delphi/scripts/extract_api.py \
-        --out ~/pstefanou12.github.io/delphi/web/src/generated/api.json
+        --out ~/pstefanou12.github.io/delphi/web/src/generated/api.json \
+        [--ref waterboi/infer-dims]
+
+With --ref, the package is read from that git ref of the delphi.ai checkout
+the environment belongs to, exported to a temporary directory, so an unmerged
+branch can be documented without checking it out.
 
 For every documented model this records the constructor signature, the
 per-argument descriptions from its Google-style docstring, the class
@@ -20,7 +25,9 @@ from importlib import metadata
 import json
 import pathlib
 import re
+import subprocess
 import sys
+import tempfile
 
 # (key, module, class, config override). The key is what the docs registry
 # refers to. A config override names "module:Class" for models without a
@@ -421,11 +428,36 @@ def extract(key, module, name, config_path):
     }
 
 
+def _import_from_ref(ref):
+    """Put a git ref's copy of the package first on sys.path."""
+    repo = subprocess.run(
+        ["git", "rev-parse", "--show-toplevel"],
+        capture_output=True,
+        text=True,
+        check=True,
+    ).stdout.strip()
+    target = tempfile.mkdtemp(prefix="delphi-api-")
+    archive = subprocess.run(
+        ["git", "-C", repo, "archive", ref, "delphi"],
+        capture_output=True,
+        check=True,
+    ).stdout
+    subprocess.run(["tar", "-x", "-C", target], input=archive, check=True)
+    sys.path.insert(0, target)
+    print(f"documenting {ref} of {repo}")
+
+
 def main():
     """Write the API JSON."""
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--out", required=True, type=pathlib.Path)
+    parser.add_argument(
+        "--ref",
+        help="git ref of delphi.ai to document instead of its working tree",
+    )
     args = parser.parse_args()
+    if args.ref:
+        _import_from_ref(args.ref)
 
     import delphi  # pylint: disable=import-outside-toplevel
 

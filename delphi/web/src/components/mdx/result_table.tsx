@@ -3,13 +3,13 @@ import type {ReactNode} from 'react';
 /** Props of ResultTable. */
 export interface ResultTableProps {
   columns: string[];
-  /** Each row is [label, ...cells]; the last row is delphi's estimate. */
+  /** Each row is [label, ...cells]; the last row is delphi.ai's estimate. */
   rows: ReactNode[][];
   caption?: ReactNode;
 }
 
 /**
- * Truth, the naive estimate and delphi's, side by side: the comparison every
+ * Truth, the naive estimate and delphi.ai's, side by side: the comparison every
  * example ends with.
  */
 export function ResultTable({columns, rows, caption}: ResultTableProps) {

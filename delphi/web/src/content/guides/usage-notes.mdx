@@ -4,6 +4,14 @@
 `(n, dims)` to a mask over it. Anything that answers "is this point observed?"
 works; there is nothing to subclass.
 
+**The dimension comes from the sample.** No model takes `dims`: `fit(S)`
+reads it from `S.shape[1]`, so known parameters such as a covariance must
+match the sample's width.
+
+**`phi=None` learns the set.** Every distribution accepts it and learns the
+set from the sample before fitting; see
+[Learning the truncation set](/truncated-statistics).
+
 **`alpha` is optional.** It is the survival mass, the fraction of the
 population inside the set, and it sizes the region the optimizer is kept in.
 Omit it if you cannot measure it: the budget then starts at `min_radius` and
@@ -56,7 +64,7 @@ standardizing, map them back as in the Quickstart.
 
 ## Logging
 
-**Logging is off until you turn it on.** delphi logs through the standard
+**Logging is off until you turn it on.** delphi.ai logs through the standard
 library under the `delphi` logger and installs no handler:
 
 ```python

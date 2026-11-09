@@ -1,69 +1,61 @@
 import {Link} from 'react-router-dom';
 
 import {version} from '../api';
-import {GITHUB, SECTIONS} from '../content/registry';
-import {CodeBlock} from './mdx/code_block';
+import {GITHUB, PARTS} from '../content/registry';
+import type {Part} from '../content/registry';
 
-const BIBTEX = `@software{stefanou_delphi,
-  author  = {Stefanou, Patroklos},
-  title   = {delphi: statistical estimation from truncated samples},
-  url     = {${GITHUB}},
-  version = {${version ?? ''}},
-  year    = {2026},
-}`;
+interface PartCardProps {
+  part: Part;
+}
 
-/** The landing page: what delphi does, every page by section, and citing. */
+function PartCard({part}: PartCardProps) {
+  const pages = part.sections.flatMap(s => s.pages);
+  return (
+    <div className="part-card">
+      <h3 id={part.id}>{part.title}</h3>
+      <p>{part.summary}</p>
+      {part.sections.length > 1 && (
+        <ul className="part-card-sections">
+          {part.sections.map(section => (
+            <li key={section.id}>
+              <Link to={`/${section.pages[0].slug}`}>{section.title}</Link>
+            </li>
+          ))}
+        </ul>
+      )}
+      <Link className="button" to={`/${pages[0].slug}`}>
+        View docs
+      </Link>
+    </div>
+  );
+}
+
+/** The landing page: what delphi.ai is, and a card for each part of the docs. */
 export function Home() {
-  const algorithms = SECTIONS.flatMap(s => s.pages).filter(
-    p => p.kind === 'algorithm',
-  ).length;
   return (
     <article className="page prose home">
-      <p className="eyebrow">delphi {version && `v${version}`}</p>
-      <h1>Statistics from truncated samples</h1>
+      <h1>delphi.ai documentation</h1>
       <p className="lead">
-        When every observation outside some set is missing entirely, the sample
-        is a biased view of the distribution that produced it. Given a
-        membership oracle for that set, delphi recovers the distribution as it
-        was before truncation, for {algorithms} models across distributions,
-        regression and classification.
+        delphi.ai is a PyTorch library for machine learning development, built
+        around one trainer that fits every model.
       </p>
-      <div className="home-actions">
-        <Link className="button primary" to="/quickstart">
-          Quickstart
-        </Link>
-        <Link className="button" to="/installation">
-          Install
-        </Link>
-        <a
-          className="button"
-          href={GITHUB}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      <p>
+        {version && (
+          <>
+            Version <code>{version}</code>.{' '}
+          </>
+        )}
+        Source and issues are on{' '}
+        <a href={GITHUB} target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
+        .
+      </p>
+      <div className="part-grid">
+        {PARTS.map(part => (
+          <PartCard key={part.id} part={part} />
+        ))}
       </div>
-
-      {SECTIONS.filter(s => s.id !== 'start').map(section => (
-        <section key={section.id}>
-          <h2 id={section.id}>{section.title}</h2>
-          <div className="card-grid">
-            {section.pages.map(page => (
-              <Link key={page.slug} to={`/${page.slug}`} className="card">
-                <span className="card-title">{page.title}</span>
-                <span className="card-summary">{page.summary}</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-      ))}
-
-      <h2 id="citing">Citing</h2>
-      <p>If you use delphi in your work, please cite it:</p>
-      <CodeBlock>
-        <code className="language-bibtex">{BIBTEX}</code>
-      </CodeBlock>
     </article>
   );
 }

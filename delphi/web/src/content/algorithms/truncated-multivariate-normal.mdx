@@ -1,19 +1,22 @@
-## Which estimator runs
+## One class, every case
 
 `TruncatedMultivariateNormal` covers every case of the normal and picks the
-estimator from what you know:
+estimator from what you pass:
 
 | you pass | estimator | learns |
 |---|---|---|
 | `phi` | `KnownTruncationMultivariateNormal`: projected SGD on the truncated NLL | mean and covariance |
 | `phi` and `covariance_matrix` | `KnownTruncationMultivariateNormalKnownCovariance` | mean |
+| neither | `UnknownTruncationMultivariateNormal`: the Hermite expansion | mean, covariance and the set |
 | `covariance_matrix` only | `UnknownTruncationMultivariateNormalKnownCovariance` | mean and the set |
-| neither | `UnknownTruncationMultivariateNormal`: see [unknown set](/unknown-truncation-multivariate-normal) | mean, covariance and the set |
-| `method="l1"`, no `phi` | learns the set by L1 polynomial regression, then fits as if it were known | mean and covariance |
+| `method="l1"`, no `phi` | learns the set by L1 polynomial regression, as [every family can](/truncated-statistics), then fits as if it were known | mean and covariance |
 
 The fitted estimator is `model.estimator_`, which holds every diagnostic.
+Every mode reports the same estimates.
 
-## Method
+## Known set
+
+### Method
 
 Observed only on $S$, the sample's density is
 $\mathcal{N}(x; \mu, \Sigma)\,\mathbf{1}\{x \in S\} / \mathcal{N}(S; \mu, \Sigma)$.
@@ -21,11 +24,11 @@ In the natural parameters $T = \Sigma^{-1}$, $v = \Sigma^{-1}\mu$ its negative
 log-likelihood is convex, and Daskalakis et al. (2018) show that projected SGD
 on it, started from the sample's own mean and covariance and kept in a region
 sized by the survival mass $\alpha$, recovers $(\mu, \Sigma)$ efficiently in
-high dimensions. Its gradient needs
-the moments of the current model on $S$, which delphi estimates by rejection
-sampling from the current model through `phi`.
+high dimensions. Its gradient needs the moments of the current model on $S$,
+which delphi.ai estimates by rejection sampling from the current model through
+`phi`.
 
-## Example
+### Example
 
 A correlated Gaussian, observed only where $x_0 + x_1 > 1$:
 
@@ -54,7 +57,7 @@ alpha = phi(population).float().mean().item()
 # Fit on standardized data, moving phi through the same transform.
 mean, std = S.mean(0), S.std(0)
 model = truncated_multivariate_normal.TruncatedMultivariateNormal(
-    2, phi=lambda z: phi(z * std + mean), alpha=alpha
+    phi=lambda z: phi(z * std + mean), alpha=alpha
 )
 model.fit((S - mean) / std)
 
@@ -75,4 +78,76 @@ recovered_cov = ch.diag(std) @ model.avg_covariance_matrix_ @ ch.diag(std)
 <Callout kind="tip" title="Standardize first">
   Fit on `(S - mean) / std` with `phi` composed with the inverse transform, and
   map the estimates back: the raw data's scale slows the descent.
+</Callout>
+
+## Unknown set
+
+### Method
+
+When the set cannot be queried at all, a normal can still be recovered if the
+set is not too complex, by the algorithm of Kontonis, Tzamos and Zampetakis
+(2019). It whitens the sample, estimates the degree-`degree` Hermite expansion
+of a function that mixes the set with the Gaussian, and minimizes a convex
+objective built from it by projected L-BFGS over the whole sample (the paper
+uses SGD). Leave out `phi` to use it.
+
+### Example
+
+```python
+import torch as ch
+import torch.distributions
+
+from delphi.truncated.distributions import truncated_multivariate_normal
+
+ch.manual_seed(0)
+
+# Observed only where x0 > -0.5 and x1 > -0.5; the fit is never told so.
+population = torch.distributions.MultivariateNormal(ch.zeros(2), ch.eye(2)).sample(
+    [50000]
+)
+inside = (population[:, 0] > -0.5) & (population[:, 1] > -0.5)
+S = population[inside][:20000]
+
+# The default hyperparameters: here degree 132, sized from the sample.
+model = truncated_multivariate_normal.TruncatedMultivariateNormal()
+model.fit(S)
+
+# The set the fit implies, as a membership oracle.
+recovered = model.truncation_set()
+```
+
+<ResultTable
+  columns={["mean", "covariance"]}
+  rows={[
+    ["truth", "(0, 0)", "[[1, 0], [0, 1]]"],
+    ["sample mean and covariance", "(0.506, 0.512)", "[[0.490, 0.004], [0.004, 0.477]]"],
+    ["recovered", "(−0.010, 0.069)", "[[1.024, 0.036], [0.036, 0.928]]"],
+  ]}
+/>
+
+### Choosing the degree
+
+**The degree sets the accuracy, and the sample sets the degree.** The
+expansion of a set's indicator converges slowly, and at a fixed degree the
+estimate keeps a bias that more samples do not remove; the paper's bound
+shrinks as $k^{-1/4}$ in the degree $k$. Each of the basis's
+$\binom{k + d}{d}$ coefficients is a sample mean, though, so past about one
+coefficient per sample their noise outweighs the bias the degree removes.
+
+By default the degree is the largest whose basis has no more terms than there
+are samples estimating the coefficients (half the training sample), capped at
+1200:
+
+| dimensions | 1 | 2 | 3 | 4 | 10 |
+|---|---|---|---|---|---|
+| default degree, 20000 samples | 1200 | 132 | 35 | 19 | 6 |
+
+More data buys more degree. Any `degree` can be set explicitly, with a warning
+when its basis outgrows the sample.
+
+<Callout title="Know the covariance if you can">
+  Passed as `covariance_matrix`, it whitens the sample by the truth and only
+  the mean is learned, which leaves less to estimate. Both estimators degrade
+  as the survival mass falls, which `alpha` does not change: here it only
+  sizes the region the descent is kept in.
 </Callout>

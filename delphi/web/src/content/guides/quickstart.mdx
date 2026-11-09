@@ -1,5 +1,5 @@
 A correlated Gaussian, observed only where $x_0 + x_1 > 1$. Every model in
-delphi follows the same three steps: describe the truncation set as a plain
+delphi.ai follows the same three steps: describe the truncation set as a plain
 callable `phi`, construct the model, and `fit` it to the sample you observed.
 
 ```python
@@ -30,7 +30,7 @@ alpha = phi(population).float().mean().item()
 mean, std = S.mean(0), S.std(0)
 # The default hyperparameters: 2500 steps, lr 1e-2, the Fisher schedule.
 model = truncated_multivariate_normal.TruncatedMultivariateNormal(
-    2, phi=lambda z: phi(z * std + mean), alpha=alpha
+    phi=lambda z: phi(z * std + mean), alpha=alpha
 )
 model.fit((S - mean) / std)
 
@@ -55,5 +55,5 @@ entry, and even get the sign of the correlation wrong.
 
 - [Usage notes](/usage-notes): what `phi`, `alpha` and the hyperparameters do, and which estimate to read.
 - [Multivariate normal](/truncated-multivariate-normal): the model above in full.
-- [Multivariate normal, unknown set](/unknown-truncation-multivariate-normal): the same fit when `phi` cannot be queried.
+- The same page covers the fit when `phi` cannot be queried: leave it out.
 - [Linear regression](/truncated-linear-regression): truncation on the response of a linear model.

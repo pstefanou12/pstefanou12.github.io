@@ -1,6 +1,6 @@
 import {guides} from '../content/mdx';
 import type {GuideEntry} from '../content/registry';
-import {sectionOf} from '../content/registry';
+import {breadcrumb} from '../content/registry';
 import {MdxBody} from './mdx_body';
 import {PrevNext} from './prev_next';
 
@@ -14,7 +14,7 @@ export function GuidePage({entry}: GuidePageProps) {
   const load = guides[entry.slug];
   return (
     <article className="page prose">
-      <p className="eyebrow">{sectionOf(entry.slug)?.title}</p>
+      <p className="eyebrow">{breadcrumb(entry.slug)}</p>
       <h1>{entry.title}</h1>
       {load ? (
         <MdxBody load={load} />

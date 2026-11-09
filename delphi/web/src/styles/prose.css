@@ -1,11 +1,11 @@
 .prose { font-size: 16px; }
-.prose h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.02em; }
+.prose h1 { color: var(--heading); font-size: 2.1rem; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.02em; }
 .prose h2 { font-size: 1.45rem; margin: 48px 0 12px; padding-top: 8px; border-top: 1px solid var(--border); letter-spacing: -0.01em; }
 .prose h3 { font-size: 1.12rem; margin: 32px 0 8px; }
 .prose h4 { font-size: 1rem; margin: 24px 0 6px; }
 .prose p, .prose ul, .prose ol { margin: 0 0 16px; }
 .prose li + li { margin-top: 4px; }
-.prose a { color: var(--accent); text-underline-offset: 2px; }
+.prose a { color: var(--link); text-underline-offset: 2px; }
 .prose code {
   font-family: var(--mono); font-size: 0.86em;
   background: var(--bg-code); border: 1px solid var(--border); border-radius: 5px; padding: 0.08em 0.35em;
@@ -35,10 +35,11 @@
   opacity: 0; transition: opacity 0.15s;
 }
 .code-block:hover .copy, .code-block .copy:focus { opacity: 1; }
-.token.keyword, .token.boolean, .token.builtin { color: var(--tok-keyword); }
+.token.keyword, .token.boolean { color: var(--tok-keyword); }
 .token.string, .token.char { color: var(--tok-string); }
 .token.number, .token.constant { color: var(--tok-number); }
-.token.function, .token.class-name, .token.decorator { color: var(--tok-function); }
+.token.function, .token.decorator { color: var(--tok-function); }
+.token.class-name, .token.builtin { color: var(--tok-class); }
 .token.comment { color: var(--tok-comment); font-style: italic; }
 .token.punctuation, .token.operator { color: var(--tok-punct); }
 
@@ -89,7 +90,7 @@
 .pn:hover { border-color: var(--accent); }
 .pn.next { text-align: right; grid-column: 2; }
 .pn-label { font-size: 12px; color: var(--fg-muted); }
-.pn-title { color: var(--accent); font-weight: 500; }
+.pn-title { color: var(--link); font-weight: 500; }
 
 /* Home */
 .home-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 24px; }
@@ -98,7 +99,7 @@
   border: 1px solid var(--border); color: var(--fg) !important; text-decoration: none; font-weight: 500; font-size: 15px;
 }
 .button:hover { border-color: var(--accent); }
-.button.primary { background: var(--accent); border-color: var(--accent); color: var(--bg) !important; }
+.button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent) !important; }
 .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
 .card {
   display: flex; flex-direction: column; gap: 4px; padding: 12px 14px;
@@ -115,3 +116,22 @@
   .prev-next { grid-template-columns: 1fr; }
   .pn.next { grid-column: 1; }
 }
+
+/* Landing page: one card per part, as PyTorch's docs landing has */
+.part-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; margin-top: 28px; }
+.part-card {
+  display: flex; flex-direction: column; gap: 6px; padding: 20px;
+  border: 1px solid var(--border); border-radius: 12px; background: var(--bg-soft);
+}
+.part-card h3 { margin: 0; color: var(--fg); font-size: 1.15rem; }
+.part-card p { margin: 0; color: var(--fg-soft); font-size: 14px; }
+.part-card-sections { margin: 4px 0 0 !important; padding-left: 18px; font-size: 14px; }
+.part-card .button { margin-top: auto; align-self: flex-start; font-size: 14px; padding: 6px 14px; }
+.part-card > p + .button, .part-card-sections + .button { margin-top: 12px; }
+
+.paper-list li + li { margin-top: 10px; }
+.paper-pages { color: var(--fg-muted); font-size: 14px; }
+.config-mode-body { padding: 12px 14px 0; }
+.config-mode-body > p { font-size: 14px; }
+.meta-row .badge { color: var(--fg-soft); }
+.prose h3 code { font-size: 0.9em; }
