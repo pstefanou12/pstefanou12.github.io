@@ -5,13 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:delphi": "vite delphi/web",
-    "build:delphi": "rm -rf delphi/assets && vite build delphi/web",
-    "typecheck:delphi": "tsc -p delphi/web",
-    "docs:api": "poetry -C ${DELPHI_AI:-$HOME/delphi.ai} run python \"$PWD/delphi/scripts/extract_api.py\" --out \"$PWD/delphi/web/src/generated/api.json\" ${DELPHI_REF:+--ref \"$DELPHI_REF\"}",
-    "lint:delphi": "eslint delphi/web eslint.config.js .prettierrc.js",
-    "fix:delphi": "eslint --fix delphi/web eslint.config.js .prettierrc.js"
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -27,11 +23,18 @@
   "devDependencies": {
     "@mdx-js/react": "^3.1.0",
     "@mdx-js/rollup": "^3.1.0",
+    "@playwright/test": "^1.54.2",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/mdx": "^2.0.13",
+    "@types/node": "^18.19.130",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^4.5.2",
     "gts": "^7.0.0",
+    "jsdom": "^26.1.0",
     "katex": "^0.16.22",
     "prism-react-renderer": "^2.4.1",
     "react": "^18.3.1",
@@ -42,6 +45,12 @@
     "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0",
     "typescript": "^5.9.3",
-    "vite": "^6.3.5"
-  }
+    "vite": "^6.3.5",
+    "vitest": "^3.1.4"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
 }

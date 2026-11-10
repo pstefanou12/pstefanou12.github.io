@@ -1,0 +1,53 @@
+# Copyright 2026 Delphi Tech. All Rights Reserved.
+# Author: pstefanou12@
+#
+# Checks every PR; on main, builds the site and deploys it to GitHub Pages.
+# Needs Settings › Pages › Source set to "GitHub Actions".
+
+name: Pages
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# A new push cancels the branch's run still in progress.
+concurrency:
+  group: pages-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - uses: extractions/setup-just@v2
+      - run: just install
+      - run: just check
+      - name: Install Chromium for the smoke test
+        run: npx playwright install --with-deps chromium
+      # Builds _site/ and runs the browser smoke test against it.
+      - run: just e2e
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

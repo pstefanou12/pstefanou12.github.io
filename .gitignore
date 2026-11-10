@@ -1,5 +1,8 @@
 __pycache__
 .vscode
-CLAUDE.md
 mma/notes/
 node_modules/
+_site/
+**/dist/
+test-results/
+playwright-report/

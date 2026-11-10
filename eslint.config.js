@@ -1,21 +1,40 @@
-// ESLint flat config: Google's TypeScript style via gts
-// (https://google.github.io/styleguide/tsguide.html). Formatting comes from
-// gts's Prettier settings in .prettierrc.js.
+/**
+ * @fileoverview ESLint flat config: Google's TypeScript style via gts, plus
+ * the house file-header rule. Formatting comes from .prettierrc.js.
+ * Copyright 2026 Delphi Tech. All Rights Reserved.
+ * Author: pstefanou12@
+ */
+
+'use strict';
+
 const gts = require('gts');
+const globals = require('globals');
+
+const fileHeader = require('./tools/eslint/file_header_rule.js');
 
 module.exports = [
   {
-    // Built output, and code that predates the style rule (mma/), which
+    // Build output, and code that predates the style rule (mma/, js/), which
     // adopts it when next changed.
-    ignores: ['**/node_modules/', 'delphi/assets/', 'mma/', 'js/'],
+    ignores: ['**/node_modules/', '**/dist/', '_site/', 'mma/', 'js/'],
   },
   ...gts,
   {
-    files: ['delphi/web/**/*.{ts,tsx,mts}'],
+    // Node tooling (this config, Prettier's, the local ESLint rules).
+    files: ['*.js', 'tools/**/*.js'],
+    languageOptions: {sourceType: 'commonjs', globals: globals.node},
+  },
+  {
+    plugins: {pat: {rules: {'file-header': fileHeader}}},
+    rules: {'pat/file-header': 'error'},
+  },
+  {
+    files: ['packages/**/*.{ts,tsx}', 'apps/**/*.{ts,tsx}'],
     languageOptions: {
       parserOptions: {
         ecmaFeatures: {jsx: true},
-        project: './delphi/web/tsconfig.json',
+        project: false,
+        projectService: true,
         tsconfigRootDir: __dirname,
       },
     },
