@@ -1,0 +1,50 @@
+## Method
+
+`TruncatedLassoRegression` fits a $k$-sparse $w$ from fewer samples than
+dimensions, Daskalakis, Rohatgi and Zampetakis (2020): it minimizes the
+truncated NLL plus $\lambda \lVert w \rVert_1$ by projected SGD, one sample per
+step, kept in
+
+$$
+E_r = \{ w : \lVert X w + b - y \rVert_2 \le r \sqrt{n} \},
+$$
+
+from the smallest-$\ell_1$ point of $E_r$, averaging the iterates. The noise
+variance must be known, and the intercept is not penalized.
+
+## Example
+
+```python
+import torch as ch
+
+from delphi.stats.truncated import truncated_lasso_regression
+
+w = ch.zeros(1000, 1)
+w[:5] = 1.0
+X = ch.randn(2000, 1000)
+y = X @ w + ch.randn(2000, 1)
+
+
+def phi(z):
+    return z.abs() < 4.0
+
+
+kept = phi(y).flatten()
+model = truncated_lasso_regression.TruncatedLassoRegression(
+    phi, kept.float().mean().item(), noise_var=1.0, fit_intercept=False
+)
+model.fit(X[kept][:400], y[kept][:400])
+model.coef_.abs().topk(5).indices
+```
+
+## Arguments in practice
+
+- **`l1`** penalizes the coefficients of $y / \sqrt{\sigma^2}$;
+  $\sqrt{\log(d) / n}$ by default.
+- **`alpha`** sets the radius $r = 1 + 2 / \sqrt{\alpha}$ of $E_r$, unless the
+  `radius` hyperparameter is given; `None` grows it by `rate` each phase
+  until the projection stops binding.
+- **The step** is $3 / (\operatorname{mean}_i \lVert x_i \rVert^2 \sqrt{N / p})$
+  for $N$ `iterations` over $p$ columns, unless `lr` is given.
+- **`delphi.stats.linear.lasso.Lasso`** is the untruncated lasso the start
+  comes from, and `fit_constrained` its constrained form.

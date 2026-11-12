@@ -1,0 +1,65 @@
+## Which class
+
+The univariate normal has four classes, one for each combination of what you
+know. Each takes what it needs of `phi`, `covariance_matrix`
+(the known variance, as a 1×1 matrix) and `alpha`, and reports the standard
+deviation as `scale_`, as `torch.distributions.Normal` names it. The API
+reference below covers all four.
+
+| you know | class | learns |
+|---|---|---|
+| the set (`phi`) | `TruncatedNormal` | `loc_`, `scale_` |
+| the set and the variance | `TruncatedNormalKnownVariance` | `loc_` |
+| neither | `UnknownTruncationNormal` | `loc_`, `scale_` |
+| the variance only | `UnknownTruncationNormalKnownVariance` | `loc_` |
+
+`TruncatedNormal(None)` also works: like every family, it then learns the set
+by L1 regression first; see
+[Learning the truncation set](/truncated-statistics).
+
+With a known set they fit by projected SGD on the truncated negative
+log-likelihood (Daskalakis et al., 2018); with an unknown one, from the
+sample's Hermite expansion (Kontonis, Tzamos and Zampetakis, 2019). The
+[multivariate normal](/truncated-multivariate-normal) page describes both
+methods, with examples.
+
+## Example
+
+A normal with mean 1 and standard deviation 2, observed only where $x > 0$:
+
+```python
+import torch as ch
+
+from delphi.truncated.distributions import truncated_normal
+
+ch.manual_seed(0)
+
+population = ch.randn(50000, 1) * 2.0 + 1.0
+
+
+def phi(x):
+    return (x > 0.0).squeeze(-1)
+
+
+S = population[phi(population)]
+alpha = phi(population).float().mean().item()
+
+# Fit on standardized data, moving phi through the same transform.
+mean, std = S.mean(0), S.std(0)
+model = truncated_normal.TruncatedNormal(
+    lambda z: phi(z * std + mean), alpha=alpha
+)
+model.fit((S - mean) / std)
+
+recovered_loc = model.avg_loc_ * std + mean
+recovered_scale = model.avg_scale_ * std
+```
+
+<ResultTable
+  columns={["loc", "scale"]}
+  rows={[
+    ["truth", "1", "2"],
+    ["sample mean and standard deviation", "2.010", "1.390"],
+    ["recovered", "1.011", "1.978"],
+  ]}
+/>

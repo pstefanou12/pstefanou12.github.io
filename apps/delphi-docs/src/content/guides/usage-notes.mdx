@@ -1,0 +1,75 @@
+## The truncation set
+
+**The truncation set is a plain callable.** `phi` maps a batch of shape
+`(n, dims)` to a mask over it. Anything that answers "is this point observed?"
+works; there is nothing to subclass.
+
+**The dimension comes from the sample.** No model takes `dims`: `fit(S)`
+reads it from `S.shape[1]`, so known parameters such as a covariance must
+match the sample's width.
+
+**`phi=None` learns the set.** Every distribution accepts it and learns the
+set from the sample before fitting; see
+[Learning the truncation set](/truncated-statistics).
+
+**`alpha` is optional.** It is the survival mass, the fraction of the
+population inside the set, and it sizes the region the optimizer is kept in.
+Omit it if you cannot measure it: the budget then starts at `min_radius` and
+grows by a factor of `rate` per phase, while the projection still binds, up to
+`max_radius`. `alpha=1` is rejected: with nothing truncated there is nothing
+to correct, so fit the distribution directly.
+
+## Hyperparameters
+
+**Hyperparameters are a keyword argument.** Every model runs on its config's
+defaults; override any of them with `hyperparameters={"iterations": 5000}`.
+Each algorithm page lists its config's keys and defaults under
+*Hyperparameters*.
+
+**Hyperparameters are a plain dict**, validated against a pydantic config.
+Keys the config does not declare are ignored with a warning, so a misspelled
+key is audible rather than silent.
+
+**The Fisher schedule is the default.** It sets the step size from the
+Hessian of the truncated likelihood, starting at $1 / L$ and decaying as
+$1 / (L + \mu t)$, and re-measures both as the fit moves, so neither needs
+tuning. Pass `hyperparameters={"scheduler": None}` for a constant rate.
+
+**Some families precondition.** Families whose sufficient statistics are
+strongly correlated on the truncation set, such as the inverse Gaussian's $x$
+and $1/x$ or the two-parameter Gamma's $\log x$ and $x$, set `precondition`:
+each step multiplies the gradient by the inverse covariance of the sufficient
+statistics over the observed sample, the truncated NLL's Hessian at the truth.
+
+**Standardize multivariate normals first.** Fit on `(S - mean) / std` with
+`phi` composed with the inverse transform, as in the [Quickstart](/quickstart),
+and map the estimates back: the raw data's scale slows the descent.
+
+## Estimates
+
+**Use the `avg_` estimates.** Every model exposes four: `avg_` (the mean of
+the iterates after a burn-in, set by `avg_burn_in`), `ema_` (a bias-corrected
+moving average), `final_` (the last iterate) and `best_` (the iterate with the
+lowest validation loss). The averaged iterate is the one the convergence
+guarantee is about; `best_` is the least reliable of the four in our tests.
+
+**`model.summary()` reports how the fit went**: the data and survival mass,
+the optimizer, scheduler, steps, stop reason and final losses, all four
+estimates, how often the projection fired, the fitted model's own mass on the
+truncation set (a mismatch with `alpha` means the fit has gone wrong) and the
+curvature at the estimate. It has no standard errors or p-values: neither
+analysis this follows gives an asymptotic distribution for the estimate.
+Estimates are reported in the coordinates the model was fit in, so after
+standardizing, map them back as in the Quickstart.
+
+## Logging
+
+**Logging is off until you turn it on.** delphi.ai logs through the standard
+library under the `delphi` logger and installs no handler:
+
+```python
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logging.getLogger("delphi.trainer").setLevel(logging.WARNING)  # per module
+```

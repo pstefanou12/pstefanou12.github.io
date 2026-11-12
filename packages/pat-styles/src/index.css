@@ -1,0 +1,10 @@
+/**
+ * @fileoverview Everything pat-styles provides, in cascade order.
+ * Copyright 2026 Delphi Tech. All Rights Reserved.
+ * Author: pstefanou12@
+ */
+
+@import "./tokens.css";
+@import "./base.css";
+@import "./shell.css";
+@import "./prose.css";

@@ -6,7 +6,8 @@
     "rootDir": "mma/src",
     "outDir": "mma/dist",
     "strict": true,
-    "noEmitOnError": true
+    "noEmitOnError": true,
+    "types": []
   },
   "include": ["mma/src/**/*"]
 }
